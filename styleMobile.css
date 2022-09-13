@@ -1,0 +1,12 @@
+#panel {
+    flex-direction: column;
+}
+
+img {
+    max-width: 70vw;
+    border-radius: 2rem;
+}
+
+h2 {
+    max-width: 70vw;
+}

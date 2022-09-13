@@ -20,15 +20,6 @@ body {
     flex-direction: column;
 }
 
-img {
-    max-width: 30vw;
-    border-radius: 2rem;
-}
-
-h2 {
-    max-width: 30vw;
-}
-
 #footer {
     /* margin-top: 2em; */
     font-size: .7em;
