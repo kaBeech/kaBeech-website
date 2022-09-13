@@ -2,6 +2,10 @@
     flex-direction: column;
 }
 
+h2 (
+    /* font-size: initial; */
+)
+
 img {
     max-width: 70vw;
     border-radius: 2rem;
