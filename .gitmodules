@@ -1,3 +1,6 @@
 [submodule "buddh-a-sketch"]
 	path = buddh-a-sketch
 	url = git@github.com:kaBeech/buddh-a-sketch.git
+[submodule "tic-tac-toebot"]
+	path = tic-tac-toebot
+	url = git@github.com:kaBeech/tic-tac-toebot.git
