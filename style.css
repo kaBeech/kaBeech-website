@@ -2,8 +2,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    text-shadow: #101520 0.025em 0.05em;
-    box-shadow: #101520 0.025em 0.05em;
+    text-shadow: #050710 0.03em 0.06em;
 }
 
 body {
@@ -26,6 +25,7 @@ body {
 img {
     border-radius: 2rem;
     width: 24rem;
+    box-shadow:  #050710 0.03em 0.06em;
 }
 
 #panel {
