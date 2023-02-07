@@ -1,4 +1,5 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
+import { Link } from "@builder.io/qwik-city";
 import styles from "./navigation.css?inline";
 
 export const Navigation = component$(() => {
@@ -6,11 +7,17 @@ export const Navigation = component$(() => {
 
   return (
     <div class="lazyflex lazyalign">
-      <div>LOGO</div>
+      <div class="lazylogo">LOGO</div>
       <ul class="lazyflex">
-        <li>Home</li>
-        <li>Testdir</li>
-        <li>Bonus</li>
+        <li>
+          <Link href="/">Home</Link>
+        </li>
+        <li>
+          <Link href="/testdir">Testdir</Link>
+        </li>
+        <li>
+          <Link href="/bonus">Bonus</Link>
+        </li>
       </ul>
     </div>
   );

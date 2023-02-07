@@ -1,10 +1,5 @@
-.lazyflex {
-    display: flex;
-}
-
-.lazyalign {
-    align-items: center;
-    justify-content: space-between;
+ul {
+	list-style: none;
 }
 
 ul, li {
@@ -16,6 +11,24 @@ ul, li {
 	vertical-align: baseline;
 }
 
-ul {
-	list-style: none;
+.lazyflex {
+    display: flex;
+    gap: 1em;
 }
+
+.lazylogo {
+    font-size: 1.5em;
+    background-color: black;
+    color: aqua;
+    padding: 0.5em;
+}
+
+.lazyalign {
+    align-items: center;
+    justify-content: space-between;
+}
+
+li {
+    font-size: 1.2em;
+}
+

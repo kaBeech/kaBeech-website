@@ -1,11 +1,11 @@
 import { component$, Slot } from "@builder.io/qwik";
-import { Navigation } from "~/components/navigation/navigation";
+import Header from "../components/header/header";
 
 export default component$(() => {
   return (
     <>
       <main>
-        <Navigation />
+        <Header />
         <section>
           <Slot />
         </section>
