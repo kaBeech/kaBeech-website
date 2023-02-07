@@ -1,16 +1,30 @@
-import { component$, useStore } from "@builder.io/qwik";
+import { $, component$, useStore, useTask$ } from "@builder.io/qwik";
 
-export const TestButton = component$(() => {
+interface TestButtonProps {
+  handleFunction: any;
+}
+
+export const TestButton = component$((props: TestButtonProps) => {
   const state = useStore({
     numberOfClicks: 0,
     message: `Yes!`,
+  });
+
+  const handleClick = $(() => {
+    state.numberOfClicks += 1;
+    props.handleFunction();
+  });
+
+  useTask$(({ track }) => {
+    track(state);
+    console.log(state.numberOfClicks);
   });
 
   return (
     <div>
       <button
         onClick$={() => {
-          state.numberOfClicks += 1;
+          handleClick();
         }}
       >
         Click Me!
