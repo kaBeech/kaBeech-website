@@ -1,5 +1,6 @@
 import { component$, Slot } from "@builder.io/qwik";
 import { Navigation } from "~/components/navigation/navigation";
+import { Screen } from "~/components/screen/screen";
 
 export default component$(() => {
   return (
@@ -7,7 +8,9 @@ export default component$(() => {
       <main>
         <Navigation />
         <section>
-          <Slot />
+          <Screen>
+            <Slot />
+          </Screen>
         </section>
       </main>
       <footer>
