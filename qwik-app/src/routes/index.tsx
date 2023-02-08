@@ -21,7 +21,7 @@ export default component$(() => {
             responseShort: "Fun",
             responseLong:
               "I'm just having fun. Do you have anything cool to play with?",
-            linkPath: "/flower",
+            linkPath: "/fun",
           },
           {
             responseShort: "About",
