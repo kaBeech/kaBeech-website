@@ -1,6 +1,5 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
-import { KaBeechHeartLogo } from "../icons/kaBeechHeart";
 import styles from "./navigation.css?inline";
 
 export const Navigation = component$(() => {
@@ -8,7 +7,7 @@ export const Navigation = component$(() => {
 
   return (
     <div class="lazyflex lazyalign">
-      <KaBeechHeartLogo />
+      <div class="lazyRoundBorders"></div>
       <ul class="lazyflex">
         <li>
           <Link href="/">Home</Link>

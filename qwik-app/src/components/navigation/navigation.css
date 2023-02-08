@@ -28,6 +28,13 @@ ul, li {
     justify-content: space-between;
 }
 
+.lazyRoundBorders {
+    border-radius: 1em;
+    width: 3.34em;
+    aspect-ratio: 1;
+    background-image: url(../../../public/favicon.svg);
+}
+
 li {
     font-size: 1.2em;
 }
