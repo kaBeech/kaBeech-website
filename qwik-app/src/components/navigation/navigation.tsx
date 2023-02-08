@@ -10,13 +10,19 @@ export const Navigation = component$(() => {
       <div class="lazyRoundBorders"></div>
       <ul class="lazyflex">
         <li>
-          <Link href="/">Home</Link>
+          <Link class="link" href="/">
+            Home
+          </Link>
         </li>
         <li>
-          <Link href="/testdir">Testdir</Link>
+          <Link class="link" href="/testdir">
+            Testdir
+          </Link>
         </li>
         <li>
-          <Link href="/bonus">Bonus</Link>
+          <Link class="link" href="/bonus">
+            Bonus
+          </Link>
         </li>
       </ul>
     </div>

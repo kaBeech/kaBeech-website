@@ -1,4 +1,17 @@
 .lazyButton {
-    background-color: var(--kaBeech-screen-background);
-    color: var(--kaBeech-screen-foreground);
+    /* background-color: var(--kaBeech-screen-background); */
+    /* color: var(--kaBeech-screen-foreground); */
+}
+
+:link {
+    color: var(--kaBeech-main-background)
+}
+
+:visited {
+    color: var(--kaBeech-main-background)
+}
+
+.lazyCancel {
+    background-color: var(--kaBeech-cancel);
+    color: var(--kaBeech-screen-background);
 }

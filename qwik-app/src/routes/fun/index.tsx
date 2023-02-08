@@ -33,7 +33,9 @@ export default component$(() => {
       <img src="/flower.svg" alt="A snapshot of the Qwik flower" />
       <p>
         Okay, I didn't actually make this one - it's made by the Qwik team.{" "}
-        <Link href="/tech#Qwik">More info on Qwik here.</Link>
+        <Link class="link" href="/tech#Qwik">
+          More info on Qwik here.
+        </Link>
       </p>
       <p>
         I'm showing it here because {"A)"} it's a fun exhibition of Qwik being

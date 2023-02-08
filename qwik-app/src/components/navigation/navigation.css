@@ -17,6 +17,8 @@
 }
 
 .lazyRoundBorders {
+    border-style: solid;
+    border-color: var(--kaBeech-screen-foreground);
     border-radius: 1em;
     width: 3.34em;
     aspect-ratio: 1;

@@ -16,13 +16,14 @@ export const ResponseDetail = component$((props: ResponseDetailProps) => {
   });
 
   return (
-    <div class="flex">
+    <div class="flex midground">
       <div>{props.response.responseLong}</div>
       <div class="flex column">
         <button class="lazyButton">
-          <Link href={props.response.linkPath}>Enter</Link>
+          <Link href={props.response.linkPath}>Confirm</Link>
         </button>
         <button
+          class="lazyCancel"
           onClick$={() => {
             hideResponseDetail();
           }}

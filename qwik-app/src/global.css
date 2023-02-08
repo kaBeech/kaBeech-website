@@ -10,13 +10,17 @@
   --kaBeech-color-starry-field: #000406;
   --kaBeech-color-terminal-idle: #00141a;
   --kaBeech-color-terminal-text: #00a0a0;
+  --kaBeech-color-algae: #007d7d;
   --kaBeech-color-photonsword: #0088ff;
   --kaBeech-color-distant-planet: #004886;
+  --kaBeech-color-solar-wind: #eb3305;
   --kaBeech-main-background: var(--kaBeech-color-starry-field);
   --kaBeech-screen-background: var(--kaBeech-color-terminal-idle);
+  --kaBeech-screen-midground: var(--kaBeech-color-algae);
   --kaBeech-screen-foreground: var(--kaBeech-color-terminal-text);
-  --kaBeech-link-unvisited: var(--kaBeech-color-photonsword);
-  --kaBeech-link-visited: var(--kaBeech-color-distant-planet);
+  --kaBeech-link-visited: var(--kaBeech-color-photonsword);
+  --kaBeech-link-unvisited: var(--kaBeech-color-distant-planet);
+  --kaBeech-cancel: var(--kaBeech-color-solar-wind)
 }
 
 body {
@@ -47,6 +51,10 @@ button {
   background-color: var(--kaBeech-screen-foreground);
   color: var(--kaBeech-screen-background);
   border-width: 0.2em;
+}
+
+.midground {
+  background-color: var(--kaBeech-screen-midground);
 }
 
 .invertColor {
@@ -104,11 +112,15 @@ body {
   flex-direction: column;
 }
 
-:link {
+:link, :visited {
+  color: inherit
+}
+
+:link.link {
   color: var(--kaBeech-link-unvisited);
 }
 
-:visited {
+:visited.link {
   color: var(--kaBeech-link-visited);
 }
 
