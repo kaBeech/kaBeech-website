@@ -1,4 +1,5 @@
 import { $, component$, useStylesScoped$ } from "@builder.io/qwik";
+import { Link } from "@builder.io/qwik-city";
 import type { ResponseOption } from "~/globalTypes";
 import styles from "./responseButton.css?inline";
 
@@ -20,7 +21,7 @@ export const ResponseButton = component$((props: ResponseButtonProps) => {
         handleClick();
       }}
     >
-      {props.response.responseShort}
+      <Link href={props.response.jumpTo}>{props.response.responseShort}</Link>
     </button>
   );
 });

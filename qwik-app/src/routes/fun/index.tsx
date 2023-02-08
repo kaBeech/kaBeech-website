@@ -62,6 +62,11 @@ export default component$(() => {
             responseLong: "Show me that cool flower you didn't actually make!",
             linkPath: "/flower",
           },
+          {
+            responseShort: "Back",
+            responseLong: "Actually, there's something else I wanted to ask...",
+            linkPath: "/",
+          },
         ]}
       />
     </div>
@@ -69,11 +74,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "kaBeech - Welcome!",
+  title: "kaBeech - Fun and Games!",
   meta: [
     {
       name: "description",
-      content: "Welcome to my site!",
+      content: "Fun and Games!",
     },
   ],
 };

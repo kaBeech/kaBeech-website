@@ -26,7 +26,7 @@ export default component$(() => {
           {
             responseShort: "About",
             responseLong: "I'm interested in you - tell me about yourself!",
-            linkPath: "/about",
+            linkPath: "/about-me",
           },
         ]}
       />
