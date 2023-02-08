@@ -9,7 +9,7 @@ export const ResponseBar = component$(() => {
   const testData: TestData[] = [{ response: "quiet" }, { response: "LOOUD" }];
 
   return (
-    <div class="invertColor flex spaceBetween">
+    <div class="invertColor flex spaceBetween roundCornersBottom">
       <div>{"<"}</div>
       <div>
         {testData.map((i) => (

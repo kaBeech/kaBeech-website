@@ -7,7 +7,7 @@ export default component$(() => {
       <h1>Welcome!</h1>
       <p>Welcome to kaBeech, Kyle Beechly's personal website</p>
       <p>
-        My name is Beechi, and I'll be your guide here. I'm glad to see you!
+        My name is Beechi, and I'll be your guide here. I'm glad to meet you!
       </p>
       <p>
         Please help me direct your experience by chosing a reply below. Just

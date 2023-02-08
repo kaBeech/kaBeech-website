@@ -44,6 +44,14 @@ button {
   justify-content: space-between;
 }
 
+.roundCornersTop {
+  border-radius: 0.8em 0.8em 0 0;
+}
+
+.roundCornersBottom {
+  border-radius: 0 0 0.8em 0.8em;
+}
+
 /* Copied from pre-qwik site */
 
 * {
