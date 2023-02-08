@@ -28,6 +28,23 @@ export default component$(() => {
             responseLong: "I'm interested in you - tell me about yourself!",
             linkPath: "/about-me",
           },
+          {
+            responseShort: "Tech",
+            responseLong:
+              "Woah, this site is pretty cool! What tech does it use?",
+            linkPath: "/tech",
+          },
+          {
+            responseShort: "Projects",
+            responseLong:
+              "I'm interested in your engineering career. What are some of the projects you're most proud of?",
+            linkPath: "/projects",
+          },
+          {
+            responseShort: "Contact",
+            responseLong: "How can I get in touch with you?",
+            linkPath: "/contact",
+          },
         ]}
       />
     </div>
