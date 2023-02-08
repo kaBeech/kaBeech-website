@@ -14,7 +14,10 @@ export default component$(() => {
         </section>
       </main>
       <footer>
-        <span>Made with ♡ by Kyle Beechly</span>
+        <span>
+          Made with ♡ by{" "}
+          <a href="https://github.com/kaBeech/kaBeech-website">kaBeech</a>
+        </span>
       </footer>
     </>
   );
