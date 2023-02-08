@@ -17,11 +17,14 @@ export default component$(() => {
       </p>
       <ResponseBar
         responses={[
-          { responseShort: "quiet", responseLong: "quiet" },
           {
-            responseShort: "LOOUD",
+            responseShort: "Fun",
             responseLong:
-              "LOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOUD",
+              "I'm just having fun. Do you have anything cool to play with?",
+          },
+          {
+            responseShort: "About",
+            responseLong: "I'm interested in you - tell me about yourself!",
           },
         ]}
       />
