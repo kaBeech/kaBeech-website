@@ -20,7 +20,7 @@
     border-radius: 1em;
     width: 3.34em;
     aspect-ratio: 1;
-    background-image: url(../../../public/favicon.svg);
+    background-image: url(/favicon.svg);
 }
 
 li {
