@@ -35,6 +35,15 @@ button {
   border-width: 0.2em;
 }
 
+.invertColor {
+  background-color: var(--kaBeech-screen-foreground);
+  color: var(--kaBeech-screen-background);
+}
+
+.spaceBetween {
+  justify-content: space-between;
+}
+
 /* Copied from pre-qwik site */
 
 * {
