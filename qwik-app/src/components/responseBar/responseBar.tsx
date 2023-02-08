@@ -23,7 +23,7 @@ export const ResponseBar = component$((props: ResponseBarProps) => {
   });
 
   return (
-    <div class="invertColor flex column alignStretch roundCornersBottom">
+    <div class="invertColor flex column alignStretch roundCornersBottom width100">
       {state.responseDetailHidden === false && (
         <ResponseDetail
           response={state.selectedResponse}

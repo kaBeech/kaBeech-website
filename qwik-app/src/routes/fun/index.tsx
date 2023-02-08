@@ -8,7 +8,7 @@ export default component$(() => {
   useStylesScoped$(styles);
 
   return (
-    <div>
+    <div class="flex column">
       <h1>Fun and Games!</h1>
       <p>Here are some cool things I've made!</p>
       <p>
@@ -18,6 +18,11 @@ export default component$(() => {
 
       <h2>Buddh-A-Sketch</h2>
       <img src="/favicon.svg" alt="A rainbow heart made with Buddh-A-Sketch" />
+      <button>
+        <Link href="https://kabeech.github.io/buddh-a-sketch/">
+          Check it out!
+        </Link>
+      </button>
       <p>
         This started as an emulation of a classic drawing toy and evolved to
         include functionality for meditative practice. Then I added
@@ -31,6 +36,9 @@ export default component$(() => {
 
       <h2>Qwik Flower</h2>
       <img src="/flower.svg" alt="A snapshot of the Qwik flower" />
+      <button>
+        <Link href="/flower">Check it out!</Link>
+      </button>
       <p>
         Okay, I didn't actually make this one - it's made by the Qwik team.{" "}
         <Link class="link" href="/tech#Qwik">

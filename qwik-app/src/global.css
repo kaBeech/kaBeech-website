@@ -66,6 +66,10 @@ button {
   justify-content: space-between;
 }
 
+.width100 {
+  width: 100%;
+}
+
 .roundCornersTop {
   border-radius: 0.8em 0.8em 0 0;
 }
