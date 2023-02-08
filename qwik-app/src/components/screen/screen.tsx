@@ -1,5 +1,5 @@
 import { component$, Slot, useStylesScoped$ } from "@builder.io/qwik";
-import { Beechi } from "../beechi/beechi";
+import { Beechy } from "../beechy/beechy";
 import styles from "./screen.css?inline";
 
 export const Screen = component$(() => {
@@ -7,7 +7,7 @@ export const Screen = component$(() => {
 
   return (
     <div class="lazy">
-      <Beechi />
+      <Beechy />
       <Slot />
     </div>
   );

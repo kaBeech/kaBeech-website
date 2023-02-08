@@ -8,7 +8,7 @@ export default component$(() => {
       <h1>Welcome!</h1>
       <p>Welcome to kaBeech, Kyle Beechly's personal website</p>
       <p>
-        My name is Beechi, and I'll be your guide here. I'm glad to meet you!
+        My name is Beechy, and I'll be your guide here. I'm glad to meet you!
       </p>
       <h3>What would you like to do?</h3>
       <p>
