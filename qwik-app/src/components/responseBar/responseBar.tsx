@@ -18,10 +18,17 @@ export const ResponseBar = component$((props: ResponseBarProps) => {
     state.selectedResponse = response;
   });
 
+  const hideResponseDetail = $(() => {
+    state.responseDetailHidden = true;
+  });
+
   return (
     <div class="invertColor flex column alignStretch roundCornersBottom">
       {state.responseDetailHidden === false && (
-        <ResponseDetail response={state.selectedResponse} />
+        <ResponseDetail
+          response={state.selectedResponse}
+          hideResponseDetail={hideResponseDetail}
+        />
       )}
       <div class="flex spaceBetween">
         <div>{"<"}</div>

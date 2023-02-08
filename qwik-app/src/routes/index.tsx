@@ -21,10 +21,12 @@ export default component$(() => {
             responseShort: "Fun",
             responseLong:
               "I'm just having fun. Do you have anything cool to play with?",
+            linkPath: "/flower",
           },
           {
             responseShort: "About",
             responseLong: "I'm interested in you - tell me about yourself!",
+            linkPath: "/about",
           },
         ]}
       />
