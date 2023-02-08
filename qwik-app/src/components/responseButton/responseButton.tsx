@@ -11,7 +11,7 @@ export const ResponseButton = component$((props: ResponseButtonProps) => {
   useStylesScoped$(styles);
 
   const handleClick = $(() => {
-    props.handleFunction();
+    props.handleFunction(props.response);
   });
 
   return (

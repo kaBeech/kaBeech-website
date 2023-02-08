@@ -52,6 +52,18 @@ button {
   border-radius: 0 0 0.8em 0.8em;
 }
 
+.alignStretch {
+  align-items: stretch;
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+.hidden {
+  visibility: hidden;
+} 
+
 /* Copied from pre-qwik site */
 
 * {
