@@ -7,7 +7,7 @@ export default component$(() => {
     <>
       <main>
         <Navigation />
-        <section>
+        <section class="flex column">
           <Screen>
             <Slot />
           </Screen>

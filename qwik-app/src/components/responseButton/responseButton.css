@@ -1,0 +1,4 @@
+button {
+  background-color: var(--kaBeech-screen-text);
+  color: var(--kaBeech-idle-screen);
+}

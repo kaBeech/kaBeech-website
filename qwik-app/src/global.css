@@ -6,17 +6,28 @@
  *
  */
 
-/* :root {
-  --qwik-dark-blue: #006ce9;
-  --qwik-light-blue: #18b6f6;
-  --qwik-light-purple: #ac7ff4;
-  --qwik-dark-purple: #713fc2;
-} */
+:root {
+  --kaBeech-starry-field: #000406;
+  --kaBeech-idle-screen: #00141a;
+  --kaBeech-screen-text: #00a0a0;
+  --kaBeech-link-unvisited: #0088ff;
+  --kaBeech-link-visited: #004886;
+}
 
 body {
-  background-color: #000406;
+  background-color: var(--kaBeech-starry-field);
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   padding: 20px 20px 40px 20px;
+}
+
+button {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  background-color: inherit;
+  color: inherit;
+  border-width: 0.2em;
 }
 
 /* Copied from pre-qwik site */
@@ -33,7 +44,7 @@ body {
   font-size: 1.5rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-image: url(./starry-background.jpg);
-  color: #00a0a0;
+  color: var(--kaBeech-screen-text);
   margin-top: 2em;
 }
 
@@ -46,11 +57,11 @@ body {
 }
 
 :link {
-  color: #0088ff;
+  color: var(--kaBeech-link-unvisited);
 }
 
 :visited {
-  color: #004886;
+  color: var(--kaBeech-link-visited);
 }
 
 img {

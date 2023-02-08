@@ -1,7 +1,9 @@
 
 .lazy {
 border-style: solid;
-background-color: #00141a;
+background-color: var(--kaBeech-idle-screen);
 border-radius: 0.3em;
+height: max-content;
+width: 80%;
 }
 
