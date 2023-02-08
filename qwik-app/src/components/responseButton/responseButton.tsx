@@ -1,30 +1,17 @@
-import {
-  $,
-  component$,
-  useStore,
-  useStylesScoped$,
-  useTask$,
-} from "@builder.io/qwik";
+import { $, component$, useStylesScoped$ } from "@builder.io/qwik";
+import type { ResponseOption } from "~/globalTypes";
 import styles from "./responseButton.css?inline";
 
 interface ResponseButtonProps {
-  response: string;
+  response: ResponseOption;
   handleFunction?: any;
 }
 
 export const ResponseButton = component$((props: ResponseButtonProps) => {
   useStylesScoped$(styles);
 
-  const state = useStore({
-    response: props.response,
-  });
-
   const handleClick = $(() => {
     props.handleFunction();
-  });
-
-  useTask$(({ track }) => {
-    track(state);
   });
 
   return (
@@ -33,7 +20,7 @@ export const ResponseButton = component$((props: ResponseButtonProps) => {
         handleClick();
       }}
     >
-      {state.response}
+      {props.response.responseShort}
     </button>
   );
 });

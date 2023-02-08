@@ -11,7 +11,6 @@ export const Screen = component$(() => {
     <div class="lazy">
       <Beechi />
       <Slot />
-      <ResponseBar />
     </div>
   );
 });
