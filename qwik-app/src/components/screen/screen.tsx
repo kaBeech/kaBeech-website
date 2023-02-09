@@ -9,7 +9,9 @@ export const Screen = component$(() => {
     <div class="lazy">
       <Beechy />
       <div class="screenGradientTop heightHalf"></div>
-      <Slot />
+      <div class="lazyScroll">
+        <Slot />
+      </div>
     </div>
   );
 });

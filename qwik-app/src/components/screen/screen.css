@@ -16,5 +16,11 @@
   /* align-self: stretch;
 justify-self: stretch; */
   /* width: 80vw; */
-  /* height: 80vh; */
+  /* height: 80vh;
+  overflow: auto; */
+}
+
+.lazyScroll {
+  height: 69vh;
+  overflow: auto;
 }
