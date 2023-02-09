@@ -12,7 +12,7 @@ export default component$(() => {
       </p>
       <h3>What would you like to do?</h3>
       <p>
-        Please help me direct your experience by chosing a reply below. Just
+        Please help me direct your experience by chosing a response below. Just
         click or tap a button!
       </p>
       <ResponseBar
