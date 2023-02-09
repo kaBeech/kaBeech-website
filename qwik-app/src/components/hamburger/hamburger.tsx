@@ -1,14 +1,13 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
-import { Link } from "@builder.io/qwik-city";
-import styles from "./navigation.css?inline";
+import styles from "./hamburger.css?inline";
 
-export const Navigation = component$(() => {
+export const Hamburger = component$(() => {
   useStylesScoped$(styles);
 
   return (
     <div class="lazyflex lazyalign">
-      <div class="lazyRoundBorders"></div>
-      <ul class="lazyflex">
+      <div class="lazyLogo"></div>
+      {/* <ul class="lazyflex">
         <li>
           <Link class="link" href="/">
             Home
@@ -24,7 +23,7 @@ export const Navigation = component$(() => {
             Bonus
           </Link>
         </li>
-      </ul>
+      </ul> */}
     </div>
   );
 });

@@ -1,17 +1,22 @@
 import { component$, Slot } from "@builder.io/qwik";
-import { Navigation } from "~/components/navigation/navigation";
+import { Hamburger } from "~/components/hamburger/hamburger";
+
+import { Logo } from "~/components/logo/logo";
 import { Screen } from "~/components/screen/screen";
 
 export default component$(() => {
   return (
     <>
       <main>
-        <Navigation />
-        <section class="flex column">
-          <Screen>
-            <Slot />
-          </Screen>
-        </section>
+        <div class="flex alignStart">
+          <Logo />
+          <section class="flex column">
+            <Screen>
+              <Slot />
+            </Screen>
+          </section>
+          <Hamburger />
+        </div>
       </main>
       <footer>
         <span>

@@ -9,6 +9,7 @@
     background-color: black;
     color: aqua;
     padding: 0.5em;
+    margin: 2em;
 }
 
 .lazyalign {
@@ -16,13 +17,14 @@
     justify-content: space-between;
 }
 
-.lazyRoundBorders {
+.lazyLogo {
     border-style: solid;
     border-color: var(--kaBeech-screen-foreground);
     border-radius: 1em;
     width: 3.34em;
     aspect-ratio: 1;
     background-image: url(/favicon.svg);
+    margin: 0.5em;
 }
 
 li {

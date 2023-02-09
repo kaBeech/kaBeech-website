@@ -1,0 +1,32 @@
+
+.lazyflex {
+    display: flex;
+    gap: 1em;
+}
+
+.lazylogo {
+    font-size: 1.5em;
+    background-color: black;
+    color: aqua;
+    padding: 0.5em;
+}
+
+.lazyalign {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lazyLogo {
+    border-style: solid;
+    border-color: var(--kaBeech-screen-foreground);
+    border-radius: 1em;
+    width: 3.34em;
+    aspect-ratio: 1;
+    background-image: url(/favicon.svg);
+    margin: 0.5em;
+}
+
+li {
+    font-size: 1.2em;
+}
+
