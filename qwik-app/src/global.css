@@ -19,6 +19,10 @@
   --kaBeech-color-photonsword: #0088ff;
   --kaBeech-color-distant-planet: #004886;
   --kaBeech-color-solar-wind: #eb3305;
+  --kaBeech-color-easter-moss: #00b63a;
+}
+
+:root {
   --kaBeech-main-background: var(--kaBeech-color-starry-field);
   --kaBeech-screen-background: var(--kaBeech-color-terminal-idle);
   --kaBeech-screen-midground: var(--kaBeech-color-algae);
@@ -26,7 +30,8 @@
   --kaBeech-link-visited: var(--kaBeech-color-photonsword);
   --kaBeech-link-unvisited: var(--kaBeech-color-distant-planet);
   --kaBeech-cancel: var(--kaBeech-color-solar-wind);
-  --kaBeech-response: var(--kaBeech-color-response)
+  --kaBeech-response: var(--kaBeech-color-response);
+  --kaBeech-response-text: var(--kaBeech-color-easter-moss);
 }
 
 body {
@@ -118,6 +123,10 @@ button {
 
 .width100 {
   width: 100%;
+}
+
+.height100 {
+  height: 100%;
 }
 
 .height1 {

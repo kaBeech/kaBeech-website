@@ -17,7 +17,7 @@ export const ResponseDetail = component$((props: ResponseDetailProps) => {
 
   return (
     <div class="flex responseGradient">
-      <div>{props.response.responseLong}</div>
+      <div class="lazy">{props.response.responseLong}</div>
       <div class="flex column">
         <button class="lazyButton">
           <Link href={props.response.linkPath}>Confirm</Link>

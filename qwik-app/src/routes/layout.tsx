@@ -8,14 +8,14 @@ export default component$(() => {
   return (
     <>
       <main>
-        <div class="flex alignStart">
-          <Logo />
-          <section class="flex column">
+        <div class="flex spaceBetween">
+          <section class="flex alignStart width100 height100">
+            <Logo />
             <Screen>
               <Slot />
             </Screen>
+            <Logo />
           </section>
-          <Logo />
         </div>
       </main>
       <footer>

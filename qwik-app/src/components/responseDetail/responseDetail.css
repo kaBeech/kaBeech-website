@@ -7,3 +7,7 @@
     background-color: var(--kaBeech-cancel);
     color: var(--kaBeech-screen-background);
 }
+
+.lazy {
+    color: var(--kaBeech-response-text);
+}
