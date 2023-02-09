@@ -3,4 +3,6 @@ button {
   color: var(--kaBeech-screen-foreground); */
   width: 4em;
   aspect-ratio: 1;
+  background-color: transparent;
+  opacity: 1;
 }
