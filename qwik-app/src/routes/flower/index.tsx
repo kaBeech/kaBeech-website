@@ -1,6 +1,13 @@
-import { component$, useClientEffect$, useStore, useStylesScoped$ } from '@builder.io/qwik';
-import { DocumentHead, useLocation } from '@builder.io/qwik-city';
-import styles from './flower.css?inline';
+import {
+  component$,
+  useClientEffect$,
+  useStore,
+  useStylesScoped$,
+} from "@builder.io/qwik";
+import type { DocumentHead } from "@builder.io/qwik-city";
+import { useLocation } from "@builder.io/qwik-city";
+import { ResponseBar } from "~/components/responseBar/responseBar";
+import styles from "./flower.css?inline";
 
 export default component$(() => {
   useStylesScoped$(styles);
@@ -31,11 +38,11 @@ export default component$(() => {
       />
       <div
         style={{
-          '--state': `${state.count * 0.1}`,
+          "--state": `${state.count * 0.1}`,
         }}
         class={{
           host: true,
-          pride: loc.query['pride'] === 'true',
+          pride: loc.query["pride"] === "true",
         }}
       >
         {Array.from({ length: state.number }, (_, i) => (
@@ -45,14 +52,34 @@ export default component$(() => {
               square: true,
               odd: i % 2 === 0,
             }}
-            style={{ '--index': `${i + 1}` }}
+            style={{ "--index": `${i + 1}` }}
           />
         )).reverse()}
       </div>
+      <ResponseBar
+        responses={[
+          {
+            responseShort: "Rainbow",
+            responseLong: "More colors please!",
+            linkPath: "/flower?pride=true",
+          },
+          {
+            responseShort: "Monochrome",
+            responseLong: "Fewer colors please!",
+            linkPath: "/flower?pride=false",
+          },
+          {
+            responseShort: "Back",
+            responseLong:
+              "Actually, there's something else I want to play with...",
+            linkPath: "/fun",
+          },
+        ]}
+      />
     </>
   );
 });
 
 export const head: DocumentHead = {
-  title: 'Qwik Flower',
+  title: "Qwik Flower",
 };
