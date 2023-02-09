@@ -4,5 +4,7 @@ button {
   width: 4em;
   aspect-ratio: 1;
   background-color: transparent;
+  border-style: none;
   opacity: 1;
+  cursor: pointer;
 }
