@@ -23,14 +23,19 @@ export const ResponseBar = component$((props: ResponseBarProps) => {
   });
 
   return (
-    <div class="invertColor flex column alignStretch roundCornersBottom width100">
-      {state.responseDetailHidden === false && (
-        <ResponseDetail
-          response={state.selectedResponse}
-          hideResponseDetail={hideResponseDetail}
-        />
+    <div class="flex column alignStretch width100">
+      {state.responseDetailHidden === true ? (
+        <div class="screenGradientBottom heightHalf"></div>
+      ) : (
+        <div>
+          <div class="screenGradientResponse height1"></div>
+          <ResponseDetail
+            response={state.selectedResponse}
+            hideResponseDetail={hideResponseDetail}
+          />
+        </div>
       )}
-      <div class="flex spaceBetween">
+      <div class="flex spaceBetween invertBeechyGradient roundCornersBottom">
         <div>{"<"}</div>
         <div>
           {props.responses.map((response) => (

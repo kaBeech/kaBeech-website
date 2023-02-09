@@ -8,6 +8,7 @@ export const Screen = component$(() => {
   return (
     <div class="lazy">
       <Beechy />
+      <div class="screenGradientTop heightHalf"></div>
       <Slot />
     </div>
   );

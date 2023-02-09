@@ -7,6 +7,11 @@
  */
 
 :root {
+  --kaBeech-color-beechy-top: #178155;
+  --kaBeech-color-beechy-bottom: #00587d;
+  --kaBeech-color-response: #182343;
+  --kaBeech-color-orig-beechy-top: #178155;
+  --kaBeech-color-orig-beechy-bottom: #3367A0;
   --kaBeech-color-starry-field: #000406;
   --kaBeech-color-terminal-idle: #00141a;
   --kaBeech-color-terminal-text: #00a0a0;
@@ -20,7 +25,8 @@
   --kaBeech-screen-foreground: var(--kaBeech-color-terminal-text);
   --kaBeech-link-visited: var(--kaBeech-color-photonsword);
   --kaBeech-link-unvisited: var(--kaBeech-color-distant-planet);
-  --kaBeech-cancel: var(--kaBeech-color-solar-wind)
+  --kaBeech-cancel: var(--kaBeech-color-solar-wind);
+  --kaBeech-response: var(--kaBeech-color-response)
 }
 
 body {
@@ -62,12 +68,56 @@ button {
   color: var(--kaBeech-screen-background);
 }
 
+.beechyGradient {
+  background-image: linear-gradient(var(--kaBeech-color-beechy-top), var(--kaBeech-color-beechy-bottom));
+}
+
+.invertBeechyGradient {
+  background-image: linear-gradient(var(--kaBeech-color-beechy-bottom), var(--kaBeech-color-beechy-top));
+}
+
+.screenGradientTop {
+  background-image: linear-gradient(var(--kaBeech-color-beechy-bottom), var(--kaBeech-screen-background));
+}
+
+.screenGradientBottom {
+  background-image: linear-gradient(var(--kaBeech-screen-background), var(--kaBeech-color-beechy-bottom));
+}
+
+.screenGradientResponse {
+  background-image: linear-gradient(var(--kaBeech-screen-background), var(--kaBeech-response));
+}
+
+.responseGradient {
+  background-image: linear-gradient(var(--kaBeech-response), var(--kaBeech-color-beechy-bottom));
+}
+
+.beechyTop {
+  background-color: var(--kaBeech-color-beechy-top);
+}
+
+.beechyBottom {
+  background-color: var(--kaBeech-color-beechy-bottom);
+}
+
+.noBoxShadow {
+  box-shadow: none;
+}
+
 .spaceBetween {
   justify-content: space-between;
 }
 
 .width100 {
   width: 100%;
+}
+
+.height1 {
+  height: 1em;
+}
+
+.heightHalf {
+  height: 0.5em;
 }
 
 .tall {

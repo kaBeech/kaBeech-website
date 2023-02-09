@@ -1,4 +1,6 @@
 button {
   /* background-color: var(--kaBeech-screen-background);
   color: var(--kaBeech-screen-foreground); */
+  width: 4em;
+  aspect-ratio: 1;
 }
