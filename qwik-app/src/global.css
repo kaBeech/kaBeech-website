@@ -135,6 +135,11 @@ button {
   flex: 1 1 auto;
   height: 30vh;
   /* align-self: stretch; */
+  /* padding: 0 8em; */
+}
+
+.scrollAuto p {
+  max-width: 48em;
 }
 
 .smallText {

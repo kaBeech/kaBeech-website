@@ -9,7 +9,7 @@ export default component$(() => {
 
   return (
     <div class="flex column fg100">
-      <div class="flex column scrollAuto">
+      <div class="flex column scrollAuto alignSelfStretch">
         <h1>Fun and Games!</h1>
         <p>Here are some cool things I've made!</p>
         <p>
@@ -41,7 +41,7 @@ export default component$(() => {
         <h2>Qwik Flower</h2>
         <img src="/flower.svg" alt="A snapshot of the Qwik flower" />
         <button>
-          <Link href="/flower">Check it out!</Link>
+          <Link href="/flower?pride=true">Check it out!</Link>
         </button>
         <p>
           Okay, I didn't actually make this one - it's made by the Qwik team.{" "}
@@ -65,7 +65,7 @@ export default component$(() => {
           {
             responseShort: "Flower",
             responseLong: "Show me that cool flower you didn't actually make!",
-            linkPath: "/flower",
+            linkPath: "/flower?pride=true",
           },
           {
             responseShort: "Back",

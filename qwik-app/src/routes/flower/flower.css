@@ -27,12 +27,14 @@ input {
   display: block;
   width: var(--size);
   height: var(--size);
-  transform: rotateZ(calc(var(--rotation) * var(--state) * (var(--center) - var(--index))));
+  transform: rotateZ(
+    calc(var(--rotation) * var(--state) * (var(--center) - var(--index)))
+  );
   transition-property: transform, border-color;
   transition-duration: 5s;
   transition-timing-function: ease-in-out;
   grid-area: 1 / 1;
-  background: white;
+  background: rgb(0, 174, 165);
   border-width: 2px;
   border-style: solid;
   border-color: black;
@@ -52,20 +54,20 @@ input {
 }
 
 .pride .square:nth-child(12n + 1) {
-  background: #e70000;
+  background: #e70074;
 }
 .pride .square:nth-child(12n + 3) {
   background: #ff8c00;
 }
 .pride .square:nth-child(12n + 5) {
-  background: #ffef00;
+  background: #00e21a;
 }
 .pride .square:nth-child(12n + 7) {
-  background: #00811f;
+  background: #00be75;
 }
 .pride .square:nth-child(12n + 9) {
-  background: #0044ff;
+  background: #00cbf3;
 }
 .pride .square:nth-child(12n + 11) {
-  background: #760089;
+  background: #002fff;
 }
