@@ -5,7 +5,7 @@ import { ResponseBar } from "~/components/responseBar/responseBar";
 export default component$(() => {
   return (
     <div class="flex column fg100">
-      <div class="scrollAuto">
+      <div class="screenContents">
         <h1>Welcome!</h1>
         <p>Welcome to kaBeech, Kyle Beechly's personal website</p>
         <p>

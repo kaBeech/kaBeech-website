@@ -9,9 +9,9 @@ export default component$(() => {
   useStylesScoped$(styles);
 
   return (
-    <div class="lazyScroll">
+    <div class="screenContainer">
       <Beechy />
-      <div class="flex column scrollAuto alignSelfStretch lazy">
+      <div class="screenContents">
         <h1>Fun and Games!</h1>
         <p>Here are some cool things I've made!</p>
         <p>

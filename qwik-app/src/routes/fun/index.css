@@ -5,18 +5,3 @@ img {
   width: 8em;
   aspect-ratio: 1;
 }
-
-.lazyScroll {
-  /* height: 69vh; */
-  /* overflow: auto; */
-  /* justify-self: stretch; */
-  /* justify-content: space-between; */
-  flex-grow: 100;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-
-.lazy {
-  text-align: end;
-}
