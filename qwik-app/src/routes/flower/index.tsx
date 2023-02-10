@@ -30,7 +30,10 @@ export default component$(() => {
   return (
     <div class="screenContainer">
       <Beechy />
-      <div class="screenContents lazy" style="align-items: flex-end">
+      <div
+        class="screenContents flex1 spaceBetween"
+        style="align-items: flex-end"
+      >
         <input
           type="range"
           value={state.number}
@@ -47,7 +50,7 @@ export default component$(() => {
             host: true,
             flex1: true,
             pride: loc.query["pride"] === "true",
-            pyramid: loc.query["pyramid"] === "true",
+            romanesca: loc.query["romanesca"] === "true",
             helix: loc.query["helix"] === "true",
           }}
         >
@@ -78,7 +81,7 @@ export default component$(() => {
           {
             responseShort: "Romanesca",
             responseLong: "Something about this is too... flat",
-            linkPath: "/flower?pride=true&pyramid=true",
+            linkPath: "/flower?pride=true&romanesca=true",
           },
           {
             responseShort: "Helix",
