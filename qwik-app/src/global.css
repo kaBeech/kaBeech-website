@@ -11,7 +11,7 @@
   --kaBeech-color-beechy-bottom: #00587d;
   --kaBeech-color-response: #182343;
   --kaBeech-color-orig-beechy-top: #178155;
-  --kaBeech-color-orig-beechy-bottom: #3367A0;
+  --kaBeech-color-orig-beechy-bottom: #3367a0;
   --kaBeech-color-starry-field: #000406;
   --kaBeech-color-terminal-idle: #00141a;
   --kaBeech-color-terminal-text: #00a0a0;
@@ -36,22 +36,25 @@
 
 body {
   background-color: var(--kaBeech-main-background);
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    sans-serif;
   padding: 20px 20px 40px 20px;
 }
 
 ul {
-	list-style: none;
+  list-style: none;
 }
 
-a, ul, li {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
   text-decoration: none;
-	vertical-align: baseline;
+  vertical-align: baseline;
 }
 
 button {
@@ -74,27 +77,45 @@ button {
 }
 
 .beechyGradient {
-  background-image: linear-gradient(var(--kaBeech-color-beechy-top), var(--kaBeech-color-beechy-bottom));
+  background-image: linear-gradient(
+    var(--kaBeech-color-beechy-top),
+    var(--kaBeech-color-beechy-bottom)
+  );
 }
 
 .invertBeechyGradient {
-  background-image: linear-gradient(var(--kaBeech-color-beechy-bottom), var(--kaBeech-color-beechy-top));
+  background-image: linear-gradient(
+    var(--kaBeech-color-beechy-bottom),
+    var(--kaBeech-color-beechy-top)
+  );
 }
 
 .screenGradientTop {
-  background-image: linear-gradient(var(--kaBeech-color-beechy-bottom), var(--kaBeech-screen-background));
+  background-image: linear-gradient(
+    var(--kaBeech-color-beechy-bottom),
+    var(--kaBeech-screen-background)
+  );
 }
 
 .screenGradientBottom {
-  background-image: linear-gradient(var(--kaBeech-screen-background), var(--kaBeech-color-beechy-bottom));
+  background-image: linear-gradient(
+    var(--kaBeech-screen-background),
+    var(--kaBeech-color-beechy-bottom)
+  );
 }
 
 .screenGradientResponse {
-  background-image: linear-gradient(var(--kaBeech-screen-background), var(--kaBeech-response));
+  background-image: linear-gradient(
+    var(--kaBeech-screen-background),
+    var(--kaBeech-response)
+  );
 }
 
 .responseGradient {
-  background-image: linear-gradient(var(--kaBeech-response), var(--kaBeech-color-beechy-bottom));
+  background-image: linear-gradient(
+    var(--kaBeech-response),
+    var(--kaBeech-color-beechy-bottom)
+  );
 }
 
 .beechyTop {
@@ -109,6 +130,13 @@ button {
   box-shadow: none;
 }
 
+.scrollAuto {
+  overflow: auto;
+  flex: 1 2 auto;
+  height: 30vh;
+  /* align-self: stretch; */
+}
+
 .spaceBetween {
   justify-content: space-between;
 }
@@ -119,6 +147,23 @@ button {
 
 .alignStretch {
   align-items: stretch;
+}
+
+.alignSelfStretch {
+  align-self: stretch;
+}
+
+.justifyStretch {
+  justify-content: stretch;
+}
+
+.justifySelfStretch {
+  justify-self: stretch;
+}
+
+.fg100 {
+  flex-grow: 100;
+  justify-content: space-between;
 }
 
 .width100 {
@@ -155,7 +200,7 @@ button {
 
 .hidden {
   visibility: hidden;
-} 
+}
 
 /* Copied from pre-qwik site */
 
@@ -169,7 +214,8 @@ button {
 body {
   font-size: 100%;
   font-size: 1.5rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-image: url(/starry-background.jpg);
   color: var(--kaBeech-screen-foreground);
   margin: 0.5em 0;
@@ -184,8 +230,13 @@ body {
   flex-direction: column;
 }
 
-:link, :visited {
-  color: inherit
+.margin0 {
+  margin: 0;
+}
+
+:link,
+:visited {
+  color: inherit;
 }
 
 :link.link {
@@ -199,7 +250,7 @@ body {
 img {
   border-radius: 2rem;
   width: 24rem;
-  box-shadow:  #050710 0.03em 0.06em;
+  box-shadow: #050710 0.03em 0.06em;
 }
 
 #panel {
@@ -208,11 +259,11 @@ img {
 
 #contactButton {
   border-radius: 1rem;
-  box-shadow:  #050710 0.03em 0.06em;
+  box-shadow: #050710 0.03em 0.06em;
   text-shadow: #055050 0.03em 0.06em;
   text-decoration: none;
   font-size: 2rem;
-  background-color: #009090;;
+  background-color: #009090;
   color: #cceeff;
   width: 14rem;
   aspect-ratio: 4;

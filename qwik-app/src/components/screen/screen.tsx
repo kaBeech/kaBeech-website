@@ -6,7 +6,7 @@ export const Screen = component$(() => {
   useStylesScoped$(styles);
 
   return (
-    <div class="lazy">
+    <div class="lazy flex column">
       <Beechy />
       <div class="screenGradientTop heightHalf"></div>
       <div class="lazyScroll">

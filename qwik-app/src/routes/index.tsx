@@ -4,17 +4,19 @@ import { ResponseBar } from "~/components/responseBar/responseBar";
 
 export default component$(() => {
   return (
-    <div>
-      <h1>Welcome!</h1>
-      <p>Welcome to kaBeech, Kyle Beechly's personal website</p>
-      <p>
-        My name is Beechy, and I'll be your guide here. I'm glad to meet you!
-      </p>
-      <h3>What would you like to do?</h3>
-      <p>
-        Please help me direct your experience by chosing a response below. Just
-        click or tap a button!
-      </p>
+    <div class="flex column fg100">
+      <div class="scrollAuto">
+        <h1>Welcome!</h1>
+        <p>Welcome to kaBeech, Kyle Beechly's personal website</p>
+        <p>
+          My name is Beechy, and I'll be your guide here. I'm glad to meet you!
+        </p>
+        <h3>What would you like to do?</h3>
+        <p>
+          Please help me direct your experience by chosing a response below.
+          Just click or tap a button!
+        </p>
+      </div>
       <ResponseBar
         responses={[
           {
