@@ -30,7 +30,7 @@ export default component$(() => {
   return (
     <div class="screenContainer">
       <Beechy />
-      <div class="screenContents">
+      <div class="screenContents lazy" style="align-items: flex-end">
         <input
           type="range"
           value={state.number}
@@ -45,6 +45,7 @@ export default component$(() => {
           }}
           class={{
             host: true,
+            lazy: true,
             pride: loc.query["pride"] === "true",
             helix: loc.query["helix"] === "true",
           }}

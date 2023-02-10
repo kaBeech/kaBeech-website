@@ -65,6 +65,13 @@ input {
   /* padding: 0 8em; */
 }
 
+.lazy {
+  flex: 1;
+  /* try this: */
+  /* align-items: flex-end; */
+  /* align-items: initial; */
+}
+
 .pride .square:nth-child(12n + 1) {
   background: #e70074;
 }
