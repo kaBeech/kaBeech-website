@@ -46,15 +46,13 @@ export default component$(() => {
           <Link href="/flower?pride=true">Check it out!</Link>
         </button>
         <p>
-          Okay, I didn't actually make this one - it's made by the Qwik team.{" "}
+          An enchanting animated fractal that I remixed. It was originally made
+          by the Qwik team{" "}
           <Link class="link" href="/tech#Qwik">
-            More info on Qwik here.
-          </Link>
-        </p>
-        <p>
-          I'm showing it here because {"A)"} it's a fun exhibition of Qwik being
-          able to load reactive components quickly, and {"B)"} it's cool to look
-          at
+            (more info on Qwik here)
+          </Link>{" "}
+          as an exhibition showing how fast Qwik can be at loading reactive
+          components.
         </p>
       </div>
       <ResponseBar
@@ -66,12 +64,12 @@ export default component$(() => {
           },
           {
             responseShort: "Flower",
-            responseLong: "Show me that cool flower you didn't actually make!",
+            responseLong: "Show me that cool fractal flower!",
             linkPath: "/flower?pride=true",
           },
           {
             responseShort: "Back",
-            responseLong: "Actually, there's something else I wanted to ask...",
+            responseLong: "Actually, there's something else I want to ask...",
             linkPath: "/",
           },
         ]}

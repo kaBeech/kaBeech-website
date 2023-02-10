@@ -46,6 +46,7 @@ export default component$(() => {
           class={{
             host: true,
             pride: loc.query["pride"] === "true",
+            helix: loc.query["helix"] === "true",
           }}
         >
           {Array.from({ length: state.number }, (_, i) => (
@@ -68,9 +69,19 @@ export default component$(() => {
             linkPath: "/flower?pride=true",
           },
           {
-            responseShort: "Monochrome",
+            responseShort: "Stereochrome",
             responseLong: "Fewer colors please!",
-            linkPath: "/flower?pride=false",
+            linkPath: "/flower",
+          },
+          {
+            responseShort: "Helix",
+            responseLong: "Something about this is too... flat",
+            linkPath: "/flower?helix=true",
+          },
+          {
+            responseShort: "Rainbow Helix",
+            responseLong: "Okay, but what if it was made out of fiddlesticks?",
+            linkPath: "/flower?pride=true&helix=true",
           },
           {
             responseShort: "Back",

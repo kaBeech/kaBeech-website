@@ -31,7 +31,7 @@ export default component$(() => {
           },
           {
             responseShort: "Back",
-            responseLong: "Actually, there's something else I wanted to ask...",
+            responseLong: "Actually, there's something else I want to ask...",
             linkPath: "/",
           },
         ]}
