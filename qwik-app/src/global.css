@@ -7,6 +7,11 @@
  */
 
 :root {
+  display: flex;
+  flex-direction: column;
+}
+
+:root {
   --kaBeech-color-beechy-top: #178155;
   --kaBeech-color-beechy-bottom: #00587d;
   --kaBeech-color-response: #182343;
@@ -234,6 +239,10 @@ body {
 
 .flex {
   display: flex;
+}
+
+.flex1 {
+  flex: 1;
 }
 
 .column {

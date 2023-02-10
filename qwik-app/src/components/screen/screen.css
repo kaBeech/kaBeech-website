@@ -21,6 +21,8 @@ justify-self: stretch; */
   justify-content: space-between;
   align-items: stretch;
   align-content: stretch;
+  align-self: stretch;
+  flex: 1;
 }
 
 .lazyScroll {
