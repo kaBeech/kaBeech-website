@@ -16,7 +16,7 @@ export const ResponseDetail = component$((props: ResponseDetailProps) => {
   });
 
   return (
-    <div class="flex responseGradient">
+    <div class="flex justifyCenter responseGradient">
       <div class="lazy">{props.response.responseLong}</div>
       <div class="flex column">
         <button class="lazyButton">

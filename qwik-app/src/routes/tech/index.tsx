@@ -9,23 +9,23 @@ export default component$(() => {
       <Beechy />
       <div class="screenContents">
         <h1>Tech</h1>
-
-        <ResponseBar
-          responses={[
-            {
-              responseShort: "Tech",
-              responseLong: "Yeah, gimme all your geeky tech credentials!",
-              linkPath: "/about-me/tech",
-            },
-            {
-              responseShort: "Back",
-              responseLong:
-                "Actually, there's something else I wanted to ask...",
-              linkPath: "/",
-            },
-          ]}
-        />
+        <p></p>
       </div>
+
+      <ResponseBar
+        responses={[
+          {
+            responseShort: "Tech",
+            responseLong: "Yeah, gimme all your geeky tech credentials!",
+            linkPath: "/about-me/tech",
+          },
+          {
+            responseShort: "Back",
+            responseLong: "Actually, there's something else I wanted to ask...",
+            linkPath: "/",
+          },
+        ]}
+      />
     </div>
   );
 });
