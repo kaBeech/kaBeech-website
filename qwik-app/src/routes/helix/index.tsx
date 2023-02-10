@@ -8,7 +8,7 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 import { useLocation } from "@builder.io/qwik-city";
 import { Beechy } from "~/components/beechy/beechy";
 import { ResponseBar } from "~/components/responseBar/responseBar";
-import styles from "./flower.css?inline";
+import styles from "./helix.css?inline";
 
 export default component$(() => {
   useStylesScoped$(styles);
@@ -40,6 +40,7 @@ export default component$(() => {
           }}
         />
         <div
+          id="screenContents"
           style={{
             "--state": `${state.count * 0.1}`,
           }}
@@ -65,12 +66,12 @@ export default component$(() => {
           {
             responseShort: "Rainbow",
             responseLong: "More colors please!",
-            linkPath: "/flower?pride=true",
+            linkPath: "/helix?pride=true",
           },
           {
             responseShort: "Monochrome",
             responseLong: "Fewer colors please!",
-            linkPath: "/flower?pride=false",
+            linkPath: "/helix?pride=false",
           },
           {
             responseShort: "Back",
@@ -85,5 +86,5 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "Qwik Flower",
+  title: "Qwik Helix",
 };
