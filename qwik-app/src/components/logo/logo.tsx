@@ -10,7 +10,7 @@ export const Logo = component$(() => {
       <Link href="/">
         <img
           class="lazy"
-          src="/favicon.svg"
+          src="/favicon.png"
           alt="The kaBeech Heart - click to go to Home Page"
         />
       </Link>

@@ -22,7 +22,7 @@ export default component$(() => {
         </h3>
         <h2>Buddh-A-Sketch</h2>
         <img
-          src="/favicon.svg"
+          src="/favicon.png"
           alt="A rainbow heart made with Buddh-A-Sketch"
         />
         <button>
