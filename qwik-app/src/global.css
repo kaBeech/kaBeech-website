@@ -172,6 +172,7 @@ button {
   overflow: auto;
   flex: 1 1 auto;
   height: 0;
+  justify-content: space-between;
   /* padding: auto; */
   /* align-self: stretch; */
   /* padding: 0 8em; */
