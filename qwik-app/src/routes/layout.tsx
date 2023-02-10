@@ -1,4 +1,5 @@
 import { component$, Slot } from "@builder.io/qwik";
+import { Hamburger } from "~/components/hamburger/hamburger";
 // import { Hamburger } from "~/components/hamburger/hamburger";
 
 import { Logo } from "~/components/logo/logo";
@@ -14,7 +15,7 @@ export default component$(() => {
             <Screen>
               <Slot />
             </Screen>
-            <Logo />
+            <Hamburger />
           </section>
         </div>
       </main>
