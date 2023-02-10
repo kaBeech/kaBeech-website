@@ -132,9 +132,13 @@ button {
 
 .scrollAuto {
   overflow: auto;
-  flex: 1 2 auto;
+  flex: 1 1 auto;
   height: 30vh;
   /* align-self: stretch; */
+}
+
+.smallText {
+  font-size: 0.9em;
 }
 
 .spaceBetween {

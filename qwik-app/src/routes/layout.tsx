@@ -19,13 +19,13 @@ export default component$(() => {
         </div>
       </main>
       <footer>
-        <span>
-          Made with ♡ by{" "}
-          <a class="link" href="https://github.com/kaBeech/kaBeech-website">
-            kaBeech
-          </a>
-          <div id="footer">
-            Background photo by{" "}
+        <div id="footer">
+          <span class="smallText">
+            Made with ♡ by{" "}
+            <a class="link" href="https://github.com/kaBeech/kaBeech-website">
+              kaBeech
+            </a>{" "}
+            - Background photo by{" "}
             <a
               class="link"
               href="https://unsplash.com/@bartek_16?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
@@ -39,8 +39,8 @@ export default component$(() => {
             >
               Unsplash
             </a>
-          </div>
-        </span>
+          </span>
+        </div>
       </footer>
     </>
   );
