@@ -69,14 +69,14 @@ export default component$(() => {
       <ResponseBar
         responses={[
           {
-            responseShort: "Rainbow",
-            responseLong: "More colors please!",
-            linkPath: "/flower?pride=true",
-          },
-          {
             responseShort: "Stereochrome",
             responseLong: "Fewer colors please!",
             linkPath: "/flower",
+          },
+          {
+            responseShort: "Rainbow",
+            responseLong: "More colors please!",
+            linkPath: "/flower?pride=true",
           },
           {
             responseShort: "Romanesca",
@@ -85,7 +85,7 @@ export default component$(() => {
           },
           {
             responseShort: "Helix",
-            responseLong: "Okay, but what if it was made out of fiddlesticks?",
+            responseLong: "Okay, but what if it were made out of fiddlesticks?",
             linkPath: "/flower?pride=true&helix=true",
           },
           {
@@ -101,5 +101,5 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "Qwik Flower",
+  title: "Fractal Flower",
 };

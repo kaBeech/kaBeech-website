@@ -40,19 +40,32 @@ export default component$(() => {
           favorites. It's not very sophisticated, but it's a lot of fun and I
           love it!
         </p>
-        <h2>Qwik Flower</h2>
-        <img src="/flower.svg" alt="A snapshot of the Qwik flower" />
+        <h2>Fractal Flower</h2>
+        <img src="/flower.svg" alt="A fractal flower budding" />
         <button>
           <Link href="/flower?pride=true">Check it out!</Link>
         </button>
         <p>
-          An enchanting animated fractal that I remixed. It was originally made
-          by the Qwik team{" "}
+          An enchanting interactive animation that I remixed. The original
+          version was made by the Qwik team{" "}
           <Link class="link" href="/tech#Qwik">
             (more info on Qwik here)
           </Link>{" "}
           as an exhibition showing how fast Qwik can be at loading reactive
           components
+        </p>
+        <h2>Tic-Tac-Toebot</h2>
+        <img src="/tic-tac-toebot.png" alt="A snapshot of the Tic-Tac-Toebot" />
+        <button>
+          <Link href="https://kabeech.github.io/tic-tac-toebot/">
+            Check it out!
+          </Link>
+        </button>
+        <p>A robot that plays Tic-Tac-Toe!</p>
+        <p>
+          My friend Andy thinks he can beat the Unbeatable Master. I think he
+          thinks I spent more time on the AI than I did. If you feel like John
+          Henrying it up with him, go on and set the difficulty to Impossible
         </p>
       </div>
       <ResponseBar
@@ -66,6 +79,11 @@ export default component$(() => {
             responseShort: "Flower",
             responseLong: "Show me that cool fractal flower!",
             linkPath: "/flower?pride=true",
+          },
+          {
+            responseShort: "Tic-Tac-Toebot",
+            responseLong: "I fancy a game of Tic-Tac-Toe!",
+            linkPath: "https://kabeech.github.io/tic-tac-toebot/",
           },
           {
             responseShort: "Back",
