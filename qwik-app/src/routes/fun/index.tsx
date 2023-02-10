@@ -3,7 +3,7 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 import { Link } from "@builder.io/qwik-city";
 import { Beechy } from "~/components/beechy/beechy";
 import { ResponseBar } from "~/components/responseBar/responseBar";
-import styles from "./index.css?inline";
+import styles from "./fun.css?inline";
 
 export default component$(() => {
   useStylesScoped$(styles);
