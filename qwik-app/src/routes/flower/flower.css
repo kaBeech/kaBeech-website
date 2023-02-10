@@ -65,11 +65,9 @@ input {
   /* padding: 0 8em; */
 }
 
-.lazy {
-  flex: 1;
-  /* try this: */
-  /* align-items: flex-end; */
-  /* align-items: initial; */
+.romanesca {
+  align-items: flex-start;
+  align-content: center;
 }
 
 .pride .square:nth-child(12n + 1) {
