@@ -8,3 +8,11 @@ button {
   cursor: pointer;
   margin: 0 1em;
 }
+
+.semitransparent {
+  /* background-color: #00000045;
+  box-shadow: 0 0em 0.4em 0.05em rgba(0, 0, 0, 0.209),
+    0 0em 1.5em 0 rgba(0, 0, 0, 0.085);
+  border-radius: 1em;
+  padding: 1em; */
+}

@@ -1,13 +1,29 @@
 .lazyButton {
-    /* background-color: var(--kaBeech-screen-background);
+  /* background-color: var(--kaBeech-screen-background);
     color: var(--kaBeech-screen-foreground); */
 }
 
 .lazyCancel {
-    background-color: var(--kaBeech-cancel);
-    color: var(--kaBeech-screen-background);
+  background-color: var(--kaBeech-cancel);
+  color: var(--kaBeech-screen-background);
 }
 
 .lazy {
-    color: var(--kaBeech-response-text);
+  color: var(--kaBeech-response-text);
+}
+
+.lazyColor {
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.127), rgba(0, 0, 0, 0.252)); */
+  /* box-shadow: 0 0em 0.4em 0.05em rgba(0, 0, 0, 0.209),
+    0 0em 1.5em 0 rgba(0, 0, 0, 0.085); */
+  /* border-radius: 1em; */
+  /* padding: 1em; */
+  /* margin-bottom: 0.5em; */
+  gap: 0.5em;
+}
+
+button {
+  font-size: 1.5em;
+  width: 1.5em;
+  aspect-ratio: 1;
 }

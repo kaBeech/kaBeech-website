@@ -17,10 +17,10 @@ export const ResponseDetail = component$((props: ResponseDetailProps) => {
 
   return (
     <div class="flex justifyCenter responseGradient">
-      <div class="lazy">{props.response.responseLong}</div>
-      <div class="flex column">
+      <div class="lazyColor flex">
+        <div class="lazy">{props.response.responseLong}</div>
         <button class="lazyButton">
-          <Link href={props.response.linkPath}>Confirm</Link>
+          <Link href={props.response.linkPath}>O</Link>
         </button>
         <button
           class="lazyCancel"
@@ -28,7 +28,7 @@ export const ResponseDetail = component$((props: ResponseDetailProps) => {
             hideResponseDetail();
           }}
         >
-          Cancel
+          X
         </button>
       </div>
     </div>

@@ -19,24 +19,29 @@
   --kaBeech-color-orig-beechy-bottom: #3367a0;
   --kaBeech-color-starry-field: #000406;
   --kaBeech-color-terminal-idle: #00141a;
+  --kaBeech-color-terminal-idle-transparent: #00141a00;
   --kaBeech-color-terminal-text: #00a0a0;
   --kaBeech-color-algae: #007d7d;
   --kaBeech-color-photonsword: #0088ff;
   --kaBeech-color-distant-planet: #004886;
   --kaBeech-color-solar-wind: #eb3305;
   --kaBeech-color-easter-moss: #00b63a;
+  --kaBeech-color-easter-mosss: #f800f0;
 }
 
 :root {
   --kaBeech-main-background: var(--kaBeech-color-starry-field);
   --kaBeech-screen-background: var(--kaBeech-color-terminal-idle);
+  --kaBeech-screen-background-transparent: var(
+    --kaBeech-color-terminal-idle-transparent
+  );
   --kaBeech-screen-midground: var(--kaBeech-color-algae);
   --kaBeech-screen-foreground: var(--kaBeech-color-terminal-text);
   --kaBeech-link-visited: var(--kaBeech-color-photonsword);
   --kaBeech-link-unvisited: var(--kaBeech-color-distant-planet);
   --kaBeech-cancel: var(--kaBeech-color-solar-wind);
   --kaBeech-response: var(--kaBeech-color-response);
-  --kaBeech-response-text: var(--kaBeech-color-easter-moss);
+  --kaBeech-response-text: var(--kaBeech-color-easter-mosss);
 }
 
 body {
@@ -98,7 +103,7 @@ button {
 .screenGradientTop {
   background-image: linear-gradient(
     var(--kaBeech-color-beechy-bottom),
-    var(--kaBeech-screen-background)
+    var(--kaBeech-screen-background-transparent)
   );
 }
 
@@ -242,6 +247,10 @@ button {
   background-color: transparent;
 }
 
+.semitransparent {
+  background-color: #00000022;
+}
+
 .hidden {
   visibility: hidden;
 }
@@ -275,6 +284,10 @@ body {
 
 .column {
   flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
 }
 
 .margin0 {
