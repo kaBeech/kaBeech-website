@@ -37,8 +37,8 @@ export default component$(() => {
         </p>
         <p>
           This is one of my first JavaScript projects, and still one of my
-          favorites. It's not very sophisticated, but it's a lot of fun and I
-          love it!
+          favorites. Currently it requires a mouse to use. It's not very
+          sophisticated, but it's a lot of fun and I love it!
         </p>
         <h2>Fractal Flower</h2>
         <img src="/flower.svg" alt="A fractal flower budding" />
