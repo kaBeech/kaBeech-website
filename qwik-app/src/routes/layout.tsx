@@ -10,7 +10,7 @@ export default component$(() => {
     <>
       <main>
         <div class="flex spaceBetween">
-          <section class="flex alignStart width100 height100">
+          <section class="flex alignStart height100 vw100">
             <Logo />
             <Screen>
               <Slot />
