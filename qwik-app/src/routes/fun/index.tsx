@@ -52,7 +52,7 @@ export default component$(() => {
             (more info on Qwik here)
           </Link>{" "}
           as an exhibition showing how fast Qwik can be at loading reactive
-          components.
+          components
         </p>
       </div>
       <ResponseBar
