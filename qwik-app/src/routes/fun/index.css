@@ -1,9 +1,22 @@
-
 img {
-    border-style: solid;
-    /* border-color: var(--kaBeech-main-background); */
-    border-radius: 1em;
-    width: 8em;
-    aspect-ratio: 1;
+  border-style: solid;
+  /* border-color: var(--kaBeech-main-background); */
+  border-radius: 1em;
+  width: 8em;
+  aspect-ratio: 1;
 }
 
+.lazyScroll {
+  /* height: 69vh; */
+  /* overflow: auto; */
+  /* justify-self: stretch; */
+  /* justify-content: space-between; */
+  flex-grow: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.lazy {
+  text-align: end;
+}

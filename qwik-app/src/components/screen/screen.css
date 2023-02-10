@@ -24,14 +24,3 @@ justify-self: stretch; */
   align-self: stretch;
   flex: 1;
 }
-
-.lazyScroll {
-  /* height: 69vh; */
-  /* overflow: auto; */
-  /* justify-self: stretch; */
-  /* justify-content: space-between; */
-  flex-grow: 100;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}

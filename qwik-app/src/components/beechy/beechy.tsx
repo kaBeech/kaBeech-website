@@ -5,12 +5,15 @@ export const Beechy = component$(() => {
   useStylesScoped$(styles);
 
   return (
-    <div class="beechyGradient roundCornersTop">
-      <img
-        class="noBoxShadow"
-        src="/beechy.svg"
-        alt="Beechy, kaBeech's avatar"
-      />
-    </div>
+    <>
+      <div class="beechyGradient roundCornersTop">
+        <img
+          class="noBoxShadow"
+          src="/beechy.svg"
+          alt="Beechy, kaBeech's avatar"
+        />
+      </div>
+      <div class="screenGradientTop heightHalf"></div>
+    </>
   );
 });

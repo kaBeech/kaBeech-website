@@ -1,6 +1,7 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { Link } from "@builder.io/qwik-city";
+import { Beechy } from "~/components/beechy/beechy";
 import { ResponseBar } from "~/components/responseBar/responseBar";
 import styles from "./index.css?inline";
 
@@ -8,8 +9,9 @@ export default component$(() => {
   useStylesScoped$(styles);
 
   return (
-    <div class="flex column fg100">
-      <div class="flex column scrollAuto alignSelfStretch">
+    <div class="lazyScroll">
+      <Beechy />
+      <div class="flex column scrollAuto alignSelfStretch lazy">
         <h1>Fun and Games!</h1>
         <p>Here are some cool things I've made!</p>
         <p>
