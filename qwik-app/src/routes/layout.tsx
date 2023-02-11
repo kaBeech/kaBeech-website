@@ -21,7 +21,7 @@ export default component$(() => {
       </main>
       <footer>
         <div id="footer">
-          <span class="smallText">
+          <p class="smallText">
             Made with ♡ by{" "}
             <a class="link" href="https://github.com/kaBeech/kaBeech-website">
               kaBeech
@@ -40,7 +40,7 @@ export default component$(() => {
             >
               Unsplash
             </a>
-          </span>
+          </p>
         </div>
       </footer>
     </>
