@@ -35,12 +35,12 @@ export const linkTiles = {
     icon: "/icons/mail.svg",
   },
   about_pronouns: {
-    linkPath: "about-me/pronouns",
+    linkPath: "/about-me/pronouns",
     text: "Pronouns",
     icon: "/icons/mail.svg",
   },
   about_beechy: {
-    linkPath: "about-me/beechy",
+    linkPath: "/about-me/beechy",
     text: "Beechy",
     icon: "/icons/person-circle-outline.svg",
   },
