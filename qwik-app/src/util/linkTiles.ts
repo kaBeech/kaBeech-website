@@ -2,7 +2,7 @@ export const linkTiles = {
   back: {
     linkPath: "../",
     text: "Back",
-    icon: null,
+    icon: "/icons/chevron-back-circle-outline.svg",
   },
   home: {
     linkPath: "/",
@@ -37,47 +37,47 @@ export const linkTiles = {
   about_pronouns: {
     linkPath: "about-me/pronouns",
     text: "Pronouns",
-    icon: null,
+    icon: "/icons/mail.svg",
   },
   about_beechy: {
     linkPath: "about-me/beechy",
     text: "Beechy",
-    icon: null,
+    icon: "/icons/person-circle-outline.svg",
   },
 
   fun_buddhASketch: {
     linkPath: "https://kabeech.github.io/buddh-a-sketch/",
     text: "Buddh-A-Sketch",
-    icon: null,
+    icon: "/icons/person-circle-outline.svg",
   },
   fun_flower: {
     linkPath: "/flower?pride=true",
     text: "Flower",
-    icon: null,
+    icon: "/icons/cpu.svg",
   },
   fun_ticTacToebot: {
     linkPath: "https://kabeech.github.io/tic-tac-toebot/",
     text: "Tic-Tac-Toebot",
-    icon: null,
+    icon: "/icons/x.svg",
   },
   flower_stereochrome: {
     linkPath: "/flower",
     text: "Stereochrome",
-    icon: null,
+    icon: "/icons/home.svg",
   },
   flower_rainbow: {
     linkPath: "/flower?pride=true",
     text: "Rainbow",
-    icon: null,
+    icon: "/icons/person-circle-outline.svg",
   },
   flower_romanesca: {
     linkPath: "/flower?pride=true&romanesca=true",
     text: "Romanesca",
-    icon: null,
+    icon: "/icons/cpu.svg",
   },
   flower_helix: {
     linkPath: "/flower?pride=true&helix=true",
     text: "Helix",
-    icon: null,
+    icon: "/icons/menu.svg",
   },
 };
