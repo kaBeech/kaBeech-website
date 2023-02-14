@@ -164,6 +164,24 @@ button {
   );
 }
 
+.sC {
+  display: flex;
+  align-items: stretch;
+  flex: 1;
+}
+
+.sCs {
+  display: flex;
+  align-self: stretch;
+  overflow: auto;
+  flex: 1 1 auto;
+  height: 0;
+  /* justify-content: space-between; */
+  /* padding: auto; */
+  /* align-self: stretch; */
+  /* padding: 0 8em; */
+}
+
 .screenContainer {
   display: flex;
   flex-direction: column;
