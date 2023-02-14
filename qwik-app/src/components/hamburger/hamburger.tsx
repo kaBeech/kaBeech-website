@@ -10,7 +10,7 @@ export const Hamburger = component$(() => {
   });
 
   const handleClick = $(() => {
-    if (state.selected === true) {
+    if (state.selected) {
       state.selected = false;
     } else {
       state.selected = true;
@@ -27,7 +27,7 @@ export const Hamburger = component$(() => {
         src="/icons/menu.svg"
         alt="Menu Button"
       />
-      {state.selected === true && (
+      {state.selected && (
         <>
           <Link class="link" href="/">
             <img class="lazy" src="/icons/home.svg" alt="Home" />

@@ -24,7 +24,7 @@ export const ResponseBar = component$((props: ResponseBarProps) => {
 
   return (
     <div class="flex column alignStretch width100">
-      {state.responseDetailHidden === true ? (
+      {state.responseDetailHidden ? (
         <div class="screenGradientBottom heightHalf"></div>
       ) : (
         <div>

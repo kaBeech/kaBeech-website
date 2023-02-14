@@ -7,7 +7,7 @@ export const linkTiles = {
   home: {
     linkPath: "/",
     text: "Home",
-    icon: null,
+    icon: "/icons/home.svg",
   },
   fun: {
     linkPath: "/fun",

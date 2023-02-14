@@ -32,28 +32,24 @@ export const ResponseButton = component$((props: ResponseButtonProps) => {
 
   return (
     <>
-      {state.selected === true ? (
-        <button
-          class="semitransparent"
-          onClick$={() => {
-            handleClick();
-          }}
-        >
-          <Link href={props.response.jumpTo}>
-            {props.response.linkTile.text}
-          </Link>
-        </button>
-      ) : (
-        <button
-          onClick$={() => {
-            handleClick();
-          }}
-        >
-          <Link href={props.response.jumpTo}>
-            {props.response.linkTile.text}
-          </Link>
-        </button>
-      )}
+      <button
+        class={{ semitransparent: state.selected }}
+        onClick$={() => {
+          handleClick();
+        }}
+      >
+        <Link href={props.response.jumpTo}>
+          {" "}
+          {props.response.linkTile.icon ? (
+            <img
+              src={props.response.linkTile.icon}
+              alt={props.response.linkTile.text}
+            />
+          ) : (
+            props.response.linkTile.text
+          )}
+        </Link>
+      </button>
     </>
   );
 });
