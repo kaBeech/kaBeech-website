@@ -105,6 +105,8 @@ button {
   background-color: var(--kaBeech-screen-foreground);
   color: var(--kaBeech-screen-background);
   border-width: 0.2em;
+  border-style: none;
+  border-radius: 0.25em;
 }
 
 .midground {

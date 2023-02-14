@@ -12,27 +12,27 @@ export const linkTiles = {
   fun: {
     linkPath: "/fun",
     text: "Fun",
-    icon: null,
+    icon: "/icons/game-controller-outline.svg",
   },
   about: {
     linkPath: "/about-me",
     text: "About Me",
-    icon: null,
+    icon: "/icons/person-circle-outline.svg",
   },
   tech: {
     linkPath: "/poqd",
     text: "Tech",
-    icon: null,
+    icon: "/icons/cpu.svg",
   },
   projects: {
     linkPath: "/projects",
     text: "Projects",
-    icon: null,
+    icon: "/icons/hammer-outline.svg",
   },
   contact: {
     linkPath: "/contact",
     text: "Contact",
-    icon: null,
+    icon: "/icons/mail.svg",
   },
   about_pronouns: {
     linkPath: "about-me/pronouns",
