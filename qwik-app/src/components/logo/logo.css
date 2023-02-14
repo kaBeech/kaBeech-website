@@ -1,8 +1,3 @@
-.lazyflex {
-  display: flex;
-  gap: 1em;
-}
-
 .lazylogo {
   font-size: 1.5em;
   background-color: black;
@@ -13,6 +8,7 @@
 .lazyalign {
   align-items: center;
   justify-content: space-between;
+  gap: 1em;
 }
 
 img {

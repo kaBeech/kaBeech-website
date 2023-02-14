@@ -2,7 +2,11 @@ import { $, component$, useStore, useStylesScoped$ } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
 import styles from "./hamburger.css?inline";
 
-export const Hamburger = component$(() => {
+interface HamburgerProps {
+  class: string;
+}
+
+export const Hamburger = component$((props: HamburgerProps) => {
   useStylesScoped$(styles);
 
   const state = useStore({
@@ -18,7 +22,7 @@ export const Hamburger = component$(() => {
   });
 
   return (
-    <div class="lazyflex lazyalign column">
+    <div class={`lazyalign column ${props.class}`}>
       <img
         onClick$={() => {
           handleClick();

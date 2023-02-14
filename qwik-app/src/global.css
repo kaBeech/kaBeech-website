@@ -10,6 +10,30 @@
   min-height: fit-content;
 }
 
+.mobileSpacing {
+  justify-content: space-evenly;
+}
+
+.mobileShow {
+  display: none;
+}
+
+.mobileHide {
+  display: flex;
+}
+
+@media (max-width: 1000px) {
+  .mobileHide {
+    display: none;
+  }
+  .mobileShow {
+    display: flex;
+  }
+  .mobileSpacing {
+    justify-content: space-between;
+  }
+}
+
 :root {
   display: flex;
   flex-direction: column;
@@ -224,6 +248,10 @@ button {
 
 .spaceBetween {
   justify-content: space-between;
+}
+
+.spaceEvenly {
+  justify-content: space-evenly;
 }
 
 .alignStart {

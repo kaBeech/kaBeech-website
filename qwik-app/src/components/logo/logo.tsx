@@ -2,11 +2,15 @@ import { component$, useStylesScoped$ } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
 import styles from "./logo.css?inline";
 
-export const Logo = component$(() => {
+interface LogoProps {
+  class: string;
+}
+
+export const Logo = component$((props: LogoProps) => {
   useStylesScoped$(styles);
 
   return (
-    <div class="lazyflex lazyalign">
+    <div class={`lazyalign ${props.class}`} id="test">
       <Link href="/">
         <img
           class="lazy"

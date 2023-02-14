@@ -11,11 +11,11 @@ export default component$(() => {
       <main>
         <div class="flex spaceBetween">
           <section class="flex alignStart vw100">
-            <Logo />
+            <Logo class="mobileHide" />
             <Screen>
               <Slot />
             </Screen>
-            <Hamburger />
+            <Hamburger class="mobileHide" />
           </section>
         </div>
       </main>
@@ -26,7 +26,7 @@ export default component$(() => {
             <a class="link" href="https://github.com/kaBeech/kaBeech-website">
               Kyle Beechly
             </a>{" "}
-            - Background photo by{" "}
+            • Background photo by{" "}
             <a
               class="link"
               href="https://unsplash.com/@bartek_16?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
