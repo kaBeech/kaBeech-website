@@ -51,7 +51,7 @@ export const linkTiles = {
     icon: "/icons/person-circle-outline.svg",
   },
   fun_flower: {
-    linkPath: "/flower?pride=true",
+    linkPath: "/fun/flower?pride=true",
     text: "Flower",
     icon: "/icons/cpu.svg",
   },
@@ -61,22 +61,22 @@ export const linkTiles = {
     icon: "/icons/x.svg",
   },
   flower_stereochrome: {
-    linkPath: "/flower",
+    linkPath: "./",
     text: "Stereochrome",
     icon: "/icons/home.svg",
   },
   flower_rainbow: {
-    linkPath: "/flower?pride=true",
+    linkPath: "?pride=true",
     text: "Rainbow",
     icon: "/icons/person-circle-outline.svg",
   },
   flower_romanesca: {
-    linkPath: "/flower?pride=true&romanesca=true",
+    linkPath: "?pride=true&romanesca=true",
     text: "Romanesca",
     icon: "/icons/cpu.svg",
   },
   flower_helix: {
-    linkPath: "/flower?pride=true&helix=true",
+    linkPath: "?pride=true&helix=true",
     text: "Helix",
     icon: "/icons/menu.svg",
   },
