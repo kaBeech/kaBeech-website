@@ -44,7 +44,7 @@ export default component$(() => {
         <h2>Fractal Flower</h2>
         <img src="/flower.svg" alt="A fractal flower budding" />
         <button>
-          <Link href="/flower?pride=true">Check it out!</Link>
+          <Link href="flower?pride=true">Check it out!</Link>
         </button>
         <p>
           An enchanting interactive animation that I remixed. The original
