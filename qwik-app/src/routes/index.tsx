@@ -14,6 +14,11 @@ export default component$(() => {
         <p>
           My name is Beechy, and I'll be your guide here. I'm glad to meet you!
         </p>
+        <p>
+          Please be aware that this website is very much a work in progress.
+          Much of it is expected to be broken or not yet built out. But feel
+          free to poke around if you like!
+        </p>
         <h3>What would you like to do?</h3>
         <p>
           Please help me direct your experience by chosing a response below.
