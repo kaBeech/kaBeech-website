@@ -72,7 +72,7 @@
   );
   --kaBeech-screen-foreground: var(--kaBeech-color-terminal-text);
   --kaBeech-link-visited: var(--kaBeech-color-photonsword);
-  --kaBeech-link-unvisited: var(--kaBeech-color-distant-planet);
+  --kaBeech-link-unvisited: var(--kaBeech-color-photonsword);
   --kaBeech-cancel: var(--kaBeech-color-solar-wind);
   --kaBeech-response: var(--kaBeech-color-response);
   --kaBeech-response-text: var(--kaBeech-color-ultraberry);

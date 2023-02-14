@@ -12,7 +12,7 @@ export default component$(() => {
         <h1>Beechy</h1>
         <p>Oh, thanks for asking! It's pretty great!</p>
         <p>
-          Being Kyle's avatar is basically like being a conduit for zys
+          Being Kyle's avatar is basically like being a conduit for zyr
           personality
         </p>
       </div>

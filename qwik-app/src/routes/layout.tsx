@@ -24,7 +24,7 @@ export default component$(() => {
           <p class="smallText">
             Made with ♡ by{" "}
             <a class="link" href="https://github.com/kaBeech/kaBeech-website">
-              kaBeech
+              Kyle Beechly
             </a>{" "}
             - Background photo by{" "}
             <a
