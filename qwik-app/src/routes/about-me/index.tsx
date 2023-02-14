@@ -24,7 +24,7 @@ export default component$(() => {
             xe/xyr or ze/zyr pronouns
           </Link>
           . In general I'm not very strict about it though, as long as you're
-          being kind ♡
+          being compassionate ♡
         </p>
         <p>
           When I'm not coding you can probably find me running, building fantasy

@@ -48,7 +48,7 @@ export default component$(() => {
         <p>
           An enchanting interactive animation that I remixed. The original
           version was made by the Qwik team{" "}
-          <Link class="link" href="/tech#Qwik">
+          <Link class="link" href="/poqd#Qwik">
             (more info on Qwik here)
           </Link>{" "}
           as an exhibition showing how fast Qwik can be at loading reactive

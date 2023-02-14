@@ -46,11 +46,11 @@ export const Hamburger = component$(() => {
               alt="About Me"
             />
           </Link>
-          <Link class="link" href="/tech">
+          <Link class="link" href="/poqd">
             <img
               class="lazy"
               src="/icons/cpu.svg"
-              alt="Tech used on this website"
+              alt="Tech used on this website (the POQD stack)"
             />
           </Link>{" "}
           <Link class="link" href="/projects">

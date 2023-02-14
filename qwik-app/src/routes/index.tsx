@@ -35,8 +35,8 @@ export default component$(() => {
           {
             responseShort: "Tech",
             responseLong:
-              "Woah, this site is pretty cool! What tech does it use?",
-            linkPath: "/tech",
+              "Woah, this site is pretty cool! What did you use to build it?",
+            linkPath: "/poqd",
           },
           {
             responseShort: "Projects",

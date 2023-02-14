@@ -8,17 +8,23 @@ export default component$(() => {
     <div class="screenContainer">
       <Beechy />
       <div class="screenContents">
-        <h1>Tech</h1>
-        <p></p>
+        <h1>What is the POQD stack?</h1>
+        <p>
+          This website was built using next-generation JavaScript software in a
+          group (or 'stack') I like to call 'POQD'
+        </p>
+        <p>
+          I first learned professional web development using a software stack
+          known as MERN, which stands for 'MongoDB, Express, React, and
+          Node.js'. POQD is very similar, and stands for 'PostgreSQL, Oak, Qwik,
+          and Deno'
+        </p>
+        <h2>Why?</h2>
+        <h2>What are the differences between MERN and POQD?</h2>
       </div>
 
       <ResponseBar
         responses={[
-          {
-            responseShort: "Tech",
-            responseLong: "Yeah, gimme all your geeky tech credentials!",
-            linkPath: "/about-me/tech",
-          },
           {
             responseShort: "Back",
             responseLong: "Actually, there's something else I want to ask...",
@@ -31,11 +37,12 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "kaBeech - Tech",
+  title: "kaBeech - POQD Stack",
   meta: [
     {
       name: "description",
-      content: "Information about the technology this site uses",
+      content:
+        "Information about the POQD stack of JavaScript software used to build this site",
     },
   ],
 };
