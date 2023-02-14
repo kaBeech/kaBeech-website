@@ -37,7 +37,7 @@ export const ResponseBar = component$((props: ResponseBarProps) => {
       )}
       <div class="flex spaceBetween invertBeechyGradient roundCornersBottom">
         <div>{"<"}</div>
-        <div>
+        <div class="flex">
           {props.responses.map((response) => (
             <ResponseButton
               response={response}

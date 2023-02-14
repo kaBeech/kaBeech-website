@@ -1,23 +1,25 @@
 button {
   /* background-color: var(--kaBeech-screen-background);
   color: var(--kaBeech-screen-foreground); */
-  height: 2.5em;
+  /* height: 2.5em; */
   background-color: transparent;
   border-style: none;
   opacity: 1;
   cursor: pointer;
   margin: 0 1em;
+  padding: 0;
   /* flex: 1 1 auto; */
+  /* max-width: 4em; */
 }
 
 img {
-  width: 4em;
-  padding: 0.5em;
+  min-width: 1em;
+  width: 3em;
+  max-width: 100%;
+  /* width: clamp(1em, 4em, 100%); */
+  padding: 0.5em 0;
+  /* padding: 0; */
   /* flex: 1 1 auto; */
-}
-
-svg {
-  width: 80em;
 }
 
 .semitransparent {
