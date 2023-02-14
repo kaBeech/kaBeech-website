@@ -40,7 +40,7 @@ export const ResponseButton = component$((props: ResponseButtonProps) => {
           }}
         >
           <Link href={props.response.jumpTo}>
-            {props.response.responseShort}
+            {props.response.linkTile.text}
           </Link>
         </button>
       ) : (
@@ -50,7 +50,7 @@ export const ResponseButton = component$((props: ResponseButtonProps) => {
           }}
         >
           <Link href={props.response.jumpTo}>
-            {props.response.responseShort}
+            {props.response.linkTile.text}
           </Link>
         </button>
       )}

@@ -2,6 +2,7 @@ import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { Beechy } from "~/components/beechy/beechy";
 import { ResponseBar } from "~/components/responseBar/responseBar";
+import { linkTiles } from "~/util/linkTiles";
 
 export default component$(() => {
   return (
@@ -22,32 +23,27 @@ export default component$(() => {
       <ResponseBar
         responses={[
           {
-            responseShort: "Fun",
-            responseLong:
+            fullMessage:
               "I'm just having fun. Do you have anything cool to play with?",
-            linkPath: "/fun",
+            linkTile: linkTiles.fun,
           },
           {
-            responseShort: "About",
-            responseLong: "I'm interested in you - tell me about yourself!",
-            linkPath: "/about-me",
+            fullMessage: "I'm interested in you - tell me about yourself!",
+            linkTile: linkTiles.about,
           },
           {
-            responseShort: "Tech",
-            responseLong:
+            fullMessage:
               "Woah, this site is pretty cool! What did you use to build it?",
-            linkPath: "/poqd",
+            linkTile: linkTiles.tech,
           },
           {
-            responseShort: "Projects",
-            responseLong:
+            fullMessage:
               "I'm interested in your engineering career. What are some of the projects you're most proud of?",
-            linkPath: "/projects",
+            linkTile: linkTiles.projects,
           },
           {
-            responseShort: "Contact",
-            responseLong: "How can I get in touch with you?",
-            linkPath: "/contact",
+            fullMessage: "How can I get in touch with you?",
+            linkTile: linkTiles.contact,
           },
         ]}
       />

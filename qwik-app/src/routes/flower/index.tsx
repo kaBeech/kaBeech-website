@@ -8,6 +8,7 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 import { useLocation } from "@builder.io/qwik-city";
 import { Beechy } from "~/components/beechy/beechy";
 import { ResponseBar } from "~/components/responseBar/responseBar";
+import { linkTiles } from "~/util/linkTiles";
 import styles from "./flower.css?inline";
 
 export default component$(() => {
@@ -69,30 +70,25 @@ export default component$(() => {
       <ResponseBar
         responses={[
           {
-            responseShort: "Stereochrome",
-            responseLong: "Fewer colors please!",
-            linkPath: "/flower",
+            fullMessage: "Fewer colors please!",
+            linkTile: linkTiles.flower_stereochrome,
           },
           {
-            responseShort: "Rainbow",
-            responseLong: "More colors please!",
-            linkPath: "/flower?pride=true",
+            fullMessage: "More colors please!",
+            linkTile: linkTiles.flower_rainbow,
           },
           {
-            responseShort: "Romanesca",
-            responseLong: "Something about this is too... flat",
-            linkPath: "/flower?pride=true&romanesca=true",
+            fullMessage: "Something about this is too... flat",
+            linkTile: linkTiles.flower_romanesca,
           },
           {
-            responseShort: "Helix",
-            responseLong: "Okay, but what if it were made out of fiddlesticks?",
-            linkPath: "/flower?pride=true&helix=true",
+            fullMessage: "Okay, but what if it were made out of fiddlesticks?",
+            linkTile: linkTiles.flower_helix,
           },
           {
-            responseShort: "Back",
-            responseLong:
+            fullMessage:
               "Actually, there's something else I want to play with...",
-            linkPath: "/fun",
+            linkTile: linkTiles.back,
           },
         ]}
       />

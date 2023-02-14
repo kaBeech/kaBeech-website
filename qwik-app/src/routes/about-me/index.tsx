@@ -3,6 +3,7 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 import { Link } from "@builder.io/qwik-city";
 import { Beechy } from "~/components/beechy/beechy";
 import { ResponseBar } from "~/components/responseBar/responseBar";
+import { linkTiles } from "~/util/linkTiles";
 
 export default component$(() => {
   return (
@@ -35,25 +36,21 @@ export default component$(() => {
       <ResponseBar
         responses={[
           {
-            responseShort: "Tech",
-            responseLong: "Wait, what's all this about a poked stack?",
-            linkPath: "/poqd",
+            fullMessage: "Wait, what's all this about a poked stack?",
+            linkTile: linkTiles.tech,
           },
           {
-            responseShort: "Pronouns",
-            responseLong: "I'm actually curious about your preferred pronouns!",
-            linkPath: "/about-me/pronouns",
+            fullMessage: "I'm actually curious about your preferred pronouns!",
+            linkTile: linkTiles.about_pronouns,
           },
           {
-            responseShort: "Beechy",
-            responseLong:
+            fullMessage:
               "No, I mean YOU, Beechy! What's it like being an avatar?",
-            linkPath: "/about-me/beechy",
+            linkTile: linkTiles.about_beechy,
           },
           {
-            responseShort: "Back",
-            responseLong: "Actually, there's something else I want to ask...",
-            linkPath: "/",
+            fullMessage: "Actually, there's something else I want to ask...",
+            linkTile: linkTiles.back,
           },
         ]}
       />

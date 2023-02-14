@@ -3,6 +3,7 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 import { Link } from "@builder.io/qwik-city";
 import { Beechy } from "~/components/beechy/beechy";
 import { ResponseBar } from "~/components/responseBar/responseBar";
+import { linkTiles } from "~/util/linkTiles";
 import styles from "./fun.css?inline";
 
 export default component$(() => {
@@ -71,24 +72,20 @@ export default component$(() => {
       <ResponseBar
         responses={[
           {
-            responseShort: "Buddh-A-Sketch",
-            responseLong: "A nostalgic zen flow toy? Yes please!",
-            linkPath: "https://kabeech.github.io/buddh-a-sketch/",
+            fullMessage: "A nostalgic zen flow toy? Yes please!",
+            linkTile: linkTiles.fun_buddhASketch,
           },
           {
-            responseShort: "Flower",
-            responseLong: "Show me that cool fractal flower!",
-            linkPath: "/flower?pride=true",
+            fullMessage: "Show me that cool fractal flower!",
+            linkTile: linkTiles.fun_flower,
           },
           {
-            responseShort: "Tic-Tac-Toebot",
-            responseLong: "I fancy a game of Tic-Tac-Toe!",
-            linkPath: "https://kabeech.github.io/tic-tac-toebot/",
+            fullMessage: "I fancy a game of Tic-Tac-Toe!",
+            linkTile: linkTiles.fun_ticTacToebot,
           },
           {
-            responseShort: "Back",
-            responseLong: "Actually, there's something else I want to ask...",
-            linkPath: "/",
+            fullMessage: "Actually, there's something else I want to ask...",
+            linkTile: linkTiles.back,
           },
         ]}
       />

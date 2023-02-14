@@ -2,6 +2,7 @@ import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { Beechy } from "~/components/beechy/beechy";
 import { ResponseBar } from "~/components/responseBar/responseBar";
+import { linkTiles } from "~/util/linkTiles";
 
 export default component$(() => {
   return (
@@ -15,9 +16,8 @@ export default component$(() => {
       <ResponseBar
         responses={[
           {
-            responseShort: "Back",
-            responseLong: "Actually, there's something else I want to ask...",
-            linkPath: "/",
+            fullMessage: "Actually, there's something else I want to ask...",
+            linkTile: linkTiles.back,
           },
         ]}
       />
