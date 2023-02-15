@@ -17,6 +17,12 @@ export default component$(() => {
             contact@kaBeech.com
           </Link>
         </p>
+        <p>
+          You can also{" "}
+          <Link class="link" href="https://github.com/kaBeech">
+            find me on GitHub
+          </Link>
+        </p>
       </div>
 
       <ResponseBar
@@ -24,6 +30,10 @@ export default component$(() => {
           {
             fullMessage: "I want to get in touch with you!",
             linkTile: linkTiles.email,
+          },
+          {
+            fullMessage: "Get me to your GitHub!",
+            linkTile: linkTiles.gitHub,
           },
           {
             fullMessage: "There's something else I want to ask...",

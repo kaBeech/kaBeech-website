@@ -59,6 +59,11 @@ export const linkTiles = {
     text: "Tic-Tac-Toebot",
     icon: "/icons/x-square.svg",
   },
+  fun_adventOfCode: {
+    linkPath: "https://github.com/kaBeech/Advent-Of-Code-2022",
+    text: "Advent Of Code",
+    icon: "/icons/tree.svg",
+  },
   flower_stereochrome: {
     linkPath: "./",
     text: "Stereochrome",
