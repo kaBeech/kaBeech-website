@@ -23,7 +23,7 @@ Please be aware that this website is very much a work in progress. Much of it is
 
 ### Add Content
 
-* Pronoun page
+* Pronouns page
 * POQD page
 
 ### Integrate Into Main Site (using APIs)
