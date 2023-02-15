@@ -9,6 +9,11 @@ export const linkTiles = {
     text: "GitHub",
     icon: "/icons/logo-github.svg",
   },
+  email: {
+    linkPath: "mailto:contact@kabeech.com",
+    text: "Email Me!",
+    icon: "/icons/mail.svg",
+  },
   home: {
     linkPath: "/",
     text: "Home",
