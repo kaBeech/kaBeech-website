@@ -14,9 +14,15 @@ export default component$(() => {
         <p>
           My name's Kyle Beechly and I'm a software engineer from the Pacific
           Northwest (in America). I built this site to showcase some of my work
-          in the new{" "}
+          using the new{" "}
           <Link class="link" href="/poqd">
             POQD stack
+          </Link>
+        </p>
+        <p>
+          You can{" "}
+          <Link class="link" href="https://github.com/kaBeech">
+            find more of my work on GitHub!
           </Link>
         </p>
         <p>
@@ -40,6 +46,10 @@ export default component$(() => {
             linkTile: linkTiles.tech,
           },
           {
+            fullMessage: "Get me to your GitHub!",
+            linkTile: linkTiles.gitHub,
+          },
+          {
             fullMessage: "I'm actually curious about your preferred pronouns!",
             linkTile: linkTiles.about_pronouns,
           },
@@ -49,7 +59,7 @@ export default component$(() => {
             linkTile: linkTiles.about_beechy,
           },
           {
-            fullMessage: "Actually, there's something else I want to ask...",
+            fullMessage: "There's something else I want to ask...",
             linkTile: linkTiles.back,
           },
         ]}

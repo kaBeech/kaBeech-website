@@ -86,8 +86,7 @@ export default component$(() => {
             linkTile: linkTiles.flower_helix,
           },
           {
-            fullMessage:
-              "Actually, there's something else I want to play with...",
+            fullMessage: "There's something else I want to play with...",
             linkTile: linkTiles.back,
           },
         ]}

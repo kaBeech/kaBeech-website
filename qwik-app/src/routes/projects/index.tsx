@@ -61,7 +61,7 @@ export default component$(() => {
             linkTile: linkTiles.projects_audiopile,
           },
           {
-            fullMessage: "Actually, there's something else I want to ask...",
+            fullMessage: "There's something else I want to ask...",
             linkTile: linkTiles.back,
           },
         ]}

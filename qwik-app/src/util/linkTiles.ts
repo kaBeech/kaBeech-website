@@ -7,7 +7,7 @@ export const linkTiles = {
   gitHub: {
     linkPath: "https://github.com/kaBeech",
     text: "GitHub",
-    icon: "/icons/github-logo.svg",
+    icon: "/icons/logo-github.svg",
   },
   home: {
     linkPath: "/",

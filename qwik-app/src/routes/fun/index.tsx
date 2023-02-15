@@ -84,7 +84,7 @@ export default component$(() => {
             linkTile: linkTiles.fun_ticTacToebot,
           },
           {
-            fullMessage: "Actually, there's something else I want to ask...",
+            fullMessage: "There's something else I want to ask...",
             linkTile: linkTiles.back,
           },
         ]}

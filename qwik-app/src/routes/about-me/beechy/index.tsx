@@ -15,11 +15,15 @@ export default component$(() => {
           Being Kyle's avatar is basically like being a conduit for zyr
           personality
         </p>
+        <p>
+          I get to do whatever I want, and sometimes I get to talk with folks
+          like you, which is good fun!
+        </p>
       </div>
       <ResponseBar
         responses={[
           {
-            fullMessage: "Actually, there's something else I want to ask...",
+            fullMessage: "There's something else I want to ask...",
             linkTile: linkTiles.back,
           },
         ]}

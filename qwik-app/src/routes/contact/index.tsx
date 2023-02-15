@@ -16,7 +16,7 @@ export default component$(() => {
       <ResponseBar
         responses={[
           {
-            fullMessage: "Actually, there's something else I want to ask...",
+            fullMessage: "There's something else I want to ask...",
             linkTile: linkTiles.back,
           },
         ]}
