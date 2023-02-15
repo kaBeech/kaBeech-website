@@ -11,14 +11,10 @@
   /* opacity: 0.5; */
 }
 
-.lazy {
-  color: var(--kaBeech-response-text);
-}
-
 .lazyColor {
   background-image: linear-gradient(
-    rgba(255, 255, 255, 0.127),
-    rgba(255, 255, 255, 0.252)
+    rgba(255, 255, 255, 0.33),
+    rgba(255, 255, 255, 0.349)
   );
   box-shadow: 0 0em 0.4em 0.05em rgba(255, 255, 255, 0.154),
     0 0em 1.5em 0 rgba(255, 255, 255, 0.085);
