@@ -246,6 +246,10 @@ button {
   font-size: 0.9em;
 }
 
+.justifyStart {
+  justify-content: safe;
+}
+
 .spaceBetween {
   justify-content: space-between;
 }
