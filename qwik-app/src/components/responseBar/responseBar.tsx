@@ -35,17 +35,17 @@ export const ResponseBar = component$((props: ResponseBarProps) => {
           />
         </div>
       )}
-      <div class="flex spaceBetween invertBeechyGradient roundCornersBottom">
-        <div>{"<"}</div>
-        <div class="flex">
-          {props.responses.map((response) => (
-            <ResponseButton
-              response={response}
-              handleFunction={showResponseDetail}
-            />
-          ))}
-        </div>
-        <div>&gt;</div>
+      <div class="flex spaceEvenly invertBeechyGradient roundCornersBottom">
+        {/* <div>{"<"}</div> */}
+        {/* <div class="flex"> */}
+        {props.responses.map((response) => (
+          <ResponseButton
+            response={response}
+            handleFunction={showResponseDetail}
+          />
+        ))}
+        {/* </div> */}
+        {/* <div>&gt;</div> */}
       </div>
     </div>
   );

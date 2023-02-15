@@ -5,7 +5,7 @@ export const Screen = component$(() => {
   useStylesScoped$(styles);
 
   return (
-    <div class="lazy flex">
+    <div class="lazy flex screenContents12">
       <Slot />
     </div>
   );

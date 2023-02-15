@@ -10,7 +10,7 @@ export const Logo = component$((props: LogoProps) => {
   useStylesScoped$(styles);
 
   return (
-    <div class={`lazyalign ${props.class}`} id="test">
+    <div class={`lazyalign ${props.class}`}>
       <Link href="/">
         <img
           class="lazy"

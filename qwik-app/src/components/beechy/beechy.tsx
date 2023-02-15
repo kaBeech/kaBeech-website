@@ -9,13 +9,13 @@ export const Beechy = component$(() => {
   return (
     <>
       <div class="beechyGradient roundCornersTop flex mobileSpacing">
-        <Logo class="mobileShow" />
+        <Logo class="tinyHide" />
         <img
           class="noBoxShadow"
           src="/beechy.svg"
           alt="Beechy, kaBeech's avatar"
         />
-        <Hamburger class="mobileShow hidden" />
+        <Hamburger class="tinyHide hidden" />
       </div>
       <div class="screenGradientTop heightHalf"></div>
     </>
