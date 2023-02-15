@@ -57,7 +57,7 @@ export const linkTiles = {
   flower_stereochrome: {
     linkPath: "./",
     text: "Stereochrome",
-    icon: "/icons/home.svg",
+    icon: "/icons/apps-sharp.svg",
   },
   flower_rainbow: {
     linkPath: "?pride=true",
@@ -67,7 +67,7 @@ export const linkTiles = {
   flower_romanesca: {
     linkPath: "?pride=true&romanesca=true",
     text: "Romanesca",
-    icon: "/icons/cpu.svg",
+    icon: "/icons/cube-outline.svg",
   },
   flower_helix: {
     linkPath: "?pride=true&helix=true",
@@ -97,8 +97,7 @@ export const linkTiles = {
   poqd_qwik: {
     linkPath: "https://qwik.builder.io/",
     text: "Qwik",
-    // icon: "/icons/monitor.svg",
-    icon: "/icons/browsers-outline.svg",
+    icon: "/icons/monitor.svg",
   },
   poqd_deno: {
     linkPath: "https://deno.land/",
