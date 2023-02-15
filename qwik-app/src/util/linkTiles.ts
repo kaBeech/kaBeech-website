@@ -4,6 +4,11 @@ export const linkTiles = {
     text: "Back",
     icon: "/icons/chevron-back-circle-outline.svg",
   },
+  gitHub: {
+    linkPath: "https://github.com/kaBeech",
+    text: "GitHub",
+    icon: "/icons/github-logo.svg",
+  },
   home: {
     linkPath: "/",
     text: "Home",
@@ -37,28 +42,28 @@ export const linkTiles = {
   about_pronouns: {
     linkPath: "/about-me/pronouns",
     text: "Pronouns",
-    icon: "/icons/mail.svg",
+    icon: "/icons/transgender-outline.svg",
   },
   about_beechy: {
     linkPath: "/about-me/beechy",
     text: "Beechy",
-    icon: "/icons/person-circle-outline.svg",
+    icon: "/icons/happy-outline.svg",
   },
 
   fun_buddhASketch: {
     linkPath: "https://kabeech.github.io/buddh-a-sketch/",
     text: "Buddh-A-Sketch",
-    icon: "/icons/person-circle-outline.svg",
+    icon: "/icons/color-palette-outline.svg",
   },
   fun_flower: {
     linkPath: "/fun/flower?pride=true",
     text: "Flower",
-    icon: "/icons/cpu.svg",
+    icon: "/icons/flower-outline.svg",
   },
   fun_ticTacToebot: {
     linkPath: "https://kabeech.github.io/tic-tac-toebot/",
     text: "Tic-Tac-Toebot",
-    icon: "/icons/x.svg",
+    icon: "/icons/x-square.svg",
   },
   flower_stereochrome: {
     linkPath: "./",
@@ -68,7 +73,7 @@ export const linkTiles = {
   flower_rainbow: {
     linkPath: "?pride=true",
     text: "Rainbow",
-    icon: "/icons/person-circle-outline.svg",
+    icon: "/icons/color-palette-outline.svg",
   },
   flower_romanesca: {
     linkPath: "?pride=true&romanesca=true",
@@ -78,11 +83,11 @@ export const linkTiles = {
   flower_helix: {
     linkPath: "?pride=true&helix=true",
     text: "Helix",
-    icon: "/icons/menu.svg",
+    icon: "/icons/helix.svg",
   },
   projects_audiopile: {
     linkPath: "https://www.audiopile.cloud/",
     text: "Audiopile",
-    icon: "/icons/game-controller-outline.svg",
+    icon: "/icons/musical-notes-outline.svg",
   },
 };
