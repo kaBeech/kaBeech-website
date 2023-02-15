@@ -28,7 +28,7 @@ export default component$(() => {
         />
         <button>
           <Link href="https://kabeech.github.io/buddh-a-sketch/">
-            Check out Budd-A-Sketch!
+            Check out Buddh-A-Sketch!
           </Link>
         </button>
         <p>
