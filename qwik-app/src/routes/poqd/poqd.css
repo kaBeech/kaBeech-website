@@ -11,3 +11,7 @@ ol {
   gap: 1em;
   max-width: 48em;
 }
+
+td {
+  border: 0.5em solid transparent;
+}

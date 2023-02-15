@@ -287,6 +287,10 @@ button {
   /* justify-content: space-between; */
 }
 
+.gap1 {
+  gap: 1em;
+}
+
 .vw100 {
   width: 100vw;
 }

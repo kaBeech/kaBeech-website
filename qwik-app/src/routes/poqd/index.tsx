@@ -109,6 +109,7 @@ export default component$(() => {
         <div class="flex alignStart">
           <div>
             <h4>What is Hydration?</h4>
+            <p>(Used by Next.js)</p>
             <ol>
               <li>A static site is generated on the server</li>
               <li>
@@ -119,18 +120,17 @@ export default component$(() => {
                 of logic that respond to a user's interaction (Event Listeners)
               </li>{" "}
               <li>
-                The client downloads the HTML and displays it. This part is
-                FAST!
+                The client downloads the HTML for the page. This part is FAST!
               </li>
               <li>
                 The client then downloads all the JavaScript. This can be a lot
-                of JavaScript and JavaScript takes a while to download, so this
-                part is SLOW!
+                of JavaScript, which can take a while to download, so this part
+                is SLOW!
               </li>
               <li>
                 The client then parses all the JavaScript. That means the client
                 looks at the JavaScript and has to figure out what the heck is
-                going on. This can be a lot of JavaScript to understand so this
+                going on. This can be a lot of JavaScript to understand, so this
                 part is SLOW!
               </li>
               <li>
@@ -155,6 +155,7 @@ export default component$(() => {
           </div>
           <div>
             <h4>What is Resumability?</h4>
+            <p>(Used by Qwik)</p>
             <ol>
               <li>A static site is generated on the server</li>
               <li>
@@ -286,7 +287,7 @@ export default component$(() => {
           But after a minute (you are a very smart and beautiful kaBeech after
           all), you'll start to ask yourself "Okay, but why do I need to pass
           state to components that I haven't even built yet?" And then you'll
-          realize that you could structure this in a more organized, more
+          realize that you could structure this all in a more organized, more
           performant way
         </p>
         <p>I like tools that encourage me to grow ♡ </p>
