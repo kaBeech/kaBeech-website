@@ -98,7 +98,11 @@
   --kaBeech-color-solar-wind: #d42a00;
   --kaBeech-color-easter-moss: #00b63a;
   --kaBeech-color-ultraberry: #520052;
+<<<<<<< HEAD
   --kaBeech-color-cold-fuchsian: #b94eb9;
+=======
+  --kaBeech-color-atomic-fuchsian: #db31db;
+>>>>>>> 7c83e8f99bf88f0c85e686c0c2e6878fdcdf89f8
 }
 
 :root {
@@ -117,7 +121,11 @@
   --kaBeech-cancel: var(--kaBeech-color-solar-wind);
   --kaBeech-response: var(--kaBeech-color-response);
   --kaBeech-response-text: var(--kaBeech-color-ultraberry);
+<<<<<<< HEAD
   --kaBeech-response-text-light: var(--kaBeech-color-cold-fuchsian);
+=======
+  --kaBeech-response-text-light: var(--kaBeech-color-atomic-fuchsian);
+>>>>>>> 7c83e8f99bf88f0c85e686c0c2e6878fdcdf89f8
 }
 
 body {
