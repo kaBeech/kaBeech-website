@@ -28,7 +28,7 @@ export default component$(() => {
         />
         <button>
           <Link href="https://kabeech.github.io/buddh-a-sketch/">
-            Check it out!
+            Check out Budd-A-Sketch!
           </Link>
         </button>
         <p>
@@ -44,7 +44,7 @@ export default component$(() => {
         <h2>Fractal Flower</h2>
         <img src="/flower.svg" alt="A fractal flower budding" />
         <button>
-          <Link href="flower?pride=true">Check it out!</Link>
+          <Link href="flower?pride=true">Check out the Flower!</Link>
         </button>
         <p>
           An enchanting interactive animation that I remixed. The original
@@ -59,7 +59,7 @@ export default component$(() => {
         <img src="/tic-tac-toebot.png" alt="A snapshot of the Tic-Tac-Toebot" />
         <button>
           <Link href="https://kabeech.github.io/tic-tac-toebot/">
-            Check it out!
+            Check out Tic-Tac-Toebot!
           </Link>
         </button>
         <p>A robot that plays Tic-Tac-Toe!</p>
