@@ -391,7 +391,7 @@ button {
 * {
   align-items: center;
   text-align: center;
-  text-shadow: #050710 0.03em 0.06em;
+  text-shadow: #050710 0.005em 0.005em;
 }
 
 body {
