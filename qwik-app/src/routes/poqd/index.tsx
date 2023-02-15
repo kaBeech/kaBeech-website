@@ -206,7 +206,9 @@ export default component$(() => {
           right out of the box!
         </p>
         <h1>Why POQD?</h1>
-        <p>Okay, but give it to me in a nutshell. Why do you use POQD?</p>
+        <h4 class="responseTextLight">
+          Okay, but give it to me in a nutshell. Why do you use POQD?
+        </h4>
         <h2>1. It's Accessible for Developers</h2>
         <p>
           I value tools that enable me to start working right away. The less
