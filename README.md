@@ -33,9 +33,8 @@ Please be aware that this website is very much a work in progress. Much of it is
 
 ## Fix
 
-* Make Hamburger icons overflow
 * Stabilize screen height
-* Make response confirm/cancel buttons images (instead of text)
+* Make Hamburger icons overflow (do after screen height^)
 * Add padding to screen content
 * Consider reorganizing columns in POQD page for mobile
 * Improve the gradient transitions into the ScreenContents: make the inner color transparent and make it overlap with the ScreenContents (so that it fades gradually into the text/images on screen instead of making a sharp line)

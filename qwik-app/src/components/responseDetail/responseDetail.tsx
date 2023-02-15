@@ -19,16 +19,18 @@ export const ResponseDetail = component$((props: ResponseDetailProps) => {
     <div class="flex justifyCenter responseGradient">
       <div class="lazyColor flex">
         <div class="responseText">{props.response.fullMessage}</div>
-        <button class="lazyButton">
-          <Link href={props.response.linkTile.linkPath}>O</Link>
+        <button class="lazyButton flex">
+          <Link href={props.response.linkTile.linkPath} class="flex width100">
+            <img src="/icons/check.svg" alt="Confirm response" />
+          </Link>
         </button>
         <button
-          class="lazyCancel"
+          class="lazyCancel flex"
           onClick$={() => {
             hideResponseDetail();
           }}
         >
-          X
+          <img src="/icons/x.svg" alt="Cancel response" class="pointer" />
         </button>
       </div>
     </div>

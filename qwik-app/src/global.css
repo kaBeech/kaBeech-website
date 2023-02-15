@@ -277,6 +277,10 @@ button {
   background-color: var(--kaBeech-color-beechy-bottom);
 }
 
+.overflow {
+  overflow: auto;
+}
+
 .noBoxShadow {
   box-shadow: none;
 }
@@ -376,6 +380,10 @@ button {
 
 .hidden {
   visibility: hidden;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 /* Copied from pre-qwik site */
