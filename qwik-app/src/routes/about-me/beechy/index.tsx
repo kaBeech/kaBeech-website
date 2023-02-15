@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-import type { DocumentHead } from "@builder.io/qwik-city";
+import { DocumentHead, Link } from "@builder.io/qwik-city";
 import { Beechy } from "~/components/beechy/beechy";
 import { ResponseBar } from "~/components/responseBar/responseBar";
 import { linkTiles } from "~/util/linkTiles";
@@ -18,6 +18,26 @@ export default component$(() => {
         <p>
           I get to do whatever I want, and sometimes I get to talk with folks
           like you, which is good fun!
+        </p>
+        <p>
+          When I'm not playing host, I enjoy meditating and reading. Some of my
+          favorite authors are{" "}
+          <Link class="link" href="https://devdutt.com/books/jaya/">
+            Devdutt Pattanaik
+          </Link>
+          ,{" "}
+          <Link
+            class="link"
+            href="https://en.wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach"
+          >
+            Douglas Hofstadter
+          </Link>
+          , and
+          <Link class="link" href="https://xkcd.com/917/">
+            {" "}
+            Randall Munroe
+          </Link>
+          !
         </p>
       </div>
       <ResponseBar
