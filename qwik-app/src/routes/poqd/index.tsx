@@ -295,6 +295,22 @@ export default component$(() => {
       <ResponseBar
         responses={[
           {
+            fullMessage: "I want to learn more about PostgreSQL",
+            linkTile: linkTiles.poqd_postgres,
+          },
+          {
+            fullMessage: "I want to learn more about Oak",
+            linkTile: linkTiles.poqd_oak,
+          },
+          {
+            fullMessage: "I want to learn more about Qwik",
+            linkTile: linkTiles.poqd_qwik,
+          },
+          {
+            fullMessage: "I want to learn more about Deno",
+            linkTile: linkTiles.poqd_deno,
+          },
+          {
             fullMessage: "There's something else I want to ask...",
             linkTile: linkTiles.back,
           },

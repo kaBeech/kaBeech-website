@@ -39,17 +39,6 @@ export const linkTiles = {
     text: "Contact",
     icon: "/icons/mail.svg",
   },
-  about_pronouns: {
-    linkPath: "/about-me/pronouns",
-    text: "Pronouns",
-    icon: "/icons/transgender-outline.svg",
-  },
-  about_beechy: {
-    linkPath: "/about-me/beechy",
-    text: "Beechy",
-    icon: "/icons/happy-outline.svg",
-  },
-
   fun_buddhASketch: {
     linkPath: "https://kabeech.github.io/buddh-a-sketch/",
     text: "Buddh-A-Sketch",
@@ -84,6 +73,37 @@ export const linkTiles = {
     linkPath: "?pride=true&helix=true",
     text: "Helix",
     icon: "/icons/helix.svg",
+  },
+  about_pronouns: {
+    linkPath: "/about-me/pronouns",
+    text: "Pronouns",
+    icon: "/icons/transgender-outline.svg",
+  },
+  about_beechy: {
+    linkPath: "/about-me/beechy",
+    text: "Beechy",
+    icon: "/icons/happy-outline.svg",
+  },
+  poqd_postgres: {
+    linkPath: "https://www.postgresql.org/",
+    text: "PostgreSQL",
+    icon: "/icons/server-outline.svg",
+  },
+  poqd_oak: {
+    linkPath: "https://oakserver.github.io/oak/",
+    text: "Oak",
+    icon: "/icons/server.svg",
+  },
+  poqd_qwik: {
+    linkPath: "https://qwik.builder.io/",
+    text: "Qwik",
+    // icon: "/icons/monitor.svg",
+    icon: "/icons/browsers-outline.svg",
+  },
+  poqd_deno: {
+    linkPath: "https://deno.land/",
+    text: "Deno",
+    icon: "/icons/hard-drive.svg",
   },
   projects_audiopile: {
     linkPath: "https://www.audiopile.cloud/",
