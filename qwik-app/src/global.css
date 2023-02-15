@@ -1,0 +1,468 @@
+/**
+ * WHAT IS THIS FILE?
+ *
+ * Globally applied styles. No matter which components are in the page or matching route,
+ * the styles in here will be applied to the Document, without any sort of CSS scoping.
+ *
+ */
+
+.hfc {
+  min-height: fit-content;
+}
+
+.mobileSpacing {
+  justify-content: space-evenly;
+}
+
+.mobileShow {
+  display: none;
+}
+
+.mobileHide {
+  display: flex;
+}
+
+.tinyHide {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .mobileHide {
+    display: none;
+  }
+  .mobileShow {
+    display: flex;
+  }
+  .tinyHide {
+    display: flex;
+  }
+  .mobileSpacing {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 408px) {
+  .tinyHide {
+    display: none;
+  }
+  .mobileSpacing {
+    justify-content: space-evenly;
+  }
+}
+
+:root {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Scrollbars for Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--kaBeech-screen-midground) transparent;
+}
+
+/* Scrollbars for Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 0.2em;
+}
+
+*::-webkit-scrollbar-track {
+  /* background: orange; */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--kaBeech-screen-midground-transparent);
+  /* box-shadow: 0 0em 0.5em 0.1em rgba(0, 20, 26, 0.964),
+    0 0em 0.4em 0.05em rgba(0, 160, 157, 0.515),
+    0 0em 1em 0 rgba(1, 90, 125, 0.484); */
+  border-radius: 20px;
+  /* border: 3px solid orange; */
+}
+
+/*  */
+
+:root {
+  --kaBeech-color-beechy-top: #178155;
+  --kaBeech-color-beechy-bottom: #00587d;
+  --kaBeech-color-response: #182343;
+  --kaBeech-color-orig-beechy-top: #178155;
+  --kaBeech-color-orig-beechy-bottom: #3367a0;
+  --kaBeech-color-starry-field: #000406;
+  --kaBeech-color-terminal-idle: #00141a;
+  --kaBeech-color-terminal-idle-transparent: #00141a00;
+  --kaBeech-color-terminal-text: #00a0a0;
+  --kaBeech-color-algae-transparent: #00333aa8;
+  --kaBeech-color-algae: #00333a;
+  --kaBeech-color-photonsword: #0088ff;
+  --kaBeech-color-distant-planet: #004886;
+  --kaBeech-color-solar-wind: #d42a00;
+  --kaBeech-color-easter-moss: #00b63a;
+  --kaBeech-color-ultraberry: #520052;
+<<<<<<< HEAD
+  --kaBeech-color-cold-fuchsian: #b94eb9;
+=======
+  --kaBeech-color-atomic-fuchsian: #db31db;
+>>>>>>> 7c83e8f99bf88f0c85e686c0c2e6878fdcdf89f8
+}
+
+:root {
+  --kaBeech-main-background: var(--kaBeech-color-starry-field);
+  --kaBeech-screen-background: var(--kaBeech-color-terminal-idle);
+  --kaBeech-screen-background-transparent: var(
+    --kaBeech-color-terminal-idle-transparent
+  );
+  --kaBeech-screen-midground: var(--kaBeech-color-algae);
+  --kaBeech-screen-midground-transparent: var(
+    --kaBeech-color-algae-transparent
+  );
+  --kaBeech-screen-foreground: var(--kaBeech-color-terminal-text);
+  --kaBeech-link-visited: var(--kaBeech-color-photonsword);
+  --kaBeech-link-unvisited: var(--kaBeech-color-photonsword);
+  --kaBeech-cancel: var(--kaBeech-color-solar-wind);
+  --kaBeech-response: var(--kaBeech-color-response);
+  --kaBeech-response-text: var(--kaBeech-color-ultraberry);
+<<<<<<< HEAD
+  --kaBeech-response-text-light: var(--kaBeech-color-cold-fuchsian);
+=======
+  --kaBeech-response-text-light: var(--kaBeech-color-atomic-fuchsian);
+>>>>>>> 7c83e8f99bf88f0c85e686c0c2e6878fdcdf89f8
+}
+
+body {
+  background-color: var(--kaBeech-main-background);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  padding: 20px 20px 40px 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+
+button {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  background-color: var(--kaBeech-screen-foreground);
+  color: var(--kaBeech-screen-background);
+  border-width: 0.2em;
+  border-style: none;
+  border-radius: 0.25em;
+}
+
+.responseText {
+  color: var(--kaBeech-response-text);
+}
+
+.responseTextLight {
+  color: var(--kaBeech-response-text-light);
+}
+
+.midground {
+  background-color: var(--kaBeech-screen-midground);
+}
+
+.invertColor {
+  background-color: var(--kaBeech-screen-foreground);
+  color: var(--kaBeech-screen-background);
+}
+
+.beechyGradient {
+  background-image: linear-gradient(
+    var(--kaBeech-color-beechy-top),
+    var(--kaBeech-color-beechy-bottom)
+  );
+}
+
+.invertBeechyGradient {
+  background-image: linear-gradient(
+    var(--kaBeech-color-beechy-bottom),
+    var(--kaBeech-color-beechy-top)
+  );
+}
+
+.screenGradientTop {
+  background-image: linear-gradient(
+    var(--kaBeech-color-beechy-bottom),
+    var(--kaBeech-screen-background-transparent)
+  );
+}
+
+.screenGradientBottom {
+  background-image: linear-gradient(
+    var(--kaBeech-screen-background),
+    var(--kaBeech-color-beechy-bottom)
+  );
+}
+
+.screenGradientResponse {
+  background-image: linear-gradient(
+    var(--kaBeech-screen-background),
+    var(--kaBeech-response)
+  );
+}
+
+.responseGradient {
+  background-image: linear-gradient(
+    var(--kaBeech-response),
+    var(--kaBeech-color-beechy-bottom)
+  );
+}
+
+.sC {
+  display: flex;
+  align-items: stretch;
+  flex: 1;
+}
+
+.sCs {
+  display: flex;
+  align-self: stretch;
+  overflow: auto;
+  flex: 1 1 auto;
+  height: 0;
+  /* justify-content: space-between; */
+  /* padding: auto; */
+  /* align-self: stretch; */
+  /* padding: 0 8em; */
+}
+
+.screenContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex: 1;
+}
+
+.screenContents {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  overflow: auto;
+  flex: 1 1 auto;
+  height: 0;
+  /* justify-content: space-between; */
+  /* padding: auto; */
+  /* align-self: stretch; */
+  /* padding: 0 8em; */
+}
+
+.screenContents12 {
+  /* display: flex; */
+  flex-direction: column;
+  /* align-self: stretch; */
+  overflow: auto;
+  flex: 1 1 auto;
+  height: 0;
+  /* justify-content: space-between; */
+  /* padding: auto; */
+  /* align-self: stretch; */
+  /* padding: 0 8em; */
+}
+
+.screenContents p {
+  max-width: 48em;
+}
+
+.beechyTop {
+  background-color: var(--kaBeech-color-beechy-top);
+}
+
+.beechyBottom {
+  background-color: var(--kaBeech-color-beechy-bottom);
+}
+
+.noBoxShadow {
+  box-shadow: none;
+}
+
+.smallText {
+  font-size: 0.9em;
+}
+
+.justifyStart {
+  justify-content: safe;
+}
+
+.spaceBetween {
+  justify-content: space-between;
+}
+
+.spaceEvenly {
+  justify-content: space-evenly;
+}
+
+.spaceAround {
+  justify-content: space-around;
+}
+
+.alignStart {
+  align-items: flex-start;
+}
+
+.alignStretch {
+  align-items: stretch;
+}
+
+.alignSelfStretch {
+  align-self: stretch;
+}
+
+.justifyStretch {
+  justify-content: stretch;
+}
+
+.justifySelfStretch {
+  justify-self: stretch;
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.fg100 {
+  flex-grow: 10;
+  /* justify-content: space-between; */
+}
+
+.gap1 {
+  gap: 1em;
+}
+
+.vw100 {
+  width: 100vw;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.height100 {
+  height: 100%;
+}
+
+.height1 {
+  height: 1em;
+}
+
+.heightHalf {
+  height: 0.5em;
+}
+
+.tall {
+  height: 1000vh;
+}
+
+.roundCornersTop {
+  border-radius: 0.8em 0.8em 0 0;
+}
+
+.roundCornersBottom {
+  border-radius: 0 0 0.8em 0.8em;
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+.semitransparent {
+  background-color: #00000022;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/* Copied from pre-qwik site */
+
+* {
+  align-items: center;
+  text-align: center;
+  text-shadow: #050710 0.03em 0.06em;
+}
+
+body {
+  font-size: 100%;
+  font-size: 1.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-image: url(/starry-background.jpg);
+  color: var(--kaBeech-screen-foreground);
+  margin: 0.5em 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.margin0 {
+  margin: 0;
+}
+
+:link,
+:visited {
+  color: inherit;
+}
+
+:link.link {
+  color: var(--kaBeech-link-unvisited);
+}
+
+:visited.link {
+  color: var(--kaBeech-link-visited);
+}
+
+/* img {
+  border-radius: 2rem;
+  width: 24rem;
+  box-shadow: #050710 0.03em 0.06em;
+} */
+
+#panel {
+  gap: 0.2rem;
+}
+
+#contactButton {
+  border-radius: 1rem;
+  box-shadow: #050710 0.03em 0.06em;
+  text-shadow: #055050 0.03em 0.06em;
+  text-decoration: none;
+  font-size: 2rem;
+  background-color: #009090;
+  color: #cceeff;
+  width: 14rem;
+  aspect-ratio: 4;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+#footer {
+  margin-top: 0.2rem;
+  font-size: 1rem;
+}

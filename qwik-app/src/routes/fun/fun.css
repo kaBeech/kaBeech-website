@@ -1,0 +1,7 @@
+img {
+  border-style: solid;
+  /* border-color: var(--kaBeech-main-background); */
+  border-radius: 1em;
+  width: 8em;
+  aspect-ratio: 1;
+}

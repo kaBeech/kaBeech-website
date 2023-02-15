@@ -1,0 +1,32 @@
+button {
+  /* background-color: var(--kaBeech-screen-background);
+  color: var(--kaBeech-screen-foreground); */
+  /* height: 2.5em; */
+  background-color: transparent;
+  border-style: none;
+  opacity: 1;
+  cursor: pointer;
+  /* margin: 0 1em; */
+  padding: 0;
+  /* flex: 1 1 auto; */
+  /* max-width: 4em; */
+}
+
+img {
+  /* min-width: 1em; */
+  width: 3em;
+  max-width: 80%;
+  /* width: clamp(1em, 4em, 100%); */
+  padding: 0.5em 0;
+  margin: 0 auto;
+  /* padding: 0; */
+  /* flex: 1 1 auto; */
+}
+
+.semitransparent {
+  /* background-color: #00000045;
+  box-shadow: 0 0em 0.4em 0.05em rgba(0, 0, 0, 0.209),
+    0 0em 1.5em 0 rgba(0, 0, 0, 0.085);
+  border-radius: 1em;
+  padding: 1em; */
+}

@@ -1,0 +1,33 @@
+.lazyButton {
+  box-shadow: 0 0em 0.2em 0.05em rgba(0, 160, 160, 0.507),
+    0 0em 0.2em 0 rgba(0, 160, 160, 0.674);
+}
+
+.lazyCancel {
+  background-color: var(--kaBeech-cancel);
+  color: var(--kaBeech-screen-background);
+  box-shadow: 0 0em 0.2em 0.05em rgba(235, 51, 5, 0.507),
+    0 0em 0.2em 0 rgba(235, 51, 5, 0.674);
+  /* opacity: 0.5; */
+}
+
+.lazyColor {
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.33),
+    rgba(255, 255, 255, 0.349)
+  );
+  box-shadow: 0 0em 0.4em 0.05em rgba(255, 255, 255, 0.154),
+    0 0em 1.5em 0 rgba(255, 255, 255, 0.085);
+  border-radius: 1em;
+  padding: 0.5em 0.8em;
+  margin-bottom: 0.5em;
+  gap: 0.5em;
+}
+
+button {
+  font-size: 1.5em;
+  width: 1.5em;
+  aspect-ratio: 1;
+  border-style: none;
+  border-radius: 0.5em;
+}
