@@ -200,7 +200,10 @@ export default component$(() => {
           </div>
         </div>
         <h3>Why Deno?</h3>
-        <p>Fast, secure, robust. Less configuring, more doing</p>
+        <p>
+          Fast, secure, robust. Less configuring, more doing. Typescript works
+          right out of the box!
+        </p>
         <h1>Why POQD?</h1>
         <p>Okay, but give it to me in a nutshell. Why do you use POQD?</p>
         <h2>1. It's Accessible</h2>
