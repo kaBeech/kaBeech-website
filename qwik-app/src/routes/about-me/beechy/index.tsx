@@ -13,7 +13,11 @@ export default component$(() => {
         <p>Oh, thanks for asking! It's pretty great!</p>
         <p>
           Being Kyle's avatar is basically like being a conduit for zyr
-          personality
+          personality (I also prefer{" "}
+          <Link class="link" href="/about-me/pronouns">
+            xe/xyr or ze/zyr pronouns
+          </Link>
+          )
         </p>
         <p>
           I get to do whatever I want, and sometimes I get to talk with folks
@@ -42,6 +46,10 @@ export default component$(() => {
       </div>
       <ResponseBar
         responses={[
+          {
+            fullMessage: "I'm actually curious about your preferred pronouns!",
+            linkTile: linkTiles.about_pronouns,
+          },
           {
             fullMessage: "There's something else I want to ask...",
             linkTile: linkTiles.back,

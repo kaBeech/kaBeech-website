@@ -13,6 +13,7 @@ Please be aware that this website is very much a work in progress. Much of it is
 ### Small Features
 
 * Make background scroll
+* Update Beechy's mouth
 
 ### Big Features
 
