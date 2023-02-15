@@ -80,4 +80,9 @@ export const linkTiles = {
     text: "Helix",
     icon: "/icons/menu.svg",
   },
+  projects_audiopile: {
+    linkPath: "https://www.audiopile.cloud/",
+    text: "Audiopile",
+    icon: "/icons/game-controller-outline.svg",
+  },
 };

@@ -56,6 +56,11 @@ export default component$(() => {
       <ResponseBar
         responses={[
           {
+            fullMessage:
+              "Ooh! I've been looking for a simple audio sharing tool!",
+            linkTile: linkTiles.projects_audiopile,
+          },
+          {
             fullMessage: "Actually, there's something else I want to ask...",
             linkTile: linkTiles.back,
           },
