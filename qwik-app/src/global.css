@@ -6,9 +6,122 @@
  *
  */
 
-.hfc {
+/* .hfc {
   min-height: fit-content;
+} */
+
+/* Custom Colors Raw*/
+
+:root {
+  --kaBeech-color-beechy-top: #178155;
+  --kaBeech-color-beechy-bottom: #00587d;
+  --kaBeech-color-response: #182343;
+  --kaBeech-color-orig-beechy-top: #178155;
+  --kaBeech-color-orig-beechy-bottom: #3367a0;
+  --kaBeech-color-starry-field: #000406;
+  --kaBeech-color-terminal-idle: #00141a;
+  --kaBeech-color-terminal-idle-transparent: #00141a00;
+  --kaBeech-color-terminal-text: #00a0a0;
+  --kaBeech-color-algae-transparent: #00333aa8;
+  --kaBeech-color-algae: #00333a;
+  --kaBeech-color-photonsword: #0088ff;
+  --kaBeech-color-distant-planet: #004886;
+  --kaBeech-color-solar-wind: #d42a00;
+  --kaBeech-color-easter-moss: #00b63a;
+  --kaBeech-color-ultraberry: #520052;
+  --kaBeech-color-cold-fuchsian: #b94eb9;
 }
+
+/* Custom Colors Assignmened */
+
+:root {
+  --kaBeech-main-background: var(--kaBeech-color-starry-field);
+  --kaBeech-screen-background: var(--kaBeech-color-terminal-idle);
+  --kaBeech-screen-background-transparent: var(
+    --kaBeech-color-terminal-idle-transparent
+  );
+  --kaBeech-screen-midground: var(--kaBeech-color-algae);
+  --kaBeech-screen-midground-transparent: var(
+    --kaBeech-color-algae-transparent
+  );
+  --kaBeech-screen-foreground: var(--kaBeech-color-terminal-text);
+  --kaBeech-link-visited: var(--kaBeech-color-photonsword);
+  --kaBeech-link-unvisited: var(--kaBeech-color-photonsword);
+  --kaBeech-cancel: var(--kaBeech-color-solar-wind);
+  --kaBeech-response: var(--kaBeech-color-response);
+  --kaBeech-response-text: var(--kaBeech-color-ultraberry);
+  --kaBeech-response-text-light: var(--kaBeech-color-cold-fuchsian);
+}
+
+/* Element-level */
+
+* {
+  align-items: center;
+  text-align: center;
+  text-shadow: #050710 0.005em 0.005em;
+}
+
+:link,
+:visited {
+  color: inherit;
+}
+
+html,
+main {
+  height: 100%;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* flex: 1 1 auto; */
+}
+
+section {
+  padding: 0.5em 1em 2em 1em;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  font-size: 1.5rem;
+  background-color: var(--kaBeech-main-background);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: url(/starry-background-bartek-tiled-4x-vsmall.jpg);
+  color: var(--kaBeech-screen-foreground);
+}
+
+ul {
+  list-style: none;
+}
+
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+
+button {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  background-color: var(--kaBeech-screen-foreground);
+  color: var(--kaBeech-screen-background);
+  border-width: 0.2em;
+  border-style: none;
+  border-radius: 0.25em;
+}
+
+/* Viewsetting */
 
 .mobileSpacing {
   justify-content: space-evenly;
@@ -73,114 +186,22 @@
   width: 0.4em;
 }
 
-*::-webkit-scrollbar-track {
-  /* background: orange; */
-}
-
 *::-webkit-scrollbar-thumb {
   background-color: var(--kaBeech-screen-midground-transparent);
   /* box-shadow: 0 0em 0.5em 0.1em rgba(0, 20, 26, 0.964),
     0 0em 0.4em 0.05em rgba(0, 160, 157, 0.515),
     0 0em 1em 0 rgba(1, 90, 125, 0.484); */
   border-radius: 20px;
-  /* border: 3px solid orange; */
 }
 
-/*  */
+/* Class-level Colors */
 
-:root {
-  --kaBeech-color-beechy-top: #178155;
-  --kaBeech-color-beechy-bottom: #00587d;
-  --kaBeech-color-response: #182343;
-  --kaBeech-color-orig-beechy-top: #178155;
-  --kaBeech-color-orig-beechy-bottom: #3367a0;
-  --kaBeech-color-starry-field: #000406;
-  --kaBeech-color-terminal-idle: #00141a;
-  --kaBeech-color-terminal-idle-transparent: #00141a00;
-  --kaBeech-color-terminal-text: #00a0a0;
-  --kaBeech-color-algae-transparent: #00333aa8;
-  --kaBeech-color-algae: #00333a;
-  --kaBeech-color-photonsword: #0088ff;
-  --kaBeech-color-distant-planet: #004886;
-  --kaBeech-color-solar-wind: #d42a00;
-  --kaBeech-color-easter-moss: #00b63a;
-  --kaBeech-color-ultraberry: #520052;
-  --kaBeech-color-cold-fuchsian: #b94eb9;
+:link.link {
+  color: var(--kaBeech-link-unvisited);
 }
 
-:root {
-  --kaBeech-main-background: var(--kaBeech-color-starry-field);
-  --kaBeech-screen-background: var(--kaBeech-color-terminal-idle);
-  --kaBeech-screen-background-transparent: var(
-    --kaBeech-color-terminal-idle-transparent
-  );
-  --kaBeech-screen-midground: var(--kaBeech-color-algae);
-  --kaBeech-screen-midground-transparent: var(
-    --kaBeech-color-algae-transparent
-  );
-  --kaBeech-screen-foreground: var(--kaBeech-color-terminal-text);
-  --kaBeech-link-visited: var(--kaBeech-color-photonsword);
-  --kaBeech-link-unvisited: var(--kaBeech-color-photonsword);
-  --kaBeech-cancel: var(--kaBeech-color-solar-wind);
-  --kaBeech-response: var(--kaBeech-color-response);
-  --kaBeech-response-text: var(--kaBeech-color-ultraberry);
-  --kaBeech-response-text-light: var(--kaBeech-color-cold-fuchsian);
-}
-
-html,
-/* body, */
-/* footer, */
-main {
-  height: 100%;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* flex: 1 1 auto; */
-}
-
-body {
-  margin: 0;
-  /* height: 92%; */
-  height: 100%;
-}
-
-section {
-  padding: 0.5em 1em 2em 1em;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: var(--kaBeech-main-background);
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    sans-serif;
-  padding: 20px 20px 40px 20px;
-}
-
-ul {
-  list-style: none;
-}
-
-a,
-ul,
-li {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  text-decoration: none;
-  vertical-align: baseline;
-}
-
-button {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  background-color: var(--kaBeech-screen-foreground);
-  color: var(--kaBeech-screen-background);
-  border-width: 0.2em;
-  border-style: none;
-  border-radius: 0.25em;
+:visited.link {
+  color: var(--kaBeech-link-visited);
 }
 
 .responseText {
@@ -242,68 +263,34 @@ button {
   );
 }
 
-.sC {
-  display: flex;
-  align-items: stretch;
-  flex: 1;
-}
-
-.sCs {
-  display: flex;
-  align-self: stretch;
-  overflow: auto;
-  flex: 1 1 auto;
-  height: 0;
-  /* justify-content: space-between; */
-  /* padding: auto; */
-  /* align-self: stretch; */
-  /* padding: 0 8em; */
-}
-
-.screenContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  flex: 1;
-  max-height: 100%;
-}
-
-.screenContents {
-  display: flex;
-  flex-direction: column;
-  align-self: stretch;
-  overflow: auto;
-  flex: 1 1 auto;
-  /* height: 0; */
-  /* justify-content: space-between; */
-  /* padding: auto; */
-  /* align-self: stretch; */
-  padding: 0 1em;
-}
-
-.screenContents12 {
-  /* display: flex; */
-  flex-direction: column;
-  /* align-self: stretch; */
-  overflow: auto;
-  flex: 1 1 auto;
-  /* height: 0; */
-  /* justify-content: space-between; */
-  /* padding: auto; */
-  /* align-self: stretch; */
-  /* padding: 0 8em; */
-}
-
-.screenContents p {
-  max-width: 48em;
-}
-
 .beechyTop {
   background-color: var(--kaBeech-color-beechy-top);
 }
 
 .beechyBottom {
   background-color: var(--kaBeech-color-beechy-bottom);
+}
+
+/* Shortcuts */
+
+.flex {
+  display: flex;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.margin0 {
+  margin: 0;
 }
 
 .overflow {
@@ -359,11 +346,6 @@ button {
   justify-content: center;
 }
 
-.fg100 {
-  flex-grow: 10;
-  /* justify-content: space-between; */
-}
-
 .gap1 {
   gap: 1em;
 }
@@ -388,24 +370,24 @@ button {
   height: 1em;
 }
 
-.heightHalf {
-  height: 0.5em;
-}
-
 .height2 {
   height: 2em;
+}
+
+.heightHalf {
+  height: 0.5em;
 }
 
 .tall {
   height: 1000vh;
 }
 
-.roundCornersTop {
-  border-radius: 0.8em 0.8em 0 0;
+.pointer {
+  cursor: pointer;
 }
 
-.roundCornersBottom {
-  border-radius: 0 0 0.8em 0.8em;
+.hidden {
+  visibility: hidden;
 }
 
 .transparent {
@@ -416,92 +398,17 @@ button {
   background-color: #00000022;
 }
 
-.hidden {
-  visibility: hidden;
+.roundCornersTop {
+  border-radius: 0.8em 0.8em 0 0;
 }
 
-.pointer {
-  cursor: pointer;
+.roundCornersBottom {
+  border-radius: 0 0 0.8em 0.8em;
 }
 
-/* Copied from pre-qwik site */
-
-* {
-  align-items: center;
-  text-align: center;
-  text-shadow: #050710 0.005em 0.005em;
-}
-
-body {
-  font-size: 100%;
-  font-size: 1.5rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background-image: url(/starry-background-bartek-tiled-4x-vsmall.jpg);
-  color: var(--kaBeech-screen-foreground);
-  /* margin: 0.5em 0; */
-  padding: 0;
-}
-
-.flex {
-  display: flex;
-}
-
-.flex1 {
-  flex: 1;
-}
-
-.column {
-  flex-direction: column;
-}
-
-.row {
-  flex-direction: row;
-}
-
-.margin0 {
-  margin: 0;
-}
-
-:link,
-:visited {
-  color: inherit;
-}
-
-:link.link {
-  color: var(--kaBeech-link-unvisited);
-}
-
-:visited.link {
-  color: var(--kaBeech-link-visited);
-}
-
-/* img {
-  border-radius: 2rem;
-  width: 24rem;
-  box-shadow: #050710 0.03em 0.06em;
-} */
-
-#panel {
-  gap: 0.2rem;
-}
-
-#contactButton {
-  border-radius: 1rem;
-  box-shadow: #050710 0.03em 0.06em;
-  text-shadow: #055050 0.03em 0.06em;
-  text-decoration: none;
-  font-size: 2rem;
-  background-color: #009090;
-  color: #cceeff;
-  width: 14rem;
-  aspect-ratio: 4;
-  font-weight: 800;
-  margin-bottom: 1rem;
-}
+/* id-level */
 
 #footer {
-  /* margin-top: 0.2rem; */
   font-size: 1rem;
   height: 3rem;
   position: absolute;
@@ -510,4 +417,44 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Mess */
+
+.screenContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex: 1;
+  max-height: 100%;
+}
+
+.screenContents {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  overflow: auto;
+  flex: 1 1 auto;
+  /* height: 0; */
+  /* justify-content: space-between; */
+  /* padding: auto; */
+  /* align-self: stretch; */
+  padding: 0 1em;
+}
+
+.screenContents12 {
+  /* display: flex; */
+  flex-direction: column;
+  /* align-self: stretch; */
+  overflow: auto;
+  flex: 1 1 auto;
+  /* height: 0; */
+  /* justify-content: space-between; */
+  /* padding: auto; */
+  /* align-self: stretch; */
+  /* padding: 0 8em; */
+}
+
+.screenContents p {
+  max-width: 48em;
 }
