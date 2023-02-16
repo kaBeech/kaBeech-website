@@ -93,12 +93,14 @@ body {
   color: var(--kaBeech-screen-foreground);
 }
 
-ul {
+ul,
+ol {
   list-style: none;
 }
 
 a,
 ul,
+ol,
 li {
   margin: 0;
   padding: 0;

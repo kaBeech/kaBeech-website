@@ -111,43 +111,44 @@ export default component$(() => {
             <h4>What is Hydration?</h4>
             <p>(Used by Next.js)</p>
             <ol>
-              <li>A static site is generated on the server</li>
+              <li>1. A static site is generated on the server</li>
               <li>
-                When it's ready, the server sends three pieces of information
+                2. When it's ready, the server sends three pieces of information
                 (potentially as lots of JavaScript) to the client in order to
                 run the application: the page's structure (Component Tree),
                 what's currently on the page (Application State), and the bits
                 of logic that respond to a user's interaction (Event Listeners)
               </li>{" "}
               <li>
-                The client downloads the HTML for the page. This part is FAST!
+                3. The client downloads the HTML for the page. This part is
+                FAST!
               </li>
               <li>
-                The client then downloads all the JavaScript. This can be a lot
-                of JavaScript, which can take a while to download, so this part
-                is SLOW!
-              </li>
-              <li>
-                The client then parses all the JavaScript. That means the client
-                looks at the JavaScript and has to figure out what the heck is
-                going on. This can be a lot of JavaScript to understand, so this
+                4. The client then downloads all the JavaScript. This can be a
+                lot of JavaScript, which can take a while to download, so this
                 part is SLOW!
               </li>
               <li>
-                The client then executes all the JavaScript. This means the
+                5. The client then parses all the JavaScript. That means the
+                client looks at the JavaScript and has to figure out what the
+                heck is going on. This can be a lot of JavaScript to understand,
+                so this part is SLOW!
+              </li>
+              <li>
+                6. The client then executes all the JavaScript. This means the
                 client does what the JavaScript says to catch the page up to the
                 point where the server had it. This can be a lot to do, so this
                 part is SLOW!
               </li>
               <li>
-                The client then binds all the Event Listeners to their
+                7. The client then binds all the Event Listeners to their
                 respective pieces of code. The process of doing this is pretty
                 quick, but there could potentially be a lot of Listeners, so
                 we'll say this part is MEDIUM FAST!
               </li>
               <li>
                 <strong>
-                  At this point the user can view and intaract with the
+                  8. At this point the user can view and intaract with the
                   application
                 </strong>
               </li>
@@ -157,27 +158,28 @@ export default component$(() => {
             <h4>What is Resumability?</h4>
             <p>(Used by Qwik)</p>
             <ol>
-              <li>A static site is generated on the server</li>
+              <li>1. A static site is generated on the server</li>
               <li>
-                When it's ready, the server <strong>pauses</strong> execution of
-                the code. It then takes all the JavaScript that would be sent to
-                the client and serializes it (including its state) into HTML.
+                2. When it's ready, the server <strong>pauses</strong> execution
+                of the code. It then takes all the JavaScript that would be sent
+                to the client and serializes it (including its state) into HTML.
                 Only this HTML gets sent to the client
               </li>
               <li>
-                The client downloads this HTML from the server and displays it.
-                Doing so, it <strong>resumes</strong> execution of the code in
-                the browser, using the serialized JavaScript. This part is FAST!
+                3. The client downloads this HTML from the server and displays
+                it. Doing so, it <strong>resumes</strong> execution of the code
+                in the browser, using the serialized JavaScript. This part is
+                FAST!
               </li>
               <li>
                 <strong>
-                  At this point the user can view and intaract with the
+                  4. At this point the user can view and intaract with the
                   application
                 </strong>
               </li>
               <li>
-                If a part of the code is interactible, the necessary JavaScript
-                is downloaded and run only right when it needs to be
+                5. If a part of the code is interactible, the necessary
+                JavaScript is downloaded and run only right when it needs to be
               </li>
             </ol>
           </div>

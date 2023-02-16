@@ -10,7 +10,6 @@ Please be aware that this website is very much a work in progress. Much of it is
 
 ## High Priority
 
-* Fix screen contents sizing on small screens (e.g. currently the MERN/POQD table is getting cut off)
 * Make background scroll
 
 ## Add Features
