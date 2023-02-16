@@ -121,9 +121,23 @@
 }
 
 html,
-body,
+/* body, */
+/* footer, */
 main {
   height: 100%;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* flex: 1 1 auto; */
+}
+
+body {
+  margin: 0;
+  height: 92%;
+}
+
+section {
+  padding: 0.5em 1em;
+  box-sizing: border-box;
 }
 
 body {
@@ -408,7 +422,7 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-image: url(/starry-background.jpg);
   color: var(--kaBeech-screen-foreground);
-  margin: 0.5em 0;
+  /* margin: 0.5em 0; */
   padding: 0;
 }
 
@@ -472,4 +486,5 @@ body {
 #footer {
   margin-top: 0.2rem;
   font-size: 1rem;
+  height: 2rem;
 }
