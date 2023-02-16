@@ -1,6 +1,7 @@
 .lazyButton {
   box-shadow: 0 0em 0.2em 0.05em rgba(0, 160, 160, 0.507),
     0 0em 0.2em 0 rgba(0, 160, 160, 0.674);
+  cursor: pointer;
 }
 
 .lazyCancel {
