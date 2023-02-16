@@ -18,7 +18,7 @@ export const ResponseDetail = component$((props: ResponseDetailProps) => {
   return (
     <div class="flex justifyCenter responseGradient">
       <div class="lazyColor flex">
-        <div class="responseText">{props.response.fullMessage}</div>
+        <p class="responseText">{props.response.fullMessage}</p>
         <div class="flex tinyColumn gapHalf">
           <Link href={props.response.linkTile.linkPath} class="flex width100">
             <button class="lazyButton flex justifyCenter">
