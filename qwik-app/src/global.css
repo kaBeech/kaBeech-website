@@ -39,6 +39,9 @@
   .mobileSpacing {
     justify-content: space-between;
   }
+  .mobileColumn {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 408px) {
@@ -47,6 +50,9 @@
   }
   .mobileSpacing {
     justify-content: space-evenly;
+  }
+  .tinyColumn {
+    flex-direction: column;
   }
 }
 
@@ -357,6 +363,10 @@ button {
 
 .gap1 {
   gap: 1em;
+}
+
+.gapHalf {
+  gap: 0.5em;
 }
 
 .vw100 {
