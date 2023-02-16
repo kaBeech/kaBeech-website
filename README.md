@@ -49,5 +49,4 @@ Please be aware that this website is very much a work in progress. Much of it is
 #### Also
 
 * Add box-shadow to images and buttons in ScreenContents
-* Maybe make the (webkit) scrollbar a lil wider?
 * Reassess font size (for mobile)?
