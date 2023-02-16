@@ -21,6 +21,7 @@
   --kaBeech-color-starry-field: #000406;
   --kaBeech-color-terminal-idle: #00141a;
   --kaBeech-color-terminal-idle-transparent: #00141a00;
+  --kaBeech-color-terminal-idle-semitransparent: #00141ab4;
   --kaBeech-color-terminal-text: #00a0a0;
   --kaBeech-color-algae-transparent: #00333aa8;
   --kaBeech-color-algae: #00333a;
@@ -39,6 +40,9 @@
   --kaBeech-screen-background: var(--kaBeech-color-terminal-idle);
   --kaBeech-screen-background-transparent: var(
     --kaBeech-color-terminal-idle-transparent
+  );
+  --kaBeech-screen-background-semitransparent: var(
+    --kaBeech-color-terminal-idle-semitransparent
   );
   --kaBeech-screen-midground: var(--kaBeech-color-algae);
   --kaBeech-screen-midground-transparent: var(

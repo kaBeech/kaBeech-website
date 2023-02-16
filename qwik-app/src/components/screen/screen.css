@@ -1,5 +1,6 @@
 .lazy {
-  background-color: var(--kaBeech-screen-background);
+  /* background-color: var(--kaBeech-screen-background); */
+  background-color: var(--kaBeech-screen-background-semitransparent);
   border-style: none;
   border-radius: 1em;
   /* border-color: var(--kaBeech-main-background); */
