@@ -53,6 +53,19 @@
   --kaBeech-response-text-light: var(--kaBeech-color-cold-fuchsian);
 }
 
+/* id-level */
+
+#footer {
+  font-size: 1rem;
+  height: 3rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Element-level */
 
 * {
@@ -172,6 +185,20 @@ button {
   }
   body {
     font-size: 1rem;
+  }
+  #footer {
+    font-size: 0.7rem;
+    height: 2rem;
+  }
+}
+
+@media (max-width: 346px) {
+  body {
+    font-size: 0.7rem;
+  }
+  #footer {
+    font-size: 0.5rem;
+    height: 1.5rem;
   }
 }
 
@@ -413,19 +440,6 @@ button {
 
 .roundCornersBottom {
   border-radius: 0 0 0.8em 0.8em;
-}
-
-/* id-level */
-
-#footer {
-  font-size: 1rem;
-  height: 3rem;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* Mess */
