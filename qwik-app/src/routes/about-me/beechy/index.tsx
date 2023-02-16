@@ -25,8 +25,11 @@ export default component$(() => {
           like you, which is good fun!
         </p>
         <p>
-          When I'm not playing host, I enjoy meditating and reading. Some of my
-          favorite authors are{" "}
+          When I'm not playing host, I enjoy{" "}
+          <Link class="link" href="/fun/al-lugha-misma">
+            learning languages
+          </Link>
+          , meditating, and reading. Some of my favorite authors are{" "}
           <Link class="link" href="https://devdutt.com/books/jaya/">
             Devdutt Pattanaik
           </Link>
@@ -50,6 +53,11 @@ export default component$(() => {
           {
             fullMessage: "I'm actually curious about your preferred pronouns!",
             linkTile: linkTiles.about_pronouns,
+          },
+          {
+            fullMessage:
+              "Learning languages? That IS fun! Let's talk about that!",
+            linkTile: linkTiles.fun_alLughaMisma,
           },
           {
             fullMessage: "There's something else I want to ask...",
