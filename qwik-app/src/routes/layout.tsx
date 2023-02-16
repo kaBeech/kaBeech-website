@@ -9,7 +9,7 @@ export default component$(() => {
   return (
     <>
       <main>
-        <div class="flex spaceBetween">
+        <div class="flex spaceBetween height100 alignStretch">
           <section class="flex alignStart vw100">
             <Logo class="mobileHide" />
             <Screen>
