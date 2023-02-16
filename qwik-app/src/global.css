@@ -38,13 +38,14 @@
   }
   .mobileSpacing {
     justify-content: space-between;
+    padding: 0 1em;
   }
   .mobileColumn {
     flex-direction: column;
   }
 }
 
-@media (max-width: 408px) {
+@media (max-width: 440px) {
   .tinyHide {
     display: none;
   }
@@ -138,11 +139,12 @@ main {
 
 body {
   margin: 0;
-  height: 92%;
+  /* height: 92%; */
+  height: 100%;
 }
 
 section {
-  padding: 0.5em 1em;
+  padding: 0.5em 1em 2em 1em;
   box-sizing: border-box;
 }
 
@@ -314,6 +316,7 @@ button {
 
 .smallText {
   font-size: 0.9em;
+  margin: 0;
 }
 
 .justifyStart {
@@ -494,7 +497,13 @@ body {
 }
 
 #footer {
-  margin-top: 0.2rem;
+  /* margin-top: 0.2rem; */
   font-size: 1rem;
-  height: 2rem;
+  height: 3rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
