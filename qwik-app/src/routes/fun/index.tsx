@@ -124,6 +124,11 @@ export default component$(() => {
           },
           {
             fullMessage:
+              "I wanna learn about Al Lugha Misma (I understand it's not built yet)",
+            linkTile: linkTiles.fun_alLughaMisma,
+          },
+          {
+            fullMessage:
               "I'm a big logic nerd like you - lemme see your solutions for Advent Of Code 2022!",
             linkTile: linkTiles.fun_adventOfCode,
           },
