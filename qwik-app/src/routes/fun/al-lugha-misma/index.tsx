@@ -69,7 +69,7 @@ export default component$(() => {
           </tr>{" "}
           <tr>
             <td>Hawaiian</td>
-            <td>ʻUala kahiki</td>
+            <td>'uala kahiki</td>
           </tr>{" "}
           <tr>
             <td>Hindi</td>
