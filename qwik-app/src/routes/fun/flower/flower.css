@@ -69,6 +69,10 @@ input {
   flex: 1;
 } */
 
+.screenContents {
+  padding: 0;
+}
+
 .romanesca {
   align-items: flex-start;
   align-content: center;
