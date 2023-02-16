@@ -322,6 +322,10 @@ button {
   justify-content: space-around;
 }
 
+.alignCenter {
+  align-items: center;
+}
+
 .alignStart {
   align-items: flex-start;
 }

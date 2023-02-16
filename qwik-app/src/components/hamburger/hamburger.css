@@ -16,7 +16,6 @@
 img {
   border-style: solid;
   border-width: 0.1em;
-  /* border-color: linear-gradient(var(--kaBeech-color-beechy-top), var(--kaBeech-color-beechy-bottom)); */
   background-color: var(--kaBeech-main-background);
   border-color: rgba(23, 129, 86, 0.19);
   border-radius: 1em;
