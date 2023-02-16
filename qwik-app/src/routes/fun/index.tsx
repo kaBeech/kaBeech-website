@@ -124,7 +124,7 @@ export default component$(() => {
           },
           {
             fullMessage:
-              "I wanna learn about Al Lugha Misma (I understand it's not built yet)",
+              "I'm interested in Al Lugha Misma (I understand it's not built yet)",
             linkTile: linkTiles.fun_alLughaMisma,
           },
           {
