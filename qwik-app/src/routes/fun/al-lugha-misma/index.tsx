@@ -13,12 +13,12 @@ export default component$(() => {
       <Beechy />
       <div class="screenContents">
         <h1>Al Lugha Misma</h1>
-        <p>You like "potato (English)," and I like "baTaaTaa (Arabic)!"</p>
-        <p>Or "papa (Spanish)"</p>
+        <p>You like "potato (English)," and I like "baTaaTaa (Arabic)"</p>
+        <p>Or "papa (Spanish)!"</p>
         <p>
-          We all say words a little bit differently. But sometimes I'm amazed by
-          how similar our words are, even across languages! For example, here's
-          how we say "potato" in a few languages:
+          We all say words a little differently. But sometimes I'm amazed by how
+          similar our words are, even across languages! For example, here's how
+          we say "potato" in a few languages:
         </p>
         {/* Fetch potato legend from Al Lugha Misma API and put it in a table */}
         {/* Hindi: paTeTo, Hawaiian: ʻUala kahiki ('uala means sweet potato, kahiki 

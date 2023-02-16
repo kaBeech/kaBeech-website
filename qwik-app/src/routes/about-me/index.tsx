@@ -27,7 +27,7 @@ export default component$(() => {
         </p>
         <p>
           If you're interested, I prefer{" "}
-          <Link class="link" href="/about-me/pronouns">
+          <Link class="link" href="pronouns">
             xe/xyr or ze/zyr pronouns
           </Link>
           . I'm not very strict about it though, as long as you're being
@@ -35,8 +35,14 @@ export default component$(() => {
         </p>
         <p>
           When I'm not coding you can probably find me running, building fantasy
-          worlds for tabletop roleplaying games, SHREDDING guitar, and/or
-          thinking deeply about the nature of being
+          worlds for tabletop roleplaying games, or SHREDDING guitar
+        </p>
+        <p>
+          I also have an{" "}
+          <Link class="link" href="beechy">
+            avatar named Beechy
+          </Link>
+          , who is the one saying these words to you!
         </p>
       </div>
       <ResponseBar
