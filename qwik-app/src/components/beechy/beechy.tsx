@@ -7,7 +7,7 @@ export const Beechy = component$(() => {
   useStylesScoped$(styles);
 
   return (
-    <>
+    <div>
       <div class="beechyGradient roundCornersTop flex mobileSpacing">
         <Logo class="tinyHide" />
         <img
@@ -18,6 +18,6 @@ export const Beechy = component$(() => {
         <Hamburger class="tinyHide hidden" />
       </div>
       <div class="screenGradientTop heightHalf"></div>
-    </>
+    </div>
   );
 });

@@ -392,6 +392,10 @@ button {
   height: 0.5em;
 }
 
+.height2 {
+  height: 2em;
+}
+
 .tall {
   height: 1000vh;
 }
