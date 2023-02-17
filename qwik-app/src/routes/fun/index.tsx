@@ -107,6 +107,26 @@ export default component$(() => {
           I'm proud of my work, and I very much look forward to completing the
           challenges when I have more spare time!
         </p>
+        <h2>Al Lugha Misma</h2>
+        <img
+          class="tempLogo"
+          src="/icons/happy-outline.svg"
+          alt="A smiling face (used as a placeholder for the Al Lugha Misma logo)"
+        />
+        <button>
+          <Link href="al-lugha-misma">Check out Al Lugha Misma!</Link>
+        </button>
+        <p>You like "potato (English)," and I like "baTaaTaa (Arabic)"</p>
+        <p>Or "papa (Spanish)!"</p>
+        <p>
+          This is a comparative linguistics game playing with similarities in
+          words across languages
+        </p>
+        <p>
+          Al Lugha Misma is under construction and currently only has an in
+          information page on this site. But if you'd like to learn more about
+          the project, feel free to check it out!
+        </p>
       </div>
       <ResponseBar
         responses={[
@@ -124,13 +144,13 @@ export default component$(() => {
           },
           {
             fullMessage:
-              "I'm interested in Al Lugha Misma (I understand it's not built yet)",
-            linkTile: linkTiles.fun_alLughaMisma,
+              "I'm a big logic nerd like you - lemme see your solutions for Advent Of Code 2022!",
+            linkTile: linkTiles.fun_adventOfCode,
           },
           {
             fullMessage:
-              "I'm a big logic nerd like you - lemme see your solutions for Advent Of Code 2022!",
-            linkTile: linkTiles.fun_adventOfCode,
+              "I'd like to learn more about Al Lugha Misma (I understand it's not implemented yet)",
+            linkTile: linkTiles.fun_alLughaMisma,
           },
           {
             fullMessage: "There's something else I want to ask...",

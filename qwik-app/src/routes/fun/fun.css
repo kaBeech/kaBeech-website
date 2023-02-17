@@ -5,3 +5,7 @@ img {
   width: 8em;
   aspect-ratio: 1;
 }
+
+.tempLogo {
+  background-color: var(--kaBeech-main-background);
+}
