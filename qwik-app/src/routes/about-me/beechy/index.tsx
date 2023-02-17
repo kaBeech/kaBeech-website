@@ -10,8 +10,8 @@ export default component$(() => {
     <div class="screenContainer">
       <Beechy />
       <div class="screenContents">
-        <h1>Beechy</h1>
-        <p>Oh! Thanks for asking - It's pretty great!</p>
+        <h1>About Me, Beechy</h1>
+        <p>Oh! Thanks for asking - being me pretty great!</p>
         <p>
           Being Kyle's avatar is basically like being a conduit for zyr
           personality (I also prefer{" "}
