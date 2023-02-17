@@ -11,11 +11,11 @@ export default component$(() => {
       <div class="screenContents">
         <h1>Pronouns</h1>
         <p>Why, thank you for asking!</p>
-        <h2 class="responseTextLight">What are your preferred pronouns?</h2>
+        <h3 class="responseTextLight">What are your preferred pronouns?</h3>
         <p>Content to be added!</p>
-        <h2 class="responseTextLight">Why not use they/them?</h2>
+        <h3 class="responseTextLight">Why not use they/them?</h3>
         <p>Content to be added!</p>
-        <h2 class="responseTextLight">Why both xe/xyr and ze/zyr?</h2>
+        <h3 class="responseTextLight">Why both xe/xyr and ze/zyr?</h3>
         <p>Content to be added!</p>
       </div>
       <ResponseBar
