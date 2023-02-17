@@ -16,8 +16,8 @@ export default component$(() => {
         </p>
         <p>
           Please be aware that this website is very much a work in progress.
-          Much of it is expected to be broken or not yet built out. But feel
-          free to poke around if you like!
+          Much of it is not yet built out. But plese feel welcome to look
+          around!
         </p>
         <h3>What would you like to do?</h3>
         <p>
