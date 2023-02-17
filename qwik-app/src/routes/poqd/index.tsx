@@ -14,10 +14,12 @@ export default component$(() => {
       <Beechy />
       <div class="screenContents">
         <h1>What is the POQD stack?</h1>
-        <h2>
+        <h3 class="noticeTop">
           Notice: Some sections of this page have sparse information in them.
+        </h3>
+        <h3 class="noticeBottom">
           More content will be added to this page soon!
-        </h2>
+        </h3>
         <p>
           This website was built using next-generation JavaScript software in a
           group (or 'stack') I like to call 'POQD'
