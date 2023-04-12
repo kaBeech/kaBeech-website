@@ -333,6 +333,11 @@ export default component$(() => {
           performant way
         </p>
         <p>I like tools that encourage me to grow ♡ </p>
+        <p>
+          <Link class="link margin1" href="../">
+            {"<-- Back"}
+          </Link>{" "}
+        </p>
       </div>
 
       <ResponseBar

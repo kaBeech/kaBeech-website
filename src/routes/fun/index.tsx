@@ -127,6 +127,11 @@ export default component$(() => {
           information page on this site. But if you'd like to learn more about
           the project, feel free to check it out!
         </p>
+        <p>
+          <Link class="link margin1" href="../">
+            {"<-- Back"}
+          </Link>{" "}
+        </p>
       </div>
       <ResponseBar
         responses={[

@@ -23,6 +23,11 @@ export default component$(() => {
             find me on GitHub
           </Link>
         </p>
+        <p>
+          <Link class="link margin1" href="../">
+            {"<-- Back"}
+          </Link>{" "}
+        </p>
       </div>
 
       <ResponseBar
