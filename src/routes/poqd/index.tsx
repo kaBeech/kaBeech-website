@@ -39,23 +39,55 @@ export default component$(() => {
           </tr>
           <tr>
             <th>Database</th>
-            <td>MongoDB</td>
-            <td>PostgreSQL</td>
-          </tr>{" "}
+            <td>
+              <Link class="link" href="https://www.mongodb.com/">
+                MongoDB
+              </Link>
+            </td>
+            <td>
+              <Link class="link" href="https://www.postgresql.org/">
+                PostgreSQL
+              </Link>
+            </td>
+          </tr>
           <tr>
             <th>Backend</th>
-            <td>Express</td>
-            <td>Oak</td>
-          </tr>{" "}
+            <td>
+              <Link class="link" href="https://expressjs.com/">
+                Express
+              </Link>
+            </td>
+            <td>
+              <Link class="link" href="https://oakserver.github.io/oak/">
+                Oak
+              </Link>
+            </td>
+          </tr>
           <tr>
             <th>Frontend</th>
-            <td>React</td>
-            <td>Qwik</td>
-          </tr>{" "}
+            <td>
+              <Link class="link" href="https://react.dev/">
+                React
+              </Link>
+            </td>
+            <td>
+              <Link class="link" href="https://qwik.builder.io/">
+                Qwik
+              </Link>
+            </td>
+          </tr>
           <tr>
             <th>Runtime</th>
-            <td>Node.js</td>
-            <td>Deno</td>
+            <td>
+              <Link class="link" href="https://nodejs.org/en">
+                Node.js
+              </Link>
+            </td>
+            <td>
+              <Link class="link" href="https://deno.land/">
+                Deno
+              </Link>
+            </td>
           </tr>
         </table>
         <h2>Database</h2>
