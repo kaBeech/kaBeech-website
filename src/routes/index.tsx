@@ -1,5 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import { Link } from "@builder.io/qwik-city";
 import { Beechy } from "~/components/beechy/beechy";
 import { ResponseBar } from "~/components/responseBar/responseBar";
 import { linkTiles } from "~/util/linkTiles";
@@ -14,16 +15,52 @@ export default component$(() => {
         <p>
           My name is Beechy, and I'll be your guide here. I'm glad to meet you!
         </p>
-        <p>
-          Please be aware that this website is very much a work in progress.
-          Much of it is not yet built out. But plese feel welcome to look
-          around!
-        </p>
         <h3>What would you like to do?</h3>
         <p>
           Please help me direct your experience by chosing a response below.
-          Just click or tap a button!
+          <strong>
+            {" "}
+            Just click or tap a button at the bottom of the screen!
+          </strong>
         </p>
+        <p>
+          Alternatively, you can click a link in the text here or use the
+          hamburger button in the upper right
+        </p>
+        <h4>If you are interested, I can:</h4>
+        <ul>
+          <li class="margin1">
+            - Show you{" "}
+            <Link class="link" href="/fun">
+              some fun toys
+            </Link>{" "}
+          </li>
+          <li class="margin1">
+            -{" "}
+            <Link class="link" href="/about-me">
+              Talk about myself
+            </Link>{" "}
+          </li>
+          <li class="margin1">
+            - Tell you about the{" "}
+            <Link class="link" href="/poqd">
+              tech used to build this website
+            </Link>{" "}
+          </li>
+          <li class="margin1">
+            - Show you{" "}
+            <Link class="link" href="/projects">
+              some other projects I've made/worked on
+            </Link>{" "}
+          </li>
+          <li class="margin1">
+            - Give you my virtual business card (
+            <Link class="link" href="/contact">
+              Contact Info
+            </Link>{" "}
+            )
+          </li>
+        </ul>
       </div>
       <ResponseBar
         responses={[
