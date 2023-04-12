@@ -1,8 +1,8 @@
 import {
   component$,
-  useClientEffect$,
   useStore,
   useStylesScoped$,
+  useVisibleTask$,
 } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { useLocation } from "@builder.io/qwik-city";
@@ -20,7 +20,7 @@ export default component$(() => {
     number: 20,
   });
 
-  useClientEffect$(({ cleanup }) => {
+  useVisibleTask$(({ cleanup }) => {
     const timeout = setTimeout(() => (state.count = 1), 500);
     cleanup(() => clearTimeout(timeout));
 
@@ -50,9 +50,9 @@ export default component$(() => {
           class={{
             host: true,
             flex1: true,
-            pride: loc.query["pride"] === "true",
-            romanesca: loc.query["romanesca"] === "true",
-            helix: loc.query["helix"] === "true",
+            pride: loc.url.searchParams.get("pride") === "true",
+            romanesca: loc.url.searchParams.get("romanesca") === "true",
+            helix: loc.url.searchParams.get("helix") === "true",
           }}
         >
           {Array.from({ length: state.number }, (_, i) => (
