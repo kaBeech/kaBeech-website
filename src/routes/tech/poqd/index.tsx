@@ -369,7 +369,7 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "kaBeech - POQD Stack",
+  title: "POQD Stack - kaBeech",
   meta: [
     {
       name: "description",
