@@ -127,11 +127,6 @@ export default component$(() => {
           information page on this site. But if you'd like to learn more about
           the project, feel free to check it out!
         </p>
-        <p>
-          <Link class="link margin1" href="../">
-            {"<-- Back"}
-          </Link>{" "}
-        </p>
         <h2>Namagen</h2>
         <img
           class="tempLogo"
@@ -153,7 +148,7 @@ export default component$(() => {
         <p>
           <Link class="link margin1" href="../">
             {"<-- Back"}
-          </Link>{" "}
+          </Link>
         </p>
       </div>
       <ResponseBar
