@@ -53,8 +53,9 @@ export default component$(() => {
             (more info on Qwik here)
           </Link>{" "}
           as an exhibition showing how fast Qwik can be at loading reactive
-          components. I tweaked the colors and added some extra visualizer modes
+          components
         </p>
+        <p>I tweaked the colors and added extra visualizer modes</p>
         <h2>Tic-Tac-Toebot</h2>
         <img src="/tic-tac-toebot.png" alt="A snapshot of the Tic-Tac-Toebot" />
         <button>
