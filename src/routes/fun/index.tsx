@@ -87,7 +87,7 @@ export default component$(() => {
         <h2>Al Lugha Misma</h2>
         <img
           class="tempLogo"
-          src="/icons/happy-outline.svg"
+          src="/icons/alLughaMismaColorized2.png"
           alt="A smiling face (used as a placeholder for the Al Lugha Misma logo)"
         />
         <button>
