@@ -25,14 +25,14 @@ export default component$(() => {
         <h2>WebAssembly (WASM)</h2>
         <p>TBA</p>
         <p>
-          <Link class="link" href="poqd">
+          <Link class="link" href="wasm">
             Click here to learn more about WebAssembly
           </Link>
         </p>
         <h2>Edge Functions</h2>
         <p>TBA</p>
         <p>
-          <Link class="link" href="poqd">
+          <Link class="link" href="edge">
             Click here to learn more about edge functions
           </Link>
         </p>
