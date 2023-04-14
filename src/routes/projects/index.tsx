@@ -18,6 +18,18 @@ export default component$(() => {
         <h3>
           Scroll down or use the response buttons below to check them out!
         </h3>
+        <h2>Wyrld Dashboard</h2>
+        <img
+          src="/icons/happy-outline.svg"
+          alt="A smiling face (used as a placeholder for the Wyrld Dashboard or Far Reach Co logo)"
+        />
+        <button>
+          <Link href="https://farreachco.com/">Check out Wyrld Dashboard!</Link>
+        </button>
+        <p>
+          Fast and unobtrusive cloud-based tools for tabletop roleplaying games
+        </p>
+        <p>Content coming soon!</p>
         <h2>Audiopile</h2>
         <img
           src="/waveform.png"
@@ -100,6 +112,10 @@ export default component$(() => {
 
       <ResponseBar
         responses={[
+          {
+            fullMessage: "Time to play some D&D!!!",
+            linkTile: linkTiles.projects_wyrldDashboard,
+          },
           {
             fullMessage:
               "Ooh! I've been looking for a simple audio sharing tool!",

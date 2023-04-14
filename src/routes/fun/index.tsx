@@ -104,7 +104,7 @@ export default component$(() => {
         </p>
         <p>
           It also serves as an example of how a Web Assembly application built
-          with Rust can be integrated into a JavaSctipt environment
+          with Rust can be integrated into a JavaScript environment
         </p>
         <p>
           <Link class="link margin1" href="../">
@@ -127,13 +127,7 @@ export default component$(() => {
             linkTile: linkTiles.fun_ticTacToebot,
           },
           {
-            fullMessage:
-              "I'm a big logic nerd like you - lemme see your solutions for Advent Of Code 2022!",
-            linkTile: linkTiles.fun_adventOfCode,
-          },
-          {
-            fullMessage:
-              "I'd like to learn more about Al Lugha Misma (I understand it's not implemented yet)",
+            fullMessage: "I'd like to learn more about Al Lugha Misma",
             linkTile: linkTiles.fun_alLughaMisma,
           },
           {
