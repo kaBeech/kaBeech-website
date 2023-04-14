@@ -15,12 +15,6 @@ export default component$(() => {
       <div class="screenContents">
         <h1>Fun and Games!</h1>
         <p>Here are some cool things I've made!</p>
-        <p>
-          Be sure to read the descriptions, as some are still works in progress
-        </p>
-        <h3>
-          Scroll down or use the response buttons below to check them out!
-        </h3>
         <h2>Buddh-A-Sketch</h2>
         <img
           src="/favicon.png"
