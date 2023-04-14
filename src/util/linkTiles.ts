@@ -67,7 +67,7 @@ export const linkTiles = {
   fun_alLughaMisma: {
     linkPath: "/fun/al-lugha-misma",
     text: "Al Lugha Misma",
-    icon: "/icons/happy-outline.svg",
+    icon: "/icons/alLughaMismaLogo.png",
   },
   fun_namagen: {
     linkPath: "/fun/namagen",
