@@ -15,7 +15,7 @@ export const Beechy = component$(() => {
           src="/beechy.svg"
           alt="Beechy, kaBeech's avatar"
         />
-        <Hamburger class="tinyHide hidden" />
+        <Hamburger class="tinyHide" />
       </div>
       <div class="screenGradientTop heightHalf"></div>
     </div>

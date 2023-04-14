@@ -19,6 +19,7 @@
   --kaBeech-color-orig-beechy-top: #178155;
   --kaBeech-color-orig-beechy-bottom: #3367a0;
   --kaBeech-color-starry-field: #000406;
+  --kaBeech-color-starry-field-semitransparent: #000406b4;
   --kaBeech-color-terminal-idle: #00141a;
   --kaBeech-color-terminal-idle-transparent: #00141a00;
   --kaBeech-color-terminal-idle-semitransparent: #00141ab4;
@@ -37,6 +38,9 @@
 
 :root {
   --kaBeech-main-background: var(--kaBeech-color-starry-field);
+  --kaBeech-main-background-semitransparent: var(
+    --kaBeech-color-starry-field-semitransparent
+  );
   --kaBeech-screen-background: var(--kaBeech-color-terminal-idle);
   --kaBeech-screen-background-transparent: var(
     --kaBeech-color-terminal-idle-transparent
@@ -173,7 +177,7 @@ button {
     display: flex;
   }
   .mobileSpacing {
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 1em;
   }
   .mobileColumn {
@@ -183,10 +187,12 @@ button {
 
 @media (max-width: 440px) {
   .tinyHide {
-    display: none;
+    display: flex;
+    width: 7em;
+    max-width: 10%;
   }
   .mobileSpacing {
-    justify-content: space-evenly;
+    justify-content: center;
   }
   .tinyColumn {
     flex-direction: column;
