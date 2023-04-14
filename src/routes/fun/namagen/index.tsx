@@ -82,6 +82,13 @@ export default component$(() => {
           Mamobibu is a very simple test language I made to test Namagen's
           functionality
         </p>
+        <p>
+          There are five vowels in Mamobibu (a, e, i, o, and u), but only two
+          consonants (b and m)! It is truly a wonder how the Mamobibu people can
+          express such complex ideas with so few language sounds. This is
+          achieved through extensive agglutination and changes in the meanings
+          of words based on their relationship to each other in a sentence
+        </p>
         <h3>Saurian</h3>
         <p>
           Random Saurain Name:{" "}
