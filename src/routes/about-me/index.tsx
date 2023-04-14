@@ -54,7 +54,7 @@ export default component$(() => {
         responses={[
           {
             fullMessage: "Wait, what's all this about a poked stack?",
-            linkTile: linkTiles.tech,
+            linkTile: linkTiles.tech_poqd,
           },
           {
             fullMessage: "Get me to your GitHub!",

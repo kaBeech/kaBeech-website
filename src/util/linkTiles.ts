@@ -30,7 +30,7 @@ export const linkTiles = {
     icon: "/icons/person-circle-outline.svg",
   },
   tech: {
-    linkPath: "/poqd",
+    linkPath: "/tech",
     text: "Tech",
     icon: "/icons/cpu.svg",
   },
@@ -103,6 +103,21 @@ export const linkTiles = {
     linkPath: "/about-me/beechy",
     text: "Beechy",
     icon: "/icons/happy-outline.svg",
+  },
+  tech_poqd: {
+    linkPath: "/tech/poqd",
+    text: "POQD",
+    icon: "/icons/server-outline.svg",
+  },
+  tech_edge: {
+    linkPath: "/tech/edge",
+    text: "Edge Functions",
+    icon: "/icons/server-outline.svg",
+  },
+  tech_wasm: {
+    linkPath: "/tech/wasm",
+    text: "WebAssembly",
+    icon: "/icons/server-outline.svg",
   },
   poqd_postgres: {
     linkPath: "https://www.postgresql.org/",

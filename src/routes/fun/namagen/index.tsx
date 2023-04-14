@@ -143,7 +143,7 @@ export default component$(() => {
         responses={[
           {
             fullMessage:
-              "Wow, that works fast! Please tell me more about the tech used to build it",
+              "Wow, that works fast! Please tell me more about the tech you used to build it",
             linkTile: linkTiles.tech,
           },
           {
