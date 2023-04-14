@@ -50,7 +50,7 @@ export default component$(() => {
           <li class="margin1">
             - Show you{" "}
             <Link class="link" href="/projects">
-              some other projects I've made/worked on
+              some other projects I've worked on
             </Link>{" "}
           </li>
           <li class="margin1">
@@ -79,8 +79,7 @@ export default component$(() => {
             linkTile: linkTiles.tech,
           },
           {
-            fullMessage:
-              "I'm interested in your engineering career. What are some of the projects you're most proud of?",
+            fullMessage: "Show me some projects you've worked on!",
             linkTile: linkTiles.projects,
           },
           {
