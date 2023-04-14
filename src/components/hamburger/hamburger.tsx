@@ -50,12 +50,8 @@ export const Hamburger = component$((props: HamburgerProps) => {
               alt="About Me"
             />
           </Link>
-          <Link class="link" href="/poqd">
-            <img
-              class="lazy"
-              src="/icons/cpu.svg"
-              alt="Tech used on this website (the POQD stack)"
-            />
+          <Link class="link" href="/tech">
+            <img class="lazy" src="/icons/cpu.svg" alt="Technology" />
           </Link>{" "}
           <Link class="link" href="/projects">
             <img class="lazy" src="/icons/hammer-outline.svg" alt="Projects" />
