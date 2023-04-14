@@ -15,7 +15,7 @@ export default component$(() => {
           My name's Kyle Beechly and I'm a software engineer from the Pacific
           Northwest (in America). I built this site to showcase some of my work
           using the new{" "}
-          <Link class="link" href="/poqd">
+          <Link class="link" href="/tech/poqd">
             POQD stack
           </Link>
         </p>
