@@ -30,6 +30,19 @@ img {
   margin-left: 0.5em;
 }
 
+.blink {
+  border-style: solid;
+  border-width: 0.1em;
+  background-color: var(--kaBeech-main-background);
+  border-color: rgba(23, 129, 86, 0.19);
+  border-radius: 1em;
+  box-shadow: 0 0em 0.4em 0.05em rgba(0, 160, 149, 0.362),
+    0 0em 2.5em 0 rgba(1, 89, 125, 0.412);
+  padding: 0.25em 0.5em;
+  /* margin: 0.35em -0.5em 0 0.5em; */
+  margin-left: 0.5em;
+}
+
 @media (max-width: 1000px) {
   img {
     margin: 0;
@@ -39,7 +52,24 @@ img {
     position: absolute;
     top: 0.8em;
     right: 2em;
+    align-items: end;
   }
+}
+
+.shadow {
+  align-items: end;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+  max-height: 80vh;
+  background-color: var(--kaBeech-main-background-semitransparent);
+  padding: 0.5em 0.8em;
+  border-radius: 1em;
+  border-style: solid;
+  border-color: var(--kaBeech-main-background);
+  border-width: 0.15em;
 }
 
 li {
