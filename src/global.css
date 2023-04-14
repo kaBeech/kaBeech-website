@@ -173,7 +173,7 @@ button {
     display: flex;
   }
   .mobileSpacing {
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 1em;
   }
   .mobileColumn {
@@ -183,10 +183,12 @@ button {
 
 @media (max-width: 440px) {
   .tinyHide {
-    display: none;
+    display: flex;
+    width: 7em;
+    max-width: 10%;
   }
   .mobileSpacing {
-    justify-content: space-evenly;
+    justify-content: center;
   }
   .tinyColumn {
     flex-direction: column;
