@@ -17,14 +17,29 @@ export default component$(() => {
         </p>
         <h2>The POQD Stack</h2>
         <p>TBA</p>
+        <p>
+          <Link class="link" href="poqd">
+            Click here to learn more about the POQD stack
+          </Link>
+        </p>
         <h2>WebAssembly (WASM)</h2>
         <p>TBA</p>
+        <p>
+          <Link class="link" href="poqd">
+            Click here to learn more about WebAssembly
+          </Link>
+        </p>
         <h2>Edge Functions</h2>
         <p>TBA</p>
         <p>
+          <Link class="link" href="poqd">
+            Click here to learn more about edge functions
+          </Link>
+        </p>
+        <p>
           <Link class="link margin1" href="../">
             {"<-- Back"}
-          </Link>{" "}
+          </Link>
         </p>
       </div>
 
