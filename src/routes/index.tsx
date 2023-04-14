@@ -24,7 +24,7 @@ export default component$(() => {
           </strong>
         </p>
         <p>
-          Alternatively, you can click a link in the text here or use the
+          Alternatively, you can click a link in the text below or use the
           hamburger button in the upper right
         </p>
         <h4>If you are interested, I can:</h4>
