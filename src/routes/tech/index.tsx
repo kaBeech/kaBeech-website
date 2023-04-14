@@ -10,19 +10,17 @@ export default component$(() => {
     <div class="screenContainer">
       <Beechy />
       <div class="screenContents">
-        <h1>Contact</h1>
+        <h1>This Website is Brought to You in Part by Cool Technology!</h1>
         <p>
-          You can email me at{" "}
-          <Link class="link" href="mailto:contact@kabeech.com">
-            contact@kaBeech.com
-          </Link>
+          There's some really cool new technology available for web development,
+          and this site makes use of it! For example:
         </p>
-        <p>
-          You can also{" "}
-          <Link class="link" href="https://github.com/kaBeech">
-            find me on GitHub
-          </Link>
-        </p>
+        <h2>The POQD Stack</h2>
+        <p>TBA</p>
+        <h2>WebAssembly (WASM)</h2>
+        <p>TBA</p>
+        <h2>Edge Functions</h2>
+        <p>TBA</p>
         <p>
           <Link class="link margin1" href="../">
             {"<-- Back"}
@@ -33,12 +31,16 @@ export default component$(() => {
       <ResponseBar
         responses={[
           {
-            fullMessage: "I want to get in touch with you!",
-            linkTile: linkTiles.email,
+            fullMessage: "I want to learn more about the POQD stack",
+            linkTile: linkTiles.tech_poqd,
           },
           {
-            fullMessage: "Get me to your GitHub!",
-            linkTile: linkTiles.gitHub,
+            fullMessage: "I want to learn more about Edge Functions",
+            linkTile: linkTiles.tech_edge,
+          },
+          {
+            fullMessage: "I want to learn more about WebAssembly",
+            linkTile: linkTiles.tech_wasm,
           },
           {
             fullMessage: "There's something else I want to ask...",
@@ -51,11 +53,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "kaBeech - Contact",
+  title: "kaBeech - Tech",
   meta: [
     {
       name: "description",
-      content: "Contact Me!",
+      content: "Information about the software used to build this site",
     },
   ],
 };

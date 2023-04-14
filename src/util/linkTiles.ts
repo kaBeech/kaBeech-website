@@ -30,7 +30,7 @@ export const linkTiles = {
     icon: "/icons/person-circle-outline.svg",
   },
   tech: {
-    linkPath: "/poqd",
+    linkPath: "/tech",
     text: "Tech",
     icon: "/icons/cpu.svg",
   },
@@ -59,15 +59,20 @@ export const linkTiles = {
     text: "Tic-Tac-Toebot",
     icon: "/icons/x-square.svg",
   },
+  fun_adventOfCode: {
+    linkPath: "https://github.com/kaBeech/Advent-Of-Code-2022",
+    text: "Advent Of Code",
+    icon: "/icons/tree.svg",
+  },
   fun_alLughaMisma: {
     linkPath: "/fun/al-lugha-misma",
     text: "Al Lugha Misma",
     icon: "/icons/happy-outline.svg",
   },
-  fun_adventOfCode: {
-    linkPath: "https://github.com/kaBeech/Advent-Of-Code-2022",
-    text: "Advent Of Code",
-    icon: "/icons/tree.svg",
+  fun_namagen: {
+    linkPath: "/fun/namagen",
+    text: "Namagen",
+    icon: "/icons/happy-outline.svg",
   },
   flower_stereochrome: {
     linkPath: "./",
@@ -98,6 +103,21 @@ export const linkTiles = {
     linkPath: "/about-me/beechy",
     text: "Beechy",
     icon: "/icons/happy-outline.svg",
+  },
+  tech_poqd: {
+    linkPath: "/tech/poqd",
+    text: "POQD",
+    icon: "/icons/server-outline.svg",
+  },
+  tech_edge: {
+    linkPath: "/tech/edge",
+    text: "Edge Functions",
+    icon: "/icons/server.svg",
+  },
+  tech_wasm: {
+    linkPath: "/tech/wasm",
+    text: "WebAssembly",
+    icon: "/icons/monitor.svg",
   },
   poqd_postgres: {
     linkPath: "https://www.postgresql.org/",

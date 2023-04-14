@@ -44,12 +44,17 @@ export default component$(() => {
           </Link>
           , who is the one saying these words to you!
         </p>
+        <p>
+          <Link class="link margin1" href="../">
+            {"<-- Back"}
+          </Link>{" "}
+        </p>
       </div>
       <ResponseBar
         responses={[
           {
             fullMessage: "Wait, what's all this about a poked stack?",
-            linkTile: linkTiles.tech,
+            linkTile: linkTiles.tech_poqd,
           },
           {
             fullMessage: "Get me to your GitHub!",

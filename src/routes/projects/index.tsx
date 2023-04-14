@@ -1,5 +1,6 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
-import { DocumentHead, Link } from "@builder.io/qwik-city";
+import type { DocumentHead } from "@builder.io/qwik-city";
+import { Link } from "@builder.io/qwik-city";
 import { Beechy } from "~/components/beechy/beechy";
 import { ResponseBar } from "~/components/responseBar/responseBar";
 import { linkTiles } from "~/util/linkTiles";
@@ -50,6 +51,11 @@ export default component$(() => {
           <Link class="link" href="https://www.audiopile.cloud/">
             Audiopile
           </Link>
+        </p>
+        <p>
+          <Link class="link margin1" href="../">
+            {"<-- Back"}
+          </Link>{" "}
         </p>
       </div>
 

@@ -39,23 +39,55 @@ export default component$(() => {
           </tr>
           <tr>
             <th>Database</th>
-            <td>MongoDB</td>
-            <td>PostgreSQL</td>
-          </tr>{" "}
+            <td>
+              <Link class="link" href="https://www.mongodb.com/">
+                MongoDB
+              </Link>
+            </td>
+            <td>
+              <Link class="link" href="https://www.postgresql.org/">
+                PostgreSQL
+              </Link>
+            </td>
+          </tr>
           <tr>
             <th>Backend</th>
-            <td>Express</td>
-            <td>Oak</td>
-          </tr>{" "}
+            <td>
+              <Link class="link" href="https://expressjs.com/">
+                Express
+              </Link>
+            </td>
+            <td>
+              <Link class="link" href="https://oakserver.github.io/oak/">
+                Oak
+              </Link>
+            </td>
+          </tr>
           <tr>
             <th>Frontend</th>
-            <td>React</td>
-            <td>Qwik</td>
-          </tr>{" "}
+            <td>
+              <Link class="link" href="https://react.dev/">
+                React
+              </Link>
+            </td>
+            <td>
+              <Link class="link" href="https://qwik.builder.io/">
+                Qwik
+              </Link>
+            </td>
+          </tr>
           <tr>
             <th>Runtime</th>
-            <td>Node.js</td>
-            <td>Deno</td>
+            <td>
+              <Link class="link" href="https://nodejs.org/en">
+                Node.js
+              </Link>
+            </td>
+            <td>
+              <Link class="link" href="https://deno.land/">
+                Deno
+              </Link>
+            </td>
           </tr>
         </table>
         <h2>Database</h2>
@@ -301,6 +333,11 @@ export default component$(() => {
           performant way
         </p>
         <p>I like tools that encourage me to grow ♡ </p>
+        <p>
+          <Link class="link margin1" href="../">
+            {"<-- Back"}
+          </Link>{" "}
+        </p>
       </div>
 
       <ResponseBar
@@ -336,8 +373,7 @@ export const head: DocumentHead = {
   meta: [
     {
       name: "description",
-      content:
-        "Information about the POQD stack of JavaScript software used to build this site",
+      content: "Information about the POQD stack of JavaScript software",
     },
   ],
 };
