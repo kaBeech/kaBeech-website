@@ -38,7 +38,7 @@ import { linkTiles } from "~/util/linkTiles";
 export default component$(() => {
   const mamobibuName = useResource$(async () => {
     const response = await fetch(
-      `https://full-duck-87-dnv34518ks3g.deno.dev/mamobibu`
+      `https://full-duck-87-tas1n7h21xd0.deno.dev/mamobibu`
     );
     const data = await response.json();
     return (data.mamobibuName || "Error") as string;
@@ -46,7 +46,7 @@ export default component$(() => {
 
   const saurianName = useResource$(async () => {
     const response = await fetch(
-      `https://full-duck-87-ween4qz6p0cg.deno.dev/saurian`
+      `https://full-duck-87-tas1n7h21xd0.deno.dev/saurian`
     );
     const data = await response.json();
     // lazy
