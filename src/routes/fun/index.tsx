@@ -15,12 +15,6 @@ export default component$(() => {
       <div class="screenContents">
         <h1>Fun and Games!</h1>
         <p>Here are some cool things I've made!</p>
-        <p>
-          Be sure to read the descriptions, as some are still works in progress
-        </p>
-        <h3>
-          Scroll down or use the response buttons below to check them out!
-        </h3>
         <h2>Buddh-A-Sketch</h2>
         <img
           src="/favicon.png"
@@ -34,12 +28,12 @@ export default component$(() => {
         <p>
           This started as an emulation of a classic drawing toy and evolved to
           include functionality for meditative practice. Then I added
-          ever-mutating neon black colors because it's fun!
+          ever-mutating neon black colors because it looks cool
         </p>
         <p>
-          This is one of my first JavaScript projects, and still one of my
+          This is one of my first JavaScript projects and still one of my
           favorites. Currently it requires a mouse to use. It's not very
-          sophisticated, but it's a lot of fun and I love it!
+          sophisticated, but it's a lot of fun!
         </p>
         <h2>Namagen</h2>
         <img
@@ -56,7 +50,7 @@ export default component$(() => {
           used to suggest baby names!
         </p>
         <p>
-          It also serves as an example of how a Web Assembly application built
+          It also serves as an example of how a WebAssembly application built
           with Rust can be integrated into a JavaScript environment
         </p>
         <h2>Fractal Flower</h2>
@@ -73,7 +67,10 @@ export default component$(() => {
           as an exhibition showing how fast Qwik can be at loading reactive
           components
         </p>
-        <p>I tweaked the colors and added extra visualizer modes</p>
+        <p>
+          I tweaked the colors and added the 'Romanesca' and 'Helix' visualizer
+          modes
+        </p>
         <h2>Tic-Tac-Toebot</h2>
         <img src="/tic-tac-toebot.png" alt="A snapshot of the Tic-Tac-Toebot" />
         <button>
@@ -85,7 +82,7 @@ export default component$(() => {
         <p>
           My friend Andy thinks he can beat the Unbeatable Master. I think he
           thinks I spent more time on the AI than I did. If you feel like John
-          Henrying it up with him, go on and set the difficulty to Impossible
+          Henrying it up with him, go on and set the difficulty to 'Impossible'
         </p>
         <h2>Al Lugha Misma</h2>
         <img
@@ -96,11 +93,11 @@ export default component$(() => {
         <button>
           <Link href="al-lugha-misma">Check out Al Lugha Misma!</Link>
         </button>
-        <p>You like "potato (English)," and I like "baTaaTaa (Arabic)"</p>
-        <p>Or "papa (Spanish)!"</p>
+        <p>You like "potato" (English), and I like "baTaaTaa" (Arabic)</p>
+        <p>Or "papa" (Spanish)!</p>
         <p>
-          This is a comparative linguistics game playing with similarities in
-          words across languages
+          This is a comparative linguistics game celebrating similarities (and
+          differences!) in words across languages
         </p>
         <p>
           Al Lugha Misma is under construction and currently only has an
