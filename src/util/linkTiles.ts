@@ -112,12 +112,12 @@ export const linkTiles = {
   tech_edge: {
     linkPath: "/tech/edge",
     text: "Edge Functions",
-    icon: "/icons/server-outline.svg",
+    icon: "/icons/server.svg",
   },
   tech_wasm: {
     linkPath: "/tech/wasm",
     text: "WebAssembly",
-    icon: "/icons/server-outline.svg",
+    icon: "/icons/monitor.svg",
   },
   poqd_postgres: {
     linkPath: "https://www.postgresql.org/",
