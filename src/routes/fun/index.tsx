@@ -55,6 +55,7 @@ export default component$(() => {
           as an exhibition showing how fast Qwik can be at loading reactive
           components
         </p>
+        <p>I tweaked the colors and added extra visualizer modes</p>
         <h2>Tic-Tac-Toebot</h2>
         <img src="/tic-tac-toebot.png" alt="A snapshot of the Tic-Tac-Toebot" />
         <button>
@@ -67,45 +68,6 @@ export default component$(() => {
           My friend Andy thinks he can beat the Unbeatable Master. I think he
           thinks I spent more time on the AI than I did. If you feel like John
           Henrying it up with him, go on and set the difficulty to Impossible
-        </p>
-        <h2>Advent Of Code</h2>
-        <img
-          src="/adventOfCode.png"
-          alt="A star representing the Advent Of Code"
-        />
-        <button>
-          <Link href="https://github.com/kaBeech/Advent-Of-Code-2022">
-            Check out Advent Of Code!
-          </Link>
-        </button>
-        <p>Real holiday fun!</p>
-        <p>
-          Every year,{" "}
-          <Link class="link" href="https://twitter.com/ericwastl">
-            some blessed individual
-          </Link>{" "}
-          comes up with a holiday-themed adventure based on a series of logic
-          puzzles. Each day in December leading up to Christmas, one challenge
-          (and one piece of the story) is revealed. If you can solve that
-          challenge, a bit of the story is unravelled and the next day's
-          challenge is unlocked for you
-        </p>
-        <p>
-          If you're a big logic nerd like me this will become one of your
-          favorite winter traditions!
-        </p>
-        <p>
-          The link above will go to my repository of solutions to the
-          challenges. If you want to take a crack at the challenges yourself,{" "}
-          <Link class="link" href="https://adventofcode.com/">
-            here's a direct link to the homepage
-          </Link>
-        </p>
-        <p>
-          You may notice that I haven't finished the whole calendar for 2022.
-          That's true - my life got very busy all of a sudden this winter. But
-          I'm proud of my work, and I very much look forward to completing the
-          challenges when I have more spare time!
         </p>
         <h2>Al Lugha Misma</h2>
         <img
@@ -127,11 +89,6 @@ export default component$(() => {
           information page on this site. But if you'd like to learn more about
           the project, feel free to check it out!
         </p>
-        <p>
-          <Link class="link margin1" href="../">
-            {"<-- Back"}
-          </Link>{" "}
-        </p>
         <h2>Namagen</h2>
         <img
           class="tempLogo"
@@ -148,12 +105,12 @@ export default component$(() => {
         </p>
         <p>
           It also serves as an example of how a Web Assembly application built
-          with Rust can be integrated into a JavaSctipt environment
+          with Rust can be integrated into a JavaScript environment
         </p>
         <p>
           <Link class="link margin1" href="../">
             {"<-- Back"}
-          </Link>{" "}
+          </Link>
         </p>
       </div>
       <ResponseBar
@@ -171,13 +128,7 @@ export default component$(() => {
             linkTile: linkTiles.fun_ticTacToebot,
           },
           {
-            fullMessage:
-              "I'm a big logic nerd like you - lemme see your solutions for Advent Of Code 2022!",
-            linkTile: linkTiles.fun_adventOfCode,
-          },
-          {
-            fullMessage:
-              "I'd like to learn more about Al Lugha Misma (I understand it's not implemented yet)",
+            fullMessage: "I'd like to learn more about Al Lugha Misma",
             linkTile: linkTiles.fun_alLughaMisma,
           },
           {

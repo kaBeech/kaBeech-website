@@ -139,6 +139,11 @@ export const linkTiles = {
     text: "Deno",
     icon: "/icons/hard-drive.svg",
   },
+  projects_wyrldDashboard: {
+    linkPath: "https://farreachco.com/",
+    text: "Wyrld Dashboard",
+    icon: "/icons/happy-outline.svg",
+  },
   projects_audiopile: {
     linkPath: "https://www.audiopile.cloud/",
     text: "Audiopile",
