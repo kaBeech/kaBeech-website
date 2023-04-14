@@ -32,7 +32,7 @@ export default component$(() => {
         <h2>Edge Functions</h2>
         <p> Content coming soon...</p>
         <p>
-          <Link class="link" href="edge">
+          <Link class="link" href="edge-functions">
             Click here to learn more about edge functions
           </Link>
         </p>

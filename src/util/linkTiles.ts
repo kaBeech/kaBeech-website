@@ -110,7 +110,7 @@ export const linkTiles = {
     icon: "/icons/server-outline.svg",
   },
   tech_edge: {
-    linkPath: "/tech/edge",
+    linkPath: "/tech/edge-functions",
     text: "Edge Functions",
     icon: "/icons/server.svg",
   },
