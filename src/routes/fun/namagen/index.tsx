@@ -112,15 +112,40 @@ export default component$(() => {
           achieved through extensive agglutination and changes in the meanings
           of words based on their relationship to each other in a sentence
         </p>
-
+        <h2>Tech Used</h2>
+        <p>
+          Namagen is built using Rust, compiled to WebAssembly (aka WASM), and
+          then packaged for use in Crates, Webpack, Node.JS, and Deno
+        </p>
+        <p>
+          This pattern enables Namagen to be run at blazingly-fast WebAssembly
+          speeds either on a user's browser or as an edge function on a server
+          physically close to them
+        </p>
+        <p>
+          That means that with Namagen, you'll be able to{" "}
+          <Link class="link" href="https://xkcd.com/483/">
+            come up with fantasy nonsense faster than Neal Stephenson!
+          </Link>
+        </p>
+        <p>
+          <Link class="link" href="/tech">
+            Read more about the tech that makes this possible
+          </Link>
+        </p>
         <p>
           <Link class="link margin1" href="../">
             {"<-- Back"}
-          </Link>{" "}
+          </Link>
         </p>
       </div>
       <ResponseBar
         responses={[
+          {
+            fullMessage:
+              "Wow, that works fast! Please tell me more about the tech used to build it",
+            linkTile: linkTiles.tech,
+          },
           {
             fullMessage: "There's something else I want to ask...",
             linkTile: linkTiles.back,
