@@ -373,8 +373,7 @@ export const head: DocumentHead = {
   meta: [
     {
       name: "description",
-      content:
-        "Information about the POQD stack of JavaScript software used to build this site",
+      content: "Information about the POQD stack of JavaScript software",
     },
   ],
 };

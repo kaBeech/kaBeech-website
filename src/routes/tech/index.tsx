@@ -1,14 +1,11 @@
-import { component$, useStylesScoped$ } from "@builder.io/qwik";
+import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { Link } from "@builder.io/qwik-city";
 import { Beechy } from "~/components/beechy/beechy";
 import { ResponseBar } from "~/components/responseBar/responseBar";
 import { linkTiles } from "~/util/linkTiles";
-import styles from "./poqd.css?inline";
 
 export default component$(() => {
-  useStylesScoped$(styles);
-
   return (
     <div class="screenContainer">
       <Beechy />
@@ -16,7 +13,7 @@ export default component$(() => {
         <h1>This Website is Brought to You in Part by Cool Technology!</h1>
         <p>
           There's some really cool new technology available for web development,
-          and this site uses some of it! For example:
+          and this site makes use of it! For example:
         </p>
         <h2>The POQD Stack</h2>
         <p>TBA</p>
@@ -56,12 +53,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "kaBeech - POQD Stack",
+  title: "kaBeech - Tech",
   meta: [
     {
       name: "description",
-      content:
-        "Information about the POQD stack of JavaScript software used to build this site",
+      content: "Information about the software used to build this site",
     },
   ],
 };
