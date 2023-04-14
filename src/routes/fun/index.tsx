@@ -41,6 +41,24 @@ export default component$(() => {
           favorites. Currently it requires a mouse to use. It's not very
           sophisticated, but it's a lot of fun and I love it!
         </p>
+        <h2>Namagen</h2>
+        <img
+          class="tempLogo"
+          src="/icons/happy-outline.svg"
+          alt="A smiling face (used as a placeholder for the Namagen or Far Reach Co logo)"
+        />
+        <button>
+          <Link href="namagen">Check out Namagen!</Link>
+        </button>
+        <p>
+          Namagen randomly generates names in constructed languages. It is
+          intended for use in roleplaying games, but I suppose it could also be
+          used to suggest baby names!
+        </p>
+        <p>
+          It also serves as an example of how a Web Assembly application built
+          with Rust can be integrated into a JavaScript environment
+        </p>
         <h2>Fractal Flower</h2>
         <img src="/flower.svg" alt="A fractal flower budding" />
         <button>
@@ -89,24 +107,6 @@ export default component$(() => {
           information page on this site. But if you'd like to learn more about
           the project, feel free to check it out!
         </p>
-        <h2>Namagen</h2>
-        <img
-          class="tempLogo"
-          src="/icons/happy-outline.svg"
-          alt="A smiling face (used as a placeholder for the Namagen or Far Reach Co logo)"
-        />
-        <button>
-          <Link href="namagen">Check out Namagen!</Link>
-        </button>
-        <p>
-          Namagen randomly generates names in constructed languages. It is
-          intended for use in roleplaying games, but I suppose it could also be
-          used to suggest baby names!
-        </p>
-        <p>
-          It also serves as an example of how a Web Assembly application built
-          with Rust can be integrated into a JavaScript environment
-        </p>
         <p>
           <Link class="link margin1" href="../">
             {"<-- Back"}
@@ -120,6 +120,10 @@ export default component$(() => {
             linkTile: linkTiles.fun_buddhASketch,
           },
           {
+            fullMessage: "Ooh! I wanna try that fantasy name generator!",
+            linkTile: linkTiles.fun_namagen,
+          },
+          {
             fullMessage: "Show me that cool fractal flower!",
             linkTile: linkTiles.fun_flower,
           },
@@ -130,10 +134,6 @@ export default component$(() => {
           {
             fullMessage: "I'd like to learn more about Al Lugha Misma",
             linkTile: linkTiles.fun_alLughaMisma,
-          },
-          {
-            fullMessage: "Ooh! I wanna try that fantasy name generator!",
-            linkTile: linkTiles.fun_namagen,
           },
           {
             fullMessage: "There's something else I want to ask...",
