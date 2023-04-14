@@ -43,7 +43,7 @@ export default component$(() => {
           </li>
           <li class="margin1">
             - Tell you about the{" "}
-            <Link class="link" href="/poqd">
+            <Link class="link" href="/tech">
               tech used to build this website
             </Link>{" "}
           </li>
