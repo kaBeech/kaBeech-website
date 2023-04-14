@@ -38,5 +38,8 @@
     "vercel": "^28.4.17",
     "vite": "4.2.1",
     "vite-tsconfig-paths": "3.5.0"
+  },
+  "dependencies": {
+    "qwik": "^1.0.57"
   }
 }
