@@ -123,9 +123,32 @@ export default component$(() => {
           words across languages
         </p>
         <p>
-          Al Lugha Misma is under construction and currently only has an in
+          Al Lugha Misma is under construction and currently only has an
           information page on this site. But if you'd like to learn more about
           the project, feel free to check it out!
+        </p>
+        <p>
+          <Link class="link margin1" href="../">
+            {"<-- Back"}
+          </Link>{" "}
+        </p>
+        <h2>Namagen</h2>
+        <img
+          class="tempLogo"
+          src="/icons/happy-outline.svg"
+          alt="A smiling face (used as a placeholder for the Namagen or Far Reach Co logo)"
+        />
+        <button>
+          <Link href="namagen">Check out Namagen!</Link>
+        </button>
+        <p>
+          Namagen randomly generates names in constructed languages. It is
+          intended for use in roleplaying games, but I suppose it could also be
+          used to suggest baby names!
+        </p>
+        <p>
+          It also serves as an example of how a Web Assembly application built
+          with Rust can be integrated into a JavaSctipt environment
         </p>
         <p>
           <Link class="link margin1" href="../">
@@ -156,6 +179,10 @@ export default component$(() => {
             fullMessage:
               "I'd like to learn more about Al Lugha Misma (I understand it's not implemented yet)",
             linkTile: linkTiles.fun_alLughaMisma,
+          },
+          {
+            fullMessage: "Ooh! I wanna try that fantasy name generator!",
+            linkTile: linkTiles.fun_namagen,
           },
           {
             fullMessage: "There's something else I want to ask...",
