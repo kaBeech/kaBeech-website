@@ -157,11 +157,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "Al Lugha Misma - kaBeech",
+  title: "Namagen - kaBeech",
   meta: [
     {
       name: "description",
-      content: "Al Lugha Misma - a comparitive linguistics game",
+      content: "Namagen - a fantasy name generator",
     },
   ],
 };
