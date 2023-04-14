@@ -69,14 +69,37 @@ export default component$(() => {
           it a try!
         </p>
         <h2>Currently Implemented Languages</h2>
+        <h3>Saurian (Ḍaṭunḍiu)</h3>
+        <p>
+          Random Saurain Name:{" "}
+          <strong>
+            <Resource
+              value={saurianName}
+              onPending={() => <>Loading...</>}
+              onResolved={(saurianName) => <>{saurianName}</>}
+            />
+          </strong>
+        </p>
+        <p>
+          Saurian (or Ḍaṭunḍiu) is a language we are developing for a group of
+          dinosaur people in Far Reach Co.'s fantasy roleplaying game setting
+        </p>
+        <p>
+          Since some Ḍaṭunḍii individuals have lips, some have beaks, and all
+          may or may not have teeth, Ḍaṭunḍiu makes less of a distinction
+          between different sounds made at the front of the mouth and has more
+          variety in sounds made with the back of the throat
+        </p>
         <h3>Mamobibu</h3>
         <p>
           Random Mamobibu Name:{" "}
-          <Resource
-            value={mamobibuName}
-            onPending={() => <>Loading...</>}
-            onResolved={(mamobibuName) => <>{mamobibuName}</>}
-          />
+          <strong>
+            <Resource
+              value={mamobibuName}
+              onPending={() => <>Loading...</>}
+              onResolved={(mamobibuName) => <>{mamobibuName}</>}
+            />
+          </strong>
         </p>
         <p>
           Mamobibu is a very simple test language I made to test Namagen's
@@ -89,25 +112,7 @@ export default component$(() => {
           achieved through extensive agglutination and changes in the meanings
           of words based on their relationship to each other in a sentence
         </p>
-        <h3>Saurian</h3>
-        <p>
-          Random Saurain Name:{" "}
-          <Resource
-            value={saurianName}
-            onPending={() => <>Loading...</>}
-            onResolved={(saurianName) => <>{saurianName}</>}
-          />
-        </p>
-        <p>
-          Saurian (or Ḍaṭunḍiu) is a language we are developing for a group of
-          dinosaur people in Far Reach Co.'s fantasy roleplaying game setting
-        </p>
-        <p>
-          Since some Ḍaṭunḍii individuals have lips, some have beaks, and all
-          may or may not have teeth, Ḍaṭunḍiu makes less of a distinction
-          between different sounds made at the front of the mouth and has more
-          variety in sounds made with the back of the throat
-        </p>
+
         <p>
           <Link class="link margin1" href="../">
             {"<-- Back"}
