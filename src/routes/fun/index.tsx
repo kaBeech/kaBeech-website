@@ -28,12 +28,12 @@ export default component$(() => {
         <p>
           This started as an emulation of a classic drawing toy and evolved to
           include functionality for meditative practice. Then I added
-          ever-mutating neon black colors because it's fun!
+          ever-mutating neon black colors because it looks cool!
         </p>
         <p>
           This is one of my first JavaScript projects, and still one of my
           favorites. Currently it requires a mouse to use. It's not very
-          sophisticated, but it's a lot of fun and I love it!
+          sophisticated, but it's a lot of fun!
         </p>
         <h2>Namagen</h2>
         <img
