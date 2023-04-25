@@ -57,7 +57,7 @@ export const linkTiles = {
   fun_ticTacToebot: {
     linkPath: "https://kabeech.github.io/tic-tac-toebot/",
     text: "Tic-Tac-Toebot",
-    icon: "/icons/x-square.svg",
+    icon: "/icons/tic-tac-toebot-cropped-icon.svg",
   },
   fun_adventOfCode: {
     linkPath: "https://github.com/kaBeech/Advent-Of-Code-2022",
