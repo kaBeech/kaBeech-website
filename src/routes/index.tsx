@@ -57,7 +57,7 @@ export default component$(() => {
             - Give you my virtual business card (
             <Link class="link" href="/contact">
               Contact Info
-            </Link>{" "}
+            </Link>
             )
           </li>
         </ul>
