@@ -38,8 +38,8 @@ export default component$(() => {
         <h2>Namagen</h2>
         <img
           class="tempLogo"
-          src="/icons/happy-outline.svg"
-          alt="A smiling face (used as a placeholder for the Namagen or Far Reach Co logo)"
+          src="/peli_hype_centered.png"
+          alt="Peli, the Far Reach Co. mascot, showing excitement)"
         />
         <button>
           <Link href="namagen">Check out Namagen!</Link>

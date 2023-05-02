@@ -20,8 +20,8 @@ export default component$(() => {
         </h3>
         <h2>Wyrld Dashboard</h2>
         <img
-          src="/icons/happy-outline.svg"
-          alt="A smiling face (used as a placeholder for the Wyrld Dashboard or Far Reach Co logo)"
+          src="/peli_book_smaller.PNG"
+          alt="Peli, the Far Reach Co. mascot, holding a book"
         />
         <button>
           <Link href="https://farreachco.com/">Check out Wyrld Dashboard!</Link>

@@ -72,7 +72,7 @@ export const linkTiles = {
   fun_namagen: {
     linkPath: "/fun/namagen",
     text: "Namagen",
-    icon: "/icons/happy-outline.svg",
+    icon: "/icons/peli_hype_mono.png",
   },
   flower_stereochrome: {
     linkPath: "./",
@@ -142,7 +142,7 @@ export const linkTiles = {
   projects_wyrldDashboard: {
     linkPath: "https://farreachco.com/",
     text: "Wyrld Dashboard",
-    icon: "/icons/happy-outline.svg",
+    icon: "/icons/peli_hype_mono.png",
   },
   projects_audiopile: {
     linkPath: "https://www.audiopile.cloud/",
