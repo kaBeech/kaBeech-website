@@ -57,7 +57,7 @@ export const linkTiles = {
   fun_ticTacToebot: {
     linkPath: "https://kabeech.github.io/tic-tac-toebot/",
     text: "Tic-Tac-Toebot",
-    icon: "/icons/x-square.svg",
+    icon: "/icons/tic-tac-toebot-cropped-icon.svg",
   },
   fun_adventOfCode: {
     linkPath: "https://github.com/kaBeech/Advent-Of-Code-2022",
@@ -72,7 +72,7 @@ export const linkTiles = {
   fun_namagen: {
     linkPath: "/fun/namagen",
     text: "Namagen",
-    icon: "/icons/happy-outline.svg",
+    icon: "/icons/peli_hype_mono.png",
   },
   flower_stereochrome: {
     linkPath: "./",
@@ -110,7 +110,7 @@ export const linkTiles = {
     icon: "/icons/server-outline.svg",
   },
   tech_edge: {
-    linkPath: "/tech/edge-functions",
+    linkPath: "/tech/edge",
     text: "Edge Functions",
     icon: "/icons/server.svg",
   },
@@ -142,7 +142,7 @@ export const linkTiles = {
   projects_wyrldDashboard: {
     linkPath: "https://farreachco.com/",
     text: "Wyrld Dashboard",
-    icon: "/icons/happy-outline.svg",
+    icon: "/icons/peli_hype_mono.png",
   },
   projects_audiopile: {
     linkPath: "https://www.audiopile.cloud/",

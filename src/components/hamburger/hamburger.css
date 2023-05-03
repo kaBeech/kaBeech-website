@@ -40,7 +40,8 @@ img {
     0 0em 2.5em 0 rgba(1, 89, 125, 0.412);
   padding: 0.25em 0.5em;
   /* margin: 0.35em -0.5em 0 0.5em; */
-  margin-left: 0.5em;
+  /* margin-left: 0.5em; */
+  width: 8em;
 }
 
 @media (max-width: 1000px) {
@@ -57,7 +58,7 @@ img {
 }
 
 .shadow {
-  align-items: end;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap-reverse;
   display: flex;
@@ -65,13 +66,18 @@ img {
   gap: 0.4em;
   max-height: 80vh;
   background-color: var(--kaBeech-main-background-semitransparent);
-  padding: 0.5em 0.8em;
+  padding: 0.5em 0.4em;
   border-radius: 1em;
   border-style: solid;
   border-color: var(--kaBeech-main-background);
   border-width: 0.15em;
+  /* width: fit-content; */
 }
 
 li {
   font-size: 1.2em;
+}
+
+.link {
+  width: 100%;
 }

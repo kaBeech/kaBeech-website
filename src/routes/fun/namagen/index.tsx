@@ -1,68 +1,39 @@
-import { component$, Resource, useResource$ } from "@builder.io/qwik";
-
+import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import { routeLoader$ } from "@builder.io/qwik-city";
 import { Link } from "@builder.io/qwik-city";
 import { Beechy } from "~/components/beechy/beechy";
 import { ResponseBar } from "~/components/responseBar/responseBar";
 import { linkTiles } from "~/util/linkTiles";
 
-///
+// I know, I know. Listen, environment variables are weird in Qwik and I'm still figuring it out
+const namagen = "https://full-duck-87-qfzve1n0y4s0.deno.dev";
 
-// export default component$(() => {
-//   const mamobibuName = useResource$(async () => {
-//     const response = await fetch(
-//       `https://full-duck-87-ween4qz6p0cg.deno.dev/saurian`
-//     );
-//     const data = await response.json();
-//     return (data.title ||
-//       data.message ||
-//       data.saurianName + " transliteration: " + data.saurianNameBasicLatin ||
-//       "Error") as string;
-//   });
-//   return (
-//         <div>
-//             <h1>Welcome!</h1>
-//             <p>Welcome to kaBeech, Kyle Beechly's personal website</p>
-//             <p>
-//               My name is Beechy, and I'll be your guide here. I'm glad to meet you!
-//             </p>
-//  <Resource
-//  value={mamobibuName}
-//  onPending={() => <>Loading...</>}
-//  onResolved={(title) => <>{title}</>}
-//  />;
-//         </div>
-//         )
-///
+export const useNamagenMamobibu = routeLoader$(async () => {
+  const res = await fetch(`${namagen}/mamobibu`);
+  const data = await res.json();
+  return (data.mamobibuName || "Error") as string;
+});
+
+export const useNamagenSaurian = routeLoader$(async () => {
+  const res = await fetch(`${namagen}/saurian`);
+  const data = await res.json();
+  return (data.saurianName + " (" + data.saurianNameBasicLatin + ")" ||
+    "Error") as string;
+});
 
 export default component$(() => {
-  const mamobibuName = useResource$(async () => {
-    const response = await fetch(
-      `https://full-duck-87-dnv34518ks3g.deno.dev/mamobibu`
-    );
-    const data = await response.json();
-    return (data.mamobibuName || "Error") as string;
-  });
-
-  const saurianName = useResource$(async () => {
-    const response = await fetch(
-      `https://full-duck-87-ween4qz6p0cg.deno.dev/saurian`
-    );
-    const data = await response.json();
-    // lazy
-    return (data.saurianName + " (" + data.saurianNameBasicLatin + ")" ||
-      "Error") as string;
-  });
-
+  const mamobibuName = useNamagenMamobibu();
+  const saurianName = useNamagenSaurian();
   return (
     <div class="screenContainer">
       <Beechy />
       <div class="screenContents">
         <h1>Namagen</h1>
         <p>
-          Namagen randomly generates names in constructed languages. I built it
+          Namagen randomly generates names in constructed languages. I made it
           partly to show how a Web Assembly application built with Rust can be
-          integrated into a JavaSctipt environment (more on that further down)
+          integrated into a JavaScript environment (more on that further down)
         </p>
         <p>
           It currently supports two languages: Mamobibu and Saurian. Go on, give
@@ -71,14 +42,7 @@ export default component$(() => {
         <h2>Currently Implemented Languages</h2>
         <h3>Saurian (Ḍaṭunḍiu)</h3>
         <p>
-          Random Saurain Name:{" "}
-          <strong>
-            <Resource
-              value={saurianName}
-              onPending={() => <>Loading...</>}
-              onResolved={(saurianName) => <>{saurianName}</>}
-            />
-          </strong>
+          Random Saurain Name: <strong>{saurianName.value}</strong>
         </p>
         <p>
           Saurian (or Ḍaṭunḍiu) is a language we are developing for a group of
@@ -92,14 +56,7 @@ export default component$(() => {
         </p>
         <h3>Mamobibu</h3>
         <p>
-          Random Mamobibu Name:{" "}
-          <strong>
-            <Resource
-              value={mamobibuName}
-              onPending={() => <>Loading...</>}
-              onResolved={(mamobibuName) => <>{mamobibuName}</>}
-            />
-          </strong>
+          Random Mamobibu Name: <strong>{mamobibuName.value}</strong>
         </p>
         <p>
           Mamobibu is a very simple test language I made to test Namagen's
@@ -107,8 +64,8 @@ export default component$(() => {
         </p>
         <p>
           There are five vowels in Mamobibu (a, e, i, o, and u), but only two
-          consonants (b and m)! It is truly a wonder how the Mamobibu people can
-          express such complex ideas with so few language sounds. This is
+          consonants (b and m)! It is truly a wonder how the Mamobibu language
+          can express such complex ideas with so few speech sounds. This is
           achieved through extensive agglutination and changes in the meanings
           of words based on their relationship to each other in a sentence
         </p>
@@ -135,7 +92,7 @@ export default component$(() => {
         </p>
         <p>
           <Link class="link margin1" href="../">
-            {"<-- Back"}
+            {"<-- Back to Fun & Games"}
           </Link>
         </p>
       </div>

@@ -14,7 +14,6 @@ export default component$(() => {
       <Beechy />
       <div class="screenContents">
         <h1>Fun and Games!</h1>
-        <p>Here are some cool things I've made!</p>
         <h2>Buddh-A-Sketch</h2>
         <img
           src="/favicon.png"
@@ -23,6 +22,11 @@ export default component$(() => {
         <button>
           <Link href="https://kabeech.github.io/buddh-a-sketch/">
             Check out Buddh-A-Sketch!
+          </Link>
+        </button>
+        <button class="invertedButton">
+          <Link href="https://github.com/kaBeech/buddh-a-sketch">
+            View source on GitHub
           </Link>
         </button>
         <p>
@@ -38,16 +42,25 @@ export default component$(() => {
         <h2>Namagen</h2>
         <img
           class="tempLogo"
-          src="/icons/happy-outline.svg"
-          alt="A smiling face (used as a placeholder for the Namagen or Far Reach Co logo)"
+          src="/peli_hype_centered.png"
+          alt="Peli, the Far Reach Co. mascot, showing excitement)"
         />
         <button>
           <Link href="namagen">Check out Namagen!</Link>
         </button>
+        <button class="invertedButton">
+          <Link href="https://github.com/Far-Reach-Co/namagen">
+            View source on GitHub
+          </Link>
+        </button>
         <p>
-          Namagen randomly generates names in constructed languages. It is
-          intended for use in roleplaying games, but I suppose it could also be
-          used to suggest baby names!
+          Namagen randomly generates names in constructed languages. I built it
+          for use in roleplaying games (to integrate with the{" "}
+          <Link class="link" href="/projects">
+            Wyrld Dashboard
+          </Link>{" "}
+          suite of tools), but I suppose it could also be used to suggest baby
+          names!
         </p>
         <p>
           It also serves as an example of how a WebAssembly application built
@@ -78,6 +91,11 @@ export default component$(() => {
             Check out Tic-Tac-Toebot!
           </Link>
         </button>
+        <button class="invertedButton">
+          <Link href="https://github.com/kaBeech/tic-tac-toebot">
+            View source on GitHub
+          </Link>
+        </button>
         <p>A robot that plays Tic-Tac-Toe!</p>
         <p>
           My friend Andy thinks he can beat the Unbeatable Master. I think he
@@ -106,7 +124,7 @@ export default component$(() => {
         </p>
         <p>
           <Link class="link margin1" href="../">
-            {"<-- Back"}
+            {"<-- Back to Home"}
           </Link>
         </p>
       </div>

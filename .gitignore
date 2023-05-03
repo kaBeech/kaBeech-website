@@ -1,4 +1,6 @@
 notes.md
+.env
+.env.local
 
 # Build
 /dist

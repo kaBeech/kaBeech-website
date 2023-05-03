@@ -20,16 +20,62 @@ export default component$(() => {
         </h3>
         <h2>Wyrld Dashboard</h2>
         <img
-          src="/icons/happy-outline.svg"
-          alt="A smiling face (used as a placeholder for the Wyrld Dashboard or Far Reach Co logo)"
+          src="/peli_book_smaller.PNG"
+          alt="Peli, the Far Reach Co. mascot, holding a book"
         />
         <button>
           <Link href="https://farreachco.com/">Check out Wyrld Dashboard!</Link>
         </button>
+        <button class="invertedButton">
+          <Link href="https://github.com/Far-Reach-Co/dm-dash">
+            View source on GitHub
+          </Link>
+        </button>
         <p>
-          Fast and unobtrusive cloud-based tools for tabletop roleplaying games
+          <Link class="link" href="https://www.audiopile.cloud/">
+            Wyrld Dashboard
+          </Link>{" "}
+          provides fast and unobtrusive cloud-based tools for tabletop
+          roleplaying games (RPG's) like Dungeons & Dragons. My partner Julian
+          and I also use it as an excuse to play with cool technology (for
+          instance we're currently rebuilding our server in Rust)
         </p>
-        <p>Content coming soon!</p>
+        <p class="lazyMargin">
+          Some of the tools we provide (or are planning to build) include:
+        </p>
+        <ul>
+          <li class="margin1">
+            - A database for holding and sharing information about RPG settings
+            (worlds and their underlying rules)
+          </li>
+          <li class="margin1">
+            - A user interface (UI) for game masters (GMs) to build and share
+            custom RPG settings
+          </li>
+          <li class="margin1">
+            - A UI for players to connect with the worlds shared by their GM and
+            to create and control certain assets (i.e. their characters and
+            personal notes)
+          </li>
+          <li class="margin1">
+            - Tools (character sheets, dice, event trackers, etc.) for GMs and
+            players to interact with their worlds
+          </li>
+          <li class="margin1">
+            - A virtual table top application for sharing visual game
+            information (such as maps, character position, and turn order)
+          </li>
+          <li class="margin1">
+            - Tools for creating and sharing AI-generated portraits and maps
+          </li>
+          <li class="margin1">
+            - An extensive (200+ pages) compendium of D&D-compatible content
+          </li>
+          <li class="margin1">
+            - A framework in which other content creators can share, license,
+            and profit from their work
+          </li>
+        </ul>
         <h2>Audiopile</h2>
         <img
           src="/waveform.png"
@@ -37,6 +83,11 @@ export default component$(() => {
         />
         <button>
           <Link href="https://www.audiopile.cloud/">Check out Audiopile!</Link>
+        </button>
+        <button class="invertedButton">
+          <Link href="https://github.com/fogg4444/audiopile_master">
+            View source on GitHub
+          </Link>
         </button>
         <p>A simple, professional tool for managing audio in the cloud</p>
         <p>
@@ -71,7 +122,7 @@ export default component$(() => {
         />
         <button>
           <Link href="https://github.com/kaBeech/Advent-Of-Code-2022">
-            Check out Advent Of Code!
+            Check out my Advent Of Code repo on GitHub!
           </Link>
         </button>
         <p>Real holiday fun!</p>
@@ -105,7 +156,7 @@ export default component$(() => {
         </p>
         <p>
           <Link class="link margin1" href="../">
-            {"<-- Back"}
+            {"<-- Back to Home"}
           </Link>{" "}
         </p>
       </div>

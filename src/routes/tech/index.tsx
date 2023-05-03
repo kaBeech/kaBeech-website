@@ -16,29 +16,38 @@ export default component$(() => {
           and this site makes use of it! For example:
         </p>
         <h2>The POQD Stack</h2>
-        <p> Content coming soon...</p>
+        <p>
+          POQD is a blazingly fast, next-generation software development stack
+        </p>
         <p>
           <Link class="link" href="poqd">
             Click here to learn more about the POQD stack
           </Link>
         </p>
         <h2>WebAssembly (WASM)</h2>
-        <p> Content coming soon...</p>
+        <p>
+          WASM is a low-level programming language designed to be excecuted by
+          web browsers
+        </p>
         <p>
           <Link class="link" href="wasm">
             Click here to learn more about WebAssembly
           </Link>
         </p>
         <h2>Edge Functions</h2>
-        <p> Content coming soon...</p>
         <p>
-          <Link class="link" href="edge-functions">
+          Edge Functions are pieces of code that are designed to be deployed
+          serverlessly on the edge (i.e. at a point geographically close to the
+          user)
+        </p>
+        <p>
+          <Link class="link" href="edge">
             Click here to learn more about edge functions
           </Link>
         </p>
         <p>
           <Link class="link margin1" href="../">
-            {"<-- Back"}
+            {"<-- Back to Home"}
           </Link>
         </p>
       </div>

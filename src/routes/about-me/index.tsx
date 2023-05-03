@@ -11,6 +11,11 @@ export default component$(() => {
       <Beechy />
       <div class="screenContents">
         <h1>About Me</h1>
+        <img
+          class="portrait"
+          src="/portrait4.jpg"
+          alt="A photo of me, Kyle Beechly, at my computer"
+        />
         <p>
           My name's Kyle Beechly and I'm a software engineer from the Pacific
           Northwest (in America). I built this site to showcase some of my work
@@ -35,7 +40,7 @@ export default component$(() => {
         </p>
         <p>
           When I'm not coding you can probably find me running, building fantasy
-          worlds for tabletop roleplaying games, or SHREDDING guitar
+          worlds for tabletop roleplaying games, or playing guitar
         </p>
         <p>
           I also have an{" "}
@@ -46,7 +51,7 @@ export default component$(() => {
         </p>
         <p>
           <Link class="link margin1" href="../">
-            {"<-- Back"}
+            {"<-- Back to Home"}
           </Link>{" "}
         </p>
       </div>
