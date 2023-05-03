@@ -15,7 +15,7 @@ export default component$(() => {
       <div class="screenContents">
         <h1>What is the POQD stack?</h1>
         <p>
-          This website was built using next-generation JavaScript software in a
+          This website is built using next-generation JavaScript software in a
           group (or 'stack') I like to call 'POQD'
         </p>
         <p>
