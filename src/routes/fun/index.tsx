@@ -14,7 +14,6 @@ export default component$(() => {
       <Beechy />
       <div class="screenContents">
         <h1>Fun and Games!</h1>
-        <p>Here are some cool things I've made!</p>
         <h2>Buddh-A-Sketch</h2>
         <img
           src="/favicon.png"
@@ -45,9 +44,9 @@ export default component$(() => {
           <Link href="namagen">Check out Namagen!</Link>
         </button>
         <p>
-          Namagen randomly generates names in constructed languages. It is
-          intended for use in roleplaying games, but I suppose it could also be
-          used to suggest baby names!
+          Namagen randomly generates names in constructed languages. I built it
+          for use in roleplaying games, but I suppose it could also be used to
+          suggest baby names!
         </p>
         <p>
           It also serves as an example of how a WebAssembly application built
