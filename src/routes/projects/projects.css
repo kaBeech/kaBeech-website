@@ -10,3 +10,7 @@ img {
 button {
   margin-top: 0.15em;
 }
+
+.lazyMargin {
+  margin-bottom: 0;
+}

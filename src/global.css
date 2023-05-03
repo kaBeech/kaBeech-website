@@ -508,6 +508,7 @@ button {
   /* padding: 0 8em; */
 }
 
-.screenContents p {
+.screenContents p,
+.screenContents li {
   max-width: 48em;
 }

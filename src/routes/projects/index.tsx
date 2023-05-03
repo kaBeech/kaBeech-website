@@ -32,9 +32,50 @@ export default component$(() => {
           </Link>
         </button>
         <p>
-          Fast and unobtrusive cloud-based tools for tabletop roleplaying games
+          <Link class="link" href="https://www.audiopile.cloud/">
+            Wyrld Dashboard
+          </Link>{" "}
+          provides fast and unobtrusive cloud-based tools for tabletop
+          roleplaying games (RPG's) like Dungeons & Dragons. My partner Julian
+          and I also use it as an excuse to play with cool technology (for
+          instance we're currently rebuilding our server in Rust)
         </p>
-        <p>Content coming soon!</p>
+        <p class="lazyMargin">
+          Some of the tools we provide (or are planning to build) include:
+        </p>
+        <ul>
+          <li class="margin1">
+            - A database for holding and sharing information about RPG settings
+            (worlds and their underlying rules)
+          </li>
+          <li class="margin1">
+            - A user interface (UI) for game masters (GMs) to build and share
+            custom RPG settings
+          </li>
+          <li class="margin1">
+            - A UI for players to connect with the worlds shared by their GM and
+            to create and control certain assets (i.e. their characters and
+            personal notes)
+          </li>
+          <li class="margin1">
+            - Tools (character sheets, dice, event trackers, etc.) for GMs and
+            players to interact with their worlds
+          </li>
+          <li class="margin1">
+            - A virtual table top application for sharing visual game
+            information (such as maps, character position, and turn order)
+          </li>
+          <li class="margin1">
+            - Tools for creating and sharing AI-generated portraits and maps
+          </li>
+          <li class="margin1">
+            - An extensive (200+ pages) compendium of D&D-compatible content
+          </li>
+          <li class="margin1">
+            - A framework in which other content creators can share, license,
+            and profit from their work
+          </li>
+        </ul>
         <h2>Audiopile</h2>
         <img
           src="/waveform.png"
