@@ -1,29 +1,13 @@
-import { component$, Resource, useResource$ } from "@builder.io/qwik";
+import { component$ } from "@builder.io/qwik";
 
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { Link } from "@builder.io/qwik-city";
 import { Beechy } from "~/components/beechy/beechy";
+import { Namagen } from "~/components/namagen/namagen";
 import { ResponseBar } from "~/components/responseBar/responseBar";
 import { linkTiles } from "~/util/linkTiles";
 
-// I know, I know. Listen, environment variables are weird in Qwik and I'm still figuring it out
-const namagen = "https://full-duck-87-qfzve1n0y4s0.deno.dev";
-
 export default component$(() => {
-  const mamobibuName = useResource$(async () => {
-    const response = await fetch(`${namagen}/mamobibu`);
-    const data = await response.json();
-    return (data.mamobibuName || "Error") as string;
-  });
-
-  const saurianName = useResource$(async () => {
-    const response = await fetch(`${namagen}/saurian`);
-    const data = await response.json();
-    // lazy
-    return (data.saurianName + " (" + data.saurianNameBasicLatin + ")" ||
-      "Error") as string;
-  });
-
   return (
     <div class="screenContainer">
       <Beechy />
@@ -43,11 +27,7 @@ export default component$(() => {
         <p>
           Random Saurain Name:{" "}
           <strong>
-            <Resource
-              value={saurianName}
-              onPending={() => <>Loading...</>}
-              onResolved={(saurianName) => <>{saurianName}</>}
-            />
+            <Namagen language="saurian" />
           </strong>
         </p>
         <p>
@@ -64,11 +44,7 @@ export default component$(() => {
         <p>
           Random Mamobibu Name:{" "}
           <strong>
-            <Resource
-              value={mamobibuName}
-              onPending={() => <>Loading...</>}
-              onResolved={(mamobibuName) => <>{mamobibuName}</>}
-            />
+            <Namagen language="mamobibu" />
           </strong>
         </p>
         <p>
