@@ -100,7 +100,7 @@ export default component$(() => {
           two or more languages to play with (including one referance language,
           English by default). Then you can choose a topic (such as Numbers or
           Colors) to be given a list of words from that topic in the reference
-          language.
+          language
         </p>
         <p>Your challenge is to type the words in the remaining language(s)!</p>
         <p>
