@@ -512,3 +512,9 @@ button {
 .screenContents li {
   max-width: 48em;
 }
+
+.portrait {
+  max-width: 40%;
+  border-radius: 2em;
+  border-style: solid;
+}
