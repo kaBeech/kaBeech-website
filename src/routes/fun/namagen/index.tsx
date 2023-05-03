@@ -60,9 +60,9 @@ export default component$(() => {
       <div class="screenContents">
         <h1>Namagen</h1>
         <p>
-          Namagen randomly generates names in constructed languages. I built it
+          Namagen randomly generates names in constructed languages. I made it
           partly to show how a Web Assembly application built with Rust can be
-          integrated into a JavaSctipt environment (more on that further down)
+          integrated into a JavaScript environment (more on that further down)
         </p>
         <p>
           It currently supports two languages: Mamobibu and Saurian. Go on, give
@@ -107,8 +107,8 @@ export default component$(() => {
         </p>
         <p>
           There are five vowels in Mamobibu (a, e, i, o, and u), but only two
-          consonants (b and m)! It is truly a wonder how the Mamobibu people can
-          express such complex ideas with so few language sounds. This is
+          consonants (b and m)! It is truly a wonder how the Mamobibu language
+          can express such complex ideas with so few speech sounds. This is
           achieved through extensive agglutination and changes in the meanings
           of words based on their relationship to each other in a sentence
         </p>

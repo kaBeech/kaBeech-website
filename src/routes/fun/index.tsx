@@ -45,8 +45,12 @@ export default component$(() => {
         </button>
         <p>
           Namagen randomly generates names in constructed languages. I built it
-          for use in roleplaying games, but I suppose it could also be used to
-          suggest baby names!
+          for use in roleplaying games (to integrate with the{" "}
+          <Link class="link" href="/projects">
+            Wyrld Dashboard
+          </Link>{" "}
+          suite of tools), but I suppose it could also be used to suggest baby
+          names!
         </p>
         <p>
           It also serves as an example of how a WebAssembly application built
