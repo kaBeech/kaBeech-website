@@ -94,7 +94,7 @@ export default component$(() => {
           Again, this is not to diminish those who prefer to fluctuate between
           he/him and she/her pronouns. On a personal note, before I decided on
           xe/xyr/ze/zyr pronouns I used to tell people that I don't mind what
-          pronouns people use for me, but I like it when they mix it up
+          pronouns people use for me, but that I like it when they mix it up
         </p>
         <p>
           I said this because I like both he/him and she/her pronouns (as well
