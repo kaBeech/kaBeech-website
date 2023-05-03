@@ -181,7 +181,7 @@ export default component$(() => {
           <div>
             <h3>React</h3>
             <p>Unopinionated, component-based frontend JavaScript library</p>
-            <h4>Next.js</h4>
+            <h4>Next.js</h4>Vercel
             <p>
               Web development framework for React with opinionated routing. Uses
               server-side rendering to create static pages. Responsive web
@@ -196,7 +196,7 @@ export default component$(() => {
               design is made possible through resumability
             </p>
             <h4>Qwik City</h4>
-            <p>Web development framework for Qwik with opinionated routing.</p>
+            <p>Web development framework for Qwik with opinionated routing</p>
           </div>
         </div>
         <h3>Why Qwik?</h3>
@@ -301,6 +301,53 @@ export default component$(() => {
         <p>
           Fast, secure, robust. Less configuring, more doing. Typescript works
           right out of the box!
+        </p>
+        <p>
+          For example, Deno assumes that it doesn't have permission to do pretty
+          much anything without asking. Consent is sexy, including in data
+          privacy and security. Deno supports ES Modules by default rather than
+          CommonJS, which encourages future-facing development. Deno caches
+          needed dependencies on your file system, doing away with{" "}
+          <Link
+            class="link"
+            href="https://javascript.plainenglish.io/node-js-esm-npm-yarn-deep-dive-adda15dabce#cb91"
+          >
+            super-dense node_modules directories
+          </Link>{" "}
+        </p>
+        <p>
+          Deno is created by the same person who created the industry standard
+          runtime that it replaces and it's supported by a thriving, passionate
+          community. It's already being adopted by industry leaders like{" "}
+          <Link
+            class="link"
+            href="https://www.netlify.com/products/#netlify-edge-functions"
+          >
+            Netlify
+          </Link>
+          , who uses it to power their{" "}
+          <Link class="link" href="/tech/edge">
+            edge functions
+          </Link>
+          . Competing with Node.js is an ambitious task, but Deno is here to
+          stay
+        </p>
+        <p>
+          Now, all that being said, the Number One reason I use Deno is...
+          because I'm lazy
+        </p>
+        <p>
+          When I start building a project, I don't want to spend time setting up
+          my linter, formatter, test runner, and TypeScript compiler. I want to
+          work on my project!
+        </p>
+        <p>
+          Thankfully, Deno takes care of all of that for me and I can start
+          building{" "}
+          <Link class="link" href="/fun/al-lugha-misma">
+            silly language games
+          </Link>{" "}
+          right away!
         </p>
         <h1>Why POQD?</h1>
         <h3 class="responseTextLight">

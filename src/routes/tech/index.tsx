@@ -41,7 +41,7 @@ export default component$(() => {
           user)
         </p>
         <p>
-          <Link class="link" href="edge-functions">
+          <Link class="link" href="edge">
             Click here to learn more about edge functions
           </Link>
         </p>
