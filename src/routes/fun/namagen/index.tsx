@@ -6,48 +6,18 @@ import { Beechy } from "~/components/beechy/beechy";
 import { ResponseBar } from "~/components/responseBar/responseBar";
 import { linkTiles } from "~/util/linkTiles";
 
-///
-
-// export default component$(() => {
-//   const mamobibuName = useResource$(async () => {
-//     const response = await fetch(
-//       `https://full-duck-87-ween4qz6p0cg.deno.dev/saurian`
-//     );
-//     const data = await response.json();
-//     return (data.title ||
-//       data.message ||
-//       data.saurianName + " transliteration: " + data.saurianNameBasicLatin ||
-//       "Error") as string;
-//   });
-//   return (
-//         <div>
-//             <h1>Welcome!</h1>
-//             <p>Welcome to kaBeech, Kyle Beechly's personal website</p>
-//             <p>
-//               My name is Beechy, and I'll be your guide here. I'm glad to meet you!
-//             </p>
-//  <Resource
-//  value={mamobibuName}
-//  onPending={() => <>Loading...</>}
-//  onResolved={(title) => <>{title}</>}
-//  />;
-//         </div>
-//         )
-///
+// I know, I know. Listen, environment variables are weird in Qwik and I'm still figuring it out
+const namagen = "https://full-duck-87-qfzve1n0y4s0.deno.dev";
 
 export default component$(() => {
   const mamobibuName = useResource$(async () => {
-    const response = await fetch(
-      `https://full-duck-87-qfzve1n0y4s0.deno.dev/mamobibu`
-    );
+    const response = await fetch(`${namagen}/mamobibu`);
     const data = await response.json();
     return (data.mamobibuName || "Error") as string;
   });
 
   const saurianName = useResource$(async () => {
-    const response = await fetch(
-      `https://full-duck-87-qfzve1n0y4s0.deno.dev/saurian`
-    );
+    const response = await fetch(`${namagen}/saurian`);
     const data = await response.json();
     // lazy
     return (data.saurianName + " (" + data.saurianNameBasicLatin + ")" ||
