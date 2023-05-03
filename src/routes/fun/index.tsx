@@ -111,7 +111,7 @@ export default component$(() => {
         <button>
           <Link href="al-lugha-misma">Check out Al Lugha Misma!</Link>
         </button>
-        <p>You like "potato" (English), and I like "baTaaTaa" (Arabic)</p>
+        <p>You say "potato" (English), and I say "baTaaTaa" (Arabic)</p>
         <p>Or "papa" (Spanish)!</p>
         <p>
           This is a comparative linguistics game celebrating similarities (and
