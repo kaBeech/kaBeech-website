@@ -1,13 +1,30 @@
 import { component$ } from "@builder.io/qwik";
-
 import type { DocumentHead } from "@builder.io/qwik-city";
+import { routeLoader$ } from "@builder.io/qwik-city";
 import { Link } from "@builder.io/qwik-city";
 import { Beechy } from "~/components/beechy/beechy";
-import { Namagen } from "~/components/namagen/namagen";
 import { ResponseBar } from "~/components/responseBar/responseBar";
 import { linkTiles } from "~/util/linkTiles";
 
+// I know, I know. Listen, environment variables are weird in Qwik and I'm still figuring it out
+const namagen = "https://full-duck-87-qfzve1n0y4s0.deno.dev";
+
+export const useNamagenMamobibu = routeLoader$(async () => {
+  const res = await fetch(`${namagen}/mamobibu`);
+  const data = await res.json();
+  return (data.mamobibuName || "Error") as string;
+});
+
+export const useNamagenSaurian = routeLoader$(async () => {
+  const res = await fetch(`${namagen}/saurian`);
+  const data = await res.json();
+  return (data.saurianName + " (" + data.saurianNameBasicLatin + ")" ||
+    "Error") as string;
+});
+
 export default component$(() => {
+  const mamobibuName = useNamagenMamobibu();
+  const saurianName = useNamagenSaurian();
   return (
     <div class="screenContainer">
       <Beechy />
@@ -25,10 +42,7 @@ export default component$(() => {
         <h2>Currently Implemented Languages</h2>
         <h3>Saurian (Ḍaṭunḍiu)</h3>
         <p>
-          Random Saurain Name:{" "}
-          <strong>
-            <Namagen language="saurian" />
-          </strong>
+          Random Saurain Name: <strong>{saurianName.value}</strong>
         </p>
         <p>
           Saurian (or Ḍaṭunḍiu) is a language we are developing for a group of
@@ -42,10 +56,7 @@ export default component$(() => {
         </p>
         <h3>Mamobibu</h3>
         <p>
-          Random Mamobibu Name:{" "}
-          <strong>
-            <Namagen language="mamobibu" />
-          </strong>
+          Random Mamobibu Name: <strong>{mamobibuName.value}</strong>
         </p>
         <p>
           Mamobibu is a very simple test language I made to test Namagen's

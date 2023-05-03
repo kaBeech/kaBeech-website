@@ -17,7 +17,6 @@ export const Namagen = component$((props: NamagenProps) => {
   const saurianName = useResource$(async () => {
     const response = await fetch(`${namagen}/saurian`);
     const data = await response.json();
-    // lazy
     return (data.saurianName + " (" + data.saurianNameBasicLatin + ")" ||
       "Error") as string;
   });
