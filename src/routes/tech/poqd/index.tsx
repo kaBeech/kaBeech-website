@@ -374,8 +374,8 @@ export default component$(() => {
         <p>
           Go ahead and click around this site. See how much time you spend
           waiting for a page to load. There may not be much here yet, but I have
-          more impressive content planned to be up soon that will demonstrate
-          further how quick and responsive it is. To get a taste for now, try{" "}
+          more content planned that will demonstrate further how quick and
+          responsive it is. To get a taste for now, try{" "}
           <Link class="link" href="/fun/flower?pride=true">
             playing around with this flower
           </Link>
@@ -426,11 +426,11 @@ export default component$(() => {
           WAY I CAN WITH REACT????"
         </p>
         <p>
-          But after a minute (you are a very smart and beautiful kaBeech after
+          But after a minute (you are a very smart and attractive kaBeech after
           all), you'll start to ask yourself "Okay, but why do I need to pass
           state to components that I haven't even built yet?" And then you'll
-          realize that you could structure this all in a more organized, more
-          performant way
+          realize that you could structure the whole thing in a more organized,
+          more performant way
         </p>
         <p>I like tools that encourage me to grow ♡ </p>
         <p>
