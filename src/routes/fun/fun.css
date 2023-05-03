@@ -9,3 +9,7 @@ img {
 .tempLogo {
   background-color: var(--kaBeech-main-background);
 }
+
+button {
+  margin-top: 0.15em;
+}

@@ -6,3 +6,7 @@ img {
   aspect-ratio: 1;
   background-color: var(--kaBeech-main-background);
 }
+
+button {
+  margin-top: 0.15em;
+}

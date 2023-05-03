@@ -26,6 +26,11 @@ export default component$(() => {
         <button>
           <Link href="https://farreachco.com/">Check out Wyrld Dashboard!</Link>
         </button>
+        <button class="invertedButton">
+          <Link href="https://github.com/Far-Reach-Co/dm-dash">
+            View source on GitHub
+          </Link>
+        </button>
         <p>
           Fast and unobtrusive cloud-based tools for tabletop roleplaying games
         </p>
@@ -37,6 +42,11 @@ export default component$(() => {
         />
         <button>
           <Link href="https://www.audiopile.cloud/">Check out Audiopile!</Link>
+        </button>
+        <button class="invertedButton">
+          <Link href="https://github.com/fogg4444/audiopile_master">
+            View source on GitHub
+          </Link>
         </button>
         <p>A simple, professional tool for managing audio in the cloud</p>
         <p>
@@ -71,7 +81,7 @@ export default component$(() => {
         />
         <button>
           <Link href="https://github.com/kaBeech/Advent-Of-Code-2022">
-            Check out Advent Of Code!
+            Check out my Advent Of Code repo on GitHub!
           </Link>
         </button>
         <p>Real holiday fun!</p>

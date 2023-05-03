@@ -24,6 +24,11 @@ export default component$(() => {
             Check out Buddh-A-Sketch!
           </Link>
         </button>
+        <button class="invertedButton">
+          <Link href="https://github.com/kaBeech/buddh-a-sketch">
+            View source on GitHub
+          </Link>
+        </button>
         <p>
           This started as an emulation of a classic drawing toy and evolved to
           include functionality for meditative practice. Then I added
@@ -42,6 +47,11 @@ export default component$(() => {
         />
         <button>
           <Link href="namagen">Check out Namagen!</Link>
+        </button>
+        <button class="invertedButton">
+          <Link href="https://github.com/Far-Reach-Co/namagen">
+            View source on GitHub
+          </Link>
         </button>
         <p>
           Namagen randomly generates names in constructed languages. I built it
@@ -79,6 +89,11 @@ export default component$(() => {
         <button>
           <Link href="https://kabeech.github.io/tic-tac-toebot/">
             Check out Tic-Tac-Toebot!
+          </Link>
+        </button>
+        <button class="invertedButton">
+          <Link href="https://github.com/kaBeech/tic-tac-toebot">
+            View source on GitHub
           </Link>
         </button>
         <p>A robot that plays Tic-Tac-Toe!</p>

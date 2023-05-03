@@ -34,7 +34,7 @@
   --kaBeech-color-cold-fuchsian: #b94eb9;
 }
 
-/* Custom Colors Assignmened */
+/* Custom Colors Assignment */
 
 :root {
   --kaBeech-main-background: var(--kaBeech-color-starry-field);
@@ -150,6 +150,14 @@ button {
   border-width: 0.2em;
   border-style: none;
   border-radius: 0.25em;
+}
+
+.invertedButton {
+  color: var(--kaBeech-screen-foreground);
+  background-color: var(--kaBeech-main-background);
+  border-color: var(--kaBeech-screen-foreground);
+  border-style: solid;
+  border-width: 0.15em;
 }
 
 /* Viewsetting */
