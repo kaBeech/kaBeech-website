@@ -102,7 +102,48 @@ export default component$(() => {
           </div>
         </div>
         <h3>Why PostgreSQL?</h3>
-        <p>This might just be personal preference.</p>
+        <p>
+          The more I grow, the less dogmatic I get about database choices. These
+          days non-relational databases like MongoDB (using NoSQL) can do most
+          of what relational databases like Postgres (using SQL) do and vice
+          versa. Because of this, the remainder of this section is more flowery
+          and less science-based than the others - feel free to skip ahead.
+          You've been warned
+        </p>
+        <p>
+          MongoDB's great. It's easy to use, has friendly documentation, and
+          notably offers a very accessible multi-cloud developer data platform
+          in MongoDB Atlas
+        </p>
+        <p>
+          But I just like Postgres. It feels good on my brain. The color scheme
+          is nice. The community is great. The elephant is a kind and noble
+          creature
+        </p>
+        <p>
+          SQL just makes sense to me. I understand I'm in the minority here, but
+          I'm more likely to feel frustrated than relieved when working in a
+          system that tries to map program execution onto natural language. Not
+          that MongoDB does that per se, but the firm and simple logic of SQL
+          feels good to me
+        </p>
+        <p>
+          SQL is fast and it provides easy methods to combine data. The
+          advantages of NoSQL are that it's easily expansible and you don't have
+          to plan ahead as much
+        </p>
+        <p>
+          Again, these days both SQL and NoSQL have evolved to the point that
+          they're both viable options for many projects. It just depends on how
+          you prefer to think about your data. It sounds like an old kōan by
+          now: do you want a document full of tables (MongoDB) or a table full
+          of documents (Postgres)?
+        </p>
+        <p>
+          I like speed by default and I'm the kind of person who both a) likes
+          to plan ahead before actually building a project and b) doesn't mind
+          rewriting things if I really need to. PostgreSQL for me, please
+        </p>
         <h2>Backend</h2>
         <div class="flex">
           <div>
@@ -116,8 +157,24 @@ export default component$(() => {
         </div>
         <h3>Why Oak?</h3>
         <p>
-          It does exactly what I want, when I want, and nothing else. The same
-          is true for Express, but Oak is designed to be used with Deno!
+          It does exactly what I want, when I want, and nothing else. It is a
+          middleware framework, which means I can patch together functions to
+          enhance the functionality of the runtime (in this case Deno) when I
+          want to, and leave out unnecessary code when I don't.
+        </p>
+        <p>
+          This developer experience feels natural to me. It reminds me of
+          chaining together guitar effects on a pedal board.
+        </p>
+        <p>
+          Now, the same is true for Express, but Oak is designed to be used with
+          Deno! There are some nice things about the way Oak works (many
+          inherited from its spritual predecessor in Node.js,{" "}
+          <Link class="link" href="https://koajs.com/">
+            Koa
+          </Link>
+          ), but at the end of the day, I mostly use Koa because it's the most
+          widely-used and supported analog to Express in Deno Land
         </p>
         <h2>Frontend</h2>
         <div class="flex">
