@@ -90,7 +90,7 @@ export default component$(() => {
             </td>
           </tr>
         </table>
-        <h2>Database</h2>
+        <h2 id="database">Database</h2>
         <div class="flex">
           <div>
             <h3>MongoDB</h3>
@@ -144,7 +144,7 @@ export default component$(() => {
           to plan ahead before actually building a project and b) doesn't mind
           rewriting things if I really need to. PostgreSQL for me, please
         </p>
-        <h2>Backend</h2>
+        <h2 id="backend">Backend</h2>
         <div class="flex">
           <div>
             <h3>Express</h3>
@@ -176,7 +176,7 @@ export default component$(() => {
           ), but at the end of the day, I mostly use Koa because it's the most
           widely-used and supported analog to Express in Deno Land
         </p>
-        <h2>Frontend</h2>
+        <h2 id="frontend">Frontend</h2>
         <div class="flex">
           <div>
             <h3>React</h3>
@@ -279,7 +279,7 @@ export default component$(() => {
             </ol>
           </div>
         </div>
-        <h2>Runtime</h2>
+        <h2 id="runtime">Runtime</h2>
         <div class="flex">
           <div>
             <h3>Node.js</h3>
@@ -349,7 +349,7 @@ export default component$(() => {
           </Link>{" "}
           right away!
         </p>
-        <h1>Why POQD?</h1>
+        <h1 id="why-poqd">Why POQD?</h1>
         <h3 class="responseTextLight">
           Okay, but give it to me in a nutshell. Why do you use POQD?
         </h3>
@@ -449,18 +449,22 @@ export default component$(() => {
           {
             fullMessage: "I want to learn more about PostgreSQL",
             linkTile: linkTiles.poqd_postgres,
+            jumpTo: "/tech/poqd#database",
           },
           {
             fullMessage: "I want to learn more about Oak",
             linkTile: linkTiles.poqd_oak,
+            jumpTo: "/tech/poqd#backend",
           },
           {
             fullMessage: "I want to learn more about Qwik",
             linkTile: linkTiles.poqd_qwik,
+            jumpTo: "/tech/poqd#frontend",
           },
           {
             fullMessage: "I want to learn more about Deno",
             linkTile: linkTiles.poqd_deno,
+            jumpTo: "/tech/poqd#runtime",
           },
           {
             fullMessage: "There's something else I want to ask...",
