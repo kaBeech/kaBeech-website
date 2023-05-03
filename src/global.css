@@ -514,7 +514,7 @@ button {
 }
 
 .portrait {
-  max-width: 40%;
+  max-width: 24em;
   border-radius: 2em;
   border-style: solid;
 }
