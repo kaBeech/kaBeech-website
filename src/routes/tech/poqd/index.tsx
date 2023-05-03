@@ -26,63 +26,65 @@ export default component$(() => {
         </p>
         <h1>Comparing MERN and POQD</h1>
         <table>
-          <tr>
-            <th></th>
-            <th>MERN</th>
-            <th>POQD</th>
-          </tr>
-          <tr>
-            <th>Database</th>
-            <td>
-              <Link class="link" href="https://www.mongodb.com/">
-                MongoDB
-              </Link>
-            </td>
-            <td>
-              <Link class="link" href="https://www.postgresql.org/">
-                PostgreSQL
-              </Link>
-            </td>
-          </tr>
-          <tr>
-            <th>Backend</th>
-            <td>
-              <Link class="link" href="https://expressjs.com/">
-                Express
-              </Link>
-            </td>
-            <td>
-              <Link class="link" href="https://oakserver.github.io/oak/">
-                Oak
-              </Link>
-            </td>
-          </tr>
-          <tr>
-            <th>Frontend</th>
-            <td>
-              <Link class="link" href="https://react.dev/">
-                React
-              </Link>
-            </td>
-            <td>
-              <Link class="link" href="https://qwik.builder.io/">
-                Qwik
-              </Link>
-            </td>
-          </tr>
-          <tr>
-            <th>Runtime</th>
-            <td>
-              <Link class="link" href="https://nodejs.org/en">
-                Node.js
-              </Link>
-            </td>
-            <td>
-              <Link class="link" href="https://deno.land/">
-                Deno
-              </Link>
-            </td>
-          </tr>
+          <tbody>
+            <tr>
+              <th></th>
+              <th>MERN</th>
+              <th>POQD</th>
+            </tr>
+            <tr>
+              <th>Database</th>
+              <td>
+                <Link class="link" href="https://www.mongodb.com/">
+                  MongoDB
+                </Link>
+              </td>
+              <td>
+                <Link class="link" href="https://www.postgresql.org/">
+                  PostgreSQL
+                </Link>
+              </td>
+            </tr>
+            <tr>
+              <th>Backend</th>
+              <td>
+                <Link class="link" href="https://expressjs.com/">
+                  Express
+                </Link>
+              </td>
+              <td>
+                <Link class="link" href="https://oakserver.github.io/oak/">
+                  Oak
+                </Link>
+              </td>
+            </tr>
+            <tr>
+              <th>Frontend</th>
+              <td>
+                <Link class="link" href="https://react.dev/">
+                  React
+                </Link>
+              </td>
+              <td>
+                <Link class="link" href="https://qwik.builder.io/">
+                  Qwik
+                </Link>
+              </td>
+            </tr>
+            <tr>
+              <th>Runtime</th>
+              <td>
+                <Link class="link" href="https://nodejs.org/en">
+                  Node.js
+                </Link>
+              </td>
+              <td>
+                <Link class="link" href="https://deno.land/">
+                  Deno
+                </Link>
+              </td>
+            </tr>
+          </tbody>
         </table>
         <h2 id="database">Database</h2>
         <div class="flex">
