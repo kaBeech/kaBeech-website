@@ -115,7 +115,7 @@ export default component$(() => {
         </p>
         <p>
           <Link class="link margin1" href="../">
-            {"<-- Back"}
+            {"<-- Back to Home"}
           </Link>{" "}
         </p>
       </div>

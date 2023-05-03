@@ -14,7 +14,7 @@ export default component$(() => {
         Content coming soon...
         <p>
           <Link class="link margin1" href="../">
-            {"<-- Back"}
+            {"<-- Back to Tech"}
           </Link>{" "}
         </p>
       </div>

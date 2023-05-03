@@ -435,7 +435,7 @@ export default component$(() => {
         <p>I like tools that encourage me to grow ♡ </p>
         <p>
           <Link class="link margin1" href="../">
-            {"<-- Back"}
+            {"<-- Back to Tech"}
           </Link>{" "}
         </p>
       </div>
