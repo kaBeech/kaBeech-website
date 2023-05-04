@@ -169,7 +169,7 @@ export default component$(() => {
           <Link class="link" href="https://koajs.com/">
             Koa
           </Link>
-          ), but at the end of the day, I mostly use Koa because it's the most
+          ), but at the end of the day, I mostly use Oak because it's the most
           widely-used and supported analog to Express in Deno Land
         </p>
         <h2 id="frontend">Frontend</h2>
