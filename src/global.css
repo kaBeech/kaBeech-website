@@ -513,6 +513,15 @@ button {
   max-width: 48em;
 }
 
+.screenContents h1,
+.screenContents h2,
+.screenContents h3,
+.screenContents h4,
+.screenContents h5,
+.screenContents h6 {
+  max-width: 84rem;
+}
+
 .portrait {
   max-width: 24em;
   border-radius: 2em;
