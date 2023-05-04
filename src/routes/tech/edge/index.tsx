@@ -11,7 +11,16 @@ export default component$(() => {
       <Beechy />
       <div class="screenContents">
         <h1>Edge Functions</h1>
-        Content coming soon...
+        <h2 class="responseTextLight">What is an Edge Function?</h2>
+        <h2 class="responseTextLight">What is the Edge?</h2>
+        <h2 class="responseTextLight">
+          Why would I want to use Edge Functions?
+        </h2>
+        <h2 class="responseTextLight">
+          What are some limitations of Edge Functions?
+        </h2>
+        <h2 class="responseTextLight">How can I use Edge Functions?</h2>
+        <h2 class="responseTextLight">Why are Edge Functions exciting?</h2>
         <p>
           <Link class="link margin1" href="../">
             {"<-- Back to Tech"}
