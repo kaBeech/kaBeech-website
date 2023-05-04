@@ -97,7 +97,7 @@ export default component$(() => {
             <p>Relational Database</p>
           </div>
         </div>
-        <h3>Why PostgreSQL?</h3>
+        <h3 class="responseTextLight">Why PostgreSQL?</h3>
         <p>
           The more I grow, the less dogmatic I get about database choices. These
           days non-relational databases like MongoDB (using NoSQL) can do most
@@ -151,7 +151,7 @@ export default component$(() => {
             <p>Middleware framework for Deno</p>
           </div>
         </div>
-        <h3>Why Oak?</h3>
+        <h3 class="responseTextLight">Why Oak?</h3>
         <p>
           It does exactly what I want, when I want, and nothing else. It is a
           middleware framework, which means I can patch together functions to
@@ -195,11 +195,11 @@ export default component$(() => {
             <p>Web development framework for Qwik with opinionated routing</p>
           </div>
         </div>
-        <h3>Why Qwik?</h3>
+        <h3 class="responseTextLight">Why Qwik?</h3>
         <p>Because it's fast! How is it so fast? Resumability!</p>
         <div class="flex alignStart">
           <div>
-            <h4>What is Hydration?</h4>
+            <h4 class="responseTextLight">What is Hydration?</h4>
             <p>(Used by Next.js)</p>
             <ol>
               <li>1. A static site is generated on the server</li>
@@ -246,7 +246,7 @@ export default component$(() => {
             </ol>
           </div>
           <div>
-            <h4>What is Resumability?</h4>
+            <h4 class="responseTextLight">What is Resumability?</h4>
             <p>(Used by Qwik)</p>
             <ol>
               <li>1. A static site is generated on the server</li>
@@ -293,7 +293,7 @@ export default component$(() => {
             </p>
           </div>
         </div>
-        <h3>Why Deno?</h3>
+        <h3 class="responseTextLight">Why Deno?</h3>
         <p>
           Fast, secure, robust. Less configuring, more doing. Typescript works
           right out of the box!
