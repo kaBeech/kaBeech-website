@@ -22,11 +22,13 @@ export default component$(() => {
         </h2>
         <p>
           The Edge is a term we software engineers like to use to make a simple
-          concept sound mysterious. It just means that when you visit a webpage,
-          the information is sent to your browser from somewhere geographically
-          close to you. That place that the information is sent from, the
-          closest possible place to you where the information is stored, is what
-          we call the Edge
+          concept sound mysterious
+        </p>
+        <p>
+          It just means that when you visit a webpage, the information is sent
+          to your browser from somewhere geographically close to you. That place
+          that the information is sent from, the closest possible place to you
+          where the information is stored, is what we call the Edge
         </p>
         <p>
           The real reason we give it a special name is that it's kind of a
