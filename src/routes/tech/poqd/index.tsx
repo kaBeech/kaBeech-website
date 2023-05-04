@@ -153,14 +153,14 @@ export default component$(() => {
         </div>
         <h3 class="responseTextLight">Why Oak?</h3>
         <p>
-          It does exactly what I want, when I want, and nothing else. It is a
+          Oak does exactly what I want, when I want, and nothing else. It is a
           middleware framework, which means I can patch together functions to
           enhance the functionality of the runtime (in this case Deno) when I
-          want to, and leave out unnecessary code when I don't.
+          want to, and leave out unnecessary code when I don't
         </p>
         <p>
           This developer experience feels natural to me. It reminds me of
-          chaining together guitar effects on a pedal board.
+          chaining together guitar effects on a pedal board
         </p>
         <p>
           Now, the same is true for Express, but Oak is designed to be used with
@@ -173,7 +173,7 @@ export default component$(() => {
           widely-used and supported analog to Express in Deno Land
         </p>
         <h2 id="frontend">Frontend</h2>
-        <div class="flex">
+        <div class="flex alignStart">
           <div>
             <h3>React</h3>
             <p>Unopinionated, component-based frontend JavaScript library</p>
@@ -345,7 +345,7 @@ export default component$(() => {
           </Link>{" "}
           right away!
         </p>
-        <h1 id="why-poqd">Why POQD?</h1>
+        <h1 id="why-poqd">Summary</h1>
         <h3 class="responseTextLight">
           Okay, but give it to me in a nutshell. Why do you use POQD?
         </h3>

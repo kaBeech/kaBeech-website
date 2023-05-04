@@ -369,7 +369,7 @@ button {
 }
 
 .justifyStart {
-  justify-content: safe;
+  justify-content: start;
 }
 
 .spaceBetween {
