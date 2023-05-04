@@ -18,7 +18,7 @@ export default component$(() => {
         </p>
         <h2 class="responseTextLight">
           Okay, that doesn't mean anything to me. What do you mean
-          'serverlessly?' What is the Edge?
+          'serverlessly?' What is the 'Edge?' I'm hungry!
         </h2>
         <p>
           The Edge is a term we software engineers like to use to make a simple
@@ -35,7 +35,7 @@ export default component$(() => {
           various points on this web there are places that store information. At
           these places there are little helpers that bring information to you,
           the user (similar to how a server at a restaurant brings food to you).
-          We call these helpers 'servers.'
+          We call these helpers 'servers'
         </p>
         <p>
           Now, a 'serverless' website doesn't actually mean that there's no
@@ -45,7 +45,7 @@ export default component$(() => {
           company like Netlify or Vercel to do the serving for me
         </p>
         <p>
-          This is like if I open a chain restaurant without public dining areas
+          This is like if I open a restaurant chain without public dining areas
           and I hire out a delivery service to bring the food to my customers'
           homes. This restaurant and delivery service partnership works well for
           me, because I don't have to manage payroll and health insurance for my
@@ -55,10 +55,10 @@ export default component$(() => {
         </p>
         <p>
           The difficulty comes when the delivery service only has a few depots
-          from which they can dispatch servers and it doesn't know which one to
-          use. If the server has to drive all the way from Seattle to my
-          restaurant in Los Angeles only to deliver to someone a few blocks
-          away, that leaves a lot of time for a delicious dinner to grow cold
+          which they can dispatch servers from and they don't know which one to
+          use. If the server drives all the way from Seattle to my restaurant in
+          Los Angeles only to deliver to someone a few blocks away, that leaves
+          a lot of time for a delicious dinner to grow cold
         </p>
         <p>
           But what if the delivery company had a depot in Los Angeles and said,
