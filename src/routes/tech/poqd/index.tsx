@@ -13,7 +13,7 @@ export default component$(() => {
     <div class="screenContainer">
       <Beechy />
       <div class="screenContents">
-        <h1>What is the POQD stack?</h1>
+        <h1 class="responseTextLight">What is the POQD stack?</h1>
         <p>
           This website is built using next-generation JavaScript software in a
           group (or 'stack') I like to call 'POQD'
@@ -21,8 +21,8 @@ export default component$(() => {
         <p>
           I first learned professional web development using a software stack
           known as MERN, which stands for 'MongoDB, Express, React, and
-          Node.js'. POQD is very similar, and stands for 'PostgreSQL, Oak, Qwik,
-          and Deno'
+          Node.js'. The POQD stack is a similar concept using newer technology
+          and stands for 'PostgreSQL, Oak, Qwik, and Deno'
         </p>
         <h1>Comparing MERN and POQD</h1>
         <table>
