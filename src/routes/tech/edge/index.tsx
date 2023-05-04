@@ -30,12 +30,14 @@ export default component$(() => {
         </p>
         <p>
           The real reason we give it a special name is that it's kind of a
-          complicated concept when you look behind the curtain. Think of the
-          World Wide Web as, well, a big web that covers the whole world. At
-          various points on this web there are places that store information. At
-          these places there are little helpers that bring information to you,
-          the user (similar to how a server at a restaurant brings food to you).
-          We call these helpers 'servers'
+          complicated concept when we look behind the curtain
+        </p>
+        <p>
+          Think of the World Wide Web as, well, a big web that covers the whole
+          world. At various points on this web there are places that store
+          information. At these places there are little helpers that bring
+          information to you, the user (similar to how a server at a restaurant
+          brings food to you). We call these helpers 'servers'
         </p>
         <p>
           Now, a 'serverless' website doesn't actually mean that there's no
@@ -78,11 +80,18 @@ export default component$(() => {
         <h2 class="responseTextLight">
           Why would I want to use Edge Functions?
         </h2>
+        <h3>Speed</h3>
+        <p>Content coming soon!</p>
+        <h3>Location-Based Personalization</h3>
+        <p>Content coming soon!</p>
         <h2 class="responseTextLight">
           What are some limitations of Edge Functions?
         </h2>
+        <p>Content coming soon!</p>
         <h2 class="responseTextLight">How can I use Edge Functions?</h2>
+        <p>Content coming soon!</p>
         <h2 class="responseTextLight">Why are Edge Functions exciting?</h2>
+        <p>Content coming soon!</p>
         <p>
           <Link class="link margin1" href="../">
             {"<-- Back to Tech"}
@@ -106,7 +115,7 @@ export const head: DocumentHead = {
   meta: [
     {
       name: "description",
-      content: "Information about edge functions",
+      content: "Information about Edge Functions",
     },
   ],
 };

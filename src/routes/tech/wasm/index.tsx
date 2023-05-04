@@ -12,9 +12,13 @@ export default component$(() => {
       <div class="screenContents">
         <h1>WebAssembly (WASM)</h1>
         <h2 class="responseTextLight">What is WebAssembly?</h2>
+        <p>Content coming soon!</p>
         <h2 class="responseTextLight">Why would I want to use WebAssembly?</h2>
+        <p>Content coming soon!</p>
         <h2 class="responseTextLight">Where can I use WebAssembly?</h2>
+        <p>Content coming soon!</p>
         <h2 class="responseTextLight">How can I use WebAssembly?</h2>
+        <p>Content coming soon!</p>
         <p>
           <Link class="link margin1" href="../">
             {"<-- Back to Tech"}
