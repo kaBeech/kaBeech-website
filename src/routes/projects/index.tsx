@@ -36,9 +36,7 @@ export default component$(() => {
             Wyrld Dashboard
           </Link>{" "}
           provides fast and unobtrusive cloud-based tools for tabletop
-          roleplaying games (RPG's) like Dungeons & Dragons. My partner Julian
-          and I also use it as an excuse to play with cool technology (for
-          instance we're currently rebuilding our server in Rust)
+          roleplaying games (RPG's) like Dungeons & Dragons
         </p>
         <p class="lazyMargin">
           Some of the tools we provide (or are planning to build) include:
@@ -76,6 +74,11 @@ export default component$(() => {
             and profit from their work
           </li>
         </ul>
+        <p>
+          My partner Julian and I also use this project as an excuse to play
+          with cool technology (for instance this is where we first started
+          using the Rust programming language)
+        </p>
         <h2>Audiopile</h2>
         <img
           src="/waveform.png"

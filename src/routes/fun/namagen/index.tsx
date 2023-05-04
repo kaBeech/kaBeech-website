@@ -51,7 +51,11 @@ export default component$(() => {
         </p>
         <p>
           Saurian (or Ḍaṭunḍiu) is a language we are developing for a group of
-          dinosaur people in Far Reach Co.'s fantasy roleplaying game setting
+          dinosaur people in{" "}
+          <Link class="link" href="https://farreachco.com/">
+            Far Reach Co.'s
+          </Link>{" "}
+          fantasy roleplaying game setting
         </p>
         <p>
           Since some Ḍaṭunḍii individuals have lips, some have beaks, and all
