@@ -24,16 +24,6 @@ export default component$(() => {
             Click here to learn more about the POQD stack
           </Link>
         </p>
-        <h2>WebAssembly (WASM)</h2>
-        <p>
-          WASM is a low-level programming language designed to be excecuted by
-          web browsers
-        </p>
-        <p>
-          <Link class="link" href="wasm">
-            Click here to learn more about WebAssembly
-          </Link>
-        </p>
         <h2>Edge Functions</h2>
         <p>
           Edge Functions are pieces of code that are designed to be deployed
@@ -43,6 +33,16 @@ export default component$(() => {
         <p>
           <Link class="link" href="edge">
             Click here to learn more about edge functions
+          </Link>
+        </p>
+        <h2>WebAssembly (WASM)</h2>
+        <p>
+          WASM is a low-level programming language designed to be excecuted by
+          web browsers
+        </p>
+        <p>
+          <Link class="link" href="wasm">
+            Click here to learn more about WebAssembly
           </Link>
         </p>
         <p>

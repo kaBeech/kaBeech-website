@@ -14,6 +14,11 @@ export default component$(() => {
       <Beechy />
       <div class="screenContents">
         <h1>Al Lugha Misma</h1>
+        <img
+          class="logo"
+          src="/icons/alLughaMismaColorized2.png"
+          alt="The Al Lugha Misma logo (a calligraphic representation of 'Al Lugha Misma' in mixed Naskh and Devanagari script"
+        />
         <p>You say "potato" (English), and I say "baTaaTaa" (Arabic)</p>
         <p>Or "papa" (Spanish)!</p>
         <p>
@@ -97,10 +102,10 @@ export default component$(() => {
         <p>
           This is a game exploring comparitive linguistics. It is currently
           under construction, but in the next release you will be able to choose
-          two or more languages to play with (including one referance language,
-          English by default). Then you can choose a topic (such as Numbers or
-          Colors) to be given a list of words from that topic in the reference
-          language
+          two or more of the languages above to play with (including one
+          referance language, English by default). Then you can choose a topic
+          (such as Numbers or Colors) to be given a list of words from that
+          topic in the reference language
         </p>
         <p>Your challenge is to type the words in the remaining language(s)!</p>
         <p>

@@ -30,6 +30,11 @@ export default component$(() => {
       <Beechy />
       <div class="screenContents">
         <h1>Namagen</h1>
+        <img
+          class="logo"
+          src="/peli_hype_centered.png"
+          alt="Peli, the Far Reach Co. mascot, showing excitement)"
+        />
         <p>
           Namagen randomly generates names in constructed languages. I made it
           partly to show how a Web Assembly application built with Rust can be
@@ -46,7 +51,11 @@ export default component$(() => {
         </p>
         <p>
           Saurian (or Ḍaṭunḍiu) is a language we are developing for a group of
-          dinosaur people in Far Reach Co.'s fantasy roleplaying game setting
+          dinosaur people in{" "}
+          <Link class="link" href="https://farreachco.com/">
+            Far Reach Co.'s
+          </Link>{" "}
+          fantasy roleplaying game setting
         </p>
         <p>
           Since some Ḍaṭunḍii individuals have lips, some have beaks, and all

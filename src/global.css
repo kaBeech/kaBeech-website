@@ -523,7 +523,18 @@ button {
 }
 
 .portrait {
-  max-width: 24em;
+  width: 24em;
+  max-width: 90%;
   border-radius: 2em;
   border-style: solid;
+  margin: 2em;
+}
+
+.logo {
+  width: 12em;
+  max-width: 90%;
+  border-radius: 2em;
+  border-style: solid;
+  margin: 2em;
+  background-color: var(--kaBeech-main-background);
 }

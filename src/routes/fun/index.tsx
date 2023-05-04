@@ -36,8 +36,8 @@ export default component$(() => {
         </p>
         <p>
           This is one of my first JavaScript projects and still one of my
-          favorites. Currently it requires a mouse to use. It's not very
-          sophisticated, but it's a lot of fun!
+          favorites to play with. Currently it requires a mouse to use. It's not
+          very sophisticated, but it's a lot of fun!
         </p>
         <h2>Namagen</h2>
         <img
@@ -106,10 +106,15 @@ export default component$(() => {
         <img
           class="tempLogo"
           src="/icons/alLughaMismaColorized2.png"
-          alt="A smiling face (used as a placeholder for the Al Lugha Misma logo)"
+          alt="The Al Lugha Misma logo (a calligraphic representation of 'Al Lugha Misma' in mixed Naskh and Devanagari script"
         />
         <button>
           <Link href="al-lugha-misma">Check out Al Lugha Misma!</Link>
+        </button>
+        <button class="invertedButton">
+          <Link href="https://github.com/kaBeech/al-lugha-misma">
+            View source on GitHub
+          </Link>
         </button>
         <p>You say "potato" (English), and I say "baTaaTaa" (Arabic)</p>
         <p>Or "papa" (Spanish)!</p>
