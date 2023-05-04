@@ -111,6 +111,11 @@ export default component$(() => {
         <button>
           <Link href="al-lugha-misma">Check out Al Lugha Misma!</Link>
         </button>
+        <button class="invertedButton">
+          <Link href="https://github.com/kaBeech/al-lugha-misma">
+            View source on GitHub
+          </Link>
+        </button>
         <p>You say "potato" (English), and I say "baTaaTaa" (Arabic)</p>
         <p>Or "papa" (Spanish)!</p>
         <p>
