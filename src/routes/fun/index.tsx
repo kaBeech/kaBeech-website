@@ -106,7 +106,7 @@ export default component$(() => {
         <img
           class="tempLogo"
           src="/icons/alLughaMismaColorized2.png"
-          alt="A smiling face (used as a placeholder for the Al Lugha Misma logo)"
+          alt="The Al Lugha Misma logo (a calligraphic representation of 'Al Lugha Misma' in mixed Naskh and Devanagari script"
         />
         <button>
           <Link href="al-lugha-misma">Check out Al Lugha Misma!</Link>
