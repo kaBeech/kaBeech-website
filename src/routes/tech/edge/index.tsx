@@ -51,12 +51,14 @@ export default component$(() => {
         <p>
           This is similar to me opening a restaurant chain without public dining
           areas and hiring out a delivery service to bring the food to my
-          customers' homes. This restaurant and delivery service partnership
-          works well for me, because I don't have to manage payroll and health
-          insurance for my servers, or try to predict at which times I'll need
-          more or less staff. Instead, the delivery service takes care of their
-          servers and I pay them only when I need to deliver food, and only as
-          much as I need
+          customers' homes
+        </p>
+        <p>
+          This restaurant and delivery service partnership works well for me,
+          because I don't have to manage payroll and health insurance for my
+          servers, or try to predict at which times I'll need more or less
+          staff. Instead, the delivery service takes care of their servers and I
+          pay them only when I need to deliver food, and only as much as I need
         </p>
         <p>
           The difficulty comes when the delivery service only has a few depots
