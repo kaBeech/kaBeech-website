@@ -13,7 +13,7 @@ export default component$(() => {
     <div class="screenContainer">
       <Beechy />
       <div class="screenContents">
-        <h1>What is the POQD stack?</h1>
+        <h1 class="responseTextLight">What is the POQD stack?</h1>
         <p>
           This website is built using next-generation JavaScript software in a
           group (or 'stack') I like to call 'POQD'
@@ -21,8 +21,8 @@ export default component$(() => {
         <p>
           I first learned professional web development using a software stack
           known as MERN, which stands for 'MongoDB, Express, React, and
-          Node.js'. POQD is very similar, and stands for 'PostgreSQL, Oak, Qwik,
-          and Deno'
+          Node.js'. The POQD stack is a similar concept using newer technology
+          and stands for 'PostgreSQL, Oak, Qwik, and Deno'
         </p>
         <h1>Comparing MERN and POQD</h1>
         <table>
@@ -97,7 +97,7 @@ export default component$(() => {
             <p>Relational Database</p>
           </div>
         </div>
-        <h3>Why PostgreSQL?</h3>
+        <h3 class="responseTextLight">Why PostgreSQL?</h3>
         <p>
           The more I grow, the less dogmatic I get about database choices. These
           days non-relational databases like MongoDB (using NoSQL) can do most
@@ -151,16 +151,16 @@ export default component$(() => {
             <p>Middleware framework for Deno</p>
           </div>
         </div>
-        <h3>Why Oak?</h3>
+        <h3 class="responseTextLight">Why Oak?</h3>
         <p>
-          It does exactly what I want, when I want, and nothing else. It is a
+          Oak does exactly what I want, when I want, and nothing else. It is a
           middleware framework, which means I can patch together functions to
           enhance the functionality of the runtime (in this case Deno) when I
-          want to, and leave out unnecessary code when I don't.
+          want to, and leave out unnecessary code when I don't
         </p>
         <p>
           This developer experience feels natural to me. It reminds me of
-          chaining together guitar effects on a pedal board.
+          chaining together guitar effects on a pedal board
         </p>
         <p>
           Now, the same is true for Express, but Oak is designed to be used with
@@ -173,7 +173,7 @@ export default component$(() => {
           widely-used and supported analog to Express in Deno Land
         </p>
         <h2 id="frontend">Frontend</h2>
-        <div class="flex">
+        <div class="flex alignStart">
           <div>
             <h3>React</h3>
             <p>Unopinionated, component-based frontend JavaScript library</p>
@@ -195,11 +195,11 @@ export default component$(() => {
             <p>Web development framework for Qwik with opinionated routing</p>
           </div>
         </div>
-        <h3>Why Qwik?</h3>
+        <h3 class="responseTextLight">Why Qwik?</h3>
         <p>Because it's fast! How is it so fast? Resumability!</p>
         <div class="flex alignStart">
           <div>
-            <h4>What is Hydration?</h4>
+            <h4 class="responseTextLight">What is Hydration?</h4>
             <p>(Used by Next.js)</p>
             <ol>
               <li>1. A static site is generated on the server</li>
@@ -246,7 +246,7 @@ export default component$(() => {
             </ol>
           </div>
           <div>
-            <h4>What is Resumability?</h4>
+            <h4 class="responseTextLight">What is Resumability?</h4>
             <p>(Used by Qwik)</p>
             <ol>
               <li>1. A static site is generated on the server</li>
@@ -293,7 +293,7 @@ export default component$(() => {
             </p>
           </div>
         </div>
-        <h3>Why Deno?</h3>
+        <h3 class="responseTextLight">Why Deno?</h3>
         <p>
           Fast, secure, robust. Less configuring, more doing. Typescript works
           right out of the box!
@@ -345,7 +345,7 @@ export default component$(() => {
           </Link>{" "}
           right away!
         </p>
-        <h1 id="why-poqd">Why POQD?</h1>
+        <h1 id="why-poqd">Summary</h1>
         <h3 class="responseTextLight">
           Okay, but give it to me in a nutshell. Why do you use POQD?
         </h3>

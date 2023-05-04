@@ -369,7 +369,7 @@ button {
 }
 
 .justifyStart {
-  justify-content: safe;
+  justify-content: start;
 }
 
 .spaceBetween {
@@ -511,6 +511,15 @@ button {
 .screenContents p,
 .screenContents li {
   max-width: 48em;
+}
+
+.screenContents h1,
+.screenContents h2,
+.screenContents h3,
+.screenContents h4,
+.screenContents h5,
+.screenContents h6 {
+  max-width: 84rem;
 }
 
 .portrait {
