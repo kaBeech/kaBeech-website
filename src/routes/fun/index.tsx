@@ -36,8 +36,8 @@ export default component$(() => {
         </p>
         <p>
           This is one of my first JavaScript projects and still one of my
-          favorites. Currently it requires a mouse to use. It's not very
-          sophisticated, but it's a lot of fun!
+          favorites to play with. Currently it requires a mouse to use. It's not
+          very sophisticated, but it's a lot of fun!
         </p>
         <h2>Namagen</h2>
         <img
