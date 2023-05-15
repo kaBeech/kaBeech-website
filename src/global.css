@@ -254,7 +254,7 @@ button {
 
 /* Class-level Colors */
 
-:link.link {
+.link {
   color: var(--kaBeech-link-unvisited);
 }
 
