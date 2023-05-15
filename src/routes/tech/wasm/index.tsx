@@ -27,8 +27,11 @@ export default component$(() => {
           Matter of fact, let's talk about my one-sentence answer the the
           question "What is WebAssembly?" This will be our example, because it's
           written in a way very similar to how we use high-level programming
-          languages. Here it is again: "WebAssembly, or WASM, is a low-level
-          programming language designed to be executed by web browsers"
+          languages. Here it is again:
+        </p>
+        <p>
+          "WebAssembly, or WASM, is a low-level programming language designed to
+          be executed by web browsers"
         </p>
         <p>You know what's great about that sentence?</p>
         <p>
@@ -52,16 +55,26 @@ export default component$(() => {
         </p>
         <p>
           But some or all of that may be untrue and you may be left thinking{" "}
-          <span class="link">
+          <span class="responseTextLight">
             "Who is this maniac, and why is xe making up so many weird words? I
             can make up words too, you know. Yupt!"
           </span>
         </p>
         <p>...which is why we have low-level programming languages!</p>
+        <p>
+          A low-level language can talk about the same concepts a high-level
+          language does, but it uses much simpler terms...
+        </p>
+        <p>
+          ...low-level programming languages take a lot longer to spell
+          everything out. Look at how long this section is compared with the
+          last one! ...
+        </p>
         <p>...</p>
         <p>
-          WebAssembly is named that because it is an (ital: Assembly Language)
-          for the (ital: Web)
+          WebAssembly is named that because it is an{" "}
+          <span class="ital">Assembly Language </span>for the
+          <span class="ital">Web</span>
         </p>
         <h2 class="responseTextLight">Why would I want to use WebAssembly?</h2>
         <p>Content coming soon!</p>
