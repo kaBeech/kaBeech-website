@@ -30,6 +30,13 @@ export default component$(() => {
           languages. Here it is again: "WebAssembly, or WASM, is a low-level
           programming language designed to be executed by web browsers"
         </p>
+        <p>You know what's great about that sentence?</p>
+        <p>
+          It's a sentence. It's short. If you already understand what I mean by
+          those words in that order, you're good to go. You don't even need to
+          read the rest of this section to understand what WASM is. Easy!
+        </p>
+        <p>...for some folks. Inscrutable for others</p>
         <p>
           A high-level language assumes a level of knowlege of the person
           reading it. In the case of our WASM sentence, I assume quite a lot
@@ -39,13 +46,12 @@ export default component$(() => {
           can be executed by web browsers. I assume you know what{" "}
           <Link class="link">programming languages</Link> and{" "}
           <Link class="link">web browsers</Link> are. I assume that you can read
-          my particular English <Link class="link">ideolect</Link>, that you can
-          infer that "WASM" is an abbreviation for "Web Assembly," and that
-          you'll pronounce it like /'wasm̩/ and not like "W-A-S-M"
+          my particular <Link class="link">ideolect</Link> of English, that
+          you'll infer that "WASM" is an abbreviation for "Web Assembly," and
+          that you'll pronounce it like /'wasm̩/ and not like "W-A-S-M"
         </p>
         <p>
-          However, some or all of that may be untrue, and you may be left
-          wondering{" "}
+          But some or all of that may be untrue and you may be left thinking{" "}
           <span class="link">
             "Who is this maniac, and why is xe making up so many weird words? I
             can make up words too, you know. Yupt!"
