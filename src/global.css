@@ -538,3 +538,9 @@ button {
   margin: 2em;
   background-color: var(--kaBeech-main-background);
 }
+
+.bin {
+  width: 80%;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+}
