@@ -208,7 +208,7 @@ export default component$(() => {
           Thank you!
         </ul>
         <p>
-          Notice that these signals said nothing about typing or the '6' symbol.
+          Notice that these signals said nothing about typing or the '^' symbol.
           These are
         </p>
         <p>
