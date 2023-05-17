@@ -421,7 +421,7 @@ export default component$(() => {
         <p>
           However, because slots are symbolic, the children can NOT be read or
           transformed by the components, like is possible in React. This means
-          if you're a lazy kaBeech just hacking together a webpage real fast,
+          if you're a lazy kaBeech just hacking together a website real fast,
           you might hit a point where your mind is screaming "WHY CAN'T I JUST
           PASS THIS STATE IN TO EVERY POSSIBLE CHILD OF THIS SLOT COMPONENT THE
           WAY I CAN WITH REACT????"

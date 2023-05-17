@@ -1,11 +1,14 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, useStylesScoped$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { Link } from "@builder.io/qwik-city";
 import { Beechy } from "~/components/beechy/beechy";
 import { ResponseBar } from "~/components/responseBar/responseBar";
 import { linkTiles } from "~/util/linkTiles";
+import styles from "./wasm.css?inline";
 
 export default component$(() => {
+  useStylesScoped$(styles);
+
   return (
     <div class="screenContainer">
       <Beechy />
@@ -145,11 +148,68 @@ export default component$(() => {
           "
         </p>
         <p>
-          Well... not exactly. Although we often consider binary code (which is
-          what all those 1's and 0's are) as the classic low-level language that
-          machines think in, modern machines are a bit more complicated. These
-          days, most computers use hexadecimal code (which uses the numbers 0-9
-          as well as the letters a-f) to communicate
+          In reality, the response will look a little different. Although we
+          often consider binary code (which is what all those 1's and 0's are)
+          as the classic low-level language that machines think in, modern
+          machines are a bit more complicated. These days, most computers use
+          hexadecimal code (which uses the numbers 0-9 as well as the letters
+          a-f) to communicate
+        </p>
+        <p>
+          In addition, most machines don't actually speak English converted to
+          simple character strings, like in that example where the letter 'a' is
+          represented by the string '01100001'. Instead, they need exact
+          instructions for what they are to do
+        </p>
+        <p>
+          Consider this situation: I'm typing and want to type the character
+          '^'. I can shout at my fingers "Hey, please type an '^' symbol for
+          me!" all I want, but they're unlikely to understand the message
+        </p>
+        <p>
+          Instead, I send electrical impulses through my nervous system to my
+          muscles that instruct them in each action to take. These impulses
+          might be translated something like this:
+        </p>
+        <ul>
+          Please do the following:
+          <li>
+            - Move our left pinky to the left and back towards our stomach,
+            about an inch in total, until it's seated above the 'Shift' key
+          </li>
+          <li>
+            - Press down on the 'Shift' with our left pinky by about half an
+            inch, or until we feel resistance, and hold it there
+          </li>
+          <li>
+            - Move our right wrist to the left and out away from our stomach by
+            about 2 inches so that our right index finger can more easily
+            stretch out. While doing this, rotate our right wrist slightly so
+            that the right part of our right hand stays close to its current
+            position
+          </li>
+          <li>
+            - Reach out with our right index finger to the left and out away
+            from our stomach, about half an inch, until it's seated above the
+            '6' key
+          </li>
+          <li>
+            - Press down on the '6' key with our right index finger by about
+            half an inch, or until we feel resistance
+          </li>
+          <li>
+            - Quickly release our hold on the '6' key and move our right hand
+            back to our neutral position
+          </li>
+          <li>
+            - Release our hold on the 'Shift' key and move our left hand back to
+            our neutral position
+          </li>
+          Thank you!
+        </ul>
+        <p>
+          Notice that these signals said nothing about typing or the '6' symbol.
+          These are
         </p>
         <p>
           Regardless of whether they use binary or hexidecimal characters, these
