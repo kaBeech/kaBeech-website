@@ -122,9 +122,9 @@ export default component$(() => {
           across the Atlantic Ocean!
         </p>
         <p>
-          Since Edge Functions bring data from a source physically clost to the
+          Since Edge Functions bring data from a source physically close to the
           user, developers can now put faster speeds and more relevant content
-          into the hands of users all over the world!
+          into the hands of users in South Africa and all over the world!
         </p>
         <p>
           <Link class="link margin1" href="../">
