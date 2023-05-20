@@ -112,7 +112,10 @@ export default component$(() => {
         </p>
         <p>
           We're allowed this luxury because{" "}
-          <Link class="link margin1" href="../">
+          <Link
+            class="link margin1"
+            href="https://w3techs.com/technologies/overview/server_location"
+          >
             over 35% of all websites are hosted in the US
           </Link>
           . Internet users in South Africa, for example, are more used to longer
