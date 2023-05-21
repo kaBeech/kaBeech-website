@@ -41,17 +41,17 @@ export default component$(() => {
           integrated into a JavaScript environment (more on that further down)
         </p>
         <p>
-          It currently supports two languages: Mamobibu and Saurian. Go on, give
-          it a try!
+          It currently supports two languages: Ḍaṭunḍiu and Mamobibu. Go on,
+          give it a try!
         </p>
         <h2>Currently Implemented Languages</h2>
-        <h3>Saurian (Ḍaṭunḍiu)</h3>
+        <h3>Ḍaṭunḍiu</h3>
         <p>
-          Random Saurain Name: <strong>{saurianName.value}</strong>
+          Random Ḍaṭunḍiu Name: <strong>{saurianName.value}</strong>
         </p>
         <p>
-          Saurian (or Ḍaṭunḍiu) is a language we are developing for a group of
-          dinosaur people in{" "}
+          Ḍaṭunḍiu is a language we are developing for a group of dinosaur
+          people in{" "}
           <Link class="link" href="https://farreachco.com/">
             Far Reach Co.'s
           </Link>{" "}
