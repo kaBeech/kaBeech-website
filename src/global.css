@@ -28,6 +28,7 @@
   --kaBeech-color-algae: #00333a;
   --kaBeech-color-photonsword: #0088ff;
   --kaBeech-color-distant-planet: #004886;
+  --kaBeech-color-distant-planet-semitransparent: #00021e9c;
   --kaBeech-color-solar-wind: #d42a00;
   --kaBeech-color-easter-moss: #00b63a;
   --kaBeech-color-ultraberry: #520052;
@@ -53,6 +54,7 @@
     --kaBeech-color-algae-transparent
   );
   --kaBeech-screen-foreground: var(--kaBeech-color-terminal-text);
+  --kaBeech-screen-insert: var(--kaBeech-color-distant-planet-semitransparent);
   --kaBeech-link-visited: var(--kaBeech-color-photonsword);
   --kaBeech-link-unvisited: var(--kaBeech-color-photonsword);
   --kaBeech-cancel: var(--kaBeech-color-solar-wind);

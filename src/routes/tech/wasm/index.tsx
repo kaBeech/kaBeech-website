@@ -175,10 +175,12 @@ export default component$(() => {
           Please do the following:
           <li>
             - Move our left pinky to the left and back towards our stomach,
-            about an inch in total, until it's seated above the 'Shift' key
+            about an inch in total, until it's seated above the 'Shift' key.
+            While doing this, rotate our left wrist slightly so that the other
+            fingers of our left hand stay close to their current positions
           </li>
           <li>
-            - Press down on the 'Shift' with our left pinky by about half an
+            - Press down on the 'Shift' key with our left pinky by about half an
             inch, or until we feel resistance, and hold it there
           </li>
           <li>
@@ -207,7 +209,8 @@ export default component$(() => {
           </li>
           Thank you!
         </ul>
-        <p>
+        <p>Content coming soon!</p>
+        {/* <p>
           Notice that these signals said nothing about typing or the '^' symbol.
           These are
         </p>
@@ -226,7 +229,7 @@ export default component$(() => {
           WebAssembly is named that because it is an{" "}
           <span class="ital">Assembly Language </span>for the
           <span class="ital">Web</span>
-        </p>
+        </p> */}
         <h2 class="responseTextLight">Why would I want to use WebAssembly?</h2>
         <p>Content coming soon!</p>
         <h2 class="responseTextLight">Where can I use WebAssembly?</h2>
