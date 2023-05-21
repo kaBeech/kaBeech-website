@@ -140,12 +140,13 @@ export default component$(() => {
           World,' but in all caps please?" you're likely to receive a response
           like this:
         </p>
-        <p class="bin">
-          "
-          <Link class="link bin" href="https://lingojam.com/BinaryTranslator">
+        <p class="bin insert">
+          <Link
+            class="link bin"
+            href="https://www.binaryhexconverter.com/binary-to-ascii-text-converter"
+          >
             01011001011011110010110000100000010010010010011101101101001000000110001001100001011100110110100101100011011000010110110001101100011110010010000001100001001000000111001101101111011101010111000001100101011001000010110101110101011100000010000001100011011000010110110001100011011101010110110001100001011101000110111101110010001011000010000001001001001000000110100001100001011101100110010100100000011011100110111100100000011010010110010001100101011000010010000001110111011010000110000101110100001000000111100101101111011101010010011101110010011001010010000001110011011000010111100101101001011011100110011100100000011100100110100101100111011010000111010000100000011011100110111101110111
           </Link>
-          "
         </p>
         <p>
           In reality, the response will look a little different. Although we
@@ -171,7 +172,7 @@ export default component$(() => {
           muscles that instruct them in each action to take. These impulses
           might be translated something like this:
         </p>
-        <ul>
+        <ul class="insert">
           Please do the following:
           <li>
             - Move our left pinky to the left and back towards our stomach,
