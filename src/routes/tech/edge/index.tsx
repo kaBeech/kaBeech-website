@@ -51,12 +51,14 @@ export default component$(() => {
         <p>
           This is similar to me opening a restaurant chain without public dining
           areas and hiring out a delivery service to bring the food to my
-          customers' homes. This restaurant and delivery service partnership
-          works well for me, because I don't have to manage payroll and health
-          insurance for my servers, or try to predict at which times I'll need
-          more or less staff. Instead, the delivery service takes care of their
-          servers and I pay them only when I need to deliver food, and only as
-          much as I need
+          customers' homes
+        </p>
+        <p>
+          This restaurant and delivery service partnership works well for me,
+          because I don't have to manage payroll and health insurance for my
+          servers, or try to predict at which times I'll need more or less
+          staff. Instead, the delivery service takes care of their servers and I
+          pay them only when I need to deliver food, and only as much as I need
         </p>
         <p>
           The difficulty comes when the delivery service only has a few depots
@@ -82,18 +84,51 @@ export default component$(() => {
         <h2 class="responseTextLight">
           Why would I want to use Edge Functions?
         </h2>
-        <h3>Speed</h3>
-        <p>Content coming soon!</p>
+        <h3>Edge Functions are fast</h3>
+        <p>
+          Since data doesn't have to travel as far to get to users, edge
+          functions can deliver content in the blink of an eye!
+        </p>
         <h3>Location-Based Personalization</h3>
         <p>Content coming soon!</p>
-        <h2 class="responseTextLight">
+        {/* <h2 class="responseTextLight">
           What are some limitations of Edge Functions?
         </h2>
-        <p>Content coming soon!</p>
+        <p>Function size limits (commonly 50MB)</p>
+        <p>Limited Node.js support on some platforms</p>
+        <p>Chron Jobs not available on some platforms</p>
+        <p>Content coming soon!</p> */}
         <h2 class="responseTextLight">How can I use Edge Functions?</h2>
         <p>Content coming soon!</p>
         <h2 class="responseTextLight">Why are Edge Functions exciting?</h2>
-        <p>Content coming soon!</p>
+        <p>
+          One cool thing about Edge Functions is that they help make the web
+          accessible to users all over the world!
+        </p>
+        <p>
+          Living in North America, we get used to webpages loading quickly and
+          not waiting on long response times. After just a few seconds we often
+          get restless and start complaining or switching to a different tab
+        </p>
+        <p>
+          We're allowed this luxury because{" "}
+          <Link
+            class="link margin1"
+            href="https://w3techs.com/technologies/overview/server_location"
+          >
+            over 35% of all websites are hosted in the United States
+          </Link>
+          . Internet users in South Africa, for example, are more used to longer
+          wait times, since only about 0.5% of websites are hosted in their
+          country, and the nearest country to them with a larger piece of the
+          web hosting pie (Brazil, with a 1.1% share) is thousands of miles away
+          across the Atlantic Ocean!
+        </p>
+        <p>
+          Since Edge Functions bring data from a source physically close to the
+          user, developers can now put faster speeds and more relevant content
+          into the hands of users in South Africa and all over the world!
+        </p>
         <p>
           <Link class="link margin1" href="../">
             {"<-- Back to Tech"}

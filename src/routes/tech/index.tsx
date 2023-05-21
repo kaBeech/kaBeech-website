@@ -37,7 +37,7 @@ export default component$(() => {
         </p>
         <h2>WebAssembly (WASM)</h2>
         <p>
-          WASM is a low-level programming language designed to be excecuted by
+          WASM is a low-level programming language designed to be executed by
           web browsers
         </p>
         <p>
