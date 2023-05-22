@@ -119,9 +119,9 @@ export default component$(() => {
             over 35% of all websites are hosted in the United States
           </Link>
           . Internet users in South Africa, for example, are more used to longer
-          wait times, since only about 0.5% of websites are hosted in their
-          country, and the nearest country to them with a larger piece of the
-          web hosting pie (Brazil, with a 1.1% share) is thousands of miles away
+          wait times since only about 0.5% of websites are hosted in their
+          country and the nearest country to them with a larger piece of the web
+          hosting pie (Brazil, with a 1.1% share) is thousands of miles away
           across the Atlantic Ocean!
         </p>
         <p>

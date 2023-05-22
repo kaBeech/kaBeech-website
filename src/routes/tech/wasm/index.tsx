@@ -210,12 +210,13 @@ export default component$(() => {
           </li>
           Thank you!
         </ul>
+        <p>
+          Notice that these signals said nothing about the '^' symbol, or even
+          typing at all. These are higher-level concepts that aren't useful to
+          my muscles themselves.
+        </p>
         <p>Content coming soon!</p>
         {/* <p>
-          Notice that these signals said nothing about typing or the '^' symbol.
-          These are
-        </p>
-        <p>
           Regardless of whether they use binary or hexidecimal characters, these
           characters must have a system built around them that makes it clear
           what "010110010110" actually means. These systems that organize
