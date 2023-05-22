@@ -288,7 +288,6 @@ export default component$(() => {
           <Link class="link" href="/fun/namagen">
             the Namagen webpage
           </Link>
-          .
         </p>
         <p>
           For use on the client, a bundler like{" "}
@@ -312,9 +311,13 @@ export default component$(() => {
           <Link class="link" href="https://www.npmjs.com/">
             npm
           </Link>
-          . You might already be using WASM in your website and not even know
+          . You might even be using WASM in your website already without knowing
           it!
         </p>
+        <h2>
+          WebAssembly is a great tool you can use to talk your web browser's
+          language!
+        </h2>
         <p>
           <Link class="link margin1" href="../">
             {"<-- Back to Tech"}
