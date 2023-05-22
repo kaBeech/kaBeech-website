@@ -149,18 +149,11 @@ export default component$(() => {
           </Link>
         </p>
         <p>
-          In reality, the response will look a little different. Although we
-          often consider binary code (which is what all those 1's and 0's are)
-          as the classic low-level language that machines think in, modern
-          machines are a bit more complicated. These days, most computers use
-          hexadecimal code (which uses the numbers 0-9 as well as the letters
-          a-f) to communicate
-        </p>
-        <p>
-          In addition, most machines don't actually speak English converted to
-          simple character strings, like in that example where the letter 'a' is
-          represented by the string '01100001'. Instead, they need exact
-          instructions for what they are to do
+          In reality, the response will look a little different. Most machines
+          don't actually speak English converted to simple character strings,
+          like in that example where the letter 'a' is represented by the string
+          '01100001'. Instead, they need exact instructions for what they are to
+          do
         </p>
         <p>
           Consider this situation: I'm typing and want to type the character
@@ -211,9 +204,15 @@ export default component$(() => {
           Thank you!
         </ul>
         <p>
-          Notice that these signals said nothing about the '^' symbol, or even
-          typing at all. These are higher-level concepts that aren't useful to
-          my muscles themselves.
+          Notice that these directions said nothing about the '^' symbol, or
+          even typing at all. These are higher-level concepts that aren't useful
+          to my muscles themselves
+        </p>
+        <p>
+          Like my muscles, low-level machines need simpler instructions. The
+          series of 1's and 0's in their language might translate to phrases
+          like "move a copy of this value to this point in memory" or "move the
+          data from this point in memory to this register"
         </p>
         <p>Content coming soon!</p>
         {/* <p>
