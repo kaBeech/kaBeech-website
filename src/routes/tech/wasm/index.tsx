@@ -214,29 +214,107 @@ export default component$(() => {
           like "move a copy of this value to this point in memory" or "move the
           data from this point in memory to this register"
         </p>
-        <p>Content coming soon!</p>
-        {/* <p>
-          Regardless of whether they use binary or hexidecimal characters, these
-          characters must have a system built around them that makes it clear
-          what "010110010110" actually means. These systems that organize
-          characters in ways that machines can understand are called 'assembly
-          languages'
+        <p>
+          <strong>
+            An 'Assembly Language' is a programming language that is structured
+            in simple enough terms that a low-level computer can understand them
+          </strong>
         </p>
         <h3>
-          An 'Assembly Language' is a low-level programming language that a
-          machine can understand
+          WebAssembly is so named because it is an{" "}
+          <span class="ital">Assembly Language </span>for the{" "}
+          <span class="ital">Web</span>
         </h3>
         <p>
-          WebAssembly is named that because it is an{" "}
-          <span class="ital">Assembly Language </span>for the
-          <span class="ital">Web</span>
-        </p> */}
+          WebAssembly is a programming language that is structured in terms that
+          web browsers (like Chrome and Firefox) can understand
+        </p>
         <h2 class="responseTextLight">Why would I want to use WebAssembly?</h2>
-        <p>Content coming soon!</p>
+        <p>
+          WASM is fast! Since your web browser doesn't need an interpreter to
+          understand WebAssembly, it can perform complex tasks very quickly!
+        </p>
         <h2 class="responseTextLight">Where can I use WebAssembly?</h2>
-        <p>Content coming soon!</p>
-        <h2 class="responseTextLight">How can I use WebAssembly?</h2>
-        <p>Content coming soon!</p>
+        <p>
+          <Link class="link" href="https://caniuse.com/wasm">
+            WebAssembly is supported by all major modern web browsers
+          </Link>
+        </p>
+        <p>
+          There are also runtimes for WebAssembly like{" "}
+          <Link class="link" href="https://wasmtime.dev/">
+            Wasmtime
+          </Link>{" "}
+          and{" "}
+          <Link class="link" href="https://wasmer.io/">
+            Wasmer
+          </Link>{" "}
+          that you can use to execute WASM code outside of a browser
+        </p>
+        <h2 class="responseTextLight">
+          Okay, but I don't want to write programs in binary! How can I use
+          WebAssembly?
+        </h2>
+        <p>
+          Good news! You don't need to code in binary to write WebAssembly
+          programs!
+        </p>
+        <p>
+          If you really want to get into the nitty gritty details, WebAssembly
+          has a text format (.wat), that provides a (somewhat) human-readable
+          translation of the WASM binary
+        </p>
+        <p>
+          Most folks, though, prefer something a bit more high-level. Luckily,
+          we can use a WASM runtime like Wasmtime to write WASM programs using
+          higher-level languages like Rust and Python
+        </p>
+        <h2 class="responseTextLight">
+          Aww come on! Can't I just use JavaScript?
+        </h2>
+        <p>
+          Once written, WebAssembly programs can also be interacted with using
+          JavaScript/TypeScript, either on the client or using runtimes like
+          Deno and Node.js
+        </p>
+        <p>
+          Let's take my fantasy name generator Namagen for a server-side
+          example. To incorporate Namagen into this website, I have the package
+          running on a small Deno server{" "}
+          <Link class="link" href="/tech/edge">
+            hosted on the edge
+          </Link>{" "}
+          that is hit with an API call when you go to{" "}
+          <Link class="link" href="/fun/namagen">
+            the Namagen webpage
+          </Link>
+          .
+        </p>
+        <p>
+          For use on the client, a bundler like{" "}
+          <Link class="link" href="https://vitejs.dev/">
+            Vite
+          </Link>
+          /
+          <Link class="link" href="https://rollupjs.org/">
+            Rollup
+          </Link>{" "}
+          or{" "}
+          <Link class="link" href="https://webpack.js.org/">
+            WebPack
+          </Link>{" "}
+          is generally used to interface with WASM packages kept in the
+          node_modules folder
+        </p>
+        <p>
+          Both client and server-side WASM programs can be published to
+          repositories like{" "}
+          <Link class="link" href="https://www.npmjs.com/">
+            npm
+          </Link>
+          . You might already be using WASM in your website and not even know
+          it!
+        </p>
         <p>
           <Link class="link margin1" href="../">
             {"<-- Back to Tech"}

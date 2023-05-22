@@ -37,7 +37,7 @@ export default component$(() => {
         />
         <p>
           Namagen randomly generates names in constructed languages. I made it
-          partly to show how a Web Assembly application built with Rust can be
+          partly to show how a WebAssembly application built with Rust can be
           integrated into a JavaScript environment (more on that further down)
         </p>
         <p>
