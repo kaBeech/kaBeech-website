@@ -126,10 +126,10 @@ export default component$(() => {
           information as relayed by Beechy
         </p>
         <p>
-          However, there are a couple issues with this strategy. Kyle has to
-          rolodex xis list of friends, remember that Beechy can interpret
-          high-level gibberish, contact Beechy, and prepare some ice cream to
-          bribe zyr into helping out
+          However, there are a couple issues with this strategy. It's a long
+          process. Kyle has to rolodex xis list of friends, remember that Beechy
+          can interpret high-level gibberish, contact Beechy, and prepare some
+          ice cream to bribe zyr into helping out
         </p>
         <p>
           While Beechy eats zis ice cream, ze has to read the high-level answer
