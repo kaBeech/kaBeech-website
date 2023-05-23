@@ -357,8 +357,8 @@ export default component$(() => {
           world, or with each other, without going through you
         </p>
         <h2>
-          WebAssembly is a great tool you can use to talk with web browsers in
-          their own language!
+          All in all, WebAssembly is a great tool you can use to talk with web
+          browsers in their own language!
         </h2>
         <p>
           <Link class="link margin1" href="../">
