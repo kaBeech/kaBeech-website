@@ -538,6 +538,8 @@ button {
 
 .logo {
   width: 12em;
+  height: 12em;
+  max-height: 90%;
   max-width: 90%;
   border-radius: 2em;
   border-style: solid;

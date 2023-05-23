@@ -17,7 +17,7 @@ export default component$(() => {
         </p>
         <h2>The POQD Stack</h2>
         <p>
-          POQD is a blazingly fast, next-generation software development stack
+          POQD is a blazingly fast next-generation software development stack
         </p>
         <p>
           <Link class="link" href="poqd">
