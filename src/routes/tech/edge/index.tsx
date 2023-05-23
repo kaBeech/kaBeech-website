@@ -99,7 +99,62 @@ export default component$(() => {
         <p>Chron Jobs not available on some platforms</p>
         <p>Content coming soon!</p> */}
         <h2 class="responseTextLight">How can I use Edge Functions?</h2>
-        <p>Content coming soon!</p>
+        <p>
+          Luckily, using Edge Functions is pretty simple, because most of the
+          setup is done by a hosting provider like{" "}
+          <Link
+            class="link"
+            href="https://vercel.com/docs/concepts/functions/edge-functions"
+          >
+            Vercel
+          </Link>{" "}
+          or{" "}
+          <Link
+            class="link"
+            href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/edge-functions.html"
+          >
+            AWS
+          </Link>
+          . The tricky part is making sure that your program will run on the
+          Edge. There are limitations to what you can run, and each hosting
+          providers' limitations are slightly different
+        </p>
+        <p>
+          One thing you'll have to consider when using Edge Functions is the
+          size of your program. Each hosting provider sets a limit on the
+          maximum size of code they will host in an Edge Function. A common
+          maximum is 50MB, but in some cases it may be as small as 10KB!
+        </p>
+        <p>
+          Now, 50MB may seem huge, but keep in mind that this includes all your
+          program's dependencies, including the famously massive node_modules
+          folder. There are of course ways to mitigate this limitation, such as
+          breaking up your project into smaller parts that can each be hosted in
+          their own Edge Function, but it's an important factor to be aware of
+        </p>
+        <p>
+          In addition, there will be a limit on how long your function can run
+          before being timed out. Again, this will be set by the hosting
+          provider - it could be as long as 30 seconds or less than a
+          millisecond
+        </p>
+        <p>
+          Last but not least, most providers use a custom runtime environment
+          (instead of Node.js) to execute your code. Common consequences of this
+          include requiring the use of{" "}
+          <Link
+            class="link"
+            href="https://www.typescriptlang.org/docs/handbook/2/modules.html"
+          >
+            ES modules
+          </Link>{" "}
+          and not providing access to some browser and/or Node.js APIs
+        </p>
+        <p>
+          Keep in mind that these are only a selection of the limitations placed
+          on Edge Functions. For full info on relevant limitations, please
+          contact your hosting provider
+        </p>
         <h2 class="responseTextLight">Why are Edge Functions exciting?</h2>
         <p>
           One cool thing about Edge Functions is that they help make the web
