@@ -71,7 +71,7 @@ export default component$(() => {
           </Link>{" "}
           are. I assume that you can read my particular{" "}
           <Link class="link" href="https://en.wikipedia.org/wiki/Idiolect">
-            ideolect
+            idiolect
           </Link>{" "}
           of English, that you'll infer that "WASM" is an abbreviation for "Web
           Assembly," and that you'll pronounce it like /'wasm̩/ and not like
