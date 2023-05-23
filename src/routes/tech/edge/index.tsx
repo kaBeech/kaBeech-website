@@ -89,9 +89,6 @@ export default component$(() => {
           Since data doesn't have to travel as far to get to users, edge
           functions can deliver content in the blink of an eye!
         </p>
-        {/* <p>
-          One common way to make use of this is through caching data on the edge
-        </p> */}
         <h3>Modularity</h3>
         <p>
           <strong>
@@ -163,13 +160,6 @@ export default component$(() => {
           they're in Washington or Virginia, and calculate a final price without
           breaking the flow that leads a potential customer to a purchase
         </p>
-        {/* <h2 class="responseTextLight">
-          What are some limitations of edge functions?
-        </h2>
-        <p>Function size limits (commonly 50MB)</p>
-        <p>Limited Node.js support on some platforms</p>
-        <p>Chron Jobs not available on some platforms</p>
-        <p>Content coming soon!</p> */}
         <h2 class="responseTextLight">How can I use Edge Functions?</h2>
         <p>
           Luckily, using edge functions is pretty simple, because most of the

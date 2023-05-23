@@ -165,7 +165,7 @@ export default component$(() => {
         <p>
           Now, the same is true for Express, but Oak is designed to be used with
           Deno! There are some nice things about the way Oak works (many
-          inherited from its spritual predecessor in Node.js,{" "}
+          inherited from its spritual predecessor in Node,{" "}
           <Link class="link" href="https://koajs.com/">
             Koa
           </Link>
@@ -325,8 +325,7 @@ export default component$(() => {
           <Link class="link" href="/tech/edge">
             edge functions
           </Link>
-          . Competing with Node.js is an ambitious task, but Deno is here to
-          stay
+          . Competing with Node is an ambitious task, but Deno is here to stay
         </p>
         <p>
           Now, all that being said, the Number One reason I use Deno is...
@@ -388,7 +387,7 @@ export default component$(() => {
         </p>
         <p>
           <strong>Example 1:</strong> Deno only supports URLs for loading
-          dependencies (as opposed to Node.js, which supports both URLs and
+          dependencies (as opposed to Node, which supports both URLs and
           modules). Why would I want to use a tool that does less things? Well,
           (perhaps obviously), browsers also only support URLs. Using a runtime
           that loads dependencies in the same way a browser does forces me to
