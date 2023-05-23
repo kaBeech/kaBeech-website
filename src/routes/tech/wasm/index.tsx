@@ -49,13 +49,32 @@ export default component$(() => {
           reading it. In the case of our WASM sentence, I assume quite a lot
           about you, dear reader. I assume you know what a low-level language is
           and how it contrasts with a high-level one. I assume you know what it
-          means for code to be executed and why it's interesting that WASM can
-          be executed by web browsers. I assume you know what{" "}
-          <Link class="link">programming languages</Link> and{" "}
-          <Link class="link">web browsers</Link> are. I assume that you can read
-          my particular <Link class="link">ideolect</Link> of English, that
-          you'll infer that "WASM" is an abbreviation for "Web Assembly," and
-          that you'll pronounce it like /'wasm̩/ and not like "W-A-S-M"
+          means for code to be{" "}
+          <Link
+            class="link"
+            href="https://en.wikipedia.org/wiki/Execution_(computing)"
+          >
+            executed
+          </Link>{" "}
+          and why it's interesting that WASM can be executed by web browsers. I
+          assume you know what{" "}
+          <Link
+            class="link"
+            href="https://en.wikipedia.org/wiki/Programming_language"
+          >
+            programming languages
+          </Link>{" "}
+          and{" "}
+          <Link class="link" href="https://en.wikipedia.org/wiki/Web_browser">
+            web browsers
+          </Link>{" "}
+          are. I assume that you can read my particular{" "}
+          <Link class="link" href="https://en.wikipedia.org/wiki/Idiolect">
+            ideolect
+          </Link>{" "}
+          of English, that you'll infer that "WASM" is an abbreviation for "Web
+          Assembly," and that you'll pronounce it like /'wasm̩/ and not like
+          "W-A-S-M"
         </p>
         <p>
           But some or all of that may be untrue and you may be left thinking{" "}
@@ -234,6 +253,23 @@ export default component$(() => {
           WASM is fast! Since your web browser doesn't need an interpreter to
           understand WebAssembly, it can perform complex tasks very quickly!
         </p>
+        <p>
+          In fact, WebAssembly is so fast that{" "}
+          <Link class="link" href="https://webassembly.org/docs/security/">
+            some folks are now using it to run full data science stacks inside a
+            web browser
+          </Link>
+          !
+        </p>
+        <p>
+          WebAssembly also has security benefits!{" "}
+          <Link class="link" href="https://webassembly.org/docs/security/">
+            WASM modules execute in sandboxed environments separate from each
+            other and from the host runtime
+          </Link>
+          . That means that, in general, the modules can't talk with the outside
+          world, or each other, without going through you
+        </p>
         <h2 class="responseTextLight">Where can I use WebAssembly?</h2>
         <p>
           <Link class="link" href="https://caniuse.com/wasm">
@@ -290,33 +326,18 @@ export default component$(() => {
           </Link>
         </p>
         <p>
-          For use on the client, a bundler like{" "}
-          <Link class="link" href="https://vitejs.dev/">
-            Vite
-          </Link>
-          /
-          <Link class="link" href="https://rollupjs.org/">
-            Rollup
-          </Link>{" "}
-          or{" "}
-          <Link class="link" href="https://webpack.js.org/">
-            WebPack
-          </Link>{" "}
-          is generally used to interface with WASM packages kept in the
+          For use on the client, a bundler like Vite/Rollup or WebPack is
+          generally used to interface with WASM packages kept in the
           node_modules folder
         </p>
         <p>
           Both client and server-side WASM programs can be published to
-          repositories like{" "}
-          <Link class="link" href="https://www.npmjs.com/">
-            npm
-          </Link>
-          . You might even be using WASM in your website already without knowing
-          it!
+          repositories like npm . You might even be using WASM in your website
+          already without knowing it!
         </p>
         <h2>
-          WebAssembly is a great tool you can use to talk your web browser's
-          language!
+          WebAssembly is a great tool you can use to talk with your web browser
+          in its own language!
         </h2>
         <p>
           <Link class="link margin1" href="../">
