@@ -40,7 +40,7 @@ export default component$(() => {
         </p>
         <p>
           When I'm not coding you can probably find me running, building fantasy
-          worlds for tabletop roleplaying games, or playing guitar
+          worlds for tabletop role-playing games, or playing guitar
         </p>
         <p>
           I also have an{" "}

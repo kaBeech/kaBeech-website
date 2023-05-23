@@ -55,7 +55,7 @@ export default component$(() => {
           <Link class="link" href="https://farreachco.com/">
             Far Reach Co.'s
           </Link>{" "}
-          fantasy roleplaying game setting
+          fantasy role-playing game setting
         </p>
         <p>
           Since some Ḍaṭunḍii individuals have lips, some have beaks, and all

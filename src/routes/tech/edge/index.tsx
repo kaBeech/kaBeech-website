@@ -22,7 +22,7 @@ export default component$(() => {
         </h2>
         <p>
           The edge is a term we software engineers like to use to make a simple
-          concept sound mysterious
+          subject sound mysterious
         </p>
         <p>
           It just means that when you visit a webpage, the information is sent
@@ -35,8 +35,8 @@ export default component$(() => {
           complicated concept when we look behind the curtain
         </p>
         <p>
-          Think of the World Wide Web as, well, a big web that covers the whole
-          world. At various points on this web there are places that store
+          Let's think of the World Wide Web as, well, a big web that covers the
+          whole world. At various points on this web there are places that store
           information. At these places there are little helpers that bring
           information to you, the user (similar to how a server at a restaurant
           brings food to you). We call these helpers 'servers'

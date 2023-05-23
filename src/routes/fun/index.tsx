@@ -55,7 +55,7 @@ export default component$(() => {
         </button>
         <p>
           Namagen randomly generates names in constructed languages. I built it
-          for use in roleplaying games (to integrate with the{" "}
+          for use in role-playing games (to integrate with the{" "}
           <Link class="link" href="/projects">
             Wyrld Dashboard
           </Link>{" "}

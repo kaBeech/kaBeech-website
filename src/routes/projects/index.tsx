@@ -36,7 +36,7 @@ export default component$(() => {
             Wyrld Dashboard
           </Link>{" "}
           provides fast and unobtrusive cloud-based tools for tabletop
-          roleplaying games (RPG's) like Dungeons & Dragons
+          role-playing games (RPG's) like Dungeons & Dragons
         </p>
         <p class="lazyMargin">
           Some of the tools we provide (or are planning to build) include:
