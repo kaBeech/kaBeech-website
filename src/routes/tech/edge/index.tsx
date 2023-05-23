@@ -21,14 +21,14 @@ export default component$(() => {
           'serverlessly?' What is the 'Edge?' I'm hungry!
         </h2>
         <p>
-          The Edge is a term we software engineers like to use to make a simple
+          The edge is a term we software engineers like to use to make a simple
           concept sound mysterious
         </p>
         <p>
           It just means that when you visit a webpage, the information is sent
           to your browser from somewhere geographically close to you. That place
           that the information is sent from, the closest possible place to you
-          where the information is stored, is what we call the Edge
+          where the information is stored, is what we call the edge
         </p>
         <p>
           The real reason we give it a special name is that it's kind of a
@@ -70,15 +70,15 @@ export default component$(() => {
         <p>
           But what if the delivery company had a depot in Los Angeles and said,
           "Hey, this restaurant is in LA, why don't we send someone from our LA
-          depot to deliver it?" This is essentially the idea behind Edge
-          Functions
+          depot to deliver it?" This is essentially the idea behind edge
+          functions
         </p>
         <p>
-          With Edge Functions, I still let another company manage my servers,
+          With edge functions, I still let another company manage my servers,
           but that company makes sure that the server they're sending the
           information from is the closest one to the user visiting my website.
           This may sound like the obvious thing to do, but it's harder to pull
-          off than it sounds, which is why it's exciting that Edge Functions are
+          off than it sounds, which is why it's exciting that edge functions are
           now available to developers like us!
         </p>
         <h2 class="responseTextLight">
@@ -92,7 +92,7 @@ export default component$(() => {
         <h3>Location-Based Personalization</h3>
         <p>Content coming soon!</p>
         {/* <h2 class="responseTextLight">
-          What are some limitations of Edge Functions?
+          What are some limitations of edge functions?
         </h2>
         <p>Function size limits (commonly 50MB)</p>
         <p>Limited Node.js support on some platforms</p>
@@ -100,7 +100,7 @@ export default component$(() => {
         <p>Content coming soon!</p> */}
         <h2 class="responseTextLight">How can I use Edge Functions?</h2>
         <p>
-          Luckily, using Edge Functions is pretty simple, because most of the
+          Luckily, using edge functions is pretty simple, because most of the
           setup is done by a hosting provider like{" "}
           <Link
             class="link"
@@ -115,14 +115,14 @@ export default component$(() => {
           >
             AWS
           </Link>
-          . The tricky part is making sure that your program will run on the
-          Edge. There are limitations to what you can run, and each hosting
+          . The tricky part here is making sure that your program will run on
+          the edge. There are limitations to what you can run, and each hosting
           providers' limitations are slightly different
         </p>
         <p>
-          One thing you'll have to consider when using Edge Functions is the
+          One thing you'll have to consider when using edge functions is the
           size of your program. Each hosting provider sets a limit on the
-          maximum size of code they will host in an Edge Function. A common
+          maximum size of code they will host in an edge function. A common
           maximum is 50MB, but in some cases it may be as small as 10KB!
         </p>
         <p>
@@ -130,7 +130,7 @@ export default component$(() => {
           program's dependencies, including the famously massive node_modules
           folder. There are of course ways to mitigate this limitation, such as
           breaking up your project into smaller parts that can each be hosted in
-          their own Edge Function, but it's an important factor to be aware of
+          their own edge function, but it's an important factor to be aware of
         </p>
         <p>
           In addition, there will be a limit on how long your function can run
@@ -152,12 +152,12 @@ export default component$(() => {
         </p>
         <p>
           Keep in mind that these are only a selection of the limitations placed
-          on Edge Functions. For full info on relevant limitations, please
+          on edge functions. For full info on relevant limitations, please
           contact your hosting provider
         </p>
         <h2 class="responseTextLight">Why are Edge Functions exciting?</h2>
         <p>
-          One cool thing about Edge Functions is that they help make the web
+          One cool thing about edge functions is that they help make the web
           accessible to users all over the world!
         </p>
         <p>
@@ -180,7 +180,7 @@ export default component$(() => {
           across the Atlantic Ocean!
         </p>
         <p>
-          Since Edge Functions bring data from a source physically close to the
+          Since edge functions bring data from a source physically close to the
           user, developers can now put faster speeds and more relevant content
           into the hands of users in South Africa and all over the world!
         </p>
