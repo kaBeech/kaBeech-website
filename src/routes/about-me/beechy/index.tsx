@@ -11,6 +11,9 @@ export default component$(() => {
       <Beechy />
       <div class="screenContents">
         <h1>About Me, Beechy</h1>
+        <h2 class="responseTextLight">
+          Hey, Beechy! What's it like being an avatar?
+        </h2>
         <p>Oh! Thanks for asking - being me pretty great!</p>
         <p>
           Being Kyle's avatar is basically like being a conduit for zis

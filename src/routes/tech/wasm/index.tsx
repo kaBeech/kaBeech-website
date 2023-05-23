@@ -24,7 +24,7 @@ export default component$(() => {
         </h2>
         <p>Absolutely!</p>
         <h3>
-          First let's talk about low-level and high-level programming languages
+          First let's talk about high- and low-level programming languages
         </h3>
         <p>
           Matter of fact, let's talk about my one-sentence answer the the
@@ -44,6 +44,7 @@ export default component$(() => {
           Easy!
         </p>
         <p>...for some folks. Inscrutable for others</p>
+        <h3>This is where low-level languages come in</h3>
         <p>
           A high-level language assumes a level of knowledge of the person
           reading it. In the case of our WASM sentence, I assume quite a lot
@@ -97,6 +98,7 @@ export default component$(() => {
           understand the answer, but it takes a lot longer to spell everything
           out. Look at how long this section is compared with the last one!
         </p>
+        <h3>Speed and comprehensibility</h3>
         <p>
           Given the added length, you might conclude that using low-level
           language would take more time to convey an idea. However, this is not
@@ -113,10 +115,15 @@ export default component$(() => {
           Or... xe could find a friend to interpret the sentence for xyr. Let's
           call this interpreter 'Beechy'
         </p>
+        <h3 class="responseTextLight">Hey, I know Beechy!</h3>
         <p>
-          Beechy could read the sentence, and if ze understands the meaning I
-          intend to convey, ze could spell it out to Kyle bit by bit. This way,
-          Kyle will likely understand the information as relayed by Beechy
+          <Link class="link" href="/about-me/beechy">
+            Beechy is a known lover of languages
+          </Link>{" "}
+          and knows a lot about computers. Beechy could read the sentence, and
+          if ze understands the meaning I intend to convey, ze could spell it
+          out to Kyle bit by bit. This way, Kyle will likely understand the
+          information as relayed by Beechy
         </p>
         <p>
           However, there are a couple issues with this strategy. Kyle has to
@@ -138,8 +145,8 @@ export default component$(() => {
           sentence until xe finally understands it, takes a long time
         </p>
         <p>
-          ...and this is all assuming that Beechy interprets what I mean
-          correctly and nothing gets lost in translation!
+          ...and this is all assuming that Beechy correctly interprets what I
+          mean and nothing gets lost in translation!
         </p>
         <p>
           All told, if Kyle doesn't understand my high-level, one sentence
