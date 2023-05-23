@@ -230,8 +230,8 @@ export default component$(() => {
         <p>
           Like my muscles, low-level machines need simpler instructions. The
           series of 1's and 0's in their language might translate to phrases
-          like "move a copy of this value to this point in memory" or "move the
-          data from this point in memory to this register"
+          like "move a copy of this value to this point in memory" or "multiply
+          these two integers together"
         </p>
         <p>
           <strong>
@@ -248,32 +248,10 @@ export default component$(() => {
           WebAssembly is a programming language that is structured in terms that
           web browsers (like Chrome and Firefox) can understand
         </p>
-        <h2 class="responseTextLight">Why would I want to use WebAssembly?</h2>
-        <p>
-          WASM is fast! Since your web browser doesn't need an interpreter to
-          understand WebAssembly, it can perform complex tasks very quickly
-        </p>
-        <p>
-          In fact, WebAssembly is so fast that{" "}
-          <Link class="link" href="https://webassembly.org/docs/security/">
-            some folks are now using it to run full data science stacks inside a
-            web browser
-          </Link>
-          !
-        </p>
-        <p>
-          WebAssembly also has security benefits.{" "}
-          <Link class="link" href="https://webassembly.org/docs/security/">
-            WASM modules execute in sandboxed environments separate from each
-            other and from the host runtime
-          </Link>
-          . That means that, in general, the modules can't talk with the outside
-          world, or each other, without going through you
-        </p>
         <h2 class="responseTextLight">Where can I use WebAssembly?</h2>
         <p>
           <Link class="link" href="https://caniuse.com/wasm">
-            WebAssembly is supported by all major modern web browsers
+            WebAssembly is now supported by all major modern web browsers
           </Link>
         </p>
         <p>
@@ -305,6 +283,12 @@ export default component$(() => {
           we can use a WASM runtime like Wasmtime to write WASM programs using
           higher-level languages like Rust and Python
         </p>
+        <p>
+          This is one of the biggest draws that attracts people to WebAssembly:{" "}
+          <strong>
+            WASM provides a vehicle for other languages to run in web browsers
+          </strong>
+        </p>
         <h2 class="responseTextLight">
           Aww come on! Can't I just use JavaScript?
         </h2>
@@ -334,6 +318,36 @@ export default component$(() => {
           Both client and server-side WASM programs can be published to
           repositories like npm and deno.land/x. You might even be using WASM in
           your website already without knowing it!
+        </p>
+        <h2 class="responseTextLight">Why would I want to use WebAssembly?</h2>
+        <p>
+          WASM is fast! Since your web browser doesn't need an interpreter to
+          understand WebAssembly, it can perform complex tasks very quickly
+        </p>
+        <p>
+          In fact, WebAssembly is so fast that{" "}
+          <Link
+            class="link"
+            href="https://www.infoq.com/news/2021/05/pyodide-python-webassembly/"
+          >
+            some folks are now using it to run full data science stacks inside a
+            web browser
+          </Link>
+          !
+        </p>
+        <p>
+          WASM enables you to run code written in non-JavaScript languages in
+          the browser. The data science stack mentioned above is an example of
+          Python code running in the browser using WASM!
+        </p>
+        <p>
+          WebAssembly also has security benefits.{" "}
+          <Link class="link" href="https://webassembly.org/docs/security/">
+            WASM modules execute in sandboxed environments separate from each
+            other and from the host runtime
+          </Link>
+          . That means that, in general, the modules can't talk with the outside
+          world, or with each other, without going through you
         </p>
         <h2>
           WebAssembly is a great tool you can use to talk with web browsers in
