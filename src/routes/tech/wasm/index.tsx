@@ -115,7 +115,7 @@ export default component$(() => {
           Or... xe could find a friend to interpret the sentence for xyr. Let's
           call this interpreter 'Beechy'
         </p>
-        <h3 class="responseTextLight">Hey, I know Beechy!</h3>
+        <h4 class="responseTextLight">Hey, I know Beechy!</h4>
         <p>
           <Link class="link" href="/about-me/beechy">
             Beechy is a known lover of languages
