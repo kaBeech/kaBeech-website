@@ -85,10 +85,10 @@ export default component$(() => {
         </p>
         <p>...which is why we have low-level programming languages!</p>
         <p>
-          A low-level language can talk about the same concepts that a
-          high-level language does, but it spells out exactly what it means in
-          more explicit terms. We can use my whole answer in this entire section
-          as our example to describe low-level languages. It answers the same
+          A low-level language can convey the same information that a high-level
+          language does, but it spells out exactly what it means in more
+          explicit terms. We can use my whole answer in this entire section as
+          our example to describe low-level languages. It answers the same
           question, but assumes less of the reader and walks through the answer
           step by step
         </p>
