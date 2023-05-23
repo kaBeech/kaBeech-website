@@ -14,7 +14,7 @@ export const Logo = component$((props: LogoProps) => {
       <Link href="/">
         <img
           class="lazy"
-          src="/favicon.png"
+          src="/favicon.webp"
           alt="The kaBeech Heart - click to go to Home Page"
         />
       </Link>

@@ -13,7 +13,7 @@ export default component$(() => {
         <h1>About Me</h1>
         <img
           class="portrait"
-          src="/portrait4.jpg"
+          src="/portrait4.webp"
           alt="A photo of me, Kyle Beechly, at my computer"
         />
         <p>

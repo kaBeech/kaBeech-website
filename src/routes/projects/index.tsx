@@ -20,7 +20,7 @@ export default component$(() => {
         </h3>
         <h2>Wyrld Dashboard</h2>
         <img
-          src="/peli_book_smaller.PNG"
+          src="/peli_book_smaller.webp"
           alt="Peli, the Far Reach Co. mascot, holding a book"
         />
         <button>
@@ -81,7 +81,7 @@ export default component$(() => {
         </p>
         <h2>Audiopile</h2>
         <img
-          src="/waveform.png"
+          src="/waveform.webp"
           alt="The Audiopile logo - overlapping multicolored sine waves"
         />
         <button>
@@ -120,7 +120,7 @@ export default component$(() => {
         </p>
         <h2>Advent Of Code (My Personal Solutions)</h2>
         <img
-          src="/adventOfCode.png"
+          src="/adventOfCode.webp"
           alt="A star representing the Advent Of Code"
         />
         <button>

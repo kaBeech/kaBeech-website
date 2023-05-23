@@ -32,7 +32,7 @@ export default component$(() => {
         <h1>Namagen</h1>
         <img
           class="logo"
-          src="/peli_hype_centered.png"
+          src="/peli_hype_centered.webp"
           alt="Peli, the Far Reach Co. mascot, showing excitement)"
         />
         <p>

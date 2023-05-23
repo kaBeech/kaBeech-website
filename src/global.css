@@ -112,7 +112,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-image: url(/starry-background-bartek-tiled-4x-vsmall.jpg);
+  background-image: url(/starry-background-bartek-tiled-4x-vsmall.webp);
   color: var(--kaBeech-screen-foreground);
 }
 
@@ -530,10 +530,9 @@ button {
 }
 
 .portrait {
-  height: 20em;
-  max-height: 100%;
   width: 24em;
   max-width: 90%;
+  aspect-ratio: 1.263;
   border-radius: 2em;
   border-style: solid;
   margin: 2em;
@@ -541,9 +540,8 @@ button {
 
 .logo {
   width: 12em;
-  height: 12em;
-  max-height: 90%;
   max-width: 90%;
+  aspect-ratio: 1;
   border-radius: 2em;
   border-style: solid;
   margin: 2em;

@@ -16,7 +16,7 @@ export default component$(() => {
         <h1>Al Lugha Misma</h1>
         <img
           class="logo"
-          src="/icons/alLughaMismaColorized2.png"
+          src="/icons/alLughaMismaColorized2.webp"
           alt="The Al Lugha Misma logo (a calligraphic representation of 'Al Lugha Misma' in mixed Naskh and Devanagari script"
         />
         <p>You say "potato" (English), and I say "baTaaTaa" (Arabic)</p>
