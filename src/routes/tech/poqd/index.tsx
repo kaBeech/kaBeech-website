@@ -177,7 +177,7 @@ export default component$(() => {
           <div>
             <h3>React</h3>
             <p>Unopinionated, component-based frontend JavaScript library</p>
-            <h4>Next.js</h4>Vercel
+            <h4>Next.js</h4>
             <p>
               Web development framework for React with opinionated routing. Uses
               server-side rendering to create static pages. Responsive web

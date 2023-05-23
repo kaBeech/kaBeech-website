@@ -129,8 +129,9 @@ export default component$(() => {
           Now, 50MB may seem huge, but keep in mind that this includes all your
           program's dependencies, including the famously massive node_modules
           folder. There are of course ways to mitigate this limitation, such as
-          breaking up your project into smaller parts that can each be hosted in
-          their own edge function, but it's an important factor to be aware of
+          breaking up your project into smaller parts that can each be hosted on
+          their own edge function, but it's still an important factor to be
+          aware of
         </p>
         <p>
           In addition, there will be a limit on how long your function can run
