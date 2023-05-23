@@ -35,18 +35,33 @@ export default component$(() => {
           complicated concept when we look behind the curtain
         </p>
         <p>
-          Let's think of the World Wide Web as, well, a big web that covers the
-          whole world. At various points on this web there are places that store
-          information. At these places there are little helpers that bring
-          information to you, the user (similar to how a server at a restaurant
-          brings food to you). We call these helpers 'servers'
+          Let's think of the{" "}
+          <Link
+            class="link"
+            href="https://en.wikipedia.org/wiki/World_Wide_Web"
+          >
+            World Wide Web
+          </Link>{" "}
+          as, well, a big web that covers the whole world. At various points on
+          this web there are places that store information. At these places
+          there are little helpers that bring information to you, the user
+          (similar to how a server at a restaurant brings food to you). We call
+          these helpers 'servers'
         </p>
         <p>
           Now, a 'serverless' website doesn't actually mean that there's no
           server involved. The information (or food) still has to get to you
           somehow. But as the builder of a serverless website, I don't put the
           server in my own home and maintain it myself. Instead, I pay a company
-          like Netlify or Vercel to do the serving for me
+          like{" "}
+          <Link class="link" href="https://www.netlify.com/">
+            Netlify
+          </Link>{" "}
+          or{" "}
+          <Link class="link" href="https://vercel.com/">
+            Vercel
+          </Link>{" "}
+          to do the serving for me
         </p>
         <p>
           This is similar to me opening a restaurant chain without public dining

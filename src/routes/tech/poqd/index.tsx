@@ -165,7 +165,7 @@ export default component$(() => {
         <p>
           Now, the same is true for Express, but Oak is designed to be used with
           Deno! There are some nice things about the way Oak works (many
-          inherited from its spritual predecessor in Node,{" "}
+          inherited from its spiritual predecessor in Node,{" "}
           <Link class="link" href="https://koajs.com/">
             Koa
           </Link>
@@ -239,7 +239,7 @@ export default component$(() => {
               </li>
               <li>
                 <strong>
-                  8. At this point the user can view and intaract with the
+                  8. At this point the user can view and interact with the
                   application
                 </strong>
               </li>
@@ -264,12 +264,12 @@ export default component$(() => {
               </li>
               <li>
                 <strong>
-                  4. At this point the user can view and intaract with the
+                  4. At this point the user can view and interact with the
                   application
                 </strong>
               </li>
               <li>
-                5. If a part of the code is interactible, the necessary
+                5. If a part of the code is interactive, the necessary
                 JavaScript is downloaded and run only right when it needs to be
               </li>
             </ol>
@@ -356,7 +356,7 @@ export default component$(() => {
           the meat of my project quickly pays dividends
         </p>
         <p>
-          POQD has a low configuation overhead. Instead of having to set up a
+          POQD has a low configuration overhead. Instead of having to set up a
           TypeScript compiler, a linter, a package manager, a bundler, and so
           forth, it's already built in!
         </p>
@@ -373,9 +373,9 @@ export default component$(() => {
         <p>
           Go ahead and click around this site. See how much time you spend
           waiting for a page to load. Run a Lighthouse test (Performance usually
-          comes back with a perfect 100 for me). There may not be much here yet,
-          but I have more content planned that will demonstrate further how
-          quick and responsive it is. To get a taste for now, try{" "}
+          scores between 97 and 100 for me). There may not be much here yet, but
+          I have more content planned that will demonstrate further how quick
+          and responsive it is. To get a taste for now, try{" "}
           <Link class="link" href="/fun/flower?pride=true">
             playing around with this flower
           </Link>
@@ -414,7 +414,7 @@ export default component$(() => {
             Qwik uses symbolic slots
           </Link>
           . Qwik renders parents and children in perfect isolation. This means
-          it can render the parent component without rerendering the children
+          it can render the parent component without re-rendering the children
           and vice versa.
         </p>
         <p>

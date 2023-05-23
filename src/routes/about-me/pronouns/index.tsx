@@ -26,7 +26,7 @@ export default component$(() => {
         <h4>Grammatical Number</h4>
         <p>
           In English, they/them can be used to refer to either one person or
-          multiple people. This can lead to ambiguiuty
+          multiple people. This can lead to ambiguity
         </p>
         <p>
           Consider this sentence: "Kyle went with Beechy to the concert. When
@@ -80,7 +80,7 @@ export default component$(() => {
         </p>
         <h4>Duality</h4>
         <p>
-          The idea of gender nonconformity to me represpents the freedom to
+          The idea of gender nonconformity to me represents the freedom to
           explore the wide reaches of possibility. Its nature is to set free,
           not to constrict
         </p>
@@ -101,7 +101,7 @@ export default component$(() => {
           as others) and I enjoy being able to partake in one without forsaking
           the others. However, this resulted in most people just defaulting to
           he/him all the time, which kinda bummed me out. I decided to find
-          suitable nonbinary pronouns for friends to default to and finally
+          suitable non-binary pronouns for friends to default to and finally
           landed on the delightful options described on this page!
         </p>
         <p>

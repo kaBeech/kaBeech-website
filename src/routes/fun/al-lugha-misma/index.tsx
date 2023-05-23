@@ -74,7 +74,7 @@ export default component$(() => {
             <td>pomme de terre</td>
           </tr>{" "}
           <tr>
-            <td>Hawaiian</td>
+            <td>Hawai'ian</td>
             <td>'uala kahiki</td>
           </tr>{" "}
           <tr>
@@ -100,10 +100,10 @@ export default component$(() => {
         </table>
 
         <p>
-          This is a game exploring comparitive linguistics. It is currently
+          This is a game exploring comparative linguistics. It is currently
           under construction, but in the next release you will be able to choose
           two or more of the languages above to play with (including one
-          referance language, English by default). Then you can choose a topic
+          reference language, English by default). Then you can choose a topic
           (such as Numbers or Colors) to be given a list of words from that
           topic in the reference language
         </p>

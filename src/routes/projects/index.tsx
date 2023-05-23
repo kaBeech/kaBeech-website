@@ -36,7 +36,7 @@ export default component$(() => {
             Wyrld Dashboard
           </Link>{" "}
           provides fast and unobtrusive cloud-based tools for tabletop
-          role-playing games (RPG's) like Dungeons & Dragons
+          role-playing games (RPGs) like Dungeons & Dragons
         </p>
         <p class="lazyMargin">
           Some of the tools we provide (or are planning to build) include:
@@ -137,7 +137,7 @@ export default component$(() => {
           comes up with a holiday-themed adventure based on a series of logic
           puzzles. Each day in December leading up to Christmas, one challenge
           (and one piece of the story) is revealed. If you can solve that
-          challenge, a bit of the story is unravelled and the next day's
+          challenge, a bit of the story is unraveled and the next day's
           challenge is unlocked for you
         </p>
         <p>

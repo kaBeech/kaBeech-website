@@ -45,7 +45,7 @@ export default component$(() => {
         </p>
         <p>...for some folks. Inscrutable for others</p>
         <p>
-          A high-level language assumes a level of knowlege of the person
+          A high-level language assumes a level of knowledge of the person
           reading it. In the case of our WASM sentence, I assume quite a lot
           about you, dear reader. I assume you know what a low-level language is
           and how it contrasts with a high-level one. I assume you know what it
@@ -187,14 +187,14 @@ export default component$(() => {
         <ul class="insert">
           Please do the following:
           <li>
-            - Move our left pinky to the left and back towards our stomach,
-            about an inch in total, until it's seated above the 'Shift' key.
-            While doing this, rotate our left wrist slightly so that the other
-            fingers of our left hand stay close to their current positions
+            - Move our left pinky finger to the left and back towards our
+            stomach, about an inch in total, until it's seated above the 'Shift'
+            key. While doing this, rotate our left wrist slightly so that the
+            other fingers of our left hand stay close to their current positions
           </li>
           <li>
-            - Press down on the 'Shift' key with our left pinky by about half an
-            inch, or until we feel resistance, and hold it there
+            - Press down on the 'Shift' key with our left pinky finger by about
+            half an inch, or until we feel resistance, and hold it there
           </li>
           <li>
             - Move our right wrist to the left and out away from our stomach by

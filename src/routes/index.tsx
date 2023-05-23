@@ -17,7 +17,7 @@ export default component$(() => {
         </p>
         <h3>What would you like to do?</h3>
         <p>
-          Please help me direct your experience by chosing a response below.
+          Please help me direct your experience by choosing a response below.
           <strong>
             {" "}
             Just click or tap a button at the bottom of the screen!

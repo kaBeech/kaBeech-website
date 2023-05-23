@@ -81,7 +81,7 @@ export default component$(() => {
         <h2>Tech Used</h2>
         <p>
           Namagen is built using Rust, compiled to WebAssembly (WASM), and then
-          packaged for use in Crates, Webpack, Node.js, and Deno
+          packaged for use in Crates, WebPack, Node.js, and Deno
         </p>
         <p>
           This pattern enables Namagen to be run at blazingly-fast WebAssembly
