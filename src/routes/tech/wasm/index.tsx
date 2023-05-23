@@ -176,8 +176,8 @@ export default component$(() => {
         </p>
         <p>
           Consider this situation: I'm typing and want to type the character
-          '^'. I can shout at my fingers "Hey, please type an '^' symbol for
-          me!" all I want, but they're unlikely to understand the message
+          '^'. I can shout at my fingers "Hey, please type a '^' symbol for me!"
+          all I want, but they're unlikely to understand the message
         </p>
         <p>
           Instead, I send electrical impulses through my nervous system to my
