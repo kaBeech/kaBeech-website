@@ -204,6 +204,7 @@ button {
     display: flex;
     width: 7em;
     max-width: 10%;
+    aspect-ratio: 1;
   }
   .mobileSpacing {
     justify-content: center;
@@ -529,6 +530,8 @@ button {
 }
 
 .portrait {
+  height: 20em;
+  max-height: 100%;
   width: 24em;
   max-width: 90%;
   border-radius: 2em;
