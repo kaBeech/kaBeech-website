@@ -84,13 +84,85 @@ export default component$(() => {
         <h2 class="responseTextLight">
           Why would I want to use Edge Functions?
         </h2>
-        <h3>Edge Functions are fast</h3>
+        <h3>Edge Functions are Fast</h3>
         <p>
           Since data doesn't have to travel as far to get to users, edge
           functions can deliver content in the blink of an eye!
         </p>
+        {/* <p>
+          One common way to make use of this is through caching data on the edge
+        </p> */}
+        <h3>Modularity</h3>
+        <p>
+          <strong>
+            Edge functions can be used as{" "}
+            <Link class="link" href="https://en.wikipedia.org/wiki/Middleware">
+              middleware
+            </Link>
+            .
+          </strong>{" "}
+          Simply put, middleware receives a signal then makes some changes to
+          the data in that signal before passing it along to its next
+          destination
+        </p>
+        <p>
+          You might be familiar with middleware through working with{" "}
+          <Link class="link" href="http://expressjs.com/">
+            Express.js
+          </Link>{" "}
+          in server-side code. With Express, a server receives a request,
+          performs some operations, and then returns a response. All the code
+          that performs the operations in the middle of that process, between
+          when a request is received and when a response is returned, is called
+          middleware
+        </p>
+        <p>
+          You can use middleware edge functions to break up a large application
+          into smaller modules that work together. One popular use case here is
+          authentication. If you can move your authentication logic to an edge
+          function, authorizing your users will be quicker, your main servers
+          will do less work, and your code may also get more organized. The same
+          can be said for caching when using an edge-enabled key-value data
+          store like{" "}
+          <Link
+            class="link"
+            href="https://developers.cloudflare.com/workers/learning/how-kv-works/"
+          >
+            Cloudflare Workers KV
+          </Link>
+        </p>
         <h3>Location-Based Personalization</h3>
-        <p>Content coming soon!</p>
+        <p>
+          Since edge functions can be used as middleware at a location
+          geographically close to your users, they can do quite a lot to
+          personalize a user's experience!
+        </p>
+        <p>
+          One obvious example is language localization. Suppose I have a website
+          based in France, but I have users all over Europe so my website is
+          simultaneously provided in multiple languages. Although my users can
+          request a specific language manually or via browser/OS settings, if no
+          specific language is requested the site is rendered in French.
+          However, I can write an edge function that serves my website in a
+          different language depending on which country it is accessed from
+        </p>
+        <p>
+          This way, users in Greece get my website in Greek, users in Finland
+          get my site in Finnish, users in Malta get it in Maltese, and so on
+        </p>
+        <p>
+          Furthermore, if I have caching set up as described above,
+          Turkish-language assets would be cached for users in Turkey, allowing
+          them to access it very quickly
+        </p>
+        <p>
+          Let's take another example: sales tax. Suppose I have an eCommerce
+          site hosted in the United States. Sales tax varies widely across the
+          US and it can be a pain to calculate. With edge functions I can
+          automatically show the correct sales tax for my customers, whether
+          they're in Washington or Virginia, and calculate a final price without
+          breaking the flow that leads a potential customer to a purchase
+        </p>
         {/* <h2 class="responseTextLight">
           What are some limitations of edge functions?
         </h2>
@@ -149,7 +221,7 @@ export default component$(() => {
           >
             ES modules
           </Link>{" "}
-          and not providing access to some browser and/or Node.js APIs
+          and not providing access to some browser and/or Node APIs
         </p>
         <p>
           Keep in mind that these are only a selection of the limitations placed
