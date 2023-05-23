@@ -180,7 +180,7 @@ export default component$(() => {
           all I want, but they're unlikely to understand the message
         </p>
         <p>
-          Instead, I send electrical impulses through my nervous system to my
+          Instead, I send bioelectric impulses through my nervous system to my
           muscles that instruct them in each action to take. These impulses
           might be translated something like this:
         </p>
@@ -236,7 +236,7 @@ export default component$(() => {
         <p>
           <strong>
             An 'Assembly Language' is a programming language that is structured
-            in simple enough terms that a low-level computer can understand them
+            in basic enough terms that a low-level computer can understand them
           </strong>
         </p>
         <h3>
@@ -314,9 +314,9 @@ export default component$(() => {
           Deno and Node.js
         </p>
         <p>
-          Let's take my fantasy name generator Namagen for a server-side
-          example. To incorporate Namagen into this website, I have the package
-          running on a small Deno server{" "}
+          Let's take my fantasy name generator Namagen as a server-side example.
+          To incorporate Namagen into this website, I have the package running
+          on a small Deno server{" "}
           <Link class="link" href="/tech/edge">
             hosted on the edge
           </Link>{" "}
@@ -332,8 +332,8 @@ export default component$(() => {
         </p>
         <p>
           Both client and server-side WASM programs can be published to
-          repositories like npm . You might even be using WASM in your website
-          already without knowing it!
+          repositories like npm and deno.land/x. You might even be using WASM in
+          your website already without knowing it!
         </p>
         <h2>
           WebAssembly is a great tool you can use to talk with web browsers in

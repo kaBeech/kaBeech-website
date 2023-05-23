@@ -44,7 +44,7 @@ export default component$(() => {
         <p>
           Now, a 'serverless' website doesn't actually mean that there's no
           server involved. The information (or food) still has to get to you
-          somehow. But as a builder of a serverless website, I don't put the
+          somehow. But as the builder of a serverless website, I don't put the
           server in my own home and maintain it myself. Instead, I pay a company
           like Netlify or Vercel to do the serving for me
         </p>
@@ -58,7 +58,7 @@ export default component$(() => {
           because I don't have to manage payroll and health insurance for my
           servers, or try to predict at which times I'll need more or less
           staff. Instead, the delivery service takes care of their servers and I
-          pay them only when I need to deliver food, and only as much as I need
+          pay them only when I need to deliver food
         </p>
         <p>
           The difficulty comes when the delivery service only has a few depots
