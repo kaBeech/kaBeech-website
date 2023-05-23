@@ -251,7 +251,7 @@ export default component$(() => {
         <h2 class="responseTextLight">Why would I want to use WebAssembly?</h2>
         <p>
           WASM is fast! Since your web browser doesn't need an interpreter to
-          understand WebAssembly, it can perform complex tasks very quickly!
+          understand WebAssembly, it can perform complex tasks very quickly
         </p>
         <p>
           In fact, WebAssembly is so fast that{" "}
@@ -262,7 +262,7 @@ export default component$(() => {
           !
         </p>
         <p>
-          WebAssembly also has security benefits!{" "}
+          WebAssembly also has security benefits.{" "}
           <Link class="link" href="https://webassembly.org/docs/security/">
             WASM modules execute in sandboxed environments separate from each
             other and from the host runtime
@@ -336,8 +336,8 @@ export default component$(() => {
           already without knowing it!
         </p>
         <h2>
-          WebAssembly is a great tool you can use to talk with your web browser
-          in its own language!
+          WebAssembly is a great tool you can use to talk with web browsers in
+          their own language!
         </h2>
         <p>
           <Link class="link margin1" href="../">
