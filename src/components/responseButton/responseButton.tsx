@@ -5,7 +5,7 @@ import {
   useStylesScoped$,
   useTask$,
 } from "@builder.io/qwik";
-import { Link } from "@builder.io/qwik-city";
+// import { Link } from "@builder.io/qwik-city";
 import type { ResponseOption } from "~/globalTypes";
 import styles from "./responseButton.css?inline";
 
@@ -38,17 +38,16 @@ export const ResponseButton = component$((props: ResponseButtonProps) => {
           handleClick();
         }}
       >
-        <Link href={props.response.jumpTo}>
-          {" "}
-          {props.response.linkTile.icon ? (
-            <img
-              src={props.response.linkTile.icon}
-              alt={props.response.linkTile.text}
-            />
-          ) : (
-            props.response.linkTile.text
-          )}
-        </Link>
+        {/* <Link href={props.response.jumpTo}> */}{" "}
+        {props.response.linkTile.icon ? (
+          <img
+            src={props.response.linkTile.icon}
+            alt={props.response.linkTile.text}
+          />
+        ) : (
+          props.response.linkTile.text
+        )}
+        {/* </Link> */}
       </button>
     </>
   );
