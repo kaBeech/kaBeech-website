@@ -69,22 +69,22 @@ export const Hamburger = component$((props: HamburgerProps) => {
       )}
       {state.selected && window.outerWidth < 1000 && (
         <div class="shadow">
-          <Link class="link" href="/">
+          <Link href="/">
             <div class="blink">Home</div>
           </Link>
-          <Link class="link" href="/fun">
+          <Link href="/fun">
             <div class="blink">Fun and Games</div>
           </Link>
-          <Link class="link" href="/about-me">
+          <Link href="/about-me">
             <div class="blink">About Me</div>
           </Link>
-          <Link class="link" href="/tech">
+          <Link href="/tech">
             <div class="blink">Technology</div>
           </Link>
-          <Link class="link" href="/projects">
+          <Link href="/projects">
             <div class="blink">Projects</div>
           </Link>
-          <Link class="link" href="/contact">
+          <Link href="/contact">
             <div class="blink">Contact Me</div>
           </Link>
         </div>
