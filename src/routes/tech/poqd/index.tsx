@@ -345,10 +345,10 @@ export default component$(() => {
           right away!
         </p>
         <h1 id="why-poqd">Summary</h1>
-        <h3 class="responseTextLight">
+        <h2 class="responseTextLight nutshell">
           Okay, but give it to me in a nutshell. Why do you use POQD?
-        </h3>
-        <h2>1. It's Accessible for Developers</h2>
+        </h2>
+        <h3 class="summaryPoint">1. It's Accessible for Developers</h3>
         <p>
           I value tools that enable me to start working right away. The less
           time I have to use at the start of a new project to configure my setup
@@ -365,7 +365,7 @@ export default component$(() => {
           designed to be familiar to those using software in the MERN stack. If
           you're comfortable with MERN, you're most of the way there already!
         </p>
-        <h2>2. It's Performant</h2>
+        <h3 class="summaryPoint">2. It's Performant</h3>
         <p>
           Sites built with POQD can be fast. Like really really fast. BLAZINGLY
           FAST, some might say
@@ -380,7 +380,7 @@ export default component$(() => {
             playing around with this flower
           </Link>
         </p>
-        <h2>3. It's Smart</h2>
+        <h3 class="summaryPoint">3. It's Smart</h3>
         <p>
           The software in POQD is built in a way that encourages good coding
           practices. I'll give a couple examples:

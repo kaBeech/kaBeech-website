@@ -15,3 +15,11 @@ ol {
 td {
   border: 0.5em solid transparent;
 }
+
+.nutshell {
+  font-size: 1.7rem;
+}
+
+.summaryPoint {
+  font-size: 2rem;
+}

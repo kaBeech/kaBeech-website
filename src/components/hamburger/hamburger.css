@@ -42,7 +42,7 @@ img {
   /* margin: 0.35em -0.5em 0 0.5em; */
   /* margin-left: 0.5em; */
   width: 8em;
-  aspect-ratio: 1;
+  /* aspect-ratio: 1; */
 }
 
 @media (max-width: 1000px) {
