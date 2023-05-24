@@ -17,13 +17,21 @@
   contain: strict;
 }
 
+label {
+  display: none;
+  align-self: center;
+  /* position: relative;
+  z-index: 1; */
+}
+
 input {
   width: 100%;
 }
 
 .square {
   --size: calc(40px + var(--index) * var(--size-step));
-
+  /* z-index: 200;
+  position: relative; */
   display: block;
   width: var(--size);
   height: var(--size);
