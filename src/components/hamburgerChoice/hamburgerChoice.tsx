@@ -5,7 +5,7 @@ interface ResponseBarProps {
   text: string;
 }
 
-export const ResponseBar = component$((props: ResponseBarProps) => {
+export const HamburgerChoice = component$((props: ResponseBarProps) => {
   const state = useStore({
     choiceDetailHidden: true,
   });
