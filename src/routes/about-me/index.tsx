@@ -14,6 +14,8 @@ export default component$(() => {
         <img
           class="portrait"
           src="/portrait4.webp"
+          srcSet="/portrait4Tiny.webp 200w, /portrait4Small.webp 550w, /portrait4.webp 1000w"
+          sizes="24em"
           alt="A photo of me, Kyle Beechly, at my computer"
         />
         <p>
