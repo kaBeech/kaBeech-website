@@ -73,12 +73,13 @@ img {
   border-color: var(--kaBeech-main-background);
   border-width: 0.15em;
   /* width: fit-content; */
+  z-index: 900;
 }
 
 li {
   font-size: 1.2em;
 }
 
-.link {
+.hamburgerChoice {
   width: 100%;
 }

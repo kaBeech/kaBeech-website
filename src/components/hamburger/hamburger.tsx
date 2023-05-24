@@ -33,52 +33,58 @@ export const Hamburger = component$((props: HamburgerProps) => {
       />
       {state.selected && window.outerWidth >= 1000 && (
         <>
-          <Link class="link" href="/">
+          <Link class="hamburgerChoice" href="/">
             <img class="lazy" src="/icons/home.svg" alt="Home" />
+            <div class="blinkOut">Home</div>
           </Link>
-          <Link class="link" href="/fun">
+          <Link class="hamburgerChoice" href="/fun">
             <img
               class="lazy"
               src="/icons/game-controller-outline.svg"
               alt="Fun and Games"
             />
+            <div class="blinkOut">Fun and Games</div>
           </Link>
-          <Link class="link" href="/about-me">
+          <Link class="hamburgerChoice" href="/about-me">
             <img
               class="lazy"
               src="/icons/person-circle-outline.svg"
               alt="About Me"
             />
+            <div class="blinkOut">About Me</div>
           </Link>
-          <Link class="link" href="/tech">
+          <Link class="hamburgerChoice" href="/tech">
             <img class="lazy" src="/icons/cpu.svg" alt="Technology" />
+            <div class="blinkOut">Tech</div>
           </Link>
-          <Link class="link" href="/projects">
+          <Link class="hamburgerChoice" href="/projects">
             <img class="lazy" src="/icons/hammer-outline.svg" alt="Projects" />
+            <div class="blinkOut">Projects</div>
           </Link>
-          <Link class="link" href="/contact">
+          <Link class="hamburgerChoice" href="/contact">
             <img class="lazy" src="/icons/mail.svg" alt="Contact Me" />
+            <div class="blinkOut">Contact Me</div>
           </Link>
         </>
       )}
       {state.selected && window.outerWidth < 1000 && (
         <div class="shadow">
-          <Link class="link" href="/">
+          <Link href="/">
             <div class="blink">Home</div>
           </Link>
-          <Link class="link" href="/fun">
+          <Link href="/fun">
             <div class="blink">Fun and Games</div>
           </Link>
-          <Link class="link" href="/about-me">
+          <Link href="/about-me">
             <div class="blink">About Me</div>
           </Link>
-          <Link class="link" href="/tech">
+          <Link href="/tech">
             <div class="blink">Technology</div>
           </Link>
-          <Link class="link" href="/projects">
+          <Link href="/projects">
             <div class="blink">Projects</div>
           </Link>
-          <Link class="link" href="/contact">
+          <Link href="/contact">
             <div class="blink">Contact Me</div>
           </Link>
         </div>

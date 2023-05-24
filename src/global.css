@@ -142,6 +142,11 @@ li {
   text-shadow: #cfffbb45 0 0.06em 0.25em, #cfffbb2b 0 0.06em 0.4em;
 }
 
+.link:hover {
+  text-decoration: underline;
+  text-shadow: #cfffbb2e 0 0.06em 0.125em, #cfffbb25 0 0.06em 0.2em;
+}
+
 button {
   font-family: inherit;
   font-size: 100%;
@@ -559,4 +564,21 @@ h3.homepage {
 .bin {
   overflow-wrap: break-word;
   white-space: pre-wrap;
+}
+
+.blinkOut {
+  display: none;
+}
+
+.hamburgerChoice:hover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .blinkOut {
+    font-size: 0.9em;
+    display: block;
+    text-align: center;
+    max-width: 4em;
+    margin: 0.5em 0 0.2em 0.5em;
+  }
 }
