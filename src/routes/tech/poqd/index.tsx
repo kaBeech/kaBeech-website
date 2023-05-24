@@ -373,7 +373,7 @@ export default component$(() => {
         <p>
           Go ahead and click around this site. See how much time you spend
           waiting for a page to load. Run a Lighthouse test (Performance usually
-          scores a solid 100 for me). There may not be many fancy bells and
+          hovers around 100 for me). There may not be many fancy bells and
           whistles here yet, but I have more content planned that will
           demonstrate further how quick and responsive it is. To get a taste for
           now, try{" "}
