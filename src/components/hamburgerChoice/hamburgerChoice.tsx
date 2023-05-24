@@ -1,25 +1,25 @@
 import { $, component$, useStore } from "@builder.io/qwik";
 
-interface ResponseBarProps {
+interface HamburgerChoiceProps {
   imagePath: string;
   text: string;
 }
 
-export const HamburgerChoice = component$((props: ResponseBarProps) => {
+export const HamburgerChoice = component$((props: HamburgerChoiceProps) => {
   const state = useStore({
     choiceDetailHidden: true,
   });
 
-  const showResponseDetail = $(() => {
+  const showChoiceDetail = $(() => {
     state.choiceDetailHidden = false;
   });
 
-  // const hideResponseDetail = $(() => {
+  // const hideChoiceDetail = $(() => {
   //   state.choiceDetailHidden = true;
   // });
 
   return (
-    <div class="flex">
+    <div class="flex logo">
       {state.choiceDetailHidden ? (
         <div class="hidden"></div>
       ) : (
@@ -29,8 +29,8 @@ export const HamburgerChoice = component$((props: ResponseBarProps) => {
         class="lazy"
         src={props.imagePath}
         alt={props.text}
-        onHover$={() => {
-          showResponseDetail();
+        onClick$={() => {
+          showChoiceDetail();
         }}
       />
     </div>
