@@ -33,6 +33,8 @@ export default component$(() => {
         <img
           class="logo"
           src="/peli_hype_centered.webp"
+          srcSet="/peli_hype_centeredTiny.webp 125w, /peli_hype_centeredSmall.webp 240w, /peli_hype_centered.webp 550w"
+          sizes="12em"
           alt="Peli, the Far Reach Co. mascot, showing excitement)"
         />
         <p>
