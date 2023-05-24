@@ -97,4 +97,10 @@ export default component$(() => {
 
 export const head: DocumentHead = {
   title: "Fractal Flower",
+  meta: [
+    {
+      name: "description",
+      content: "An enchanting interactive animation",
+    },
+  ],
 };
