@@ -13,7 +13,7 @@ export default component$(() => {
         <h1>Welcome!</h1>
         <p>Welcome to kaBeech, Kyle Beechly's personal website</p>
         <p>My name is Beechy, I'll be your guide here. I'm glad to meet you!</p>
-        <h3>What would you like to do?</h3>
+        <h2 class="homepage">What would you like to do?</h2>
         <p>
           Please help me direct your experience by choosing a response below.
           <strong>
@@ -25,7 +25,7 @@ export default component$(() => {
           Alternatively, you can click a link in the text below or use the
           hamburger button in the upper right
         </p>
-        <h4>If you are interested, I can:</h4>
+        <h3 class="homepage">If you are interested, I can:</h3>
         <ul>
           <li class="margin1">
             - Show you{" "}

@@ -529,6 +529,14 @@ button {
   max-width: 84rem;
 }
 
+h2.homepage {
+  font-size: 1.7rem;
+}
+
+h3.homepage {
+  font-size: 1.5rem;
+}
+
 .portrait {
   width: 24em;
   max-width: 90%;
