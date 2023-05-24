@@ -191,44 +191,47 @@ export default component$(() => {
           muscles that instruct them in each action to take. These impulses
           might be translated something like this:
         </p>
-        <ul class="insert">
+        <div class="insert">
           Please do the following:
-          <li>
-            - Move our left pinky finger to the left and back towards our
-            stomach, about an inch in total, until it's seated above the 'Shift'
-            key. While doing this, rotate our left wrist slightly so that the
-            other fingers of our left hand stay close to their current positions
-          </li>
-          <li>
-            - Press down on the 'Shift' key with our left pinky finger by about
-            half an inch, or until we feel resistance, and hold it there
-          </li>
-          <li>
-            - Move our right wrist to the left and out away from our stomach by
-            about 2 inches so that our right index finger can more easily
-            stretch out. While doing this, rotate our right wrist slightly so
-            that the right part of our right hand stays close to its current
-            position
-          </li>
-          <li>
-            - Reach out with our right index finger to the left and out away
-            from our stomach, about half an inch, until it's seated above the
-            '6' key
-          </li>
-          <li>
-            - Press down on the '6' key with our right index finger by about
-            half an inch, or until we feel resistance
-          </li>
-          <li>
-            - Quickly release our hold on the '6' key and move our right hand
-            back to our neutral position
-          </li>
-          <li>
-            - Release our hold on the 'Shift' key and move our left hand back to
-            our neutral position
-          </li>
+          <ul>
+            <li>
+              - Move our left pinky finger to the left and back towards our
+              stomach, about an inch in total, until it's seated above the
+              'Shift' key. While doing this, rotate our left wrist slightly so
+              that the other fingers of our left hand stay close to their
+              current positions
+            </li>
+            <li>
+              - Press down on the 'Shift' key with our left pinky finger by
+              about half an inch, or until we feel resistance, and hold it there
+            </li>
+            <li>
+              - Move our right wrist to the left and out away from our stomach
+              by about 2 inches so that our right index finger can more easily
+              stretch out. While doing this, rotate our right wrist slightly so
+              that the right part of our right hand stays close to its current
+              position
+            </li>
+            <li>
+              - Reach out with our right index finger to the left and out away
+              from our stomach, about half an inch, until it's seated above the
+              '6' key
+            </li>
+            <li>
+              - Press down on the '6' key with our right index finger by about
+              half an inch, or until we feel resistance
+            </li>
+            <li>
+              - Quickly release our hold on the '6' key and move our right hand
+              back to our neutral position
+            </li>
+            <li>
+              - Release our hold on the 'Shift' key and move our left hand back
+              to our neutral position
+            </li>
+          </ul>
           Thank you!
-        </ul>
+        </div>
         <p>
           Notice that these directions said nothing about the '^' symbol, or
           even typing at all. These are higher-level concepts that aren't useful
