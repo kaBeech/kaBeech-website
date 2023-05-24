@@ -18,11 +18,11 @@
 }
 
 label {
-  visibility: collapse;
   align-self: center;
   /* position: relative;
   z-index: 1; */
   height: 0;
+  overflow: hidden;
 }
 
 input {
