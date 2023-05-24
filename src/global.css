@@ -112,7 +112,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-image: url(/starry-background-bartek-tiled-4x-vsmall.jpg);
+  background-image: url(/starry-background-bartek-tiled-4x-vsmall.webp);
   color: var(--kaBeech-screen-foreground);
 }
 
@@ -204,6 +204,7 @@ button {
     display: flex;
     width: 7em;
     max-width: 10%;
+    aspect-ratio: 1;
   }
   .mobileSpacing {
     justify-content: center;
@@ -332,6 +333,10 @@ button {
 }
 
 /* Shortcuts */
+
+.ital {
+  font-style: italic;
+}
 
 .flex {
   display: flex;
@@ -527,6 +532,7 @@ button {
 .portrait {
   width: 24em;
   max-width: 90%;
+  aspect-ratio: 1.263;
   border-radius: 2em;
   border-style: solid;
   margin: 2em;
@@ -535,6 +541,7 @@ button {
 .logo {
   width: 12em;
   max-width: 90%;
+  aspect-ratio: 1;
   border-radius: 2em;
   border-style: solid;
   margin: 2em;

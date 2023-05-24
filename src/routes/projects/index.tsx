@@ -20,7 +20,7 @@ export default component$(() => {
         </h3>
         <h2>Wyrld Dashboard</h2>
         <img
-          src="/peli_book_smaller.PNG"
+          src="/peli_book_smaller.webp"
           alt="Peli, the Far Reach Co. mascot, holding a book"
         />
         <button>
@@ -36,7 +36,7 @@ export default component$(() => {
             Wyrld Dashboard
           </Link>{" "}
           provides fast and unobtrusive cloud-based tools for tabletop
-          roleplaying games (RPG's) like Dungeons & Dragons
+          role-playing games (RPGs) like Dungeons & Dragons
         </p>
         <p class="lazyMargin">
           Some of the tools we provide (or are planning to build) include:
@@ -81,7 +81,7 @@ export default component$(() => {
         </p>
         <h2>Audiopile</h2>
         <img
-          src="/waveform.png"
+          src="/waveform.webp"
           alt="The Audiopile logo - overlapping multicolored sine waves"
         />
         <button>
@@ -120,7 +120,7 @@ export default component$(() => {
         </p>
         <h2>Advent Of Code (My Personal Solutions)</h2>
         <img
-          src="/adventOfCode.png"
+          src="/adventOfCode.webp"
           alt="A star representing the Advent Of Code"
         />
         <button>
@@ -137,7 +137,7 @@ export default component$(() => {
           comes up with a holiday-themed adventure based on a series of logic
           puzzles. Each day in December leading up to Christmas, one challenge
           (and one piece of the story) is revealed. If you can solve that
-          challenge, a bit of the story is unravelled and the next day's
+          challenge, a bit of the story is unraveled and the next day's
           challenge is unlocked for you
         </p>
         <p>

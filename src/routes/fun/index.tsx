@@ -16,7 +16,7 @@ export default component$(() => {
         <h1>Fun and Games!</h1>
         <h2>Buddh-A-Sketch</h2>
         <img
-          src="/favicon.png"
+          src="/favicon.webp"
           alt="A rainbow heart made with Buddh-A-Sketch"
         />
         <button>
@@ -42,7 +42,7 @@ export default component$(() => {
         <h2>Namagen</h2>
         <img
           class="tempLogo"
-          src="/peli_hype_centered.png"
+          src="/peli_hype_centered.webp"
           alt="Peli, the Far Reach Co. mascot, showing excitement)"
         />
         <button>
@@ -55,7 +55,7 @@ export default component$(() => {
         </button>
         <p>
           Namagen randomly generates names in constructed languages. I built it
-          for use in roleplaying games (to integrate with the{" "}
+          for use in role-playing games (to integrate with the{" "}
           <Link class="link" href="/projects">
             Wyrld Dashboard
           </Link>{" "}
@@ -85,7 +85,10 @@ export default component$(() => {
           modes
         </p>
         <h2>Tic-Tac-Toebot</h2>
-        <img src="/tic-tac-toebot.png" alt="A snapshot of the Tic-Tac-Toebot" />
+        <img
+          src="/tic-tac-toebot.webp"
+          alt="A snapshot of the Tic-Tac-Toebot"
+        />
         <button>
           <Link href="https://kabeech.github.io/tic-tac-toebot/">
             Check out Tic-Tac-Toebot!
@@ -105,7 +108,7 @@ export default component$(() => {
         <h2>Al Lugha Misma</h2>
         <img
           class="tempLogo"
-          src="/icons/alLughaMismaColorized2.png"
+          src="/icons/alLughaMismaColorized2.webp"
           alt="The Al Lugha Misma logo (a calligraphic representation of 'Al Lugha Misma' in mixed Naskh and Devanagari script"
         />
         <button>

@@ -67,12 +67,12 @@ export const linkTiles = {
   fun_alLughaMisma: {
     linkPath: "/fun/al-lugha-misma",
     text: "Al Lugha Misma",
-    icon: "/icons/alLughaMismaLogo.png",
+    icon: "/icons/alLughaMismaLogo.webp",
   },
   fun_namagen: {
     linkPath: "/fun/namagen",
     text: "Namagen",
-    icon: "/icons/peli_hype_mono.png",
+    icon: "/icons/peli_hype_mono.webp",
   },
   flower_stereochrome: {
     linkPath: "./",
@@ -142,7 +142,7 @@ export const linkTiles = {
   projects_wyrldDashboard: {
     linkPath: "https://farreachco.com/",
     text: "Wyrld Dashboard",
-    icon: "/icons/peli_hype_mono.png",
+    icon: "/icons/peli_hype_mono.webp",
   },
   projects_audiopile: {
     linkPath: "https://www.audiopile.cloud/",

@@ -24,7 +24,7 @@ export default component$(() => {
         </h2>
         <p>Absolutely!</p>
         <h3>
-          First let's talk about low-level and high-level programming languages
+          First let's talk about high- and low-level programming languages
         </h3>
         <p>
           Matter of fact, let's talk about my one-sentence answer the the
@@ -44,18 +44,38 @@ export default component$(() => {
           Easy!
         </p>
         <p>...for some folks. Inscrutable for others</p>
+        <h3>This is where low-level languages come in</h3>
         <p>
-          A high-level language assumes a level of knowlege of the person
+          A high-level language assumes a level of knowledge of the person
           reading it. In the case of our WASM sentence, I assume quite a lot
           about you, dear reader. I assume you know what a low-level language is
           and how it contrasts with a high-level one. I assume you know what it
-          means for code to be executed and why it's interesting that WASM can
-          be executed by web browsers. I assume you know what{" "}
-          <Link class="link">programming languages</Link> and{" "}
-          <Link class="link">web browsers</Link> are. I assume that you can read
-          my particular <Link class="link">ideolect</Link> of English, that
-          you'll infer that "WASM" is an abbreviation for "Web Assembly," and
-          that you'll pronounce it like /'wasm̩/ and not like "W-A-S-M"
+          means for code to be{" "}
+          <Link
+            class="link"
+            href="https://en.wikipedia.org/wiki/Execution_(computing)"
+          >
+            executed
+          </Link>{" "}
+          and why it's interesting that WASM can be executed by web browsers. I
+          assume you know what{" "}
+          <Link
+            class="link"
+            href="https://en.wikipedia.org/wiki/Programming_language"
+          >
+            programming languages
+          </Link>{" "}
+          and{" "}
+          <Link class="link" href="https://en.wikipedia.org/wiki/Web_browser">
+            web browsers
+          </Link>{" "}
+          are. I assume that you can read my particular{" "}
+          <Link class="link" href="https://en.wikipedia.org/wiki/Idiolect">
+            idiolect
+          </Link>{" "}
+          of English, that you'll infer that "WASM" is an abbreviation for "Web
+          Assembly," and that you'll pronounce it like /'wasm̩/ and not like
+          "W-A-S-M"
         </p>
         <p>
           But some or all of that may be untrue and you may be left thinking{" "}
@@ -66,10 +86,10 @@ export default component$(() => {
         </p>
         <p>...which is why we have low-level programming languages!</p>
         <p>
-          A low-level language can talk about the same concepts that a
-          high-level language does, but it spells out exactly what it means in
-          more explicit terms. We can use my whole answer in this entire section
-          as our example to describe low-level languages. It answers the same
+          A low-level language can convey the same information that a high-level
+          language does, but it spells out exactly what it means in more
+          explicit terms. We can use my whole answer in this entire section as
+          our example to describe low-level languages. It answers the same
           question, but assumes less of the reader and walks through the answer
           step by step
         </p>
@@ -78,6 +98,7 @@ export default component$(() => {
           understand the answer, but it takes a lot longer to spell everything
           out. Look at how long this section is compared with the last one!
         </p>
+        <h3>Speed and comprehensibility</h3>
         <p>
           Given the added length, you might conclude that using low-level
           language would take more time to convey an idea. However, this is not
@@ -94,16 +115,21 @@ export default component$(() => {
           Or... xe could find a friend to interpret the sentence for xyr. Let's
           call this interpreter 'Beechy'
         </p>
+        <h4 class="responseTextLight">Hey, I know Beechy!</h4>
         <p>
-          Beechy could read the sentence, and if ze understands the meaning I
-          intend to convey, ze could spell it out to Kyle bit by bit. This way,
-          Kyle will likely understand the information as relayed by Beechy
+          <Link class="link" href="/about-me/beechy">
+            Beechy is a known lover of languages
+          </Link>{" "}
+          and knows a lot about computers. Beechy could read the sentence, and
+          if ze understands the meaning I intend to convey, ze could spell it
+          out to Kyle bit by bit. This way, Kyle will likely understand the
+          information as relayed by Beechy
         </p>
         <p>
-          However, there are a couple issues with this strategy. Kyle has to
-          rolodex xis list of friends, remember that Beechy can interpret
-          high-level gibberish, contact Beechy, and prepare some ice cream to
-          bribe zyr into helping out
+          However, there are a couple issues with this strategy. It's a long
+          process. Kyle has to rolodex xis list of friends, remember that Beechy
+          can interpret high-level gibberish, contact Beechy, and prepare some
+          ice cream to bribe zyr into helping out
         </p>
         <p>
           While Beechy eats zis ice cream, ze has to read the high-level answer
@@ -119,8 +145,8 @@ export default component$(() => {
           sentence until xe finally understands it, takes a long time
         </p>
         <p>
-          ...and this is all assuming that Beechy interprets what I mean
-          correctly and nothing gets lost in translation!
+          ...and this is all assuming that Beechy correctly interprets what I
+          mean and nothing gets lost in translation!
         </p>
         <p>
           All told, if Kyle doesn't understand my high-level, one sentence
@@ -149,40 +175,33 @@ export default component$(() => {
           </Link>
         </p>
         <p>
-          In reality, the response will look a little different. Although we
-          often consider binary code (which is what all those 1's and 0's are)
-          as the classic low-level language that machines think in, modern
-          machines are a bit more complicated. These days, most computers use
-          hexadecimal code (which uses the numbers 0-9 as well as the letters
-          a-f) to communicate
-        </p>
-        <p>
-          In addition, most machines don't actually speak English converted to
-          simple character strings, like in that example where the letter 'a' is
-          represented by the string '01100001'. Instead, they need exact
-          instructions for what they are to do
+          In reality, the response will look a little different. Most machines
+          don't actually speak English converted to simple character strings,
+          like in that example where the letter 'a' is represented by the string
+          '01100001'. Instead, they need exact instructions for what they are to
+          do
         </p>
         <p>
           Consider this situation: I'm typing and want to type the character
-          '^'. I can shout at my fingers "Hey, please type an '^' symbol for
-          me!" all I want, but they're unlikely to understand the message
+          '^'. I can shout at my fingers "Hey, please type a '^' symbol for me!"
+          all I want, but they're unlikely to understand the message
         </p>
         <p>
-          Instead, I send electrical impulses through my nervous system to my
+          Instead, I send bioelectric impulses through my nervous system to my
           muscles that instruct them in each action to take. These impulses
           might be translated something like this:
         </p>
         <ul class="insert">
           Please do the following:
           <li>
-            - Move our left pinky to the left and back towards our stomach,
-            about an inch in total, until it's seated above the 'Shift' key.
-            While doing this, rotate our left wrist slightly so that the other
-            fingers of our left hand stay close to their current positions
+            - Move our left pinky finger to the left and back towards our
+            stomach, about an inch in total, until it's seated above the 'Shift'
+            key. While doing this, rotate our left wrist slightly so that the
+            other fingers of our left hand stay close to their current positions
           </li>
           <li>
-            - Press down on the 'Shift' key with our left pinky by about half an
-            inch, or until we feel resistance, and hold it there
+            - Press down on the 'Shift' key with our left pinky finger by about
+            half an inch, or until we feel resistance, and hold it there
           </li>
           <li>
             - Move our right wrist to the left and out away from our stomach by
@@ -210,33 +229,137 @@ export default component$(() => {
           </li>
           Thank you!
         </ul>
-        <p>Content coming soon!</p>
-        {/* <p>
-          Notice that these signals said nothing about typing or the '^' symbol.
-          These are
+        <p>
+          Notice that these directions said nothing about the '^' symbol, or
+          even typing at all. These are higher-level concepts that aren't useful
+          to my muscles themselves
         </p>
         <p>
-          Regardless of whether they use binary or hexidecimal characters, these
-          characters must have a system built around them that makes it clear
-          what "010110010110" actually means. These systems that organize
-          characters in ways that machines can understand are called 'assembly
-          languages'
+          Like my muscles, low-level machines need simpler instructions. The
+          series of 1's and 0's in their language might translate to phrases
+          like "move a copy of this value to this point in memory" or "multiply
+          these two integers together"
+        </p>
+        <p>
+          <strong>
+            An 'Assembly Language' is a programming language that is structured
+            in basic enough terms that a low-level computer can understand them
+          </strong>
         </p>
         <h3>
-          An 'Assembly Language' is a low-level programming language that a
-          machine can understand
+          WebAssembly is so named because it is an{" "}
+          <span class="ital">Assembly Language </span>for the{" "}
+          <span class="ital">Web</span>
         </h3>
         <p>
-          WebAssembly is named that because it is an{" "}
-          <span class="ital">Assembly Language </span>for the
-          <span class="ital">Web</span>
-        </p> */}
-        <h2 class="responseTextLight">Why would I want to use WebAssembly?</h2>
-        <p>Content coming soon!</p>
+          WebAssembly is a programming language that is structured in terms that
+          web browsers (like Chrome and Firefox) can understand
+        </p>
         <h2 class="responseTextLight">Where can I use WebAssembly?</h2>
-        <p>Content coming soon!</p>
-        <h2 class="responseTextLight">How can I use WebAssembly?</h2>
-        <p>Content coming soon!</p>
+        <p>
+          <Link class="link" href="https://caniuse.com/wasm">
+            WebAssembly is now supported by all major modern web browsers
+          </Link>
+        </p>
+        <p>
+          There are also runtimes for WebAssembly like{" "}
+          <Link class="link" href="https://wasmtime.dev/">
+            Wasmtime
+          </Link>{" "}
+          and{" "}
+          <Link class="link" href="https://wasmer.io/">
+            Wasmer
+          </Link>{" "}
+          that you can use to execute WASM code outside of a browser
+        </p>
+        <h2 class="responseTextLight">
+          Okay, but I don't want to write programs in binary! How can I use
+          WebAssembly?
+        </h2>
+        <p>
+          Good news! You don't need to code in binary to write WebAssembly
+          programs!
+        </p>
+        <p>
+          If you really want to get into the nitty gritty details, WebAssembly
+          has a text format (.wat), that provides a (somewhat) human-readable
+          translation of the WASM binary
+        </p>
+        <p>
+          Most folks, though, prefer something a bit more high-level. Luckily,
+          we can use a WASM runtime like Wasmtime to write WASM programs using
+          higher-level languages like Rust and Python
+        </p>
+        <p>
+          This is one of the biggest draws that attracts people to WebAssembly:{" "}
+          <strong>
+            WASM provides a vehicle for other languages to run in web browsers
+          </strong>
+        </p>
+        <h2 class="responseTextLight">
+          Aww come on! Can't I just use JavaScript?
+        </h2>
+        <p>
+          Once written, WebAssembly programs can also be interacted with using
+          JavaScript/TypeScript, either on the client or using runtimes like
+          Deno and Node.js
+        </p>
+        <p>
+          Let's take my fantasy name generator Namagen as a server-side example.
+          To incorporate Namagen into this website, I have the package running
+          on a small Deno server{" "}
+          <Link class="link" href="/tech/edge">
+            hosted on the edge
+          </Link>{" "}
+          that is hit with an API call when you go to{" "}
+          <Link class="link" href="/fun/namagen">
+            the Namagen webpage
+          </Link>
+        </p>
+        <p>
+          For use on the client, a bundler like Vite/Rollup or WebPack is
+          generally used to interface with WASM packages kept in the
+          node_modules folder
+        </p>
+        <p>
+          Both client and server-side WASM programs can be published to
+          repositories like npm and deno.land/x. You might even be using WASM in
+          your website already without knowing it!
+        </p>
+        <h2 class="responseTextLight">Why would I want to use WebAssembly?</h2>
+        <p>
+          WASM is fast! Since your web browser doesn't need an interpreter to
+          understand WebAssembly, it can perform complex tasks very quickly
+        </p>
+        <p>
+          In fact, WebAssembly is so fast that{" "}
+          <Link
+            class="link"
+            href="https://www.infoq.com/news/2021/05/pyodide-python-webassembly/"
+          >
+            some folks are now using it to run full data science stacks inside a
+            web browser
+          </Link>
+          !
+        </p>
+        <p>
+          WASM enables you to run code written in non-JavaScript languages in
+          the browser. The data science stack mentioned above is an example of
+          Python code running in the browser using WASM!
+        </p>
+        <p>
+          WebAssembly also has security benefits.{" "}
+          <Link class="link" href="https://webassembly.org/docs/security/">
+            WASM modules execute in sandboxed environments separate from each
+            other and from the host runtime
+          </Link>
+          . That means that, in general, the modules can't talk with the outside
+          world, or with each other, without going through you
+        </p>
+        <h2>
+          All in all, WebAssembly is a great tool you can use to talk with web
+          browsers in their own language!
+        </h2>
         <p>
           <Link class="link margin1" href="../">
             {"<-- Back to Tech"}

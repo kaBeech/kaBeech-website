@@ -32,12 +32,12 @@ export default component$(() => {
         <h1>Namagen</h1>
         <img
           class="logo"
-          src="/peli_hype_centered.png"
+          src="/peli_hype_centered.webp"
           alt="Peli, the Far Reach Co. mascot, showing excitement)"
         />
         <p>
           Namagen randomly generates names in constructed languages. I made it
-          partly to show how a Web Assembly application built with Rust can be
+          partly to show how a WebAssembly application built with Rust can be
           integrated into a JavaScript environment (more on that further down)
         </p>
         <p>
@@ -55,7 +55,7 @@ export default component$(() => {
           <Link class="link" href="https://farreachco.com/">
             Far Reach Co.'s
           </Link>{" "}
-          fantasy roleplaying game setting
+          fantasy role-playing game setting
         </p>
         <p>
           Since some Ḍaṭunḍii individuals have lips, some have beaks, and all
@@ -81,7 +81,7 @@ export default component$(() => {
         <h2>Tech Used</h2>
         <p>
           Namagen is built using Rust, compiled to WebAssembly (WASM), and then
-          packaged for use in Crates, Webpack, Node.JS, and Deno
+          packaged for use in Crates, WebPack, Node.js, and Deno
         </p>
         <p>
           This pattern enables Namagen to be run at blazingly-fast WebAssembly

@@ -12,12 +12,10 @@ export default component$(() => {
       <div class="screenContents">
         <h1>Welcome!</h1>
         <p>Welcome to kaBeech, Kyle Beechly's personal website</p>
-        <p>
-          My name is Beechy, and I'll be your guide here. I'm glad to meet you!
-        </p>
+        <p>My name is Beechy, I'll be your guide here. I'm glad to meet you!</p>
         <h3>What would you like to do?</h3>
         <p>
-          Please help me direct your experience by chosing a response below.
+          Please help me direct your experience by choosing a response below.
           <strong>
             {" "}
             Just click or tap a button at the bottom of the screen!

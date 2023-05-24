@@ -165,7 +165,7 @@ export default component$(() => {
         <p>
           Now, the same is true for Express, but Oak is designed to be used with
           Deno! There are some nice things about the way Oak works (many
-          inherited from its spritual predecessor in Node.js,{" "}
+          inherited from its spiritual predecessor in Node,{" "}
           <Link class="link" href="https://koajs.com/">
             Koa
           </Link>
@@ -177,7 +177,7 @@ export default component$(() => {
           <div>
             <h3>React</h3>
             <p>Unopinionated, component-based frontend JavaScript library</p>
-            <h4>Next.js</h4>Vercel
+            <h4>Next.js</h4>
             <p>
               Web development framework for React with opinionated routing. Uses
               server-side rendering to create static pages. Responsive web
@@ -239,7 +239,7 @@ export default component$(() => {
               </li>
               <li>
                 <strong>
-                  8. At this point the user can view and intaract with the
+                  8. At this point the user can view and interact with the
                   application
                 </strong>
               </li>
@@ -264,12 +264,12 @@ export default component$(() => {
               </li>
               <li>
                 <strong>
-                  4. At this point the user can view and intaract with the
+                  4. At this point the user can view and interact with the
                   application
                 </strong>
               </li>
               <li>
-                5. If a part of the code is interactible, the necessary
+                5. If a part of the code is interactive, the necessary
                 JavaScript is downloaded and run only right when it needs to be
               </li>
             </ol>
@@ -325,8 +325,7 @@ export default component$(() => {
           <Link class="link" href="/tech/edge">
             edge functions
           </Link>
-          . Competing with Node.js is an ambitious task, but Deno is here to
-          stay
+          . Competing with Node is an ambitious task, but Deno is here to stay
         </p>
         <p>
           Now, all that being said, the Number One reason I use Deno is...
@@ -357,7 +356,7 @@ export default component$(() => {
           the meat of my project quickly pays dividends
         </p>
         <p>
-          POQD has a low configuation overhead. Instead of having to set up a
+          POQD has a low configuration overhead. Instead of having to set up a
           TypeScript compiler, a linter, a package manager, a bundler, and so
           forth, it's already built in!
         </p>
@@ -374,9 +373,9 @@ export default component$(() => {
         <p>
           Go ahead and click around this site. See how much time you spend
           waiting for a page to load. Run a Lighthouse test (Performance usually
-          comes back with a perfect 100 for me). There may not be much here yet,
-          but I have more content planned that will demonstrate further how
-          quick and responsive it is. To get a taste for now, try{" "}
+          scores between 97 and 100 for me). There may not be much here yet, but
+          I have more content planned that will demonstrate further how quick
+          and responsive it is. To get a taste for now, try{" "}
           <Link class="link" href="/fun/flower?pride=true">
             playing around with this flower
           </Link>
@@ -388,7 +387,7 @@ export default component$(() => {
         </p>
         <p>
           <strong>Example 1:</strong> Deno only supports URLs for loading
-          dependencies (as opposed to Node.js, which supports both URLs and
+          dependencies (as opposed to Node, which supports both URLs and
           modules). Why would I want to use a tool that does less things? Well,
           (perhaps obviously), browsers also only support URLs. Using a runtime
           that loads dependencies in the same way a browser does forces me to
@@ -415,7 +414,7 @@ export default component$(() => {
             Qwik uses symbolic slots
           </Link>
           . Qwik renders parents and children in perfect isolation. This means
-          it can render the parent component without rerendering the children
+          it can render the parent component without re-rendering the children
           and vice versa.
         </p>
         <p>

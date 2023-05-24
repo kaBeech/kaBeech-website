@@ -37,12 +37,14 @@ export default component$(() => {
       >
         <input
           type="range"
+          id="resolutionSlider"
           value={state.number}
           max={50}
           onInput$={(ev) => {
             state.number = (ev.target as HTMLInputElement).valueAsNumber;
           }}
         />
+        <label for="resolutionSlider">Select Resolution With Slider</label>
         <div
           style={{
             "--state": `${state.count * 0.1}`,
@@ -97,4 +99,10 @@ export default component$(() => {
 
 export const head: DocumentHead = {
   title: "Fractal Flower",
+  meta: [
+    {
+      name: "description",
+      content: "An enchanting interactive animation",
+    },
+  ],
 };

@@ -1,11 +1,13 @@
 img {
   width: 7em;
   max-width: 100%;
+  aspect-ratio: 1.75;
   /* flex: 1 1 0; */
 }
 
 .mobileShow {
   width: 7em;
   max-width: 10%;
+  aspect-ratio: 1.75;
   /* flex: 1 1 0; */
 }
