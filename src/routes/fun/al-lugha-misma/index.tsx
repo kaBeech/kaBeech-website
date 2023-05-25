@@ -46,9 +46,7 @@ export const useGetPotatoList = routeLoader$(async () => {
   const res = await fetch(`${alLughaMismaAPI}/potato`);
   const data = await res.json();
   const potatoList: Potato[] = [];
-  console.log(data);
   data.potato_list.forEach((potato: Potato) => potatoList.push(potato));
-  console.log(potatoList);
   return (potatoList || "Error") as Potato[];
 });
 
