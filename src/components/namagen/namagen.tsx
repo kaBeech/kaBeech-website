@@ -1,21 +1,30 @@
 import { Resource, component$, useResource$ } from "@builder.io/qwik";
+import type { RequestEvent } from "@builder.io/qwik-city";
 
 interface NamagenProps {
   language: "mamobibu" | "saurian";
 }
 
-// I know, I know. Listen, environment variables are weird in Qwik and I'm still figuring it out
-const namagen = "https://full-duck-87-qfzve1n0y4s0.deno.dev";
+let namagenAPIKey: string;
+
+export const onGet = (requestEvent: RequestEvent) => {
+  const response = requestEvent.env.get("NAMAGEN_API_KEY");
+  if (response != undefined) {
+    namagenAPIKey = response;
+  } else {
+    console.error("NAMAGEN_API_KEY not found upon request");
+  }
+};
 
 export const Namagen = component$((props: NamagenProps) => {
   const mamobibuName = useResource$(async () => {
-    const response = await fetch(`${namagen}/mamobibu`);
+    const response = await fetch(`${namagenAPIKey}/mamobibu`);
     const data = await response.json();
     return (data.mamobibuName || "Error") as string;
   });
 
   const saurianName = useResource$(async () => {
-    const response = await fetch(`${namagen}/saurian`);
+    const response = await fetch(`${namagenAPIKey}/saurian`);
     const data = await response.json();
     return (data.saurianName + " (" + data.saurianNameBasicLatin + ")" ||
       "Error") as string;
