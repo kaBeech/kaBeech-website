@@ -1,22 +1,29 @@
 import { component$ } from "@builder.io/qwik";
-import type { DocumentHead } from "@builder.io/qwik-city";
-import { routeLoader$ } from "@builder.io/qwik-city";
-import { Link } from "@builder.io/qwik-city";
+import type { DocumentHead, RequestEvent } from "@builder.io/qwik-city";
+import { Link, routeLoader$ } from "@builder.io/qwik-city";
 import { Beechy } from "~/components/beechy/beechy";
 import { ResponseBar } from "~/components/responseBar/responseBar";
 import { linkTiles } from "~/util/linkTiles";
 
-// I know, I know. Listen, environment variables are weird in Qwik and I'm still figuring it out
-const namagen = "https://full-duck-87-qfzve1n0y4s0.deno.dev";
+let namagenAPIKey: string;
+
+export const onGet = (requestEvent: RequestEvent) => {
+  const response = requestEvent.env.get("NAMAGEN_API_KEY");
+  if (response != undefined) {
+    namagenAPIKey = response;
+  } else {
+    console.error("NAMAGEN_API_KEY not found upon request");
+  }
+};
 
 export const useNamagenMamobibu = routeLoader$(async () => {
-  const res = await fetch(`${namagen}/mamobibu`);
+  const res = await fetch(`${namagenAPIKey}/mamobibu`);
   const data = await res.json();
   return (data.mamobibuName || "Error") as string;
 });
 
 export const useNamagenSaurian = routeLoader$(async () => {
-  const res = await fetch(`${namagen}/saurian`);
+  const res = await fetch(`${namagenAPIKey}/saurian`);
   const data = await res.json();
   return (data.saurianName + " (" + data.saurianNameBasicLatin + ")" ||
     "Error") as string;
@@ -82,8 +89,11 @@ export default component$(() => {
         </p>
         <h2>Tech Used</h2>
         <p>
-          Namagen is built using Rust, compiled to WebAssembly (WASM), and then
-          packaged for use in Crates, WebPack, Node.js, and Deno
+          Namagen is built using Rust, compiled to{" "}
+          <Link class="link" href="/tech/wasm">
+            WebAssembly (WASM)
+          </Link>
+          , and then packaged for use in Crates, WebPack, Node.js, and Deno
         </p>
         <p>
           This pattern enables Namagen to be run at blazingly-fast WebAssembly
