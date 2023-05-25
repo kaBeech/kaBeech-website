@@ -1,13 +1,60 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
-import type { DocumentHead } from "@builder.io/qwik-city";
+import {
+  DocumentHead,
+  RequestEvent,
+  routeLoader$,
+} from "@builder.io/qwik-city";
 import { Link } from "@builder.io/qwik-city";
 import { Beechy } from "~/components/beechy/beechy";
 import { ResponseBar } from "~/components/responseBar/responseBar";
 import { linkTiles } from "~/util/linkTiles";
 import styles from "./al-lugha-misma.css?inline";
 
+// interface Language {
+//   id: Number;
+//   created_at: string;
+//   name: string;
+// }
+
+interface Potato {
+  language: string;
+  transliterated_word: string;
+}
+
+let alLughaMismaAPI: string;
+
+export const onGet = (requestEvent: RequestEvent) => {
+  const response = requestEvent.env.get("AL_LUGHA_MISMA_API");
+  if (response != undefined) {
+    alLughaMismaAPI = response;
+  } else {
+    console.error("AL_LUGHA_MISMA_API string not found upon request");
+  }
+};
+
+// export const useGetALMLanguages = routeLoader$(async () => {
+//   const res = await fetch(`${alLughaMismaAPI}/languages`);
+//   const data = await res.json();
+//   const almLanguages: string[] = [];
+//   data.language_list.forEach((language: Language) =>
+//     almLanguages.push(language.name)
+//   );
+//   return almLanguages || "Error";
+// });
+
+export const useGetPotatoList = routeLoader$(async () => {
+  const res = await fetch(`${alLughaMismaAPI}/potato`);
+  const data = await res.json();
+  const potatoList: Potato[] = [];
+  console.log(data);
+  data.potato_list.forEach((potato: Potato) => potatoList.push(potato));
+  console.log(potatoList);
+  return (potatoList || "Error") as Potato[];
+});
+
 export default component$(() => {
   useStylesScoped$(styles);
+  const potatoList = useGetPotatoList().value;
 
   return (
     <div class="screenContainer">
@@ -26,77 +73,19 @@ export default component$(() => {
           similar our words are, even across languages! For example, here's how
           we say "potato" in a few languages:
         </p>
-        {/* Fetch potato legend from Al Lugha Misma API and put it in a table */}
-        {/* Hindi: paTeTo, Hawaiian: ʻUala kahiki ('uala means sweet potato, kahiki 
-        refers to a foreign place (prototypically Tahiti)), Swahili: mbatata (or kiazi), 
-        Indonesian: kentang, French: pomme de terre, Pig Latin: otatopay */}
-        {/* <table>
-          <tr>
-            <th>Language</th>
-            <td>Arabic</td>
-            <td>English</td>
-            <td>French</td>
-            <td>Hawaiian</td>
-            <td>Hindi</td>
-            <td>Indonesian</td>
-            <td>Pig Latin</td>
-            <td>Spanish</td>
-            <td>Swahili</td>
-          </tr>{" "}
-          <tr>
-            <th>Translation</th>
-            <td>baTaaTaa</td>
-            <td>potato</td>
-            <td>pomme de terre</td>
-            <td>ʻUala kahiki</td>
-            <td>paTeTo</td>
-            <td>kentang</td>
-            <td>otatopay</td>
-            <td>papa</td>
-            <td>mbatata (or kiazi)</td>
-          </tr>{" "}
-        </table> */}
         <table>
-          <tr>
+          <thead>
             <th>Language</th>
             <th>Translation</th>
-          </tr>{" "}
-          <tr>
-            <td>Arabic</td>
-            <td>baTaaTaa</td>
-          </tr>{" "}
-          <tr>
-            <td>English</td>
-            <td>potato</td>
-          </tr>{" "}
-          <tr>
-            <td>French</td>
-            <td>pomme de terre</td>
-          </tr>{" "}
-          <tr>
-            <td>Hawai'ian</td>
-            <td>'uala kahiki</td>
-          </tr>{" "}
-          <tr>
-            <td>Hindi</td>
-            <td>paTeTo</td>
-          </tr>{" "}
-          <tr>
-            <td>Indonesian</td>
-            <td>kentang</td>
-          </tr>{" "}
-          <tr>
-            <td>Pig Latin</td>
-            <td>otatopay</td>
-          </tr>{" "}
-          <tr>
-            <td>Spanish</td>
-            <td>papa</td>
-          </tr>{" "}
-          <tr>
-            <td>Swahili</td>
-            <td>mbatata (or kiazi)</td>
-          </tr>{" "}
+          </thead>
+          <tbody>
+            {potatoList.map((potato) => (
+              <tr>
+                <td>{potato.language}</td>
+                <td>{potato.transliterated_word}</td>
+              </tr>
+            ))}
+          </tbody>
         </table>
 
         <p>

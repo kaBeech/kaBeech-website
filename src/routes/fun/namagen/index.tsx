@@ -5,25 +5,25 @@ import { Beechy } from "~/components/beechy/beechy";
 import { ResponseBar } from "~/components/responseBar/responseBar";
 import { linkTiles } from "~/util/linkTiles";
 
-let namagenAPIKey: string;
+let namagenAPI: string;
 
 export const onGet = (requestEvent: RequestEvent) => {
-  const response = requestEvent.env.get("NAMAGEN_API_KEY");
+  const response = requestEvent.env.get("NAMAGEN_API");
   if (response != undefined) {
-    namagenAPIKey = response;
+    namagenAPI = response;
   } else {
-    console.error("NAMAGEN_API_KEY not found upon request");
+    console.error("NAMAGEN_API string not found upon request");
   }
 };
 
 export const useNamagenMamobibu = routeLoader$(async () => {
-  const res = await fetch(`${namagenAPIKey}/mamobibu`);
+  const res = await fetch(`${namagenAPI}/mamobibu`);
   const data = await res.json();
   return (data.mamobibuName || "Error") as string;
 });
 
 export const useNamagenSaurian = routeLoader$(async () => {
-  const res = await fetch(`${namagenAPIKey}/saurian`);
+  const res = await fetch(`${namagenAPI}/saurian`);
   const data = await res.json();
   return (data.saurianName + " (" + data.saurianNameBasicLatin + ")" ||
     "Error") as string;
