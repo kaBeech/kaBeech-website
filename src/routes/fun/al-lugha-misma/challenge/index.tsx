@@ -31,7 +31,7 @@ export const onGet = (requestEvent: RequestEvent) => {
 
 export const useGetTranslatedWordList = routeLoader$(async () => {
   const res = await fetch(
-    `${alLughaMismaAPI}/challenge_key/challenge/Colors/languages/Arabic,Hindi`
+    `${alLughaMismaAPI}/challenge_key/challenge/Colors/languages/Arabic,English,French,Hindi,Indonesian,Spanish,Swahili`
   );
   const data = await res.json();
   const translatedWordList: TranslatedWord[] = [];
