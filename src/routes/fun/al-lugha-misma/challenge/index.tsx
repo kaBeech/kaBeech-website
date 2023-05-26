@@ -8,8 +8,8 @@ import { linkTiles } from "~/util/linkTiles";
 import styles from "../al-lugha-misma.css?inline";
 
 interface TranslatedWord {
-  referenceWordEnglish: string;
-  transliteratedWord: string;
+  reference_word_english: string;
+  transliterated_word: string;
   language: string;
 }
 
@@ -40,7 +40,7 @@ export const useGetTranslatedWordList = routeLoader$(async () => {
   );
   const data = await res.json();
   const translatedWordList: TranslatedWord[] = [];
-  data.challengeKey.forEach((translatedWord: TranslatedWord) =>
+  data.challenge_key.forEach((translatedWord: TranslatedWord) =>
     translatedWordList.push(translatedWord)
   );
   return (translatedWordList || "Error") as TranslatedWord[];
@@ -58,8 +58,8 @@ export default component$(() => {
     if (!languages.includes(translatedWord.language)) {
       languages.push(translatedWord.language);
     }
-    if (!referenceWords.includes(translatedWord.referenceWordEnglish)) {
-      referenceWords.push(translatedWord.referenceWordEnglish);
+    if (!referenceWords.includes(translatedWord.reference_word_english)) {
+      referenceWords.push(translatedWord.reference_word_english);
     }
   }
 
@@ -74,7 +74,7 @@ export default component$(() => {
     for (const translatedWord of translatedWordList) {
       if (translatedWord.language === translationByLanguage.language) {
         translationByLanguage.translatedWords.push(
-          translatedWord.transliteratedWord
+          translatedWord.transliterated_word
         );
       }
     }
