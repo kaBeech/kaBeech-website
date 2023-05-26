@@ -1,20 +1,11 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
-import {
-  DocumentHead,
-  RequestEvent,
-  routeLoader$,
-} from "@builder.io/qwik-city";
+import type { DocumentHead, RequestEvent } from "@builder.io/qwik-city";
+import { routeLoader$ } from "@builder.io/qwik-city";
 import { Link } from "@builder.io/qwik-city";
 import { Beechy } from "~/components/beechy/beechy";
 import { ResponseBar } from "~/components/responseBar/responseBar";
 import { linkTiles } from "~/util/linkTiles";
 import styles from "./al-lugha-misma.css?inline";
-
-// interface Language {
-//   id: Number;
-//   created_at: string;
-//   name: string;
-// }
 
 interface Potato {
   language: string;
@@ -31,16 +22,6 @@ export const onGet = (requestEvent: RequestEvent) => {
     console.error("AL_LUGHA_MISMA_API string not found upon request");
   }
 };
-
-// export const useGetALMLanguages = routeLoader$(async () => {
-//   const res = await fetch(`${alLughaMismaAPI}/languages`);
-//   const data = await res.json();
-//   const almLanguages: string[] = [];
-//   data.language_list.forEach((language: Language) =>
-//     almLanguages.push(language.name)
-//   );
-//   return almLanguages || "Error";
-// });
 
 export const useGetPotatoList = routeLoader$(async () => {
   const res = await fetch(`${alLughaMismaAPI}/potato`);
@@ -78,7 +59,7 @@ export default component$(() => {
           </thead>
           <tbody>
             {potatoList.map((potato) => (
-              <tr>
+              <tr key={potato.transliterated_word}>
                 <td>{potato.language}</td>
                 <td>{potato.transliterated_word}</td>
               </tr>
