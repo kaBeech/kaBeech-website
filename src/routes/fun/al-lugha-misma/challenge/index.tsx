@@ -8,8 +8,8 @@ import { linkTiles } from "~/util/linkTiles";
 import styles from "../al-lugha-misma.css?inline";
 
 interface TranslatedWord {
-  reference_word_english: string;
-  transliterated_word: string;
+  referenceWordEnglish: string;
+  transliteratedWord: string;
   language: string;
 }
 
@@ -36,11 +36,11 @@ export const onGet = (requestEvent: RequestEvent) => {
 
 export const useGetTranslatedWordList = routeLoader$(async () => {
   const res = await fetch(
-    `${alLughaMismaAPI}/challenge_key/challenge/Colors/languages/Arabic,English,French,Hawaiian,Hindi,Indonesian,PigLatin,Spanish,Swahili`
+    `${alLughaMismaAPI}/challenge/Colors/languages/Arabic,English,French,Hawaiian,Hindi,Indonesian,PigLatin,Spanish,Swahili`
   );
   const data = await res.json();
   const translatedWordList: TranslatedWord[] = [];
-  data.challenge_key.forEach((translatedWord: TranslatedWord) =>
+  data.challengeKey.forEach((translatedWord: TranslatedWord) =>
     translatedWordList.push(translatedWord)
   );
   return (translatedWordList || "Error") as TranslatedWord[];
@@ -58,8 +58,8 @@ export default component$(() => {
     if (!languages.includes(translatedWord.language)) {
       languages.push(translatedWord.language);
     }
-    if (!referenceWords.includes(translatedWord.reference_word_english)) {
-      referenceWords.push(translatedWord.reference_word_english);
+    if (!referenceWords.includes(translatedWord.referenceWordEnglish)) {
+      referenceWords.push(translatedWord.referenceWordEnglish);
     }
   }
 
@@ -74,7 +74,7 @@ export default component$(() => {
     for (const translatedWord of translatedWordList) {
       if (translatedWord.language === translationByLanguage.language) {
         translationByLanguage.translatedWords.push(
-          translatedWord.transliterated_word
+          translatedWord.transliteratedWord
         );
       }
     }
@@ -90,11 +90,11 @@ export default component$(() => {
   // for (const translationByReferenceWord of translationsByReferenceWord) {
   //   for (const translatedWord of translatedWordList) {
   //     if (
-  //       translatedWord.reference_word_english ===
+  //       translatedWord.referenceWordEnglish ===
   //       translationByReferenceWord.referenceWord
   //     ) {
   //       translationByReferenceWord.translatedWords.push(
-  //         translatedWord.transliterated_word
+  //         translatedWord.transliteratedWord
   //       );
   //     }
   //   }
