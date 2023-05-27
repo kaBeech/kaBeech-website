@@ -6,6 +6,7 @@ import { Beechy } from "~/components/beechy/beechy";
 import { ResponseBar } from "~/components/responseBar/responseBar";
 import { linkTiles } from "~/util/linkTiles";
 import styles from "../al-lugha-misma.css?inline";
+import { AlLughaMismaTable } from "~/components/alLughaMismaTable/alLughaMismaTable";
 
 interface TranslatedWord {
   reference_word_english: string;
@@ -110,24 +111,7 @@ export default component$(() => {
           src="/icons/alLughaMismaColorized2.webp"
           alt="The Al Lugha Misma logo (a calligraphic representation of 'Al Lugha Misma' in mixed Naskh and Devanagari script"
         />
-        <table>
-          <thead>
-            <th>Reference Word</th>
-            {referenceWords.map((referenceWord) => (
-              <th key={referenceWord}>{referenceWord}</th>
-            ))}
-          </thead>
-          <tbody>
-            {translationsByLanguage.map((translationByLanguage) => (
-              <tr key={translationByLanguage.language}>
-                <td>{translationByLanguage.language}</td>
-                {translationByLanguage.translatedWords.map((translatedWord) => (
-                  <td key={translatedWord}>{translatedWord}</td>
-                ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        <AlLughaMismaTable alLughaMismaAPI={alLughaMismaAPI} />
         <p>
           <Link class="link margin1" href="../">
             {"<-- Back to Fun & Games"}
