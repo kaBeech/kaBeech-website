@@ -9,6 +9,8 @@ import styles from "../../routes/fun/al-lugha-misma/al-lugha-misma.css?inline";
 
 interface AlLughaMismaProps {
   alLughaMismaAPI: string;
+  word_list: string;
+  languages: string[];
 }
 
 interface TranslatedWord {
@@ -30,12 +32,14 @@ interface TranslationByLanguage {
 export const AlLughaMismaTable = component$((props: AlLughaMismaProps) => {
   const state = useStore({
     alLughaMismaAPI: props.alLughaMismaAPI,
+    word_list: props.word_list,
+    languagesString: props.languages.toString(),
   });
   useStylesScoped$(styles);
 
   const translatedWordListResource = useResource$(async () => {
     const res = await fetch(
-      `${state.alLughaMismaAPI}/word_list/Colors/languages/Arabic,English,French,Hawaiian,Hindi,Indonesian,PigLatin,Spanish,Swahili/key`
+      `${state.alLughaMismaAPI}/word_list/${state.word_list}/languages/${state.languagesString}/key`
     );
     const data = await res.json();
     const translatedWordList: TranslatedWord[] = [];
