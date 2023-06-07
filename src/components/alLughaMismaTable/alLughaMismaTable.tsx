@@ -109,7 +109,7 @@ export const AlLughaMismaTable = component$((props: AlLughaMismaProps) => {
           return (
             <table>
               <thead>
-                <th>Reference Word</th>
+                <th>Reference</th>
                 {referenceWords.map((referenceWord) => (
                   <th key={referenceWord}>{referenceWord}</th>
                 ))}
@@ -117,7 +117,7 @@ export const AlLughaMismaTable = component$((props: AlLughaMismaProps) => {
               <tbody>
                 {translationsByLanguage.map((translationByLanguage) => (
                   <tr key={translationByLanguage.language}>
-                    <td>{translationByLanguage.language}</td>
+                    <th>{translationByLanguage.language}</th>
                     {translationByLanguage.translatedWords.map(
                       (translatedWord) => (
                         <td key={translatedWord}>{translatedWord}</td>
@@ -130,6 +130,31 @@ export const AlLughaMismaTable = component$((props: AlLughaMismaProps) => {
           );
         }}
       />
+      <form onChange$={(state.word_list = "Numbers")}>
+        <div>
+          Word List:
+          {/* <input type="text" id="colors" name="arabic"></input>
+            <label for="colors">Colors</label> */}
+          <input type="radio" id="colors" name="word_list"></input>
+          <label for="colors">Colors</label>
+          <input type="radio" id="numbers" name="word_list"></input>
+          <label for="numbers">Numbers</label>
+        </div>
+        <div>
+          Languages:
+          <input type="checkbox" id="arabic" name="languages"></input>
+          <label for="arabic">Arabic</label>
+          <input type="checkbox" id="spanish" name="languages"></input>
+          <label for="spanish">Spanish</label>
+        </div>
+        <input
+          type="submit"
+          value="START"
+          onClick$={() => {
+            // handleClick();
+          }}
+        />
+      </form>
     </div>
   );
 });

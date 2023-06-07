@@ -31,6 +31,7 @@ export default component$(() => {
           src="/icons/alLughaMismaColorized2.webp"
           alt="The Al Lugha Misma logo (a calligraphic representation of 'Al Lugha Misma' in mixed Naskh and Devanagari script"
         />
+
         <AlLughaMismaTable
           alLughaMismaAPI={alLughaMismaAPI}
           word_list="Colors"
