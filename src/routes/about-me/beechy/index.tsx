@@ -16,7 +16,7 @@ export default component$(() => {
         </h2>
         <p>Oh! Thanks for asking - being me pretty great!</p>
         <p>
-          Being Kyle's avatar is basically like being a conduit for zis
+          Being Kyle's avatar is basically like being a conduit for zys
           personality (I also prefer{" "}
           <Link class="link" href="/about-me/pronouns">
             xe/xyr or ze/zyr pronouns
