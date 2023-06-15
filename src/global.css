@@ -138,6 +138,10 @@ li {
   vertical-align: baseline;
 }
 
+iframe {
+  min-height: 700px;
+}
+
 .link {
   text-shadow: #cfffbb45 0 0.06em 0.25em, #cfffbb2b 0 0.06em 0.4em;
 }
