@@ -68,6 +68,23 @@ export default component$(() => {
             Learn more about {starCrossedTest.value.closestStarShownName}!
           </Link>
         </p>
+
+        <p>
+          <Link
+            class="link margin1"
+            href={`https://hungry-heron-21.deno.dev/star-crossings/1948-8-11,1952-3-3`}
+          >
+            Visit the StarCrossed API
+          </Link>
+        </p>
+        <p>
+          <Link
+            class="link margin1"
+            href={`https://github.com/kaBeech/star-crossed/tree/main`}
+          >
+            Visit README on GitHub
+          </Link>
+        </p>
         <h3>
           This is what it looks like in your own special corner of the universe:
         </h3>
