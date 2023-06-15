@@ -18,7 +18,7 @@ export const onGet = (requestEvent: RequestEvent) => {
 
 export const useStarCrossedTest = routeLoader$(async () => {
   const res = await fetch(
-    `${starCrossedAPI}/star-crossings/1948-12-25,2352-3-23`
+    `${starCrossedAPI}/star-crossings/1948-8-11,1952-3-3`
   );
   const data = await res.json();
   let closestStarShownName: string;
@@ -35,8 +35,8 @@ export const useStarCrossedTest = routeLoader$(async () => {
       closestStarName: data.closestStarName,
       closestStarCommonName: data.closestStarCommonName,
       closestStarShownName,
-      birthdays: ["1948-12-25", "1952-3-23"],
-    } || `Error - URI is ${starCrossedAPI}/star-crossings/1948-12-25,1952-3-23`
+      birthdays: ["1948-8-11", "1952-3-3"],
+    } || `Error - URI is ${starCrossedAPI}/star-crossings/1948-8-11,1952-3-3`
   );
 });
 
