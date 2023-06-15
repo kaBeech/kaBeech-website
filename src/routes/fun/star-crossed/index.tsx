@@ -18,7 +18,7 @@ export const onGet = (requestEvent: RequestEvent) => {
 
 export const useStarCrossedTest = routeLoader$(async () => {
   const res = await fetch(
-    `${starCrossedAPI}/star-crossings/1948-8-11,1952-3-3`
+    `${starCrossedAPI}/star-crossings/1948-1-17,1952-8-12`
   );
   const data = await res.json();
   let closestStarShownName: string;
@@ -69,8 +69,13 @@ export default component$(() => {
           </Link>
         </p>
         <h3>
-          This is what it looks like in your special corner of the universe:
+          This is what it looks like in your own special corner of the universe:
         </h3>
+        <p>
+          <Link class="link margin1" href={starCrossedTest.value.skyMapURL}>
+            View map on WikiSky
+          </Link>
+        </p>
         <iframe
           title="StarCrossed Photo"
           width="100%"
