@@ -80,9 +80,9 @@ export default component$(() => {
         <p>
           <Link
             class="link margin1"
-            href={`https://github.com/kaBeech/star-crossed/tree/main`}
+            href={`https://github.com/kaBeech/star-crossed/tree/main#readme`}
           >
-            Visit README on GitHub
+            View README on GitHub
           </Link>
         </p>
         <h3>
