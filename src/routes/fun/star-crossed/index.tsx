@@ -64,24 +64,62 @@ export default component$(() => {
         </h2>
         <h3>Closest Star: {starCrossedTest.value.closestStarShownName}</h3>
         <p>
-          <Link class="link margin1" href={starCrossedTest.value.infoURL}>
-            Learn more about {starCrossedTest.value.closestStarShownName}!
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link margin1"
+            href={starCrossedTest.value.infoURL}
+          >
+            target="_blank" rel="noopener noreferrer" Learn more about{" "}
+            {starCrossedTest.value.closestStarShownName}!
+          </Link>
+        </p>
+        <p>
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link margin1"
+            href={`https://hungry-heron-21.deno.dev/star-crossings/1948-8-11,1952-3-3`}
+          >
+            Visit the StarCrossed API
+          </Link>
+        </p>
+        <p>
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link margin1"
+            href={`https://github.com/kaBeech/star-crossed/tree/main#readme`}
+          >
+            View README on GitHub
           </Link>
         </p>
         <h3>
           This is what it looks like in your own special corner of the universe:
         </h3>
         <p>
-          <Link class="link margin1" href={starCrossedTest.value.skyMapURL}>
-            View map on WikiSky
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link margin1"
+            href={starCrossedTest.value.skyMapURL}
+          >
+            View interactive map on WikiSky
           </Link>
         </p>
-        <iframe
+        <br />
+        <img
+          src="/1948-8-11x1952-3-3.webp"
+          alt="Image of the starCrossing for 1948-8-11x1952-3-3"
+          width={1200}
+          height={1200}
+        />
+        {/* <iframe
           title="StarCrossed Photo"
           width="100%"
           height="250"
           src={starCrossedTest.value.skyMapURL}
-        ></iframe>
+        ></iframe> */}
         <p>
           <Link class="link margin1" href="../">
             {"<-- Back to Fun & Games"}
