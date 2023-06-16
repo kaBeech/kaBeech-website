@@ -70,7 +70,7 @@ export default component$(() => {
             class="link margin1"
             href={starCrossedTest.value.infoURL}
           >
-            {starCrossedTest.value.closestStarShownName}!
+            Learn more about {starCrossedTest.value.closestStarShownName}!
           </Link>
         </p>
         <p>
