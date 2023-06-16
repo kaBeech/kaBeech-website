@@ -70,7 +70,6 @@ export default component$(() => {
             class="link margin1"
             href={starCrossedTest.value.infoURL}
           >
-            target="_blank" rel="noopener noreferrer" Learn more about{" "}
             {starCrossedTest.value.closestStarShownName}!
           </Link>
         </p>
