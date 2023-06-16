@@ -97,35 +97,32 @@ export default component$(() => {
           This is what it looks like in your own special corner of the universe:
         </h3>
         <p>
+          If the iframe below does not display, please allow insecure content in
+          your browser or{" "}
           <Link
             target="_blank"
             rel="noopener noreferrer"
-            class="link margin1"
-            href={starCrossedTest.value.skyMapURL}
+            class="link"
+            href={`http://www.wikisky.org/${starCrossedTest.value.skyMapURL.slice(
+              36
+            )}`}
           >
-            View interactive map on WikiSky
+            click here to view the interactive map on WikiSky
           </Link>
         </p>
         <br />
-        <Link
-          target="_blank"
-          rel="noopener noreferrer"
-          class="link margin1"
-          href={starCrossedTest.value.skyMapURL}
-        >
-          <img
+        {/* <img
             src="/1948-8-11x1952-3-3.webp"
             alt="Image of the starCrossing for 1948-8-11x1952-3-3"
             width={1200}
             height={1200}
-          />
-        </Link>
-        {/* <iframe
-          title="StarCrossed Photo"
+          /> */}
+        <iframe
+          title="StarCrossed skyMap"
           width="100%"
-          height="250"
+          height="320"
           src={starCrossedTest.value.skyMapURL}
-        ></iframe> */}
+        ></iframe>
         <p>
           <Link class="link margin1" href="../">
             {"<-- Back to Fun & Games"}
