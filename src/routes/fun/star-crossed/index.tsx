@@ -18,7 +18,7 @@ export const onGet = (requestEvent: RequestEvent) => {
 
 export const useStarCrossedTest = routeLoader$(async () => {
   const res = await fetch(
-    `${starCrossedAPI}/star-crossings/1948-1-17,1952-8-12`
+    `${starCrossedAPI}/star-crossings/1948-8-11,1952-3-3`
   );
   const data = await res.json();
   let closestStarShownName: string;
