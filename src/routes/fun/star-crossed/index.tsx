@@ -107,12 +107,19 @@ export default component$(() => {
           </Link>
         </p>
         <br />
-        <img
-          src="/1948-8-11x1952-3-3.webp"
-          alt="Image of the starCrossing for 1948-8-11x1952-3-3"
-          width={1200}
-          height={1200}
-        />
+        <Link
+          target="_blank"
+          rel="noopener noreferrer"
+          class="link margin1"
+          href={starCrossedTest.value.skyMapURL}
+        >
+          <img
+            src="/1948-8-11x1952-3-3.webp"
+            alt="Image of the starCrossing for 1948-8-11x1952-3-3"
+            width={1200}
+            height={1200}
+          />
+        </Link>
         {/* <iframe
           title="StarCrossed Photo"
           width="100%"
