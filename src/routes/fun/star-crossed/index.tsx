@@ -119,7 +119,7 @@ export default component$(() => {
           /> */}
         <iframe
           title="StarCrossed skyMap"
-          width="100%"
+          width="90%"
           height="320"
           src={starCrossedTest.value.skyMapURL}
         ></iframe>
