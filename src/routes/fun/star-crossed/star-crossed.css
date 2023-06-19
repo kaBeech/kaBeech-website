@@ -5,6 +5,17 @@ input {
   font-size: 1.5rem;
   color: var(--kaBeech-screen-foreground);
 }
+@media (max-width: 520px) {
+  input {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 346px) {
+  input {
+    font-size: 0.7rem;
+  }
+}
 
 .iframePlaceholder {
   width: 90%;
