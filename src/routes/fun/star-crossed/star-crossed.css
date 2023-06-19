@@ -1,0 +1,8 @@
+input {
+  overflow: visible;
+}
+
+.iframePlaceholder {
+  width: 90%;
+  height: 24em;
+}
