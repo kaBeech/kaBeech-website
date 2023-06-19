@@ -106,9 +106,9 @@ export default component$(() => {
           onInput$={(ev: any) => (state.birthday2 = ev.target.value)}
           value={birthday2}
         />
-        <h2>
+        {/* <h2>
           Birthdays: {state.birthday1} x {state.birthday2}
-        </h2>
+        </h2> */}
         <Resource
           value={starCrossedResource}
           onPending={() => {
