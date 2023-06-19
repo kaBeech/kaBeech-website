@@ -66,20 +66,14 @@ export default component$(() => {
             this xkcd comic:
           </a>
         </p>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="/kaBeech/star-crossed/blob/main/public/xkcd_christmas_gps.png"
-        >
-          <img
-            src="/xkcd_christmas_gps.webp"
-            alt="xkcd Christmas GPS comic"
-            title="Christmas GPS"
-            style="max-width: 90%; aspect-ratio: 740/203;"
-            width={740}
-            height={203}
-          />
-        </a>
+        <img
+          src="/xkcd_christmas_gps.webp"
+          alt="xkcd Christmas GPS comic"
+          title="Christmas GPS"
+          style="max-width: 90%; aspect-ratio: 740/203;"
+          width={740}
+          height={203}
+        />
         <p>...but in space!</p>
         <p>
           The basic idea is to input the birthdays of you and a loved one, and
