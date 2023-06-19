@@ -72,10 +72,12 @@ export default component$(() => {
           href="/kaBeech/star-crossed/blob/main/public/xkcd_christmas_gps.png"
         >
           <img
-            src="/xkcd_christmas_gps.png"
+            src="/xkcd_christmas_gps.webp"
             alt="xkcd Christmas GPS comic"
             title="Christmas GPS"
             style="max-width: 90%;"
+            width={740}
+            height={203}
           />
         </a>
         <p>...but in space!</p>
