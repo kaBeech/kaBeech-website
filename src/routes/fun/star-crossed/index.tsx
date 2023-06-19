@@ -75,7 +75,7 @@ export default component$(() => {
             src="/xkcd_christmas_gps.webp"
             alt="xkcd Christmas GPS comic"
             title="Christmas GPS"
-            style="max-width: 90%;"
+            style="max-width: 90%; aspect-ratio: 740/203;"
             width={740}
             height={203}
           />
@@ -103,11 +103,13 @@ export default component$(() => {
           type="date"
           onInput$={(ev: any) => (state.birthday1 = ev.target.value)}
           value={birthday1}
+          aria-labelledby="Birthday 1"
         />
         <input
           type="date"
           onInput$={(ev: any) => (state.birthday2 = ev.target.value)}
           value={birthday2}
+          aria-labelledby="Birthday 2"
         />
         <Resource
           value={starCrossedResource}
