@@ -60,6 +60,42 @@ export default component$(() => {
       <Beechy />
       <div class="screenContents">
         <h1>StarCrossed</h1>
+        <p>
+          StarCrossed is inspired by{" "}
+          <a href="https://xkcd.com/201/" rel="nofollow">
+            this xkcd comic:
+          </a>
+        </p>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="/kaBeech/star-crossed/blob/main/public/xkcd_christmas_gps.png"
+        >
+          <img
+            src="/xkcd_christmas_gps.png"
+            alt="xkcd Christmas GPS comic"
+            title="Christmas GPS"
+            style="max-width: 90%;"
+          />
+        </a>
+        <p>...but in space!</p>
+        <p>
+          The basic idea is to input the birthdays of you and a loved one, and
+          return a set of celestial coordinates special to the two of you
+        </p>
+        <p>
+          In addition to these coordinates, you'll also receive the name of the
+          star closest to these coordinates (within 25 parsecs of Earth), a link
+          to some more information about this star, and a link to an interactive
+          map of the area your coordinates reside in
+        </p>
+        <p>
+          If the location is out of your starship's range, is too crowded when
+          you get there, or isn't visible from your porch, fear not! Try
+          entering in your birthdays in the reverse order - you'll get a
+          different response this way
+        </p>
+        <p>Have fun!</p>
         <input
           type="date"
           onInput$={(ev: any) => (state.birthday1 = ev.target.value)}
@@ -83,16 +119,6 @@ export default component$(() => {
                 </h2>
                 <h3>Closest Star: Loading...</h3>
                 <p>Loading extra information about the closest star...</p>
-                <p>
-                  <Link
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="link margin1"
-                    href={`https://github.com/kaBeech/star-crossed/tree/main#readme`}
-                  >
-                    View README on GitHub
-                  </Link>
-                </p>
                 <h3>
                   This is what it looks like in your own special corner of the
                   universe:
@@ -132,16 +158,6 @@ export default component$(() => {
                     href={starCrossedData.infoURL}
                   >
                     Learn more about {starCrossedData.closestStarShownName}!
-                  </Link>
-                </p>
-                <p>
-                  <Link
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="link margin1"
-                    href={`https://github.com/kaBeech/star-crossed/tree/main#readme`}
-                  >
-                    View README on GitHub
                   </Link>
                 </p>
                 <h3>
