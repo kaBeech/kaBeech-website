@@ -23,7 +23,7 @@ export default component$(() => {
     birthday1,
     birthday2,
     starCrossedAPI,
-    skyMapClass: "hidden height1",
+    skyMapClass: "hidden height1 positionFixed",
     staticPhotoClass: "",
   });
 
