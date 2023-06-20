@@ -209,6 +209,14 @@ export default component$(() => {
                   class={state.skyMapClass}
                   src={starCrossedData.skyMapURL}
                 ></iframe>{" "}
+                <p>
+                  <Link
+                    href={starCrossedData.staticPhotoURL}
+                    class={`${state.skyMapClass} link`}
+                  >
+                    Click here to get a photo of your starCrossing
+                  </Link>
+                </p>
               </div>
             );
           }}
