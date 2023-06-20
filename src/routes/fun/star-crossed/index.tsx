@@ -75,27 +75,27 @@ export default component$(() => {
         <p>
           StarCrossed is a tool for finding a spot in the universe special to
           two people. I built it as an experiment with{" "}
-          <Link href={"https://deno.com/kv"} class={`link`}>
-            Deno KV
-          </Link>{" "}
-          (an{" "}
-          <Link
+          <a
             target="_blank"
             rel="noopener noreferrer"
-            class="link"
-            href="/tech/edge"
+            href={"https://deno.com/kv"}
+            class={`link`}
           >
+            Deno KV
+          </a>{" "}
+          (an{" "}
+          <Link class="link" href="/tech/edge">
             edge-enabled
           </Link>
           , globally distributed key-value store), as my entry in{" "}
-          <Link
+          <a
             target="_blank"
             rel="noopener noreferrer"
             href={"https://deno.com/blog/deno-kv-hackathon"}
             class={`link`}
           >
             the Deno KV Hackathon
-          </Link>
+          </a>
         </p>
         <p>
           StarCrossed is inspired by the concept illustrated{" "}
@@ -184,14 +184,14 @@ export default component$(() => {
                 </h2>
                 <h3>Closest Star: {starCrossedData.closestStarShownName}</h3>
                 <p>
-                  <Link
+                  <a
                     target="_blank"
                     rel="noopener noreferrer"
                     class="link margin1"
                     href={starCrossedData.infoURL}
                   >
                     Learn more about {starCrossedData.closestStarShownName}!
-                  </Link>
+                  </a>
                 </p>
                 <h3>
                   This is what it looks like in your own special corner of the
@@ -200,25 +200,25 @@ export default component$(() => {
                 <p class={state.staticPhotoClass}>
                   This image is a static photo. To view a super cool interactive
                   Sky Map, please{" "}
-                  <Link
+                  <a
                     target="_blank"
                     rel="noopener noreferrer"
                     class="link"
                     href={`https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/mixed-content.html?lang=en`}
                   >
                     allow insecure content in your browser
-                  </Link>{" "}
+                  </a>{" "}
                   (
-                  <Link
+                  <a
                     target="_blank"
                     rel="noopener noreferrer"
                     class="link"
                     href={`https://www.comoapple.com/how-to-allow-mixed-content-in-safari.html`}
                   >
                     Safari link
-                  </Link>
+                  </a>
                   ) or{" "}
-                  <Link
+                  <a
                     target="_blank"
                     rel="noopener noreferrer"
                     class="link"
@@ -227,7 +227,7 @@ export default component$(() => {
                     )}`}
                   >
                     click here to view the interactive map on WikiSky
-                  </Link>
+                  </a>
                 </p>
                 <img
                   src={starCrossedData.staticPhotoURL}
@@ -250,24 +250,24 @@ export default component$(() => {
                   src={starCrossedData.skyMapURL}
                 ></iframe>{" "}
                 <p>
-                  <Link
+                  <a
                     target="_blank"
                     rel="noopener noreferrer"
                     href={starCrossedData.staticPhotoURL}
                     class={`${state.skyMapClass} link`}
                   >
                     Click here to get a photo of your starCrossing
-                  </Link>
+                  </a>
                 </p>
                 <p>
-                  <Link
+                  <a
                     target="_blank"
                     rel="noopener noreferrer"
                     href={"https://github.com/kaBeech/star-crossed"}
                     class={`link`}
                   >
                     View source on GitHub
-                  </Link>
+                  </a>
                 </p>
               </div>
             );
