@@ -23,6 +23,8 @@ export default component$(() => {
     birthday1,
     birthday2,
     starCrossedAPI,
+    skyMapClass: "hidden height1",
+    staticPhotoClass: "",
   });
 
   const starCrossedResource = useResource$<any>(async ({ track, cleanup }) => {
@@ -50,34 +52,52 @@ export default component$(() => {
         skyMapURL: data.skyMapURL,
         closestStarName: data.closestStarName,
         closestStarCommonName: data.closestStarCommonName,
+        staticPhotoURL: data.staticPhotoURL,
         closestStarShownName,
         birthdays: ["1948-08-11", "1952-03-3"],
       } || `Error - URI is ${starCrossedAPI}/star-crossings/1948-8-11,1952-3-3`
     );
   });
+
   return (
     <div class="screenContainer">
       <Beechy />
       <div class="screenContents">
-        <h1>StarCrossed</h1>
+        <h1 class="title">StarCrossed</h1>
+        <img
+          class="logo"
+          src="/starCrossedLogo.webp"
+          sizes="12em"
+          width={570}
+          height={570}
+          alt="A rainbow starry heart, the StarCrossed logo"
+        />
         <p>
-          StarCrossed is inspired by{" "}
+          StarCrossed is a tool for finding a spot in the universe special to
+          two people. I built it as an experiment with{" "}
+          <Link href={"https://deno.com/kv"} class={`link`}>
+            Deno KV,
+          </Link>{" "}
+          as my entry in{" "}
+          <Link href={"https://deno.com/blog/deno-kv-hackathon"} class={`link`}>
+            the Deno KV Hackathon
+          </Link>
+        </p>
+        <p>
+          StarCrossed is inspired by the concept illustrated{" "}
           <a href="https://xkcd.com/201/" rel="nofollow">
             this xkcd comic:
           </a>
         </p>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="/kaBeech/star-crossed/blob/main/public/xkcd_christmas_gps.png"
-        >
-          <img
-            src="/xkcd_christmas_gps.png"
-            alt="xkcd Christmas GPS comic"
-            title="Christmas GPS"
-            style="max-width: 90%;"
-          />
-        </a>
+        <img
+          src="/xkcd_christmas_gps.webp"
+          alt="xkcd Christmas GPS comic"
+          title="Christmas GPS"
+          style="max-width: 90%; aspect-ratio: 740/203;"
+          class="xkcd"
+          width={740}
+          height={203}
+        />
         <p>...but in space!</p>
         <p>
           The basic idea is to input the birthdays of you and a loved one, and
@@ -96,19 +116,19 @@ export default component$(() => {
           different response this way
         </p>
         <p>Have fun!</p>
+        <h2>Enter Birthdays:</h2>
         <input
           type="date"
           onInput$={(ev: any) => (state.birthday1 = ev.target.value)}
           value={birthday1}
+          aria-labelledby="Birthday 1"
         />
         <input
           type="date"
           onInput$={(ev: any) => (state.birthday2 = ev.target.value)}
           value={birthday2}
+          aria-labelledby="Birthday 2"
         />
-        {/* <h2>
-          Birthdays: {state.birthday1} x {state.birthday2}
-        </h2> */}
         <Resource
           value={starCrossedResource}
           onPending={() => {
@@ -164,7 +184,7 @@ export default component$(() => {
                   This is what it looks like in your own special corner of the
                   universe:
                 </h3>
-                <p>
+                <p class={state.staticPhotoClass}>
                   If the iframe below does not display, please allow insecure
                   content in your browser or{" "}
                   <Link
@@ -178,19 +198,43 @@ export default component$(() => {
                     click here to view the interactive map on WikiSky
                   </Link>
                 </p>
-                <br />
-                {/* <img
-              src="/1948-8-11x1952-3-3.webp"
-              alt="Image of the starCrossing for 1948-8-11x1952-3-3"
-              width={1200}
-              height={1200}
-            /> */}
+                <img
+                  src={starCrossedData.staticPhotoURL}
+                  alt="Image of the starCrossing for 1948-8-11x1952-3-3"
+                  width={700}
+                  height={700}
+                  class={state.staticPhotoClass}
+                />
+                {/* <div>staticPhotoURL: {starCrossedData.staticPhotoURL}</div> */}
                 <iframe
+                  onLoad$={() => {
+                    // alert("iframe loaded!");
+                    state.skyMapClass = "";
+                    state.staticPhotoClass = "displayNone";
+                  }}
                   title="StarCrossed skyMap"
                   width="90%"
                   height="24em"
+                  id="skyMap"
+                  class={state.skyMapClass}
                   src={starCrossedData.skyMapURL}
                 ></iframe>{" "}
+                <p>
+                  <Link
+                    href={starCrossedData.staticPhotoURL}
+                    class={`${state.skyMapClass} link`}
+                  >
+                    Click here to get a photo of your starCrossing
+                  </Link>
+                </p>
+                <p>
+                  <Link
+                    href={"https://github.com/kaBeech/star-crossed"}
+                    class={`link`}
+                  >
+                    View source on GitHub
+                  </Link>
+                </p>
               </div>
             );
           }}
@@ -215,6 +259,8 @@ export default component$(() => {
           },
         ]}
       />
+
+      {/* <script>alert();</script> */}
     </div>
   );
 });

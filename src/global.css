@@ -472,6 +472,22 @@ button {
   visibility: hidden;
 }
 
+.displayNone {
+  display: none;
+}
+
+.positionAbsolute {
+  position: absolute;
+}
+
+.positionRelative {
+  position: relative;
+}
+
+.positionFixed {
+  position: fixed;
+}
+
 .transparent {
   background-color: transparent;
 }
