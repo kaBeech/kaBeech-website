@@ -243,8 +243,8 @@ export default component$(() => {
                 </p>
                 <iframe
                   onLoad$={() => {
-                    // state.skyMapClass = "marginTop0";
-                    // state.staticPhotoClass = "displayNone";
+                    state.skyMapClass = "marginTop0";
+                    state.staticPhotoClass = "displayNone";
                   }}
                   title="StarCrossed skyMap"
                   id="skyMap"
