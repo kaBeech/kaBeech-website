@@ -145,12 +145,6 @@ export default component$(() => {
                 </h3>
                 <p>Loading iframe...</p>
                 <br />
-                {/* <img
-          src="/1948-8-11x1952-3-3.webp"
-          alt="Image of the starCrossing for 1948-8-11x1952-3-3"
-          width={1200}
-          height={1200}
-        /> */}
                 <div class={"iframePlaceholder"}></div>
               </div>
             );
@@ -185,8 +179,26 @@ export default component$(() => {
                   universe:
                 </h3>
                 <p class={state.staticPhotoClass}>
-                  If the iframe below does not display, please allow insecure
-                  content in your browser or{" "}
+                  This image is a static photo. To view a super cool interactive
+                  Sky Map, please{" "}
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="link"
+                    href={`https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/mixed-content.html?lang=en`}
+                  >
+                    allow insecure content in your browser
+                  </Link>{" "}
+                  (
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="link"
+                    href={`https://www.comoapple.com/how-to-allow-mixed-content-in-safari.html`}
+                  >
+                    Safari link
+                  </Link>
+                  ) or{" "}
                   <Link
                     target="_blank"
                     rel="noopener noreferrer"
@@ -200,15 +212,14 @@ export default component$(() => {
                 </p>
                 <img
                   src={starCrossedData.staticPhotoURL}
-                  alt="Image of the starCrossing for 1948-8-11x1952-3-3"
+                  alt={`"Image of the starCrossing for ${birthday1} x ${birthday2}`}
                   width={700}
                   height={700}
+                  id="staticPhoto"
                   class={state.staticPhotoClass}
                 />
-                {/* <div>staticPhotoURL: {starCrossedData.staticPhotoURL}</div> */}
                 <iframe
                   onLoad$={() => {
-                    // alert("iframe loaded!");
                     state.skyMapClass = "";
                     state.staticPhotoClass = "displayNone";
                   }}
