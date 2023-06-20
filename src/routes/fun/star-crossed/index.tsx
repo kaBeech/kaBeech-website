@@ -111,7 +111,7 @@ export default component$(() => {
         </p>
         <p>
           If the location is out of your starship's range, is too crowded when
-          you get there, or isn't visible from your porch, fear not! Try
+          you get there, or just isn't visible from your porch, fear not! Try
           entering in your birthdays in the reverse order - you'll get a
           different response this way
         </p>
