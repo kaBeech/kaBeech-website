@@ -15,9 +15,60 @@ export default component$(() => {
       <div class="screenContents">
         <h1>Projects</h1>
         <p>Here are some cool things I've helped build!</p>
-        <h3>
-          Scroll down or use the response buttons below to check them out!
-        </h3>
+        <h2>Audiopile</h2>
+        <img
+          src="/waveform.webp"
+          alt="The Audiopile logo - overlapping multicolored sine waves"
+        />
+        <button>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.audiopile.cloud/"
+          >
+            Check out Audiopile!
+          </a>
+        </button>
+        <button class="invertedButton">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/fogg4444/audiopile_master"
+          >
+            View source on GitHub
+          </a>
+        </button>
+        <p>A simple, professional tool for managing audio in the cloud</p>
+        <p>
+          A question for all the musicians, podcasters, and other audio
+          professionals of the world: How often do you want to privately share a
+          piece of audio with specific people?
+        </p>
+        <p>
+          Maybe it's a completed but unreleased track you're sending to a client
+          for final approval. Maybe it's a recording of just your voice that
+          you're sending to your collaborators to mix in to a final project. Or
+          it's a project you've been working on that you're sending to a friend
+          with fresh ears for an opinion. Heck, maybe it's just a tune that came
+          to you in the shower that you recorded on your shower phone (people
+          have those, right?) and want to listen to later on your studio
+          computer.
+        </p>
+        <p>
+          In any case, do you know how to get that audio from wherever it is now
+          to wherever it needs to get to in a form that can be easily used?
+        </p>
+        <p>
+          Now you do:{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="https://www.audiopile.cloud/"
+          >
+            Audiopile
+          </a>
+        </p>
         <h2>Wyrld Dashboard</h2>
         <img
           src="/peli_book_smaller.webp"
@@ -94,60 +145,6 @@ export default component$(() => {
           with cool technology (for instance this is where we first started
           using the Rust programming language)
         </p>
-        <h2>Audiopile</h2>
-        <img
-          src="/waveform.webp"
-          alt="The Audiopile logo - overlapping multicolored sine waves"
-        />
-        <button>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.audiopile.cloud/"
-          >
-            Check out Audiopile!
-          </a>
-        </button>
-        <button class="invertedButton">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/fogg4444/audiopile_master"
-          >
-            View source on GitHub
-          </a>
-        </button>
-        <p>A simple, professional tool for managing audio in the cloud</p>
-        <p>
-          A question for all the musicians, podcasters, and other audio
-          professionals of the world: How often do you want to privately share a
-          piece of audio with specific people?
-        </p>
-        <p>
-          Maybe it's a completed but unreleased track you're sending to a client
-          for final approval. Maybe it's a recording of just your voice that
-          you're sending to your collaborators to mix in to a final project. Or
-          it's a project you've been working on that you're sending to a friend
-          with fresh ears for an opinion. Heck, maybe it's just a tune that came
-          to you in the shower that you recorded on your shower phone (people
-          have those, right?) and want to listen to later on your studio
-          computer.
-        </p>
-        <p>
-          In any case, do you know how to get that audio from wherever it is now
-          to wherever it needs to get to in a form that can be easily used?
-        </p>
-        <p>
-          Now you do:{" "}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            class="link"
-            href="https://www.audiopile.cloud/"
-          >
-            Audiopile
-          </a>
-        </p>
         <h2>Advent Of Code (My Personal Solutions)</h2>
         <img
           src="/adventOfCode.webp"
@@ -211,13 +208,13 @@ export default component$(() => {
       <ResponseBar
         responses={[
           {
-            fullMessage: "Time to play some D&D!!!",
-            linkTile: linkTiles.projects_wyrldDashboard,
-          },
-          {
             fullMessage:
               "Ooh! I've been looking for a simple audio sharing tool!",
             linkTile: linkTiles.projects_audiopile,
+          },
+          {
+            fullMessage: "Time to play some D&D!!!",
+            linkTile: linkTiles.projects_wyrldDashboard,
           },
           {
             fullMessage:
