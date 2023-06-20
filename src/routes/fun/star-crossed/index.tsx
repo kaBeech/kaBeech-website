@@ -24,7 +24,7 @@ export default component$(() => {
     birthday2,
     starCrossedAPI,
     skyMapClass: "hidden height1 positionFixed",
-    staticPhotoClass: "",
+    staticPhotoClass: "marginTop0",
   });
 
   const starCrossedResource = useResource$<any>(async ({ track, cleanup }) => {
@@ -237,10 +237,14 @@ export default component$(() => {
                   id="staticPhoto"
                   class={state.staticPhotoClass}
                 />
+                <p class={state.skyMapClass}>
+                  Hover over stars to see info, use the slider to zoom in/out,
+                  click and drag to look around
+                </p>
                 <iframe
                   onLoad$={() => {
-                    state.skyMapClass = "";
-                    state.staticPhotoClass = "displayNone";
+                    // state.skyMapClass = "marginTop0";
+                    // state.staticPhotoClass = "displayNone";
                   }}
                   title="StarCrossed skyMap"
                   id="skyMap"
