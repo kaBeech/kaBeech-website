@@ -198,7 +198,6 @@ export default component$(() => {
                     click here to view the interactive map on WikiSky
                   </Link>
                 </p>
-                <br />
                 <img
                   src={starCrossedData.staticPhotoURL}
                   alt="Image of the starCrossing for 1948-8-11x1952-3-3"
