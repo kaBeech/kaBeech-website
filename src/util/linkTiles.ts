@@ -89,6 +89,12 @@ export const linkTiles = {
     icon: "/icons/peli_hype_mono.webp",
     external: false,
   },
+  fun_starCrossed: {
+    linkPath: "/fun/star-crossed",
+    text: "StarCrossed",
+    icon: "/icons/starCrossedIcon.webp",
+    external: false,
+  },
   flower_stereochrome: {
     linkPath: "./",
     text: "Stereochrome",
