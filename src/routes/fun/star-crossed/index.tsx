@@ -23,6 +23,8 @@ export default component$(() => {
     birthday1,
     birthday2,
     starCrossedAPI,
+    skyMapClass: "hidden height1",
+    staticPhotoClass: "",
   });
 
   const starCrossedResource = useResource$<any>(async ({ track, cleanup }) => {
@@ -50,16 +52,26 @@ export default component$(() => {
         skyMapURL: data.skyMapURL,
         closestStarName: data.closestStarName,
         closestStarCommonName: data.closestStarCommonName,
+        staticPhotoURL: data.staticPhotoURL,
         closestStarShownName,
         birthdays: ["1948-08-11", "1952-03-3"],
       } || `Error - URI is ${starCrossedAPI}/star-crossings/1948-8-11,1952-3-3`
     );
   });
+
   return (
     <div class="screenContainer">
       <Beechy />
       <div class="screenContents">
-        <h1>StarCrossed</h1>
+        <h1 class="title">StarCrossed</h1>
+        <img
+          class="logo"
+          src="/starCrossedLogo.webp"
+          sizes="12em"
+          width={570}
+          height={570}
+          alt="A rainbow starry heart, the StarCrossed logo"
+        />
         <p>
           StarCrossed is inspired by{" "}
           <a href="https://xkcd.com/201/" rel="nofollow">
@@ -71,6 +83,7 @@ export default component$(() => {
           alt="xkcd Christmas GPS comic"
           title="Christmas GPS"
           style="max-width: 90%; aspect-ratio: 740/203;"
+          class="xkcd"
           width={740}
           height={203}
         />
@@ -160,7 +173,7 @@ export default component$(() => {
                   This is what it looks like in your own special corner of the
                   universe:
                 </h3>
-                <p>
+                <p class={state.staticPhotoClass}>
                   If the iframe below does not display, please allow insecure
                   content in your browser or{" "}
                   <Link
@@ -175,16 +188,25 @@ export default component$(() => {
                   </Link>
                 </p>
                 <br />
-                {/* <img
-              src="/1948-8-11x1952-3-3.webp"
-              alt="Image of the starCrossing for 1948-8-11x1952-3-3"
-              width={1200}
-              height={1200}
-            /> */}
+                <img
+                  src={starCrossedData.staticPhotoURL}
+                  alt="Image of the starCrossing for 1948-8-11x1952-3-3"
+                  width={700}
+                  height={700}
+                  class={state.staticPhotoClass}
+                />
+                {/* <div>staticPhotoURL: {starCrossedData.staticPhotoURL}</div> */}
                 <iframe
+                  onLoad$={() => {
+                    // alert("iframe loaded!");
+                    state.skyMapClass = "";
+                    state.staticPhotoClass = "displayNone";
+                  }}
                   title="StarCrossed skyMap"
                   width="90%"
                   height="24em"
+                  id="skyMap"
+                  class={state.skyMapClass}
                   src={starCrossedData.skyMapURL}
                 ></iframe>{" "}
               </div>
@@ -211,6 +233,8 @@ export default component$(() => {
           },
         ]}
       />
+
+      {/* <script>alert();</script> */}
     </div>
   );
 });
