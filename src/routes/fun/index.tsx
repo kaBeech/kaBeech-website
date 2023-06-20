@@ -20,14 +20,22 @@ export default component$(() => {
           alt="A rainbow heart made with Buddh-A-Sketch"
         />
         <button>
-          <Link href="https://kabeech.github.io/buddh-a-sketch/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://kabeech.github.io/buddh-a-sketch/"
+          >
             Check out Buddh-A-Sketch!
-          </Link>
+          </a>
         </button>
         <button class="invertedButton">
-          <Link href="https://github.com/kaBeech/buddh-a-sketch">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/kaBeech/buddh-a-sketch"
+          >
             View source on GitHub
-          </Link>
+          </a>
         </button>
         <p>
           This started as an emulation of a classic drawing toy and evolved to
@@ -49,9 +57,13 @@ export default component$(() => {
           <Link href="namagen">Check out Namagen!</Link>
         </button>
         <button class="invertedButton">
-          <Link href="https://github.com/Far-Reach-Co/namagen">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/Far-Reach-Co/namagen"
+          >
             View source on GitHub
-          </Link>
+          </a>
         </button>
         <p>
           Namagen randomly generates names in constructed languages. I built it
@@ -90,14 +102,22 @@ export default component$(() => {
           alt="A snapshot of the Tic-Tac-Toebot"
         />
         <button>
-          <Link href="https://kabeech.github.io/tic-tac-toebot/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://kabeech.github.io/tic-tac-toebot/"
+          >
             Check out Tic-Tac-Toebot!
-          </Link>
+          </a>
         </button>
         <button class="invertedButton">
-          <Link href="https://github.com/kaBeech/tic-tac-toebot">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/kaBeech/tic-tac-toebot"
+          >
             View source on GitHub
-          </Link>
+          </a>
         </button>
         <p>A robot that plays Tic-Tac-Toe!</p>
         <p>
@@ -115,9 +135,13 @@ export default component$(() => {
           <Link href="al-lugha-misma">Check out Al Lugha Misma!</Link>
         </button>
         <button class="invertedButton">
-          <Link href="https://github.com/kaBeech/al-lugha-misma">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/kaBeech/al-lugha-misma"
+          >
             View source on GitHub
-          </Link>
+          </a>
         </button>
         <p>You say "potato" (English), and I say "baTaaTaa" (Arabic)</p>
         <p>Or "papa" (Spanish)!</p>

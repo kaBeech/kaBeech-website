@@ -61,9 +61,14 @@ export default component$(() => {
         <p>
           Ḍaṭunḍiu is a language we are developing for a group of dinosaur
           people in{" "}
-          <Link class="link" href="https://farreachco.com/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="https://farreachco.com/"
+          >
             Far Reach Co.'s
-          </Link>{" "}
+          </a>{" "}
           fantasy role-playing game setting
         </p>
         <p>
@@ -102,9 +107,14 @@ export default component$(() => {
         </p>
         <p>
           That means that with Namagen, you'll be able to{" "}
-          <Link class="link" href="https://xkcd.com/483/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="https://xkcd.com/483/"
+          >
             come up with fantasy nonsense faster than Neal Stephenson!
-          </Link>
+          </a>
         </p>
         <p>
           <Link class="link" href="/tech">

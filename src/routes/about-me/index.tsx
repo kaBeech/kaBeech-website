@@ -28,9 +28,14 @@ export default component$(() => {
         </p>
         <p>
           You can{" "}
-          <Link class="link" href="https://github.com/kaBeech">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="https://github.com/kaBeech"
+          >
             find more of my work on GitHub!
-          </Link>
+          </a>
         </p>
         <p>
           If you're interested, I prefer{" "}

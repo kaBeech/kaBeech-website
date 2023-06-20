@@ -24,17 +24,32 @@ export default component$(() => {
           alt="Peli, the Far Reach Co. mascot, holding a book"
         />
         <button>
-          <Link href="https://farreachco.com/">Check out Wyrld Dashboard!</Link>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://farreachco.com/"
+          >
+            Check out Wyrld Dashboard!
+          </a>
         </button>
         <button class="invertedButton">
-          <Link href="https://github.com/Far-Reach-Co/dm-dash">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/Far-Reach-Co/dm-dash"
+          >
             View source on GitHub
-          </Link>
+          </a>
         </button>
         <p>
-          <Link class="link" href="https://www.audiopile.cloud/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="https://www.audiopile.cloud/"
+          >
             Wyrld Dashboard
-          </Link>{" "}
+          </a>{" "}
           provides fast and unobtrusive cloud-based tools for tabletop
           role-playing games (RPGs) like Dungeons & Dragons
         </p>
@@ -85,12 +100,22 @@ export default component$(() => {
           alt="The Audiopile logo - overlapping multicolored sine waves"
         />
         <button>
-          <Link href="https://www.audiopile.cloud/">Check out Audiopile!</Link>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.audiopile.cloud/"
+          >
+            Check out Audiopile!
+          </a>
         </button>
         <button class="invertedButton">
-          <Link href="https://github.com/fogg4444/audiopile_master">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/fogg4444/audiopile_master"
+          >
             View source on GitHub
-          </Link>
+          </a>
         </button>
         <p>A simple, professional tool for managing audio in the cloud</p>
         <p>
@@ -114,9 +139,14 @@ export default component$(() => {
         </p>
         <p>
           Now you do:{" "}
-          <Link class="link" href="https://www.audiopile.cloud/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="https://www.audiopile.cloud/"
+          >
             Audiopile
-          </Link>
+          </a>
         </p>
         <h2>Advent Of Code (My Personal Solutions)</h2>
         <img
@@ -124,16 +154,25 @@ export default component$(() => {
           alt="A star representing the Advent Of Code"
         />
         <button>
-          <Link href="https://github.com/kaBeech/Advent-Of-Code-2022">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/kaBeech/Advent-Of-Code-2022"
+          >
             Check out my Advent Of Code repo on GitHub!
-          </Link>
+          </a>
         </button>
         <p>Real holiday fun!</p>
         <p>
           Every year,{" "}
-          <Link class="link" href="https://twitter.com/ericwastl">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="https://twitter.com/ericwastl"
+          >
             some blessed individual
-          </Link>{" "}
+          </a>{" "}
           comes up with a holiday-themed adventure based on a series of logic
           puzzles. Each day in December leading up to Christmas, one challenge
           (and one piece of the story) is revealed. If you can solve that
@@ -147,9 +186,14 @@ export default component$(() => {
         <p>
           The link above will go to my repository of solutions to the
           challenges. If you want to take a crack at the challenges yourself,{" "}
-          <Link class="link" href="https://adventofcode.com/">
-            here's a direct link to the homepage
-          </Link>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="https://adventofcode.com/"
+          >
+            here's a direct link to the Advent Of Code homepage
+          </a>
         </p>
         <p>
           My life got very busy all of a sudden this winter and I haven't yet
