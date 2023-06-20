@@ -551,7 +551,7 @@ button {
 .screenContents h4,
 .screenContents h5,
 .screenContents h6 {
-  max-width: 84rem;
+  max-width: 48em;
 }
 
 h2.homepage {
