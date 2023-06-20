@@ -41,7 +41,7 @@ export default component$(() => {
     const data = await res.json();
     let closestStarShownName: string;
     if (data.closestStarCommonName !== "null") {
-      closestStarShownName = data.closestStarCommonName;
+      closestStarShownName = data.closestStarCommonName.replace("�", "° ");
     } else {
       closestStarShownName = data.closestStarName;
     }
