@@ -76,16 +76,35 @@ export default component$(() => {
           StarCrossed is a tool for finding a spot in the universe special to
           two people. I built it as an experiment with{" "}
           <Link href={"https://deno.com/kv"} class={`link`}>
-            Deno KV,
+            Deno KV
           </Link>{" "}
-          as my entry in{" "}
-          <Link href={"https://deno.com/blog/deno-kv-hackathon"} class={`link`}>
+          (an{" "}
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="/tech/edge"
+          >
+            edge-enabled
+          </Link>
+          , globally distributed key-value store), as my entry in{" "}
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href={"https://deno.com/blog/deno-kv-hackathon"}
+            class={`link`}
+          >
             the Deno KV Hackathon
           </Link>
         </p>
         <p>
           StarCrossed is inspired by the concept illustrated{" "}
-          <a href="https://xkcd.com/201/" rel="nofollow">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="https://xkcd.com/201/"
+          >
             this xkcd comic:
           </a>
         </p>
@@ -232,6 +251,8 @@ export default component$(() => {
                 ></iframe>{" "}
                 <p>
                   <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
                     href={starCrossedData.staticPhotoURL}
                     class={`${state.skyMapClass} link`}
                   >
@@ -240,6 +261,8 @@ export default component$(() => {
                 </p>
                 <p>
                   <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
                     href={"https://github.com/kaBeech/star-crossed"}
                     class={`link`}
                   >
