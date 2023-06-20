@@ -23,8 +23,8 @@ export default component$(() => {
     birthday1,
     birthday2,
     starCrossedAPI,
-    skyMapClass: "hidden height1",
-    staticPhotoClass: "",
+    skyMapClass: "hidden height1 positionFixed",
+    staticPhotoClass: "marginTop0",
   });
 
   const starCrossedResource = useResource$<any>(async ({ track, cleanup }) => {
@@ -41,7 +41,7 @@ export default component$(() => {
     const data = await res.json();
     let closestStarShownName: string;
     if (data.closestStarCommonName !== "null") {
-      closestStarShownName = data.closestStarCommonName;
+      closestStarShownName = data.closestStarCommonName.replace("�", "° ");
     } else {
       closestStarShownName = data.closestStarName;
     }
@@ -75,17 +75,36 @@ export default component$(() => {
         <p>
           StarCrossed is a tool for finding a spot in the universe special to
           two people. I built it as an experiment with{" "}
-          <Link href={"https://deno.com/kv"} class={`link`}>
-            Deno KV,
-          </Link>{" "}
-          as my entry in{" "}
-          <Link href={"https://deno.com/blog/deno-kv-hackathon"} class={`link`}>
-            the Deno KV Hackathon
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={"https://deno.com/kv"}
+            class={`link`}
+          >
+            Deno KV
+          </a>{" "}
+          (an{" "}
+          <Link class="link" href="/tech/edge">
+            edge-enabled
           </Link>
+          , globally distributed key-value store), as my entry in{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={"https://deno.com/blog/deno-kv-hackathon"}
+            class={`link`}
+          >
+            the Deno KV Hackathon
+          </a>
         </p>
         <p>
           StarCrossed is inspired by the concept illustrated{" "}
-          <a href="https://xkcd.com/201/" rel="nofollow">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="https://xkcd.com/201/"
+          >
             this xkcd comic:
           </a>
         </p>
@@ -111,7 +130,7 @@ export default component$(() => {
         </p>
         <p>
           If the location is out of your starship's range, is too crowded when
-          you get there, or isn't visible from your porch, fear not! Try
+          you get there, or just isn't visible from your porch, fear not! Try
           entering in your birthdays in the reverse order - you'll get a
           different response this way
         </p>
@@ -145,19 +164,13 @@ export default component$(() => {
                 </h3>
                 <p>Loading iframe...</p>
                 <br />
-                {/* <img
-          src="/1948-8-11x1952-3-3.webp"
-          alt="Image of the starCrossing for 1948-8-11x1952-3-3"
-          width={1200}
-          height={1200}
-        /> */}
                 <div class={"iframePlaceholder"}></div>
               </div>
             );
           }}
           onResolved={(starCrossedData) => {
             return (
-              <div>
+              <div class="flex column">
                 <h2>
                   StarCrossed Coordinates:{" "}
                   <strong>
@@ -171,23 +184,41 @@ export default component$(() => {
                 </h2>
                 <h3>Closest Star: {starCrossedData.closestStarShownName}</h3>
                 <p>
-                  <Link
+                  <a
                     target="_blank"
                     rel="noopener noreferrer"
                     class="link margin1"
                     href={starCrossedData.infoURL}
                   >
                     Learn more about {starCrossedData.closestStarShownName}!
-                  </Link>
+                  </a>
                 </p>
                 <h3>
                   This is what it looks like in your own special corner of the
                   universe:
                 </h3>
                 <p class={state.staticPhotoClass}>
-                  If the iframe below does not display, please allow insecure
-                  content in your browser or{" "}
-                  <Link
+                  This image is a static photo. To view a super cool interactive
+                  Sky Map, please{" "}
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="link"
+                    href={`https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/mixed-content.html?lang=en`}
+                  >
+                    allow insecure content in your browser
+                  </a>{" "}
+                  (
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="link"
+                    href={`https://www.comoapple.com/how-to-allow-mixed-content-in-safari.html`}
+                  >
+                    Safari link
+                  </a>
+                  ) or{" "}
+                  <a
                     target="_blank"
                     rel="noopener noreferrer"
                     class="link"
@@ -196,44 +227,49 @@ export default component$(() => {
                     )}`}
                   >
                     click here to view the interactive map on WikiSky
-                  </Link>
+                  </a>
                 </p>
                 <img
                   src={starCrossedData.staticPhotoURL}
-                  alt="Image of the starCrossing for 1948-8-11x1952-3-3"
+                  alt={`"Image of the starCrossing for ${birthday1} x ${birthday2}`}
                   width={700}
                   height={700}
+                  id="staticPhoto"
                   class={state.staticPhotoClass}
                 />
-                {/* <div>staticPhotoURL: {starCrossedData.staticPhotoURL}</div> */}
+                <p class={state.skyMapClass}>
+                  Hover over stars to see info, use the slider to zoom in/out,
+                  click and drag to look around
+                </p>
                 <iframe
                   onLoad$={() => {
-                    // alert("iframe loaded!");
-                    state.skyMapClass = "";
+                    state.skyMapClass = "marginTop0";
                     state.staticPhotoClass = "displayNone";
                   }}
                   title="StarCrossed skyMap"
-                  width="90%"
-                  height="24em"
                   id="skyMap"
                   class={state.skyMapClass}
                   src={starCrossedData.skyMapURL}
                 ></iframe>{" "}
-                <p>
-                  <Link
+                <p class={`${state.skyMapClass}`}>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
                     href={starCrossedData.staticPhotoURL}
                     class={`${state.skyMapClass} link`}
                   >
                     Click here to get a photo of your starCrossing
-                  </Link>
+                  </a>
                 </p>
                 <p>
-                  <Link
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
                     href={"https://github.com/kaBeech/star-crossed"}
                     class={`link`}
                   >
                     View source on GitHub
-                  </Link>
+                  </a>
                 </p>
               </div>
             );

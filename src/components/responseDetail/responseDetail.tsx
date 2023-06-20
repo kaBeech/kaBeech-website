@@ -20,11 +20,24 @@ export const ResponseDetail = component$((props: ResponseDetailProps) => {
       <div class="lazyColor flex">
         <p class="responseText">{props.response.fullMessage}</p>
         <div class="flex tinyColumn gapHalf">
-          <Link href={props.response.linkTile.linkPath} class="flex width100">
-            <button class="lazyButton flex justifyCenter">
-              <img src="/icons/check.svg" alt="Confirm response" />
-            </button>
-          </Link>
+          {props.response.linkTile.external ? (
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={props.response.linkTile.linkPath}
+              class="flex width100"
+            >
+              <button class="lazyButton flex justifyCenter">
+                <img src="/icons/check.svg" alt="Confirm response" />
+              </button>
+            </a>
+          ) : (
+            <Link href={props.response.linkTile.linkPath} class="flex width100">
+              <button class="lazyButton flex justifyCenter">
+                <img src="/icons/check.svg" alt="Confirm response" />
+              </button>
+            </Link>
+          )}
           <button
             class="lazyCancel flex justifyCenter"
             onClick$={() => {

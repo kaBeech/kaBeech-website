@@ -14,20 +14,76 @@ export default component$(() => {
       <Beechy />
       <div class="screenContents">
         <h1>Fun and Games!</h1>
+        <h2>StarCrossed</h2>
+        <img
+          src="/starCrossedLogo.webp"
+          alt="An array of stars in a heart shape"
+        />
+        <button>
+          <Link href="star-crossed">Check out StarCrossed!</Link>
+        </button>
+        <button class="invertedButton">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/kaBeech/star-crossed"
+          >
+            View source on GitHub
+          </a>
+        </button>
+        <p>
+          StarCrossed is a tool for finding a spot in the universe special to
+          two people. I built it as an experiment with{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={"https://deno.com/kv"}
+            class={`link`}
+          >
+            Deno KV
+          </a>{" "}
+          (an{" "}
+          <Link class="link" href="/tech/edge">
+            edge-enabled
+          </Link>
+          , globally distributed key-value store), as my entry in{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={"https://deno.com/blog/deno-kv-hackathon"}
+            class={`link`}
+          >
+            the Deno KV Hackathon
+          </a>
+        </p>
+        <p>
+          You can use it to check your compatibility with another person (based
+          on your subjective opinion of what your stars look like), find a
+          galactic make-out spot, or just find a unique point in the sky to look
+          at together through your telescope
+        </p>
         <h2>Buddh-A-Sketch</h2>
         <img
           src="/favicon.webp"
           alt="A rainbow heart made with Buddh-A-Sketch"
         />
         <button>
-          <Link href="https://kabeech.github.io/buddh-a-sketch/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://kabeech.github.io/buddh-a-sketch/"
+          >
             Check out Buddh-A-Sketch!
-          </Link>
+          </a>
         </button>
         <button class="invertedButton">
-          <Link href="https://github.com/kaBeech/buddh-a-sketch">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/kaBeech/buddh-a-sketch"
+          >
             View source on GitHub
-          </Link>
+          </a>
         </button>
         <p>
           This started as an emulation of a classic drawing toy and evolved to
@@ -49,9 +105,13 @@ export default component$(() => {
           <Link href="namagen">Check out Namagen!</Link>
         </button>
         <button class="invertedButton">
-          <Link href="https://github.com/Far-Reach-Co/namagen">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/Far-Reach-Co/namagen"
+          >
             View source on GitHub
-          </Link>
+          </a>
         </button>
         <p>
           Namagen randomly generates names in constructed languages. I built it
@@ -90,14 +150,22 @@ export default component$(() => {
           alt="A snapshot of the Tic-Tac-Toebot"
         />
         <button>
-          <Link href="https://kabeech.github.io/tic-tac-toebot/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://kabeech.github.io/tic-tac-toebot/"
+          >
             Check out Tic-Tac-Toebot!
-          </Link>
+          </a>
         </button>
         <button class="invertedButton">
-          <Link href="https://github.com/kaBeech/tic-tac-toebot">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/kaBeech/tic-tac-toebot"
+          >
             View source on GitHub
-          </Link>
+          </a>
         </button>
         <p>A robot that plays Tic-Tac-Toe!</p>
         <p>
@@ -115,9 +183,13 @@ export default component$(() => {
           <Link href="al-lugha-misma">Check out Al Lugha Misma!</Link>
         </button>
         <button class="invertedButton">
-          <Link href="https://github.com/kaBeech/al-lugha-misma">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/kaBeech/al-lugha-misma"
+          >
             View source on GitHub
-          </Link>
+          </a>
         </button>
         <p>You say "potato" (English), and I say "baTaaTaa" (Arabic)</p>
         <p>Or "papa" (Spanish)!</p>
@@ -138,6 +210,10 @@ export default component$(() => {
       </div>
       <ResponseBar
         responses={[
+          {
+            fullMessage: "Let's look at the stars!",
+            linkTile: linkTiles.fun_starCrossed,
+          },
           {
             fullMessage: "A nostalgic zen flow toy? Yes please!",
             linkTile: linkTiles.fun_buddhASketch,

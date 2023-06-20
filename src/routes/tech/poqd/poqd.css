@@ -23,3 +23,7 @@ td {
 .summaryPoint {
   font-size: 2rem;
 }
+
+table {
+  margin: 2em 0 1em 0;
+}

@@ -118,6 +118,11 @@ body {
 
 h1 {
   font-size: 2em;
+  margin: 0.5em 0 0.2em 0;
+}
+
+h2 {
+  margin: 0.5em 0 0.5em 0;
 }
 
 ul,
@@ -136,10 +141,6 @@ li {
   font: inherit;
   text-decoration: none;
   vertical-align: baseline;
-}
-
-iframe {
-  min-height: 700px;
 }
 
 .link {
@@ -363,6 +364,10 @@ button {
   flex-direction: row;
 }
 
+.marginTop0 {
+  margin-top: 0;
+}
+
 .margin0 {
   margin: 0;
 }
@@ -551,7 +556,7 @@ button {
 .screenContents h4,
 .screenContents h5,
 .screenContents h6 {
-  max-width: 84rem;
+  max-width: 48em;
 }
 
 h2.homepage {

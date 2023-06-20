@@ -51,28 +51,42 @@ export default component$(() => {
           about you, dear reader. I assume you know what a low-level language is
           and how it contrasts with a high-level one. I assume you know what it
           means for code to be{" "}
-          <Link
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
             class="link"
             href="https://en.wikipedia.org/wiki/Execution_(computing)"
           >
             executed
-          </Link>{" "}
+          </a>{" "}
           and why it's interesting that WASM can be executed by web browsers. I
           assume you know what{" "}
-          <Link
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
             class="link"
             href="https://en.wikipedia.org/wiki/Programming_language"
           >
             programming languages
-          </Link>{" "}
+          </a>{" "}
           and{" "}
-          <Link class="link" href="https://en.wikipedia.org/wiki/Web_browser">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="https://en.wikipedia.org/wiki/Web_browser"
+          >
             web browsers
-          </Link>{" "}
+          </a>{" "}
           are. I assume that you can read my particular{" "}
-          <Link class="link" href="https://en.wikipedia.org/wiki/Idiolect">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="https://en.wikipedia.org/wiki/Idiolect"
+          >
             idiolect
-          </Link>{" "}
+          </a>{" "}
           of English, that you'll infer that "WASM" is an abbreviation for "Web
           Assembly," and that you'll pronounce it like /'wasm̩/ and not like
           "W-A-S-M"
@@ -167,12 +181,14 @@ export default component$(() => {
           like this:
         </p>
         <p class="bin insert">
-          <Link
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
             class="link bin"
             href="https://www.binaryhexconverter.com/binary-to-ascii-text-converter"
           >
             01011001011011110010110000100000010010010010011101101101001000000110001001100001011100110110100101100011011000010110110001101100011110010010000001100001001000000111001101101111011101010111000001100101011001000010110101110101011100000010000001100011011000010110110001100011011101010110110001100001011101000110111101110010001011000010000001001001001000000110100001100001011101100110010100100000011011100110111100100000011010010110010001100101011000010010000001110111011010000110000101110100001000000111100101101111011101010010011101110010011001010010000001110011011000010111100101101001011011100110011100100000011100100110100101100111011010000111010000100000011011100110111101110111
-          </Link>
+          </a>
         </p>
         <p>
           In reality, the response will look a little different. Most machines
@@ -260,19 +276,34 @@ export default component$(() => {
         </p>
         <h2 class="responseTextLight">Where can I use WebAssembly?</h2>
         <p>
-          <Link class="link" href="https://caniuse.com/wasm">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="https://caniuse.com/wasm"
+          >
             WebAssembly is now supported by all major modern web browsers
-          </Link>
+          </a>
         </p>
         <p>
           There are also runtimes for WebAssembly like{" "}
-          <Link class="link" href="https://wasmtime.dev/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="https://wasmtime.dev/"
+          >
             Wasmtime
-          </Link>{" "}
+          </a>{" "}
           and{" "}
-          <Link class="link" href="https://wasmer.io/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="https://wasmer.io/"
+          >
             Wasmer
-          </Link>{" "}
+          </a>{" "}
           that you can use to execute WASM code outside of a browser
         </p>
         <h2 class="responseTextLight">
@@ -336,13 +367,15 @@ export default component$(() => {
         </p>
         <p>
           In fact, WebAssembly is so fast that{" "}
-          <Link
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
             class="link"
             href="https://www.infoq.com/news/2021/05/pyodide-python-webassembly/"
           >
             some folks are now using it to run full data science stacks inside a
             web browser
-          </Link>
+          </a>
           !
         </p>
         <p>
@@ -352,10 +385,15 @@ export default component$(() => {
         </p>
         <p>
           WebAssembly also has security benefits.{" "}
-          <Link class="link" href="https://webassembly.org/docs/security/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="https://webassembly.org/docs/security/"
+          >
             WASM modules execute in sandboxed environments separate from each
             other and from the host runtime
-          </Link>
+          </a>
           . That means that, in general, the modules can't talk with the outside
           world, or with each other, without going through you
         </p>

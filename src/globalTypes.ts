@@ -2,6 +2,7 @@ interface LinkTile {
   linkPath: string;
   text: string;
   icon?: any;
+  external: boolean;
 }
 
 interface ResponseOption {

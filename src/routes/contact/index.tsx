@@ -13,15 +13,25 @@ export default component$(() => {
         <h1>Contact</h1>
         <p>
           You can email me at{" "}
-          <Link class="link" href="mailto:contact@kabeech.com">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="mailto:contact@kabeech.com"
+          >
             contact@kaBeech.com
-          </Link>
+          </a>
         </p>
         <p>
           You can also{" "}
-          <Link class="link" href="https://github.com/kaBeech">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="https://github.com/kaBeech"
+          >
             find me on GitHub
-          </Link>
+          </a>
         </p>
         <p>
           <Link class="link margin1" href="../">
