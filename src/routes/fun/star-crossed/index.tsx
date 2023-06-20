@@ -170,7 +170,7 @@ export default component$(() => {
           }}
           onResolved={(starCrossedData) => {
             return (
-              <div>
+              <div class="flex column">
                 <h2>
                   StarCrossed Coordinates:{" "}
                   <strong>
@@ -243,8 +243,6 @@ export default component$(() => {
                     state.staticPhotoClass = "displayNone";
                   }}
                   title="StarCrossed skyMap"
-                  width="90%"
-                  height="24em"
                   id="skyMap"
                   class={state.skyMapClass}
                   src={starCrossedData.skyMapURL}
