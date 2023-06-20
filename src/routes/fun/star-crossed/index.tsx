@@ -73,7 +73,18 @@ export default component$(() => {
           alt="A rainbow starry heart, the StarCrossed logo"
         />
         <p>
-          StarCrossed is inspired by{" "}
+          StarCrossed is a tool for finding a spot in the universe special to
+          two people. I built it as an experiment with{" "}
+          <Link href={"https://deno.com/kv"} class={`link`}>
+            Deno KV,
+          </Link>{" "}
+          as my entry in{" "}
+          <Link href={"https://deno.com/blog/deno-kv-hackathon"} class={`link`}>
+            the Deno KV Hackathon
+          </Link>
+        </p>
+        <p>
+          StarCrossed is inspired by the concept illustrated{" "}
           <a href="https://xkcd.com/201/" rel="nofollow">
             this xkcd comic:
           </a>
@@ -215,6 +226,14 @@ export default component$(() => {
                     class={`${state.skyMapClass} link`}
                   >
                     Click here to get a photo of your starCrossing
+                  </Link>
+                </p>
+                <p>
+                  <Link
+                    href={"https://github.com/kaBeech/star-crossed"}
+                    class={`link`}
+                  >
+                    View source on GitHub
                   </Link>
                 </p>
               </div>
