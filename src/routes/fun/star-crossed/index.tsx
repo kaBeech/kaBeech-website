@@ -251,7 +251,7 @@ export default component$(() => {
                   class={state.skyMapClass}
                   src={starCrossedData.skyMapURL}
                 ></iframe>{" "}
-                <p>
+                <p class={`${state.skyMapClass}`}>
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
