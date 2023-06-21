@@ -62,39 +62,6 @@ export default component$(() => {
           galactic make-out spot, or just discover a unique point in the sky to
           look at together through a telescope
         </p>
-        <h2>Buddh-A-Sketch</h2>
-        <img
-          src="/favicon.webp"
-          alt="A rainbow heart made with Buddh-A-Sketch"
-        />
-        <button>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://kabeech.github.io/buddh-a-sketch/"
-          >
-            Check out Buddh-A-Sketch!
-          </a>
-        </button>
-        <button class="invertedButton">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/kaBeech/buddh-a-sketch"
-          >
-            View source on GitHub
-          </a>
-        </button>
-        <p>
-          This started as an emulation of a classic drawing toy and evolved to
-          include functionality for meditative practice. Then I added
-          ever-mutating neon black colors because it looks cool
-        </p>
-        <p>
-          This is one of my first JavaScript projects and still one of my
-          favorites to play with. Currently it requires a mouse to use. It's not
-          very sophisticated, but it's a lot of fun!
-        </p>
         <h2>Namagen</h2>
         <img
           class="tempLogo"
@@ -125,6 +92,39 @@ export default component$(() => {
         <p>
           It also serves as an example of how a WebAssembly application built
           with Rust can be integrated into a JavaScript environment
+        </p>
+        <h2>Buddh-A-Sketch</h2>
+        <img
+          src="/favicon.webp"
+          alt="A rainbow heart made with Buddh-A-Sketch"
+        />{" "}
+        <button>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://kabeech.github.io/buddh-a-sketch/"
+          >
+            Check out Buddh-A-Sketch!
+          </a>
+        </button>
+        <button class="invertedButton">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/kaBeech/buddh-a-sketch"
+          >
+            View source on GitHub
+          </a>
+        </button>
+        <p>
+          This started as an emulation of a classic drawing toy and evolved to
+          include functionality for meditative practice. Then I added
+          ever-mutating neon black colors because it looks cool
+        </p>
+        <p>
+          This is one of my first JavaScript projects and still one of my
+          favorites to play with. Currently it requires a mouse to use. It's not
+          very sophisticated, but it's a lot of fun!
         </p>
         <h2>Fractal Flower</h2>
         <img src="/flower.svg" alt="A fractal flower budding" />
@@ -215,12 +215,12 @@ export default component$(() => {
             linkTile: linkTiles.fun_starCrossed,
           },
           {
-            fullMessage: "A nostalgic zen flow toy? Yes please!",
-            linkTile: linkTiles.fun_buddhASketch,
-          },
-          {
             fullMessage: "Ooh! I wanna try that fantasy name generator!",
             linkTile: linkTiles.fun_namagen,
+          },
+          {
+            fullMessage: "A nostalgic zen flow toy? Yes please!",
+            linkTile: linkTiles.fun_buddhASketch,
           },
           {
             fullMessage: "Show me that cool fractal flower!",
