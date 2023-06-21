@@ -1,6 +1,6 @@
-import { component$ } from "@builder.io/qwik";
+import { Resource, component$, useResource$, useStore } from "@builder.io/qwik";
 import type { DocumentHead, RequestEvent } from "@builder.io/qwik-city";
-import { Link, routeLoader$ } from "@builder.io/qwik-city";
+import { Link, server$ } from "@builder.io/qwik-city";
 import { Beechy } from "~/components/beechy/beechy";
 import { ResponseBar } from "~/components/responseBar/responseBar";
 import { linkTiles } from "~/util/linkTiles";
@@ -16,22 +16,43 @@ export const onGet = (requestEvent: RequestEvent) => {
   }
 };
 
-export const useNamagenMamobibu = routeLoader$(async () => {
-  const res = await fetch(`${namagenAPI}/mamobibu`);
+const serverFetcher = server$(async (language: string) => {
+  const abortController = new AbortController();
+  const res = await fetch(`${namagenAPI}/${language}`, {
+    signal: abortController.signal,
+  });
   const data = await res.json();
-  return (data.mamobibuName || "Error") as string;
-});
-
-export const useNamagenSaurian = routeLoader$(async () => {
-  const res = await fetch(`${namagenAPI}/saurian`);
-  const data = await res.json();
-  return (data.saurianName + " (" + data.saurianNameBasicLatin + ")" ||
-    "Error") as string;
+  switch (language) {
+    case "saurian":
+      return (data.saurianName + " (" + data.saurianNameBasicLatin + ")" ||
+        "Error") as string;
+    case "mamobibu":
+      return (data.mamobibuName || "Error") as string;
+    default:
+      return `Error - unrecognized language: ${language}`;
+  }
 });
 
 export default component$(() => {
-  const mamobibuName = useNamagenMamobibu();
-  const saurianName = useNamagenSaurian();
+  const store = useStore({
+    datundiuClicks: 0,
+    mamobibuClicks: 0,
+  });
+  const datundiuResource = useResource$<string>(async ({ track, cleanup }) => {
+    track(() => store.datundiuClicks);
+    const abortController = new AbortController();
+    cleanup(() => abortController.abort("cleanup"));
+    const res = await serverFetcher("saurian");
+    return (res || "Error using datundiuResource") as string;
+  });
+  const mamobibuResource = useResource$<string>(async ({ track, cleanup }) => {
+    track(() => store.mamobibuClicks);
+    const abortController = new AbortController();
+    cleanup(() => abortController.abort("cleanup"));
+    const res = await serverFetcher("mamobibu");
+    return (res || "Error using mamobibuResource") as string;
+  });
+
   return (
     <div class="screenContainer">
       <Beechy />
@@ -55,9 +76,26 @@ export default component$(() => {
         </p>
         <h2>Currently Implemented Languages</h2>
         <h3>Ḍaṭunḍiu</h3>
-        <p>
-          Random Ḍaṭunḍiu Name: <strong>{saurianName.value}</strong>
-        </p>
+        <Resource
+          value={datundiuResource}
+          onPending={() => {
+            return <p>Random Ḍaṭunḍiu Name: Loading...</p>;
+          }}
+          onResolved={(datundiuName) => {
+            return (
+              <p>
+                Random Ḍaṭunḍiu Name: <strong>{datundiuName}</strong>
+              </p>
+            );
+          }}
+        />
+        <button
+          onClick$={() => {
+            store.datundiuClicks++;
+          }}
+        >
+          Get new Ḍaṭunḍiu name!
+        </button>
         <p>
           Ḍaṭunḍiu is a language we are developing for a group of dinosaur
           people in{" "}
@@ -78,9 +116,26 @@ export default component$(() => {
           variety in sounds made with the back of the throat
         </p>
         <h3>Mamobibu</h3>
-        <p>
-          Random Mamobibu Name: <strong>{mamobibuName.value}</strong>
-        </p>
+        <Resource
+          value={mamobibuResource}
+          onPending={() => {
+            return <p>Random Mamobibu Name: Loading...</p>;
+          }}
+          onResolved={(mamobibuName) => {
+            return (
+              <p>
+                Random Mamobibu Name: <strong>{mamobibuName}</strong>
+              </p>
+            );
+          }}
+        />
+        <button
+          onClick$={() => {
+            store.mamobibuClicks++;
+          }}
+        >
+          Generate new Mamobibu name!
+        </button>
         <p>
           Mamobibu is a very simple test language I made to test Namagen's
           functionality
