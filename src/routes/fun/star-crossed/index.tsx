@@ -5,28 +5,21 @@ import {
   useStore,
   useStylesScoped$,
 } from "@builder.io/qwik";
-import type { DocumentHead, RequestEvent } from "@builder.io/qwik-city";
+import type { DocumentHead } from "@builder.io/qwik-city";
 import { Link, server$ } from "@builder.io/qwik-city";
 import { Beechy } from "~/components/beechy/beechy";
 import { ResponseBar } from "~/components/responseBar/responseBar";
 import { linkTiles } from "~/util/linkTiles";
 import styles from "./star-crossed.css?inline";
 
-let starCrossedAPI: string;
-
-export const onGet = (requestEvent: RequestEvent) => {
-  const response = requestEvent.env.get("STARCROSSED_API");
-  if (response != undefined) {
-    starCrossedAPI = response;
-  } else {
-    console.error("STARCROSSED_API string not found upon request");
-  }
-};
-
 const birthday1 = "1999-08-11";
 const birthday2 = "2000-03-03";
 
-const serverFetcher = server$(async (birthday1, birthday2) => {
+const serverFetcher = server$(async function (birthday1, birthday2) {
+  const starCrossedAPI = this.env.get("STARCROSSED_API");
+  if (starCrossedAPI == undefined) {
+    console.error("STARCROSSED_API string not found upon request");
+  }
   const abortController = new AbortController();
   const res = await fetch(
     `${starCrossedAPI}/star-crossings/${birthday1},${birthday2}`,
@@ -60,7 +53,6 @@ export default component$(() => {
   const state = useStore({
     birthday1,
     birthday2,
-    starCrossedAPI,
     skyMapClass: "hidden height1 positionFixed",
     staticPhotoClass: "marginTop0",
   });
@@ -73,7 +65,7 @@ export default component$(() => {
     const res = await serverFetcher(birthday1, birthday2);
     return (
       res ||
-      `Error - URI is ${starCrossedAPI}/star-crossings/1948-8-11,1952-3-3`
+      `Error fetching starCrossedAPI. URI requested is [starCrossedAPI]/star-crossings/${birthday1},${birthday2}`
     );
   });
 
