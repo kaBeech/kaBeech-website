@@ -22,8 +22,8 @@ export default component$(() => {
           </strong>
         </p>
         <p>
-          Alternatively, you can click a link in the text below or use the
-          hamburger button in the upper right
+          Alternatively, you can scroll down and click a link in the text below
+          or use the hamburger button in the upper right
         </p>
         <h3 class="homepage">If you are interested, I can:</h3>
         <ul>

@@ -139,6 +139,27 @@ export default component$(() => {
         </div>
         <h3 class="responseTextLight">Why PostgreSQL?</h3>
         <p>
+          <strong>
+            Note: with the recent release of{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={"https://deno.com/kv"}
+              class={`link`}
+            >
+              Deno KV
+            </a>
+            , I've been enjoying the low-config workflow and snappy performance
+            that comes with{" "}
+            <Link class="link" href="/tech/edge">
+              edge-enabled
+            </Link>{" "}
+            key-value stores. I still love Postgres (especially for more
+            complicated databases), but keep in mind that alternative options
+            are becoming available
+          </strong>
+        </p>
+        <p>
           The more I grow, the less dogmatic I get about database choices. These
           days non-relational databases like MongoDB (using NoSQL) can do most
           of what relational databases like Postgres (using SQL) do and vice
@@ -465,7 +486,7 @@ export default component$(() => {
           </Link>
           . Qwik renders parents and children in perfect isolation. This means
           it can render the parent component without re-rendering the children
-          and vice versa.
+          and vice versa
         </p>
         <p>
           However, because slots are symbolic, the children can NOT be read or

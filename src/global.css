@@ -16,6 +16,7 @@
   --kaBeech-color-beechy-top: #178155;
   --kaBeech-color-beechy-bottom: #00587d;
   --kaBeech-color-response: #182343;
+  --kaBeech-color-orig-beechy-top-transparent: #178155b8;
   --kaBeech-color-orig-beechy-top: #178155;
   --kaBeech-color-orig-beechy-bottom: #3367a0;
   --kaBeech-color-starry-field: #000406;
@@ -52,6 +53,10 @@
   --kaBeech-screen-midground: var(--kaBeech-color-algae);
   --kaBeech-screen-midground-transparent: var(
     --kaBeech-color-algae-transparent
+  );
+  --kaBeech-screen-accent: var(--kaBeech-color-orig-beechy-top);
+  --kaBeech-screen-accent-transparent: var(
+    --kaBeech-color-orig-beechy-top-transparent
   );
   --kaBeech-screen-foreground: var(--kaBeech-color-terminal-text);
   --kaBeech-screen-insert: var(--kaBeech-color-distant-planet-semitransparent);
@@ -249,7 +254,7 @@ button {
 /* Scrollbars for Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: var(--kaBeech-screen-midground) transparent;
+  scrollbar-color: var(--kaBeech-screen-accent-transparent);
 }
 
 /* Scrollbars for Chrome, Edge, and Safari */
@@ -258,7 +263,7 @@ button {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--kaBeech-screen-midground-transparent);
+  background-color: var(--kaBeech-screen-accent-transparent);
   /* box-shadow: 0 0em 0.5em 0.1em rgba(0, 20, 26, 0.964),
     0 0em 0.4em 0.05em rgba(0, 160, 157, 0.515),
     0 0em 1em 0 rgba(1, 90, 125, 0.484); */
