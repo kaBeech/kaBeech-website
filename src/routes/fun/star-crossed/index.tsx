@@ -5,17 +5,55 @@ import {
   useStore,
   useStylesScoped$,
 } from "@builder.io/qwik";
-import type { DocumentHead } from "@builder.io/qwik-city";
-import { Link } from "@builder.io/qwik-city";
+import type { DocumentHead, RequestEvent } from "@builder.io/qwik-city";
+import { Link, server$ } from "@builder.io/qwik-city";
 import { Beechy } from "~/components/beechy/beechy";
 import { ResponseBar } from "~/components/responseBar/responseBar";
 import { linkTiles } from "~/util/linkTiles";
 import styles from "./star-crossed.css?inline";
 
-const starCrossedAPI = "https://hungry-heron-21.deno.dev";
+let starCrossedAPI: string;
+
+export const onGet = (requestEvent: RequestEvent) => {
+  const response = requestEvent.env.get("STARCROSSED_API");
+  if (response != undefined) {
+    starCrossedAPI = response;
+  } else {
+    console.error("NAMAGEN_API string not found upon request");
+  }
+};
 
 const birthday1 = "1999-08-11";
 const birthday2 = "2000-03-03";
+
+const serverFetcher = server$(async (birthday1, birthday2) => {
+  const abortController = new AbortController();
+  const res = await fetch(
+    `${starCrossedAPI}/star-crossings/${birthday1},${birthday2}`,
+    {
+      signal: abortController.signal,
+    }
+  );
+  const data = await res.json();
+  let closestStarShownName: string;
+  if (data.closestStarCommonName !== "null") {
+    closestStarShownName = data.closestStarCommonName.replace("�", "° ");
+  } else {
+    closestStarShownName = data.closestStarName;
+  }
+  return (
+    {
+      coordinates: data.coordinates,
+      infoURL: data.infoURL,
+      skyMapURL: data.skyMapURL,
+      closestStarName: data.closestStarName,
+      closestStarCommonName: data.closestStarCommonName,
+      staticPhotoURL: data.staticPhotoURL,
+      closestStarShownName,
+      birthdays: ["1948-08-11", "1952-03-3"],
+    } || `Error - URI is ${starCrossedAPI}/star-crossings/1948-8-11,1952-3-3`
+  );
+});
 
 export default component$(() => {
   useStylesScoped$(styles);
@@ -32,30 +70,10 @@ export default component$(() => {
     const birthday2 = track(() => state.birthday2);
     const abortController = new AbortController();
     cleanup(() => abortController.abort("cleanup"));
-    const res = await fetch(
-      `${starCrossedAPI}/star-crossings/${birthday1},${birthday2}`,
-      {
-        signal: abortController.signal,
-      }
-    );
-    const data = await res.json();
-    let closestStarShownName: string;
-    if (data.closestStarCommonName !== "null") {
-      closestStarShownName = data.closestStarCommonName.replace("�", "° ");
-    } else {
-      closestStarShownName = data.closestStarName;
-    }
+    const res = await serverFetcher(birthday1, birthday2);
     return (
-      {
-        coordinates: data.coordinates,
-        infoURL: data.infoURL,
-        skyMapURL: data.skyMapURL,
-        closestStarName: data.closestStarName,
-        closestStarCommonName: data.closestStarCommonName,
-        staticPhotoURL: data.staticPhotoURL,
-        closestStarShownName,
-        birthdays: ["1948-08-11", "1952-03-3"],
-      } || `Error - URI is ${starCrossedAPI}/star-crossings/1948-8-11,1952-3-3`
+      res ||
+      `Error - URI is ${starCrossedAPI}/star-crossings/1948-8-11,1952-3-3`
     );
   });
 
