@@ -59,8 +59,8 @@ export default component$(() => {
         <p>
           You can use it to check your compatibility with another person (based
           on your subjective opinion of what your stars look like), find a
-          galactic make-out spot, or just find a unique point in the sky to look
-          at together through your telescope
+          galactic make-out spot, or just discover a unique point in the sky to
+          look at together through your telescope
         </p>
         <h2>Buddh-A-Sketch</h2>
         <img
