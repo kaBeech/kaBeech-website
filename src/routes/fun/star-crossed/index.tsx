@@ -237,18 +237,18 @@ export default component$(() => {
                   id="staticPhoto"
                   class={state.staticPhotoClass}
                 />
-                <p class={state.skyMapClass}>
+                <p class={`${state.skyMapClass} marginTop0`}>
                   Hover over stars to see info, use the slider to zoom in/out,
                   click and drag to look around
                 </p>
                 <iframe
                   onLoad$={() => {
-                    state.skyMapClass = "marginTop0";
+                    state.skyMapClass = "";
                     state.staticPhotoClass = "displayNone";
                   }}
                   title="StarCrossed skyMap"
                   id="skyMap"
-                  class={state.skyMapClass}
+                  class={`${state.skyMapClass} marginTop0`}
                   src={starCrossedData.skyMapURL}
                 ></iframe>{" "}
                 <p class={`${state.skyMapClass}`}>
@@ -295,8 +295,6 @@ export default component$(() => {
           },
         ]}
       />
-
-      {/* <script>alert();</script> */}
     </div>
   );
 });
