@@ -19,7 +19,7 @@ export const onGet = (requestEvent: RequestEvent) => {
   if (response != undefined) {
     starCrossedAPI = response;
   } else {
-    console.error("NAMAGEN_API string not found upon request");
+    console.error("STARCROSSED_API string not found upon request");
   }
 };
 
