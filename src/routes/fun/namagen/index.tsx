@@ -1,6 +1,6 @@
-import { Resource, component$, useResource$ } from "@builder.io/qwik";
+import { Resource, component$, useResource$, useStore } from "@builder.io/qwik";
 import type { DocumentHead, RequestEvent } from "@builder.io/qwik-city";
-import { Link } from "@builder.io/qwik-city";
+import { Link, server$ } from "@builder.io/qwik-city";
 import { Beechy } from "~/components/beechy/beechy";
 import { ResponseBar } from "~/components/responseBar/responseBar";
 import { linkTiles } from "~/util/linkTiles";
@@ -16,25 +16,41 @@ export const onGet = (requestEvent: RequestEvent) => {
   }
 };
 
-export default component$(() => {
-  const mamobibuResource = useResource$<string>(async ({ cleanup }) => {
-    const abortController = new AbortController();
-    cleanup(() => abortController.abort("cleanup"));
-    const res = await fetch(`${namagenAPI}/mamobibu`, {
-      signal: abortController.signal,
-    });
-    const data = await res.json();
-    return (data.mamobibuName || "Error") as string;
+const serverFetcher = server$(async (language: string) => {
+  const abortController = new AbortController();
+  const res = await fetch(`${namagenAPI}/${language}`, {
+    signal: abortController.signal,
   });
-  const saurianResource = useResource$<string>(async ({ cleanup }) => {
+  const data = await res.json();
+  switch (language) {
+    case "saurian":
+      return (data.saurianName + " (" + data.saurianNameBasicLatin + ")" ||
+        "Error") as string;
+    case "mamobibu":
+      return (data.mamobibuName || "Error") as string;
+    default:
+      return `Error - unrecognized language: ${language}`;
+  }
+});
+
+export default component$(() => {
+  const store = useStore({
+    datundiuClicks: 0,
+    mamobibuClicks: 0,
+  });
+  const datundiuResource = useResource$<string>(async ({ track, cleanup }) => {
+    track(() => store.datundiuClicks);
     const abortController = new AbortController();
     cleanup(() => abortController.abort("cleanup"));
-    const res = await fetch(`${namagenAPI}/saurian`, {
-      signal: abortController.signal,
-    });
-    const data = await res.json();
-    return (data.saurianName + " (" + data.saurianNameBasicLatin + ")" ||
-      "Error") as string;
+    const res = await serverFetcher("saurian");
+    return (res || "Error using datundiuResource") as string;
+  });
+  const mamobibuResource = useResource$<string>(async ({ track, cleanup }) => {
+    track(() => store.mamobibuClicks);
+    const abortController = new AbortController();
+    cleanup(() => abortController.abort("cleanup"));
+    const res = await serverFetcher("mamobibu");
+    return (res || "Error using mamobibuResource") as string;
   });
 
   return (
@@ -61,18 +77,25 @@ export default component$(() => {
         <h2>Currently Implemented Languages</h2>
         <h3>Ḍaṭunḍiu</h3>
         <Resource
-          value={saurianResource}
+          value={datundiuResource}
           onPending={() => {
             return <p>Random Ḍaṭunḍiu Name: Loading...</p>;
           }}
-          onResolved={(saurianName) => {
+          onResolved={(datundiuName) => {
             return (
               <p>
-                Random Ḍaṭunḍiu Name: <strong>{saurianName}</strong>
+                Random Ḍaṭunḍiu Name: <strong>{datundiuName}</strong>
               </p>
             );
           }}
         />
+        <button
+          onClick$={() => {
+            store.datundiuClicks++;
+          }}
+        >
+          Get new Ḍaṭunḍiu name!
+        </button>
         <p>
           Ḍaṭunḍiu is a language we are developing for a group of dinosaur
           people in{" "}
@@ -106,6 +129,13 @@ export default component$(() => {
             );
           }}
         />
+        <button
+          onClick$={() => {
+            store.mamobibuClicks++;
+          }}
+        >
+          Generate new Mamobibu name!
+        </button>
         <p>
           Mamobibu is a very simple test language I made to test Namagen's
           functionality
