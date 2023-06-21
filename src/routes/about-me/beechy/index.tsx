@@ -16,7 +16,7 @@ export default component$(() => {
         </h2>
         <p>Oh! Thanks for asking - being me pretty great!</p>
         <p>
-          Being Kyle's avatar is basically like being a conduit for zis
+          Being Kyle's avatar is basically like being a conduit for zys
           personality (I also prefer{" "}
           <Link class="link" href="/about-me/pronouns">
             xe/xyr or ze/zyr pronouns
@@ -33,21 +33,33 @@ export default component$(() => {
             learning languages
           </Link>
           , meditating, and reading. Some of my favorite authors are{" "}
-          <Link class="link" href="https://devdutt.com/books/jaya/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="https://devdutt.com/books/jaya/"
+          >
             Devdutt Pattanaik
-          </Link>
+          </a>
           ,{" "}
-          <Link
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
             class="link"
             href="https://en.wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach"
           >
             Douglas Hofstadter
-          </Link>
+          </a>
           , and
-          <Link class="link" href="https://xkcd.com/917/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="https://xkcd.com/917/"
+          >
             {" "}
             Randall Munroe
-          </Link>
+          </a>
           !
         </p>
         <p>

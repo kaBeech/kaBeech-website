@@ -35,53 +35,93 @@ export default component$(() => {
             <tr>
               <th>Database</th>
               <td>
-                <Link class="link" href="https://www.mongodb.com/">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="link"
+                  href="https://www.mongodb.com/"
+                >
                   MongoDB
-                </Link>
+                </a>
               </td>
               <td>
-                <Link class="link" href="https://www.postgresql.org/">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="link"
+                  href="https://www.postgresql.org/"
+                >
                   PostgreSQL
-                </Link>
+                </a>
               </td>
             </tr>
             <tr>
               <th>Backend</th>
               <td>
-                <Link class="link" href="https://expressjs.com/">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="link"
+                  href="https://expressjs.com/"
+                >
                   Express
-                </Link>
+                </a>
               </td>
               <td>
-                <Link class="link" href="https://oakserver.github.io/oak/">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="link"
+                  href="https://oakserver.github.io/oak/"
+                >
                   Oak
-                </Link>
+                </a>
               </td>
             </tr>
             <tr>
               <th>Frontend</th>
               <td>
-                <Link class="link" href="https://react.dev/">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="link"
+                  href="https://react.dev/"
+                >
                   React
-                </Link>
+                </a>
               </td>
               <td>
-                <Link class="link" href="https://qwik.builder.io/">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="link"
+                  href="https://qwik.builder.io/"
+                >
                   Qwik
-                </Link>
+                </a>
               </td>
             </tr>
             <tr>
               <th>Runtime</th>
               <td>
-                <Link class="link" href="https://nodejs.org/en">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="link"
+                  href="https://nodejs.org/en"
+                >
                   Node.js
-                </Link>
+                </a>
               </td>
               <td>
-                <Link class="link" href="https://deno.land/">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="link"
+                  href="https://deno.land/"
+                >
                   Deno
-                </Link>
+                </a>
               </td>
             </tr>
           </tbody>
@@ -98,6 +138,27 @@ export default component$(() => {
           </div>
         </div>
         <h3 class="responseTextLight">Why PostgreSQL?</h3>
+        <p>
+          <strong>
+            Note: with the recent release of{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={"https://deno.com/kv"}
+              class={`link`}
+            >
+              Deno KV
+            </a>
+            , I've been enjoying the low-config workflow and snappy performance
+            that comes with{" "}
+            <Link class="link" href="/tech/edge">
+              edge-enabled
+            </Link>{" "}
+            key-value stores. I still love Postgres (especially for more
+            complicated databases), but keep in mind that alternative options
+            are becoming available
+          </strong>
+        </p>
         <p>
           The more I grow, the less dogmatic I get about database choices. These
           days non-relational databases like MongoDB (using NoSQL) can do most
@@ -166,9 +227,14 @@ export default component$(() => {
           Now, the same is true for Express, but Oak is designed to be used with
           Deno! There are some nice things about the way Oak works (many
           inherited from its spiritual predecessor in Node,{" "}
-          <Link class="link" href="https://koajs.com/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="https://koajs.com/"
+          >
             Koa
-          </Link>
+          </a>
           ), but at the end of the day, I mostly use Oak because it's the most
           widely-used and supported analog to Express in Deno Land
         </p>
@@ -304,23 +370,27 @@ export default component$(() => {
           privacy and security. Deno supports ES Modules by default rather than
           CommonJS, which encourages future-facing development. Deno caches
           needed dependencies on your file system, doing away with{" "}
-          <Link
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
             class="link"
             href="https://javascript.plainenglish.io/node-js-esm-npm-yarn-deep-dive-adda15dabce#cb91"
           >
             super-dense node_modules directories
-          </Link>{" "}
+          </a>{" "}
         </p>
         <p>
           Deno is created by the same person who created the industry standard
           runtime that it replaces and it's supported by a thriving, passionate
           community. It's already being adopted by industry leaders like{" "}
-          <Link
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
             class="link"
             href="https://www.netlify.com/products/#netlify-edge-functions"
           >
             Netlify
-          </Link>
+          </a>
           , who uses it to power their{" "}
           <Link class="link" href="/tech/edge">
             edge functions
@@ -416,7 +486,7 @@ export default component$(() => {
           </Link>
           . Qwik renders parents and children in perfect isolation. This means
           it can render the parent component without re-rendering the children
-          and vice versa.
+          and vice versa
         </p>
         <p>
           However, because slots are symbolic, the children can NOT be read or

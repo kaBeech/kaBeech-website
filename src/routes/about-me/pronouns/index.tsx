@@ -17,11 +17,22 @@ export default component$(() => {
           I prefer xe/xyr or ze/zyr pronouns. Either pair works equally well -
           use whichever feels right in the moment!
         </p>
-        <p>For possessive pronouns I like xis or zis</p>
+        <p>For possessive pronouns I like xys or zys</p>
         <p>
-          Here's an example sentence: "I met xyr at xis house and xe drove me to
+          Here's an example sentence: "I met xyr at xys house and xe drove me to
           the concert"
         </p>
+        <h3 class="responseTextLight">How do you pronounce them?</h3>
+        <p>
+          The 'X' and 'Z' can both be pronounced /z/, like the 'Z' in 'Zebra'
+        </p>
+        <p>
+          If you want to do something fancy to distinguish the consonants, for
+          instance to use /d͡z/ for 'Z' and /x/ for 'X,' I support that as well!
+        </p>
+        <p>'Xe' and 'Ze' rhyme with 'He'</p>
+        <p>'Xyr' and 'Zyr' rhyme with 'Her'</p>
+        <p>'Xys' and 'Zys' rhyme with 'His'</p>
         <h3 class="responseTextLight">Why not use they/them?</h3>
         <h4>Grammatical Number</h4>
         <p>
@@ -35,7 +46,7 @@ export default component$(() => {
         </p>
         <p>
           Now try this one: "Kyle went with Beechy to the concert. When they
-          came back, zis fingernails were painted neon colors." To me, this more
+          came back, zys fingernails were painted neon colors." To me, this more
           clearly implies that both Beechy and Kyle came back, but that it's
           Kyle's fingernails that we're talking about
         </p>
@@ -59,20 +70,20 @@ export default component$(() => {
           referring to when talking about more than one person
         </p>
         <p>
-          Consider this passage: "Beechy drove xis blue car to Kyle's concert.
+          Consider this passage: "Beechy drove xys blue car to Kyle's concert.
           After the opening act, Kyle drove onstage in a jet black car, matching
-          xis hair. By the end of the show, the power of Music had turned both
-          xis car and xis hair rainbow colored!"
+          xys hair. By the end of the show, the power of Music had turned both
+          xys car and xys hair rainbow colored!"
         </p>
         <p>
           At the end of the show, whose car is rainbow colored? It's not
           completely clear
         </p>
         <p>
-          Now try this one: "Beechy drove xis blue car to Kyle's concert. After
-          the opening act, Kyle drove onstage in a jet black car, matching zis
-          hair. By the end of the show, the power of Music had turned both xis
-          car and zis hair rainbow colored!"
+          Now try this one: "Beechy drove xys blue car to Kyle's concert. After
+          the opening act, Kyle drove onstage in a jet black car, matching zys
+          hair. By the end of the show, the power of Music had turned both xys
+          car and zys hair rainbow colored!"
         </p>
         <p>
           With this wording, we clearly know that Beechy's car is the one that

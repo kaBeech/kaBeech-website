@@ -36,12 +36,14 @@ export default component$(() => {
         </p>
         <p>
           Let's think of the{" "}
-          <Link
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
             class="link"
             href="https://en.wikipedia.org/wiki/World_Wide_Web"
           >
             World Wide Web
-          </Link>{" "}
+          </a>{" "}
           as, well, a big web that covers the whole world. At various points on
           this web there are places that store information. At these places
           there are little helpers that bring information to you, the user
@@ -54,13 +56,23 @@ export default component$(() => {
           somehow. But as the builder of a serverless website, I don't put the
           server in my own home and maintain it myself. Instead, I pay a company
           like{" "}
-          <Link class="link" href="https://www.netlify.com/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="https://www.netlify.com/"
+          >
             Netlify
-          </Link>{" "}
+          </a>{" "}
           or{" "}
-          <Link class="link" href="https://vercel.com/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="https://vercel.com/"
+          >
             Vercel
-          </Link>{" "}
+          </a>{" "}
           to do the serving for me
         </p>
         <h3>A food delivery analogy</h3>
@@ -109,9 +121,14 @@ export default component$(() => {
         <p>
           <strong>
             Edge functions can be used as{" "}
-            <Link class="link" href="https://en.wikipedia.org/wiki/Middleware">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link"
+              href="https://en.wikipedia.org/wiki/Middleware"
+            >
               middleware
-            </Link>
+            </a>
             .
           </strong>{" "}
           Simply put, middleware receives a signal then makes some changes to
@@ -120,9 +137,14 @@ export default component$(() => {
         </p>
         <p>
           You might be familiar with middleware through working with{" "}
-          <Link class="link" href="http://expressjs.com/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="http://expressjs.com/"
+          >
             Express.js
-          </Link>{" "}
+          </a>{" "}
           in server-side code. With Express, a server receives a request,
           performs some operations, and then returns a response. All the code
           that performs the operations in the middle of that process, between
@@ -137,12 +159,23 @@ export default component$(() => {
           will do less work, and your code may also get more organized. The same
           can be said for caching when using an edge-enabled key-value data
           store like{" "}
-          <Link
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="https://deno.com/kv"
+          >
+            Deno KV
+          </a>{" "}
+          or{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
             class="link"
             href="https://developers.cloudflare.com/workers/learning/how-kv-works/"
           >
             Cloudflare Workers KV
-          </Link>
+          </a>
         </p>
         <h3>Location-Based Personalization</h3>
         <p>
@@ -180,19 +213,23 @@ export default component$(() => {
         <p>
           Luckily, using edge functions is pretty simple, because most of the
           setup is done by a hosting provider like{" "}
-          <Link
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
             class="link"
             href="https://vercel.com/docs/concepts/functions/edge-functions"
           >
             Vercel
-          </Link>{" "}
+          </a>{" "}
           or{" "}
-          <Link
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
             class="link"
             href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/edge-functions.html"
           >
             AWS
-          </Link>
+          </a>
           . The tricky part here is making sure that your program will run on
           the edge. There are limitations to what you can run, and each hosting
           providers' limitations are slightly different
@@ -221,12 +258,14 @@ export default component$(() => {
           Last but not least, most providers use a custom runtime environment
           (instead of Node.js) to execute your code. Common consequences of this
           include requiring the use of{" "}
-          <Link
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
             class="link"
             href="https://www.typescriptlang.org/docs/handbook/2/modules.html"
           >
             ES modules
-          </Link>{" "}
+          </a>{" "}
           and not providing access to some browser and/or Node APIs
         </p>
         <p>
@@ -246,12 +285,14 @@ export default component$(() => {
         </p>
         <p>
           We're allowed this luxury because{" "}
-          <Link
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
             class="link"
             href="https://w3techs.com/technologies/overview/server_location"
           >
             over 35% of all websites are hosted in the United States
-          </Link>
+          </a>
           . Internet users in South Africa, for example, are more used to longer
           wait times since only about 0.5% of websites are hosted in their
           country and the nearest country to them with a larger piece of the web

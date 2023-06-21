@@ -15,26 +15,92 @@ export default component$(() => {
       <div class="screenContents">
         <h1>Projects</h1>
         <p>Here are some cool things I've helped build!</p>
-        <h3>
-          Scroll down or use the response buttons below to check them out!
-        </h3>
+        <h2>Audiopile</h2>
+        <img
+          src="/waveform.webp"
+          alt="The Audiopile logo - overlapping multicolored sine waves"
+        />
+        <button>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.audiopile.cloud/"
+          >
+            Check out Audiopile!
+          </a>
+        </button>
+        <button class="invertedButton">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/fogg4444/audiopile_master"
+          >
+            View source on GitHub
+          </a>
+        </button>
+        <p>A simple, professional tool for managing audio in the cloud</p>
+        <p>
+          A question for all the musicians, podcasters, and other audio
+          professionals of the world: How often do you want to privately share a
+          piece of audio with specific people?
+        </p>
+        <p>
+          Maybe it's a completed but unreleased track you're sending to a client
+          for final approval. Maybe it's a recording of just your voice that
+          you're sending to your collaborators to mix in to a final project. Or
+          it's a project you've been working on that you're sending to a friend
+          with fresh ears for an opinion. Heck, maybe it's just a tune that came
+          to you in the shower that you recorded on your shower phone (people
+          have those, right?) and want to listen to later on your studio
+          computer.
+        </p>
+        <p>
+          In any case, do you know how to get that audio from wherever it is now
+          to wherever it needs to get to in a form that can be easily used?
+        </p>
+        <p>
+          Now you do:{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="https://www.audiopile.cloud/"
+          >
+            Audiopile
+          </a>
+        </p>
         <h2>Wyrld Dashboard</h2>
         <img
           src="/peli_book_smaller.webp"
           alt="Peli, the Far Reach Co. mascot, holding a book"
         />
         <button>
-          <Link href="https://farreachco.com/">Check out Wyrld Dashboard!</Link>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://farreachco.com/"
+          >
+            Check out Wyrld Dashboard!
+          </a>
         </button>
         <button class="invertedButton">
-          <Link href="https://github.com/Far-Reach-Co/dm-dash">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/Far-Reach-Co/dm-dash"
+          >
             View source on GitHub
-          </Link>
+          </a>
         </button>
         <p>
-          <Link class="link" href="https://www.audiopile.cloud/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="https://www.audiopile.cloud/"
+          >
             Wyrld Dashboard
-          </Link>{" "}
+          </a>{" "}
           provides fast and unobtrusive cloud-based tools for tabletop
           role-playing games (RPGs) like Dungeons & Dragons
         </p>
@@ -79,61 +145,31 @@ export default component$(() => {
           with cool technology (for instance this is where we first started
           using the Rust programming language)
         </p>
-        <h2>Audiopile</h2>
-        <img
-          src="/waveform.webp"
-          alt="The Audiopile logo - overlapping multicolored sine waves"
-        />
-        <button>
-          <Link href="https://www.audiopile.cloud/">Check out Audiopile!</Link>
-        </button>
-        <button class="invertedButton">
-          <Link href="https://github.com/fogg4444/audiopile_master">
-            View source on GitHub
-          </Link>
-        </button>
-        <p>A simple, professional tool for managing audio in the cloud</p>
-        <p>
-          A question for all the musicians, podcasters, and other audio
-          professionals of the world: How often do you want to privately share a
-          piece of audio with specific people?
-        </p>
-        <p>
-          Maybe it's a completed but unreleased track you're sending to a client
-          for final approval. Maybe it's a recording of just your voice that
-          you're sending to your collaborators to mix in to a final project. Or
-          it's a project you've been working on that you're sending to a friend
-          with fresh ears for an opinion. Heck, maybe it's just a tune that came
-          to you in the shower that you recorded on your shower phone (people
-          have those, right?) and want to listen to later on your studio
-          computer.
-        </p>
-        <p>
-          In any case, do you know how to get that audio from wherever it is now
-          to wherever it needs to get to in a form that can be easily used?
-        </p>
-        <p>
-          Now you do:{" "}
-          <Link class="link" href="https://www.audiopile.cloud/">
-            Audiopile
-          </Link>
-        </p>
         <h2>Advent Of Code (My Personal Solutions)</h2>
         <img
           src="/adventOfCode.webp"
           alt="A star representing the Advent Of Code"
         />
         <button>
-          <Link href="https://github.com/kaBeech/Advent-Of-Code-2022">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/kaBeech/Advent-Of-Code-2022"
+          >
             Check out my Advent Of Code repo on GitHub!
-          </Link>
+          </a>
         </button>
         <p>Real holiday fun!</p>
         <p>
           Every year,{" "}
-          <Link class="link" href="https://twitter.com/ericwastl">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="https://twitter.com/ericwastl"
+          >
             some blessed individual
-          </Link>{" "}
+          </a>{" "}
           comes up with a holiday-themed adventure based on a series of logic
           puzzles. Each day in December leading up to Christmas, one challenge
           (and one piece of the story) is revealed. If you can solve that
@@ -147,9 +183,14 @@ export default component$(() => {
         <p>
           The link above will go to my repository of solutions to the
           challenges. If you want to take a crack at the challenges yourself,{" "}
-          <Link class="link" href="https://adventofcode.com/">
-            here's a direct link to the homepage
-          </Link>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="https://adventofcode.com/"
+          >
+            here's a direct link to the Advent Of Code homepage
+          </a>
         </p>
         <p>
           My life got very busy all of a sudden this winter and I haven't yet
@@ -167,13 +208,13 @@ export default component$(() => {
       <ResponseBar
         responses={[
           {
-            fullMessage: "Time to play some D&D!!!",
-            linkTile: linkTiles.projects_wyrldDashboard,
-          },
-          {
             fullMessage:
               "Ooh! I've been looking for a simple audio sharing tool!",
             linkTile: linkTiles.projects_audiopile,
+          },
+          {
+            fullMessage: "Time to play some D&D!!!",
+            linkTile: linkTiles.projects_wyrldDashboard,
           },
           {
             fullMessage:
