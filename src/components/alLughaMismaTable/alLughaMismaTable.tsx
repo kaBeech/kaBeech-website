@@ -6,11 +6,31 @@ import {
   useStylesScoped$,
 } from "@builder.io/qwik";
 import styles from "../../routes/fun/al-lugha-misma/al-lugha-misma.css?inline";
+import { server$ } from "@builder.io/qwik-city";
+
+const serverFetcher = server$(async function (word_list, languagesString) {
+  const alLughaMismaAPI = this.env.get("AL_LUGHA_MISMA_API");
+  if (alLughaMismaAPI == undefined) {
+    console.error("AL_LUGHA_MISMA_API string not found upon request");
+  }
+  const abortController = new AbortController();
+  const res = await fetch(
+    `${alLughaMismaAPI}/word_list/${word_list}/languages/${languagesString}/key`,
+    {
+      signal: abortController.signal,
+    }
+  );
+  const data = await res.json();
+  const translatedWordList: TranslatedWord[] = [];
+  data.challenge_key.forEach((translatedWord: TranslatedWord) =>
+    translatedWordList.push(translatedWord)
+  );
+  return (translatedWordList || "Error") as TranslatedWord[];
+});
 
 interface AlLughaMismaProps {
-  alLughaMismaAPI: string;
   word_list: string;
-  languages: string[];
+  languagesString: string;
 }
 
 interface TranslatedWord {
@@ -30,24 +50,22 @@ interface TranslationByLanguage {
 }
 
 export const AlLughaMismaTable = component$((props: AlLughaMismaProps) => {
-  const state = useStore({
-    alLughaMismaAPI: props.alLughaMismaAPI,
+  const store = useStore({
     word_list: props.word_list,
-    languagesString: props.languages.toString(),
+    languagesString: props.languagesString,
   });
   useStylesScoped$(styles);
 
-  const translatedWordListResource = useResource$(async () => {
-    const res = await fetch(
-      `${state.alLughaMismaAPI}/word_list/${state.word_list}/languages/${state.languagesString}/key`
-    );
-    const data = await res.json();
-    const translatedWordList: TranslatedWord[] = [];
-    data.challenge_key.forEach((translatedWord: TranslatedWord) =>
-      translatedWordList.push(translatedWord)
-    );
-    return (translatedWordList || "Error") as TranslatedWord[];
-  });
+  const translatedWordListResource = useResource$(
+    async ({ track, cleanup }) => {
+      const word_list = track(() => store.word_list);
+      const languagesString = track(() => store.languagesString);
+      const abortController = new AbortController();
+      cleanup(() => abortController.abort("cleanup"));
+      const res = await serverFetcher(word_list, languagesString);
+      return (res || "Error") as TranslatedWord[];
+    }
+  );
 
   // for (const referenceWord of referenceWords) {
   //   translationsByReferenceWord.push({
@@ -130,7 +148,7 @@ export const AlLughaMismaTable = component$((props: AlLughaMismaProps) => {
           );
         }}
       />
-      <form onChange$={(state.word_list = "Numbers")}>
+      <form>
         <div>
           Word List:
           {/* <input type="text" id="colors" name="arabic"></input>
