@@ -96,31 +96,6 @@ export const AlLughaMismaTable = component$((props: AlLughaMismaProps) => {
           ))}
         </tbody>
       </table>
-      <form>
-        <div>
-          Word List:
-          {/* <input type="text" id="colors" name="arabic"></input>
-            <label for="colors">Colors</label> */}
-          <input type="radio" id="colors" name="word_list"></input>
-          <label for="colors">Colors</label>
-          <input type="radio" id="numbers" name="word_list"></input>
-          <label for="numbers">Numbers</label>
-        </div>
-        <div>
-          Languages:
-          <input type="checkbox" id="arabic" name="languages"></input>
-          <label for="arabic">Arabic</label>
-          <input type="checkbox" id="spanish" name="languages"></input>
-          <label for="spanish">Spanish</label>
-        </div>
-        <input
-          type="submit"
-          value="START"
-          onClick$={() => {
-            // handleClick();
-          }}
-        />
-      </form>
     </div>
   );
 });
