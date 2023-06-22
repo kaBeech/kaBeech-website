@@ -3,3 +3,7 @@ th {
   border-style: solid;
   padding: 0 0.4em;
 }
+
+h2 {
+  margin-bottom: 0;
+}

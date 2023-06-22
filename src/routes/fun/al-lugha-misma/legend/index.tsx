@@ -1,4 +1,5 @@
 import {
+  $,
   Resource,
   component$,
   useResource$,
@@ -72,6 +73,13 @@ export default component$(() => {
     languages: languagesListHTMLFriendly,
     language1: "French",
     language2: "Spanish",
+    transliterationNotesAction: "show",
+  });
+
+  const toggleTransliterationNotes = $(() => {
+    state.transliterationNotesAction === "show"
+      ? (state.transliterationNotesAction = "hide")
+      : (state.transliterationNotesAction = "show");
   });
 
   const translatedWordListResource = useResource$(
@@ -92,89 +100,126 @@ export default component$(() => {
       <Beechy />
       <div class="screenContents">
         <h1>Al Lugha Misma</h1>
+        <h2>Legend Reference</h2>
         <img
           class="logo"
           src="/icons/alLughaMismaColorized2.webp"
           alt="The Al Lugha Misma logo (a calligraphic representation of 'Al Lugha Misma' in mixed Naskh and Devanagari script"
         />
-        <div>
-          <label for="wordList">Word List: </label>
-          <select
-            onInput$={(ev: any) => (state.word_list = ev.target.value)}
-            value={state.word_list}
-            aria-labelledby="Word List"
-            name="wordList"
-          >
-            <option value="Colors">Colors</option>
-            <option value="Numbers">Numbers</option>
-          </select>
-        </div>
-        <div>
-          <label for="langage1">First Language: </label>
-          <select
-            onInput$={(ev: any) => (state.language1 = ev.target.value)}
-            value={state.language1}
-            aria-labelledby="Language 1"
-            name="language1"
-          >
-            {languagesList.map((language) =>
-              language === "French" ? (
-                <option key="French" value="French" selected>
-                  French
-                </option>
-              ) : (
-                <option
-                  key={language}
-                  value={language.replace("'", "").replace(" ", "")}
-                >
-                  {language}
-                </option>
-              )
-            )}
-          </select>
-        </div>
-        <div>
-          <label for="langage2">Second Language: </label>
-          <select
-            class="button"
-            onInput$={(ev: any) => (state.language2 = ev.target.value)}
-            value={state.language2}
-            aria-labelledby="Language 2"
-            name="language2"
-          >
-            {languagesList.map((language) =>
-              language === "Spanish" ? (
-                <option key="Spanish" value="Spanish" selected>
-                  Spanish
-                </option>
-              ) : (
-                <option
-                  key={language}
-                  value={language.replace("'", "").replace(" ", "")}
-                >
-                  {language}
-                </option>
-              )
-            )}
-          </select>
-        </div>
-        <Resource
-          value={translatedWordListResource}
-          onPending={() => (
+        <button onClick$={() => toggleTransliterationNotes()}>
+          Click here to {state.transliterationNotesAction} transliteration notes
+        </button>
+        <br />
+        {state.transliterationNotesAction === "show" ? (
+          <>
             <div>
-              <p>Loading...</p>
-              <div style="height:18em"></div>
+              <label for="wordList">Word List: </label>
+              <select
+                onInput$={(ev: any) => (state.word_list = ev.target.value)}
+                value={state.word_list}
+                aria-labelledby="Word List"
+                name="wordList"
+              >
+                <option value="Colors">Colors</option>
+                <option value="Numbers">Numbers</option>
+              </select>
             </div>
-          )}
-          onResolved={(translatedWordList) => {
-            return (
-              <AlLughaMismaTable
-                translatedWordList={translatedWordList}
-                mode="TranslationByReferenceWord"
-              />
-            );
-          }}
-        />
+            <div>
+              <label for="langage1">First Language: </label>
+              <select
+                onInput$={(ev: any) => (state.language1 = ev.target.value)}
+                value={state.language1}
+                aria-labelledby="Language 1"
+                name="language1"
+              >
+                {languagesList.map((language) =>
+                  language === "French" ? (
+                    <option key="French" value="French" selected>
+                      French
+                    </option>
+                  ) : (
+                    <option
+                      key={language}
+                      value={language.replace("'", "").replace(" ", "")}
+                    >
+                      {language}
+                    </option>
+                  )
+                )}
+              </select>
+            </div>
+            <div>
+              <label for="langage2">Second Language: </label>
+              <select
+                class="button"
+                onInput$={(ev: any) => (state.language2 = ev.target.value)}
+                value={state.language2}
+                aria-labelledby="Language 2"
+                name="language2"
+              >
+                {languagesList.map((language) =>
+                  language === "Spanish" ? (
+                    <option key="Spanish" value="Spanish" selected>
+                      Spanish
+                    </option>
+                  ) : (
+                    <option
+                      key={language}
+                      value={language.replace("'", "").replace(" ", "")}
+                    >
+                      {language}
+                    </option>
+                  )
+                )}
+              </select>
+            </div>
+            <Resource
+              value={translatedWordListResource}
+              onPending={() => (
+                <div>
+                  <p>Loading...</p>
+                  <div style="height:18em"></div>
+                </div>
+              )}
+              onResolved={(translatedWordList) => {
+                return (
+                  <AlLughaMismaTable
+                    translatedWordList={translatedWordList}
+                    mode="TranslationByReferenceWord"
+                  />
+                );
+              }}
+            />
+          </>
+        ) : (
+          <div>
+            <h3>Transliteration notes</h3>
+            <p>
+              This game involves quickly typing words that are not in English
+              using a (presumably) English-language keyboard
+            </p>
+            <p>
+              To make this easier, I have transliterated many words from their
+              native scripts into simple Latin characters. Even in languages
+              that commonly use Latin-based scripts, I have transliterated some
+              words to avoid forcing players to quickly type diacritics
+            </p>
+            <p>
+              In cases where transliterating two graphemes to the same letter
+              would lead to ambiguity, I have used capitalization and letter
+              combinations to differentiate them
+            </p>
+            <p>
+              This is why, for example the French word "zéro" is rendered as
+              "zEro" and the Arabic word "ثَلاثة" is rendered as "thalaatha"
+            </p>
+            <p>
+              When the full game goes live I will add transliteration (and some
+              pronunciation) guides for each available language. For now, just
+              know that there is some reason behind the madness!
+            </p>
+          </div>
+        )}
         <p>
           <Link class="link margin1" href="../">
             {"<-- Back to Fun & Games"}
