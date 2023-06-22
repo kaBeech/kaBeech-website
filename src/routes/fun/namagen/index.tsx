@@ -1,22 +1,15 @@
 import { Resource, component$, useResource$, useStore } from "@builder.io/qwik";
-import type { DocumentHead, RequestEvent } from "@builder.io/qwik-city";
+import type { DocumentHead } from "@builder.io/qwik-city";
 import { Link, server$ } from "@builder.io/qwik-city";
 import { Beechy } from "~/components/beechy/beechy";
 import { ResponseBar } from "~/components/responseBar/responseBar";
 import { linkTiles } from "~/util/linkTiles";
 
-let namagenAPI: string;
-
-export const onGet = (requestEvent: RequestEvent) => {
-  const response = requestEvent.env.get("NAMAGEN_API");
-  if (response != undefined) {
-    namagenAPI = response;
-  } else {
+const serverFetcher = server$(async function (language: string) {
+  const namagenAPI = this.env.get("NAMAGEN_API");
+  if (namagenAPI == undefined) {
     console.error("NAMAGEN_API string not found upon request");
   }
-};
-
-const serverFetcher = server$(async (language: string) => {
   const abortController = new AbortController();
   const res = await fetch(`${namagenAPI}/${language}`, {
     signal: abortController.signal,
