@@ -119,6 +119,12 @@ export const linkTiles = {
     icon: "/icons/helix.svg",
     external: false,
   },
+  alLughaMisma_legend: {
+    linkPath: "/fun/al-lugha-misma/legend",
+    text: "Al Lugha Misma Legend",
+    icon: "/icons/alLughaMismaLogo.webp",
+    external: false,
+  },
   about_pronouns: {
     linkPath: "/about-me/pronouns",
     text: "Pronouns",
