@@ -5,8 +5,8 @@ import {
   useStore,
   useStylesScoped$,
 } from "@builder.io/qwik";
-import type { DocumentHead } from "@builder.io/qwik-city";
-import { Link, server$ } from "@builder.io/qwik-city";
+import type { DocumentHead, RequestEvent } from "@builder.io/qwik-city";
+import { Link, routeLoader$, server$ } from "@builder.io/qwik-city";
 import { Beechy } from "~/components/beechy/beechy";
 import { ResponseBar } from "~/components/responseBar/responseBar";
 import { linkTiles } from "~/util/linkTiles";
@@ -19,11 +19,18 @@ interface TranslatedWord {
   language: string;
 }
 
-const serverFetcher = server$(async function (word_list, languagesString) {
-  const alLughaMismaAPI = this.env.get("AL_LUGHA_MISMA_API");
-  if (alLughaMismaAPI == undefined) {
+let alLughaMismaAPI: string;
+
+export const onGet = (requestEvent: RequestEvent) => {
+  const response = requestEvent.env.get("AL_LUGHA_MISMA_API");
+  if (response != undefined) {
+    alLughaMismaAPI = response;
+  } else {
     console.error("AL_LUGHA_MISMA_API string not found upon request");
   }
+};
+
+const serverFetcher = server$(async function (word_list, languagesString) {
   const abortController = new AbortController();
   const res = await fetch(
     `${alLughaMismaAPI}/word_list/${word_list}/languages/${languagesString}/key`,
@@ -39,30 +46,35 @@ const serverFetcher = server$(async function (word_list, languagesString) {
   return (translatedWordList || "Error") as TranslatedWord[];
 });
 
+export const useFetchLanguageList = routeLoader$(async function () {
+  const abortController = new AbortController();
+  const res = await fetch(`${alLughaMismaAPI}/languages`, {
+    signal: abortController.signal,
+  });
+  const data = await res.json();
+  const languageList: string[] = [];
+  data.language_list.forEach((language: string) => languageList.push(language));
+  return (languageList || "Error") as string[];
+});
+
 export default component$(() => {
   useStylesScoped$(styles);
+  const languagesListHTMLFriendly: string[] = [];
+  useFetchLanguageList().value.forEach((language: string) =>
+    languagesListHTMLFriendly.push(language.toString().replace("'", ""))
+  );
   const store = useStore({
     word_list: "Colors",
-    languagesString: [
-      "Arabic",
-      "English",
-      "French",
-      "Hawaiian",
-      "Hindi",
-      "Indonesian",
-      "PigLatin",
-      "Spanish",
-      "Swahili",
-    ].toString(),
+    languages: languagesListHTMLFriendly,
   });
 
   const translatedWordListResource = useResource$(
     async ({ track, cleanup }) => {
       const word_list = track(() => store.word_list);
-      const languagesString = track(() => store.languagesString);
+      const languages = track(() => store.languages);
       const abortController = new AbortController();
       cleanup(() => abortController.abort("cleanup"));
-      const res = await serverFetcher(word_list, languagesString);
+      const res = await serverFetcher(word_list, languages);
       return (res || "Error") as TranslatedWord[];
     }
   );
@@ -77,18 +89,36 @@ export default component$(() => {
           src="/icons/alLughaMismaColorized2.webp"
           alt="The Al Lugha Misma logo (a calligraphic representation of 'Al Lugha Misma' in mixed Naskh and Devanagari script"
         />
-        <input
-          type="text"
-          onInput$={(ev: any) => (store.languagesString = ev.target.value)}
-          value={store.languagesString}
-          aria-labelledby="Languages"
-        />
-        <input
-          type="text"
+        <select
           onInput$={(ev: any) => (store.word_list = ev.target.value)}
           value={store.word_list}
           aria-labelledby="Word List"
-        />
+        >
+          <option value="Colors">Colors</option>
+          <option value="Numbers">Numbers</option>
+        </select>
+        <select
+          // multiple={true}
+          onInput$={(ev: any) => (store.languages = ev.target.value)}
+          value={store.languages as string[]}
+          aria-labelledby="Languages"
+        >
+          {[
+            "Arabic",
+            "English",
+            "French",
+            "Hawaiian",
+            "Hindi",
+            "Indonesian",
+            "PigLatin",
+            "Spanish",
+            "Swahili",
+          ].map((language) => (
+            <option key={language} value={language}>
+              {language}
+            </option>
+          ))}
+        </select>
         <Resource
           value={translatedWordListResource}
           onResolved={(translatedWordList) => {
