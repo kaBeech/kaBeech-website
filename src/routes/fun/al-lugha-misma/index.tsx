@@ -81,6 +81,12 @@ export default component$(() => {
           language to help you {"=)"}
         </p>
         <p>
+          <Link class="link" href="legend">
+            For now, you can check out the legends for each challenge here!
+          </Link>
+        </p>
+        <p>Check back soon for the full game!</p>
+        <p>
           <Link class="link margin1" href="../">
             {"<-- Back to Fun & Games"}
           </Link>{" "}
@@ -88,6 +94,10 @@ export default component$(() => {
       </div>
       <ResponseBar
         responses={[
+          {
+            fullMessage: "Sure, let me check out the legends for now!",
+            linkTile: linkTiles.alLughaMisma_legend,
+          },
           {
             fullMessage: "There's something else I want to ask...",
             linkTile: linkTiles.back,
@@ -103,7 +113,7 @@ export const head: DocumentHead = {
   meta: [
     {
       name: "description",
-      content: "Al Lugha Misma - a comparitive linguistics game",
+      content: "Al Lugha Misma - a comparative linguistics game",
     },
   ],
 };

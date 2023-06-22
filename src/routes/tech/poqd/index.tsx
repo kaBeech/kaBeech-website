@@ -263,9 +263,16 @@ export default component$(() => {
         </div>
         <h3 class="responseTextLight">Why Qwik?</h3>
         <p>Because it's fast! How is it so fast? Resumability!</p>
+        <p>
+          Traditional server-side rendered applications use a process called
+          hydration to inject interactivity into static pages. Qwik takes a
+          different approach by pausing interactive elements during execution on
+          the server and sending them as serialized HTML to be resumed in the
+          browser
+        </p>
         <div class="flex alignStart">
           <div>
-            <h4 class="responseTextLight">What is Hydration?</h4>
+            <h4 class="responseTextLight">How does Hydration work?</h4>
             <p>(Used by Next.js)</p>
             <ol>
               <li>1. A static site is generated on the server</li>
@@ -312,7 +319,7 @@ export default component$(() => {
             </ol>
           </div>
           <div>
-            <h4 class="responseTextLight">What is Resumability?</h4>
+            <h4 class="responseTextLight">How does Resumability work?</h4>
             <p>(Used by Qwik)</p>
             <ol>
               <li>1. A static site is generated on the server</li>
@@ -342,7 +349,7 @@ export default component$(() => {
           </div>
         </div>
         <h2 id="runtime">Runtime</h2>
-        <div class="flex">
+        <div class="flex alignStart">
           <div>
             <h3>Node.js</h3>
             <p>

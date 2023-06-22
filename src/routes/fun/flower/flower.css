@@ -19,8 +19,6 @@
 
 label {
   align-self: center;
-  /* position: relative;
-  z-index: 1; */
   height: 0;
   overflow: hidden;
 }
@@ -31,8 +29,6 @@ input {
 
 .square {
   --size: calc(40px + var(--index) * var(--size-step));
-  /* z-index: 200;
-  position: relative; */
   display: block;
   width: var(--size);
   height: var(--size);
@@ -69,14 +65,7 @@ input {
   overflow: auto;
   flex: 1 1 auto;
   height: 0;
-  /* padding: auto; */
-  /* align-self: stretch; */
-  /* padding: 0 8em; */
 }
-
-/* .lazy {
-  flex: 1;
-} */
 
 .screenContents {
   padding: 0;

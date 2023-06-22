@@ -130,6 +130,14 @@ h2 {
   margin: 0.5em 0 0.5em 0;
 }
 
+h2.homepage {
+  font-size: 1.7rem;
+}
+
+h3.homepage {
+  font-size: 1.5rem;
+}
+
 ul,
 ol {
   list-style: none;
@@ -175,6 +183,14 @@ button {
   border-color: var(--kaBeech-screen-foreground);
   border-style: solid;
   border-width: 0.15em;
+}
+
+select {
+  background-color: var(--kaBeech-screen-foreground);
+  color: var(--kaBeech-screen-background);
+  border-style: none;
+  border-radius: 0.25em;
+  font-size: 0.75em;
 }
 
 /* Viewsetting */
@@ -230,6 +246,18 @@ button {
   body {
     font-size: 1rem;
   }
+  h1 {
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  h2.homepage {
+    font-size: 1.5rem;
+  }
+  h3.homepage {
+    font-size: 1.2rem;
+  }
   #footer {
     font-size: 0.7rem;
     height: 2rem;
@@ -239,6 +267,19 @@ button {
 @media (max-width: 346px) {
   body {
     font-size: 0.7rem;
+  }
+  h1 {
+    font-size: 1.4em;
+  }
+  h2 {
+    font-size: 1em;
+  }
+  h2.homepage {
+    font-size: 1rem;
+  }
+  h3.homepage {
+    font-size: 1rem;
+    margin-bottom: 0;
   }
   #footer {
     font-size: 0.5rem;
@@ -562,14 +603,6 @@ button {
 .screenContents h5,
 .screenContents h6 {
   max-width: 48em;
-}
-
-h2.homepage {
-  font-size: 1.7rem;
-}
-
-h3.homepage {
-  font-size: 1.5rem;
 }
 
 .portrait {

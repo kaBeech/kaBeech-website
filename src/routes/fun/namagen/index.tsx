@@ -87,7 +87,7 @@ export default component$(() => {
             state.datundiuClicks++;
           }}
         >
-          Get new Ḍaṭunḍiu name!
+          Generate new Ḍaṭunḍiu name!
         </button>
         <p>
           Ḍaṭunḍiu is a language we are developing for a group of dinosaur

@@ -118,9 +118,18 @@ export default component$(() => {
         </select>
         <Resource
           value={translatedWordListResource}
+          onPending={() => (
+            <div>
+              <p>Loading...</p>
+              <div style="height:18em"></div>
+            </div>
+          )}
           onResolved={(translatedWordList) => {
             return (
-              <AlLughaMismaTable translatedWordList={translatedWordList} />
+              <AlLughaMismaTable
+                translatedWordList={translatedWordList}
+                mode="TranslationByReferenceWord"
+              />
             );
           }}
         />
@@ -147,7 +156,7 @@ export const head: DocumentHead = {
   meta: [
     {
       name: "description",
-      content: "Al Lugha Misma - a comparitive linguistics game",
+      content: "Al Lugha Misma - a comparative linguistics game",
     },
   ],
 };
