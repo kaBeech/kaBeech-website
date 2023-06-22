@@ -118,6 +118,12 @@ export default component$(() => {
         </select>
         <Resource
           value={translatedWordListResource}
+          onPending={() => (
+            <div>
+              <p>Loading...</p>
+              <div style="height:18em"></div>
+            </div>
+          )}
           onResolved={(translatedWordList) => {
             return (
               <AlLughaMismaTable
