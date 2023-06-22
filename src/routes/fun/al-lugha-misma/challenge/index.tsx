@@ -120,7 +120,10 @@ export default component$(() => {
           value={translatedWordListResource}
           onResolved={(translatedWordList) => {
             return (
-              <AlLughaMismaTable translatedWordList={translatedWordList} />
+              <AlLughaMismaTable
+                translatedWordList={translatedWordList}
+                mode="TranslationByReferenceWord"
+              />
             );
           }}
         />
