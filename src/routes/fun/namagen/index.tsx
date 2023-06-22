@@ -27,19 +27,19 @@ const serverFetcher = server$(async function (language: string) {
 });
 
 export default component$(() => {
-  const store = useStore({
+  const state = useStore({
     datundiuClicks: 0,
     mamobibuClicks: 0,
   });
   const datundiuResource = useResource$<string>(async ({ track, cleanup }) => {
-    track(() => store.datundiuClicks);
+    track(() => state.datundiuClicks);
     const abortController = new AbortController();
     cleanup(() => abortController.abort("cleanup"));
     const res = await serverFetcher("saurian");
     return (res || "Error using datundiuResource") as string;
   });
   const mamobibuResource = useResource$<string>(async ({ track, cleanup }) => {
-    track(() => store.mamobibuClicks);
+    track(() => state.mamobibuClicks);
     const abortController = new AbortController();
     cleanup(() => abortController.abort("cleanup"));
     const res = await serverFetcher("mamobibu");
@@ -84,7 +84,7 @@ export default component$(() => {
         />
         <button
           onClick$={() => {
-            store.datundiuClicks++;
+            state.datundiuClicks++;
           }}
         >
           Get new Ḍaṭunḍiu name!
@@ -124,7 +124,7 @@ export default component$(() => {
         />
         <button
           onClick$={() => {
-            store.mamobibuClicks++;
+            state.mamobibuClicks++;
           }}
         >
           Generate new Mamobibu name!
