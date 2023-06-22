@@ -67,15 +67,15 @@ export default component$(() => {
   languagesList.forEach((language) =>
     languagesListHTMLFriendly.push(language.replace("'", "").replace(" ", ""))
   );
-  const store = useStore({
+  const state = useStore({
     word_list: "Colors",
     languages: languagesListHTMLFriendly,
   });
 
   const translatedWordListResource = useResource$(
     async ({ track, cleanup }) => {
-      const word_list = track(() => store.word_list);
-      const languages = track(() => store.languages);
+      const word_list = track(() => state.word_list);
+      const languages = track(() => state.languages);
       const abortController = new AbortController();
       cleanup(() => abortController.abort("cleanup"));
       const res = await serverFetcher(word_list, languages);
@@ -94,8 +94,8 @@ export default component$(() => {
           alt="The Al Lugha Misma logo (a calligraphic representation of 'Al Lugha Misma' in mixed Naskh and Devanagari script"
         />
         <select
-          onInput$={(ev: any) => (store.word_list = ev.target.value)}
-          value={store.word_list}
+          onInput$={(ev: any) => (state.word_list = ev.target.value)}
+          value={state.word_list}
           aria-labelledby="Word List"
         >
           <option value="Colors">Colors</option>
@@ -103,8 +103,8 @@ export default component$(() => {
         </select>
         <select
           // multiple={true}
-          onInput$={(ev: any) => (store.languages = ev.target.value)}
-          value={store.languages as string[]}
+          onInput$={(ev: any) => (state.languages = ev.target.value)}
+          value={state.languages as string[]}
           aria-labelledby="Languages"
         >
           {languagesList.map((language) => (
