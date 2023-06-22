@@ -1,11 +1,43 @@
-import { component$, useStore, useStylesScoped$ } from "@builder.io/qwik";
+import {
+  Resource,
+  component$,
+  useResource$,
+  useStore,
+  useStylesScoped$,
+} from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
-import { Link } from "@builder.io/qwik-city";
+import { Link, server$ } from "@builder.io/qwik-city";
 import { Beechy } from "~/components/beechy/beechy";
 import { ResponseBar } from "~/components/responseBar/responseBar";
 import { linkTiles } from "~/util/linkTiles";
 import styles from "../al-lugha-misma.css?inline";
 import { AlLughaMismaTable } from "~/components/alLughaMismaTable/alLughaMismaTable";
+
+interface TranslatedWord {
+  reference_word_english: string;
+  transliterated_word: string;
+  language: string;
+}
+
+const serverFetcher = server$(async function (word_list, languagesString) {
+  const alLughaMismaAPI = this.env.get("AL_LUGHA_MISMA_API");
+  if (alLughaMismaAPI == undefined) {
+    console.error("AL_LUGHA_MISMA_API string not found upon request");
+  }
+  const abortController = new AbortController();
+  const res = await fetch(
+    `${alLughaMismaAPI}/word_list/${word_list}/languages/${languagesString}/key`,
+    {
+      signal: abortController.signal,
+    }
+  );
+  const data = await res.json();
+  const translatedWordList: TranslatedWord[] = [];
+  data.challenge_key.forEach((translatedWord: TranslatedWord) =>
+    translatedWordList.push(translatedWord)
+  );
+  return (translatedWordList || "Error") as TranslatedWord[];
+});
 
 export default component$(() => {
   useStylesScoped$(styles);
@@ -23,6 +55,17 @@ export default component$(() => {
       "Swahili",
     ].toString(),
   });
+
+  const translatedWordListResource = useResource$(
+    async ({ track, cleanup }) => {
+      const word_list = track(() => store.word_list);
+      const languagesString = track(() => store.languagesString);
+      const abortController = new AbortController();
+      cleanup(() => abortController.abort("cleanup"));
+      const res = await serverFetcher(word_list, languagesString);
+      return (res || "Error") as TranslatedWord[];
+    }
+  );
 
   return (
     <div class="screenContainer">
@@ -46,11 +89,13 @@ export default component$(() => {
           value={store.word_list}
           aria-labelledby="Word List"
         />
-        <div>{store.languagesString}</div>
-        <div>{store.word_list}</div>
-        <AlLughaMismaTable
-          word_list={store.word_list}
-          languagesString={store.languagesString}
+        <Resource
+          value={translatedWordListResource}
+          onResolved={(translatedWordList) => {
+            return (
+              <AlLughaMismaTable translatedWordList={translatedWordList} />
+            );
+          }}
         />
         <p>
           <Link class="link margin1" href="../">

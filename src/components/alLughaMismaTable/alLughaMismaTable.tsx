@@ -1,36 +1,8 @@
-import {
-  Resource,
-  component$,
-  useResource$,
-  useStore,
-  useStylesScoped$,
-} from "@builder.io/qwik";
+import { component$, useStylesScoped$ } from "@builder.io/qwik";
 import styles from "../../routes/fun/al-lugha-misma/al-lugha-misma.css?inline";
-import { server$ } from "@builder.io/qwik-city";
-
-const serverFetcher = server$(async function (word_list, languagesString) {
-  const alLughaMismaAPI = this.env.get("AL_LUGHA_MISMA_API");
-  if (alLughaMismaAPI == undefined) {
-    console.error("AL_LUGHA_MISMA_API string not found upon request");
-  }
-  const abortController = new AbortController();
-  const res = await fetch(
-    `${alLughaMismaAPI}/word_list/${word_list}/languages/${languagesString}/key`,
-    {
-      signal: abortController.signal,
-    }
-  );
-  const data = await res.json();
-  const translatedWordList: TranslatedWord[] = [];
-  data.challenge_key.forEach((translatedWord: TranslatedWord) =>
-    translatedWordList.push(translatedWord)
-  );
-  return (translatedWordList || "Error") as TranslatedWord[];
-});
 
 interface AlLughaMismaProps {
-  word_list: string;
-  languagesString: string;
+  translatedWordList: TranslatedWord[];
 }
 
 interface TranslatedWord {
@@ -50,22 +22,39 @@ interface TranslationByLanguage {
 }
 
 export const AlLughaMismaTable = component$((props: AlLughaMismaProps) => {
-  const store = useStore({
-    word_list: props.word_list,
-    languagesString: props.languagesString,
-  });
+  const translatedWordList = props.translatedWordList;
   useStylesScoped$(styles);
 
-  const translatedWordListResource = useResource$(
-    async ({ track, cleanup }) => {
-      const word_list = track(() => store.word_list);
-      const languagesString = track(() => store.languagesString);
-      const abortController = new AbortController();
-      cleanup(() => abortController.abort("cleanup"));
-      const res = await serverFetcher(word_list, languagesString);
-      return (res || "Error") as TranslatedWord[];
+  const languages: string[] = [];
+  const referenceWords: string[] = [];
+  const translationsByLanguage: TranslationByLanguage[] = [];
+  // const translationsByReferenceWord: TranslationByReferenceWord[] = [];
+
+  for (const translatedWord of translatedWordList) {
+    if (!languages.includes(translatedWord.language)) {
+      languages.push(translatedWord.language);
     }
-  );
+    if (!referenceWords.includes(translatedWord.reference_word_english)) {
+      referenceWords.push(translatedWord.reference_word_english);
+    }
+  }
+
+  for (const language of languages) {
+    translationsByLanguage.push({
+      language: language,
+      translatedWords: [],
+    });
+  }
+
+  for (const translationByLanguage of translationsByLanguage) {
+    for (const translatedWord of translatedWordList) {
+      if (translatedWord.language === translationByLanguage.language) {
+        translationByLanguage.translatedWords.push(
+          translatedWord.transliterated_word
+        );
+      }
+    }
+  }
 
   // for (const referenceWord of referenceWords) {
   //   translationsByReferenceWord.push({
@@ -89,65 +78,24 @@ export const AlLughaMismaTable = component$((props: AlLughaMismaProps) => {
 
   return (
     <div>
-      <Resource
-        value={translatedWordListResource}
-        onResolved={(translatedWordList) => {
-          const languages: string[] = [];
-          const referenceWords: string[] = [];
-          const translationsByLanguage: TranslationByLanguage[] = [];
-          // const translationsByReferenceWord: TranslationByReferenceWord[] = [];
-
-          for (const translatedWord of translatedWordList) {
-            if (!languages.includes(translatedWord.language)) {
-              languages.push(translatedWord.language);
-            }
-            if (
-              !referenceWords.includes(translatedWord.reference_word_english)
-            ) {
-              referenceWords.push(translatedWord.reference_word_english);
-            }
-          }
-
-          for (const language of languages) {
-            translationsByLanguage.push({
-              language: language,
-              translatedWords: [],
-            });
-          }
-
-          for (const translationByLanguage of translationsByLanguage) {
-            for (const translatedWord of translatedWordList) {
-              if (translatedWord.language === translationByLanguage.language) {
-                translationByLanguage.translatedWords.push(
-                  translatedWord.transliterated_word
-                );
-              }
-            }
-          }
-          return (
-            <table>
-              <thead>
-                <th>Reference</th>
-                {referenceWords.map((referenceWord) => (
-                  <th key={referenceWord}>{referenceWord}</th>
-                ))}
-              </thead>
-              <tbody>
-                {translationsByLanguage.map((translationByLanguage) => (
-                  <tr key={translationByLanguage.language}>
-                    <th>{translationByLanguage.language}</th>
-                    {translationByLanguage.translatedWords.map(
-                      (translatedWord) => (
-                        <td key={translatedWord}>{translatedWord}</td>
-                      )
-                    )}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          );
-        }}
-      />
+      <table>
+        <thead>
+          <th>Reference</th>
+          {referenceWords.map((referenceWord) => (
+            <th key={referenceWord}>{referenceWord}</th>
+          ))}
+        </thead>
+        <tbody>
+          {translationsByLanguage.map((translationByLanguage) => (
+            <tr key={translationByLanguage.language}>
+              <th>{translationByLanguage.language}</th>
+              {translationByLanguage.translatedWords.map((translatedWord) => (
+                <td key={translatedWord}>{translatedWord}</td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
       <form>
         <div>
           Word List:
