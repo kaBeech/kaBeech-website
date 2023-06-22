@@ -152,11 +152,12 @@ export default component$(() => {
         </p>
         <p>
           Al Lugha Misma is under construction and currently only has an
-          information page on this site. But if you'd like to learn more about
-          the project, feel free to check it out!
+          information page and legends database available on this site. But if
+          you'd like to learn more about the project and browse some fun words,
+          you're more than welcome to check it out!
         </p>
         <h2>Fractal Flower</h2>
-        <img src="/flower.svg" alt="A fractal flower budding" />
+        <img src="/flower15.webp" alt="A fractal flower budding" />
         <button>
           <Link href="flower?pride=true">Check out the Flower!</Link>
         </button>
@@ -171,7 +172,8 @@ export default component$(() => {
         </p>
         <p>
           I tweaked the colors and added the 'Romanesca' and 'Helix' visualizer
-          modes
+          modes. Be sure to play with the slider at the top and try the
+          different modes using the icons at the bottom!
         </p>
         <h2>Tic-Tac-Toebot</h2>
         <img
