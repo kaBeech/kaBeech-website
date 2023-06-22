@@ -177,6 +177,14 @@ button {
   border-width: 0.15em;
 }
 
+select {
+  background-color: var(--kaBeech-screen-foreground);
+  color: var(--kaBeech-screen-background);
+  border-style: none;
+  border-radius: 0.25em;
+  font-size: 0.75em;
+}
+
 /* Viewsetting */
 
 .mobileSpacing {

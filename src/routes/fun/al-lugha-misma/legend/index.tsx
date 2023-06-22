@@ -68,14 +68,18 @@ export default component$(() => {
     languagesListHTMLFriendly.push(language.replace("'", "").replace(" ", ""))
   );
   const state = useStore({
-    word_list: "Colors",
+    word_list: "Numbers",
     languages: languagesListHTMLFriendly,
+    language1: "French",
+    language2: "Spanish",
   });
 
   const translatedWordListResource = useResource$(
     async ({ track, cleanup }) => {
       const word_list = track(() => state.word_list);
-      const languages = track(() => state.languages);
+      const language1 = track(() => state.language1);
+      const language2 = track(() => state.language2);
+      const languages = `${language1},${language2}`;
       const abortController = new AbortController();
       cleanup(() => abortController.abort("cleanup"));
       const res = await serverFetcher(word_list, languages);
@@ -93,29 +97,67 @@ export default component$(() => {
           src="/icons/alLughaMismaColorized2.webp"
           alt="The Al Lugha Misma logo (a calligraphic representation of 'Al Lugha Misma' in mixed Naskh and Devanagari script"
         />
-        <select
-          onInput$={(ev: any) => (state.word_list = ev.target.value)}
-          value={state.word_list}
-          aria-labelledby="Word List"
-        >
-          <option value="Colors">Colors</option>
-          <option value="Numbers">Numbers</option>
-        </select>
-        <select
-          // multiple={true}
-          onInput$={(ev: any) => (state.languages = ev.target.value)}
-          value={state.languages as string[]}
-          aria-labelledby="Languages"
-        >
-          {languagesList.map((language) => (
-            <option
-              key={language}
-              value={language.replace("'", "").replace(" ", "")}
-            >
-              {language}
-            </option>
-          ))}
-        </select>
+        <div>
+          <label for="wordList">Word List: </label>
+          <select
+            onInput$={(ev: any) => (state.word_list = ev.target.value)}
+            value={state.word_list}
+            aria-labelledby="Word List"
+            name="wordList"
+          >
+            <option value="Colors">Colors</option>
+            <option value="Numbers">Numbers</option>
+          </select>
+        </div>
+        <div>
+          <label for="langage1">First Language: </label>
+          <select
+            onInput$={(ev: any) => (state.language1 = ev.target.value)}
+            value={state.language1}
+            aria-labelledby="Language 1"
+            name="language1"
+          >
+            {languagesList.map((language) =>
+              language === "French" ? (
+                <option key="French" value="French" selected>
+                  French
+                </option>
+              ) : (
+                <option
+                  key={language}
+                  value={language.replace("'", "").replace(" ", "")}
+                >
+                  {language}
+                </option>
+              )
+            )}
+          </select>
+        </div>
+        <div>
+          <label for="langage2">Second Language: </label>
+          <select
+            class="button"
+            onInput$={(ev: any) => (state.language2 = ev.target.value)}
+            value={state.language2}
+            aria-labelledby="Language 2"
+            name="language2"
+          >
+            {languagesList.map((language) =>
+              language === "Spanish" ? (
+                <option key="Spanish" value="Spanish" selected>
+                  Spanish
+                </option>
+              ) : (
+                <option
+                  key={language}
+                  value={language.replace("'", "").replace(" ", "")}
+                >
+                  {language}
+                </option>
+              )
+            )}
+          </select>
+        </div>
         <Resource
           value={translatedWordListResource}
           onResolved={(translatedWordList) => {
@@ -150,7 +192,7 @@ export const head: DocumentHead = {
   meta: [
     {
       name: "description",
-      content: "Al Lugha Misma - a comparitive linguistics game",
+      content: "Al Lugha Misma - a comparative linguistics game",
     },
   ],
 };
