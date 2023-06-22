@@ -130,6 +130,14 @@ h2 {
   margin: 0.5em 0 0.5em 0;
 }
 
+h2.homepage {
+  font-size: 1.7rem;
+}
+
+h3.homepage {
+  font-size: 1.5rem;
+}
+
 ul,
 ol {
   list-style: none;
@@ -238,6 +246,18 @@ select {
   body {
     font-size: 1rem;
   }
+  h1 {
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  h2.homepage {
+    font-size: 1.5rem;
+  }
+  h3.homepage {
+    font-size: 1.2rem;
+  }
   #footer {
     font-size: 0.7rem;
     height: 2rem;
@@ -247,6 +267,19 @@ select {
 @media (max-width: 346px) {
   body {
     font-size: 0.7rem;
+  }
+  h1 {
+    font-size: 1.4em;
+  }
+  h2 {
+    font-size: 1em;
+  }
+  h2.homepage {
+    font-size: 1rem;
+  }
+  h3.homepage {
+    font-size: 1rem;
+    margin-bottom: 0;
   }
   #footer {
     font-size: 0.5rem;
@@ -570,14 +603,6 @@ select {
 .screenContents h5,
 .screenContents h6 {
   max-width: 48em;
-}
-
-h2.homepage {
-  font-size: 1.7rem;
-}
-
-h3.homepage {
-  font-size: 1.5rem;
 }
 
 .portrait {
