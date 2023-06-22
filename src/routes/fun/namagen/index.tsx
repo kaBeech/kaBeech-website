@@ -83,6 +83,7 @@ export default component$(() => {
           }}
         />
         <button
+          class="pointer"
           onClick$={() => {
             state.datundiuClicks++;
           }}
@@ -123,6 +124,7 @@ export default component$(() => {
           }}
         />
         <button
+          class="pointer"
           onClick$={() => {
             state.mamobibuClicks++;
           }}

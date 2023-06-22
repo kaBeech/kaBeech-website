@@ -106,7 +106,7 @@ export default component$(() => {
           src="/icons/alLughaMismaColorized2.webp"
           alt="The Al Lugha Misma logo (a calligraphic representation of 'Al Lugha Misma' in mixed Naskh and Devanagari script"
         />
-        <button onClick$={() => toggleTransliterationNotes()}>
+        <button class="pointer" onClick$={() => toggleTransliterationNotes()}>
           Click here to {state.transliterationNotesAction} transliteration notes
         </button>
         <br />
@@ -115,6 +115,7 @@ export default component$(() => {
             <div>
               <label for="wordList">Word List: </label>
               <select
+                class="pointer"
                 onInput$={(ev: any) => (state.word_list = ev.target.value)}
                 value={state.word_list}
                 aria-labelledby="Word List"
@@ -127,6 +128,7 @@ export default component$(() => {
             <div>
               <label for="langage1">First Language: </label>
               <select
+                class="pointer"
                 onInput$={(ev: any) => (state.language1 = ev.target.value)}
                 value={state.language1}
                 aria-labelledby="Language 1"
@@ -151,7 +153,7 @@ export default component$(() => {
             <div>
               <label for="langage2">Second Language: </label>
               <select
-                class="button"
+                class="pointer"
                 onInput$={(ev: any) => (state.language2 = ev.target.value)}
                 value={state.language2}
                 aria-labelledby="Language 2"
