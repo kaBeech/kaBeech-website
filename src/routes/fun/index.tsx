@@ -126,6 +126,35 @@ export default component$(() => {
           favorites to play with. Currently it requires a mouse to use. It's not
           very sophisticated, but it's a lot of fun!
         </p>
+        <h2>Al Lugha Misma</h2>
+        <img
+          class="tempLogo"
+          src="/icons/alLughaMismaColorized2.webp"
+          alt="The Al Lugha Misma logo (a calligraphic representation of 'Al Lugha Misma' in mixed Naskh and Devanagari script"
+        />
+        <button>
+          <Link href="al-lugha-misma">Check out Al Lugha Misma!</Link>
+        </button>
+        <button class="invertedButton">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/kaBeech/al-lugha-misma"
+          >
+            View source on GitHub
+          </a>
+        </button>
+        <p>You say "potato" (English), and I say "baTaaTaa" (Arabic)</p>
+        <p>Or "papa" (Spanish)!</p>
+        <p>
+          This is a comparative linguistics game celebrating similarities (and
+          differences!) in words across languages
+        </p>
+        <p>
+          Al Lugha Misma is under construction and currently only has an
+          information page on this site. But if you'd like to learn more about
+          the project, feel free to check it out!
+        </p>
         <h2>Fractal Flower</h2>
         <img src="/flower.svg" alt="A fractal flower budding" />
         <button>
@@ -173,35 +202,6 @@ export default component$(() => {
           thinks I spent more time on the AI than I did. If you feel like John
           Henrying it up with him, go on and set the difficulty to 'Impossible'
         </p>
-        <h2>Al Lugha Misma</h2>
-        <img
-          class="tempLogo"
-          src="/icons/alLughaMismaColorized2.webp"
-          alt="The Al Lugha Misma logo (a calligraphic representation of 'Al Lugha Misma' in mixed Naskh and Devanagari script"
-        />
-        <button>
-          <Link href="al-lugha-misma">Check out Al Lugha Misma!</Link>
-        </button>
-        <button class="invertedButton">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/kaBeech/al-lugha-misma"
-          >
-            View source on GitHub
-          </a>
-        </button>
-        <p>You say "potato" (English), and I say "baTaaTaa" (Arabic)</p>
-        <p>Or "papa" (Spanish)!</p>
-        <p>
-          This is a comparative linguistics game celebrating similarities (and
-          differences!) in words across languages
-        </p>
-        <p>
-          Al Lugha Misma is under construction and currently only has an
-          information page on this site. But if you'd like to learn more about
-          the project, feel free to check it out!
-        </p>
         <p>
           <Link class="link margin1" href="../">
             {"<-- Back to Home"}
@@ -219,8 +219,12 @@ export default component$(() => {
             linkTile: linkTiles.fun_namagen,
           },
           {
-            fullMessage: "A nostalgic zen flow toy? Yes please!",
+            fullMessage: "A nostalgic zen art toy? Yes please!",
             linkTile: linkTiles.fun_buddhASketch,
+          },
+          {
+            fullMessage: "I'd like to learn more about Al Lugha Misma",
+            linkTile: linkTiles.fun_alLughaMisma,
           },
           {
             fullMessage: "Show me that cool fractal flower!",
@@ -230,10 +234,7 @@ export default component$(() => {
             fullMessage: "I fancy a game of Tic-Tac-Toe!",
             linkTile: linkTiles.fun_ticTacToebot,
           },
-          {
-            fullMessage: "I'd like to learn more about Al Lugha Misma",
-            linkTile: linkTiles.fun_alLughaMisma,
-          },
+
           {
             fullMessage: "There's something else I want to ask...",
             linkTile: linkTiles.back,
