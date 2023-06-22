@@ -147,12 +147,14 @@ export default component$(() => {
         <p>Have fun!</p>
         <h2>Enter Birthdays:</h2>
         <input
+          class="pointer"
           type="date"
           onInput$={(ev: any) => (state.birthday1 = ev.target.value)}
           value={birthday1}
           aria-labelledby="Birthday 1"
         />
         <input
+          class="pointer"
           type="date"
           onInput$={(ev: any) => (state.birthday2 = ev.target.value)}
           value={birthday2}
