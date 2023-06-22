@@ -59,9 +59,13 @@ export const useFetchLanguageList = routeLoader$(async function () {
 
 export default component$(() => {
   useStylesScoped$(styles);
+  const languagesList: string[] = [];
   const languagesListHTMLFriendly: string[] = [];
   useFetchLanguageList().value.forEach((language: string) =>
-    languagesListHTMLFriendly.push(language.toString().replace("'", ""))
+    languagesList.push(language.toString())
+  );
+  languagesList.forEach((language) =>
+    languagesListHTMLFriendly.push(language.replace("'", "").replace(" ", ""))
   );
   const store = useStore({
     word_list: "Colors",
@@ -103,18 +107,11 @@ export default component$(() => {
           value={store.languages as string[]}
           aria-labelledby="Languages"
         >
-          {[
-            "Arabic",
-            "English",
-            "French",
-            "Hawaiian",
-            "Hindi",
-            "Indonesian",
-            "PigLatin",
-            "Spanish",
-            "Swahili",
-          ].map((language) => (
-            <option key={language} value={language}>
+          {languagesList.map((language) => (
+            <option
+              key={language}
+              value={language.replace("'", "").replace(" ", "")}
+            >
               {language}
             </option>
           ))}
