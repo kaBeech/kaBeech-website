@@ -8,7 +8,7 @@ import { linkTiles } from "~/util/linkTiles";
 import styles from "./al-lugha-misma.css?inline";
 
 interface Potato {
-  languages: { language: string };
+  language: string;
   transliterated_word: string;
 }
 
@@ -60,7 +60,7 @@ export default component$(() => {
           <tbody>
             {potatoList.map((potato) => (
               <tr key={potato.transliterated_word}>
-                <td>{potato.languages.language}</td>
+                <td>{potato.language}</td>
                 <td>{potato.transliterated_word}</td>
               </tr>
             ))}
