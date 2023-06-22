@@ -150,7 +150,7 @@ export const head: DocumentHead = {
   meta: [
     {
       name: "description",
-      content: "Al Lugha Misma - a comparitive linguistics game",
+      content: "Al Lugha Misma - a comparative linguistics game",
     },
   ],
 };
