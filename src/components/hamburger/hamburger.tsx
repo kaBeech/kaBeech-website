@@ -45,14 +45,6 @@ export const Hamburger = component$((props: HamburgerProps) => {
             />
             <div class="blinkOut">Fun and Games</div>
           </Link>
-          <Link class="hamburgerChoice" href="/about-me">
-            <img
-              class="lazy"
-              src="/icons/person-circle-outline.svg"
-              alt="About Me"
-            />
-            <div class="blinkOut">About Me</div>
-          </Link>
           <Link class="hamburgerChoice" href="/tech">
             <img class="lazy" src="/icons/cpu.svg" alt="Technology" />
             <div class="blinkOut">Tech</div>
@@ -60,6 +52,14 @@ export const Hamburger = component$((props: HamburgerProps) => {
           <Link class="hamburgerChoice" href="/projects">
             <img class="lazy" src="/icons/hammer-outline.svg" alt="Projects" />
             <div class="blinkOut">Projects</div>
+          </Link>
+          <Link class="hamburgerChoice" href="/about-me">
+            <img
+              class="lazy"
+              src="/icons/person-circle-outline.svg"
+              alt="About Me"
+            />
+            <div class="blinkOut">About Me</div>
           </Link>
           <Link class="hamburgerChoice" href="/contact">
             <img class="lazy" src="/icons/mail.svg" alt="Contact Me" />
@@ -75,14 +75,14 @@ export const Hamburger = component$((props: HamburgerProps) => {
           <Link href="/fun">
             <div class="blink">Fun and Games</div>
           </Link>
-          <Link href="/about-me">
-            <div class="blink">About Me</div>
-          </Link>
           <Link href="/tech">
             <div class="blink">Technology</div>
           </Link>
           <Link href="/projects">
             <div class="blink">Projects</div>
+          </Link>
+          <Link href="/about-me">
+            <div class="blink">About Me</div>
           </Link>
           <Link href="/contact">
             <div class="blink">Contact Me</div>

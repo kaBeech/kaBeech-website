@@ -34,12 +34,6 @@ export default component$(() => {
             </Link>{" "}
           </li>
           <li class="margin1">
-            -{" "}
-            <Link class="link" href="/about-me">
-              Talk about myself
-            </Link>{" "}
-          </li>
-          <li class="margin1">
             - Tell you about the{" "}
             <Link class="link" href="/tech">
               tech used to build this website
@@ -49,6 +43,12 @@ export default component$(() => {
             - Show you{" "}
             <Link class="link" href="/projects">
               some other projects I've worked on
+            </Link>{" "}
+          </li>
+          <li class="margin1">
+            -{" "}
+            <Link class="link" href="/about-me">
+              Talk about myself
             </Link>{" "}
           </li>
           <li class="margin1">
@@ -68,10 +68,6 @@ export default component$(() => {
             linkTile: linkTiles.fun,
           },
           {
-            fullMessage: "I'm interested in you - tell me about yourself!",
-            linkTile: linkTiles.about,
-          },
-          {
             fullMessage:
               "Woah, this site is pretty cool! What did you use to build it?",
             linkTile: linkTiles.tech,
@@ -79,6 +75,10 @@ export default component$(() => {
           {
             fullMessage: "Show me some projects you've worked on!",
             linkTile: linkTiles.projects,
+          },
+          {
+            fullMessage: "I'm interested in you - tell me about yourself!",
+            linkTile: linkTiles.about,
           },
           {
             fullMessage: "How can I get in touch with you?",
