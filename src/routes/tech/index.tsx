@@ -15,7 +15,7 @@ export default component$(() => {
           There's some really cool new technology available for web development,
           and this site makes use of it! For example:
         </p>
-        <h2>The POQD Stack</h2>
+        <h2 id="poqd">The POQD Stack</h2>
         <p>
           POQD is a blazingly fast next-generation software development stack
         </p>
@@ -24,7 +24,7 @@ export default component$(() => {
             Click here to learn more about the POQD stack
           </Link>
         </p>
-        <h2>Edge Functions</h2>
+        <h2 id="edge">Edge Functions</h2>
         <p>
           Edge Functions are pieces of code that are designed to be deployed
           serverlessly on the edge (i.e. at a point geographically close to the
@@ -35,7 +35,7 @@ export default component$(() => {
             Click here to learn more about edge functions
           </Link>
         </p>
-        <h2>WebAssembly (WASM)</h2>
+        <h2 id="wasm">WebAssembly (WASM)</h2>
         <p>
           WASM is a low-level programming language designed to be executed by
           web browsers
@@ -57,14 +57,17 @@ export default component$(() => {
           {
             fullMessage: "I want to learn more about the POQD stack",
             linkTile: linkTiles.tech_poqd,
+            jumpTo: "#poqd",
           },
           {
             fullMessage: "I want to learn more about Edge Functions",
             linkTile: linkTiles.tech_edge,
+            jumpTo: "#edge",
           },
           {
             fullMessage: "I want to learn more about WebAssembly",
             linkTile: linkTiles.tech_wasm,
+            jumpTo: "#wasm",
           },
           {
             fullMessage: "There's something else I want to ask...",

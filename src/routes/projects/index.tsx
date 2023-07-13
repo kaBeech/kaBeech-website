@@ -15,7 +15,7 @@ export default component$(() => {
       <div class="screenContents">
         <h1>Projects</h1>
         <p>Here are some cool things I've helped build!</p>
-        <h2>Audiopile</h2>
+        <h2 id="audiopile">Audiopile</h2>
         <img
           src="/waveform.webp"
           alt="The Audiopile logo - overlapping multicolored sine waves"
@@ -69,7 +69,7 @@ export default component$(() => {
             Audiopile
           </a>
         </p>
-        <h2>Wyrld Dashboard</h2>
+        <h2 id="wyrldDashboard">Wyrld Dashboard</h2>
         <img
           src="/peli_book_smaller.webp"
           alt="Peli, the Far Reach Co. mascot, holding a book"
@@ -145,7 +145,7 @@ export default component$(() => {
           with cool technology (for instance this is where we first started
           using the Rust programming language)
         </p>
-        <h2>Advent Of Code (My Personal Solutions)</h2>
+        <h2 id="adventOfCode">Advent Of Code (My Personal Solutions)</h2>
         <img
           src="/adventOfCode.webp"
           alt="A star representing the Advent Of Code"
@@ -211,15 +211,18 @@ export default component$(() => {
             fullMessage:
               "Ooh! I've been looking for a simple audio sharing tool!",
             linkTile: linkTiles.projects_audiopile,
+            jumpTo: "#audiopile",
           },
           {
             fullMessage: "Time to play some D&D!!!",
             linkTile: linkTiles.projects_wyrldDashboard,
+            jumpTo: "#wyrldDashboard",
           },
           {
             fullMessage:
               "I'm a big logic nerd like you - lemme see your solutions for Advent Of Code 2022!",
             linkTile: linkTiles.fun_adventOfCode,
+            jumpTo: "#adventOfCode",
           },
           {
             fullMessage: "There's something else I want to ask...",

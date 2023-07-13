@@ -523,22 +523,22 @@ export default component$(() => {
           {
             fullMessage: "I want to learn more about PostgreSQL",
             linkTile: linkTiles.poqd_postgres,
-            jumpTo: "/tech/poqd#database",
+            jumpTo: "#database",
           },
           {
             fullMessage: "I want to learn more about Oak",
             linkTile: linkTiles.poqd_oak,
-            jumpTo: "/tech/poqd#backend",
+            jumpTo: "#backend",
           },
           {
             fullMessage: "I want to learn more about Qwik",
             linkTile: linkTiles.poqd_qwik,
-            jumpTo: "/tech/poqd#frontend",
+            jumpTo: "#frontend",
           },
           {
             fullMessage: "I want to learn more about Deno",
             linkTile: linkTiles.poqd_deno,
-            jumpTo: "/tech/poqd#runtime",
+            jumpTo: "#runtime",
           },
           {
             fullMessage: "There's something else I want to ask...",
