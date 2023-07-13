@@ -6,14 +6,13 @@ export const SignIn = component$(() => {
   const signIn = useAuthSignin();
   return (
     <div>
-      <div>SIGNIN</div>
       <Form action={signIn}>
         <input type="hidden" name="providerId" value="github" />
-        <input
+        {/* <input
           type="hidden"
           name="options.callbackUrl"
-          value="http://qwik-auth-example.com/dashboard"
-        />
+          value={callbackUrl as string}
+        /> */}
         <button>Sign In</button>
       </Form>
     </div>
