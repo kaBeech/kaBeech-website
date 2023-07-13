@@ -14,7 +14,7 @@ export default component$(() => {
       <Beechy />
       <div class="screenContents">
         <h1>Fun and Games!</h1>
-        <h2>StarCrossed</h2>
+        <h2 id="starCrossed">StarCrossed</h2>
         <img
           src="/starCrossedLogo.webp"
           alt="An array of stars in a heart shape"
@@ -62,7 +62,7 @@ export default component$(() => {
           galactic make-out spot, or just discover a unique point in the sky to
           look at together through a telescope
         </p>
-        <h2>Namagen</h2>
+        <h2 id="namagen">Namagen</h2>
         <img
           class="tempLogo"
           src="/peli_hype_centered.webp"
@@ -93,7 +93,7 @@ export default component$(() => {
           It also serves as an example of how a WebAssembly application built
           with Rust can be integrated into a JavaScript environment
         </p>
-        <h2>Buddh-A-Sketch</h2>
+        <h2 id="buddhASketch">Buddh-A-Sketch</h2>
         <img
           src="/favicon.webp"
           alt="A rainbow heart made with Buddh-A-Sketch"
@@ -126,7 +126,7 @@ export default component$(() => {
           favorites to play with. Currently it requires a mouse to use. It's not
           very sophisticated, but it's a lot of fun!
         </p>
-        <h2>Al Lugha Misma</h2>
+        <h2 id="alLughaMisma">Al Lugha Misma</h2>
         <img
           class="tempLogo"
           src="/icons/alLughaMismaColorized2.webp"
@@ -156,7 +156,7 @@ export default component$(() => {
           you'd like to learn more about the project and browse some fun words,
           you're more than welcome to check it out!
         </p>
-        <h2>Fractal Flower</h2>
+        <h2 id="flower">Fractal Flower</h2>
         <img src="/flower15.webp" alt="A fractal flower budding" />
         <button>
           <Link href="flower?pride=true">Check out the Flower!</Link>
@@ -164,7 +164,7 @@ export default component$(() => {
         <p>
           An enchanting interactive animation that I remixed. The original
           version was made by the Qwik team{" "}
-          <Link class="link" href="/tech/poqd#Qwik">
+          <Link class="link" href="/tech/poqd#frontend">
             (more info on Qwik here)
           </Link>{" "}
           as an exhibition showing how fast Qwik can be at loading reactive
@@ -175,7 +175,7 @@ export default component$(() => {
           modes. Be sure to play with the slider at the top and try the
           different modes using the icons at the bottom!
         </p>
-        <h2>Tic-Tac-Toebot</h2>
+        <h2 id="ticTacToebot">Tic-Tac-Toebot</h2>
         <img
           src="/tic-tac-toebot.webp"
           alt="A snapshot of the Tic-Tac-Toebot"
@@ -215,26 +215,32 @@ export default component$(() => {
           {
             fullMessage: "Let's look at the stars!",
             linkTile: linkTiles.fun_starCrossed,
+            jumpTo: "#starCrossed",
           },
           {
             fullMessage: "Ooh! I wanna try that fantasy name generator!",
             linkTile: linkTiles.fun_namagen,
+            jumpTo: "#namagen",
           },
           {
             fullMessage: "A nostalgic zen art toy? Yes please!",
             linkTile: linkTiles.fun_buddhASketch,
+            jumpTo: "#buddhASketch",
           },
           {
             fullMessage: "I'd like to learn more about Al Lugha Misma",
             linkTile: linkTiles.fun_alLughaMisma,
+            jumpTo: "#alLughaMisma",
           },
           {
             fullMessage: "Show me that cool fractal flower!",
             linkTile: linkTiles.fun_flower,
+            jumpTo: "#flower",
           },
           {
             fullMessage: "I fancy a game of Tic-Tac-Toe!",
             linkTile: linkTiles.fun_ticTacToebot,
+            jumpTo: "#ticTacToebot",
           },
 
           {
