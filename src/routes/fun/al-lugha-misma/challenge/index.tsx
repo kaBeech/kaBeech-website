@@ -12,6 +12,7 @@ import { ResponseBar } from "~/components/responseBar/responseBar";
 import { linkTiles } from "~/util/linkTiles";
 import styles from "../al-lugha-misma.css?inline";
 import { AlLughaMismaTable } from "~/components/alLughaMismaTable/alLughaMismaTable";
+import { SignIn } from "~/components/signIn/signIn";
 
 interface TranslatedWord {
   reference_word_english: string;
@@ -93,6 +94,7 @@ export default component$(() => {
           src="/icons/alLughaMismaColorized2.webp"
           alt="The Al Lugha Misma logo (a calligraphic representation of 'Al Lugha Misma' in mixed Naskh and Devanagari script"
         />
+        <SignIn />
         <select
           onInput$={(ev: any) => (state.word_list = ev.target.value)}
           value={state.word_list}
