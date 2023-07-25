@@ -138,7 +138,7 @@ export default component$(() => {
           </div>
         </div>
         <h3 class="responseTextLight">Why PostgreSQL?</h3>
-        <p>
+        {/* <p>
           <strong>
             Note: with the recent release of{" "}
             <a
@@ -158,7 +158,7 @@ export default component$(() => {
             complicated databases), but keep in mind that alternative options
             are becoming available
           </strong>
-        </p>
+        </p> */}
         <p>
           The more I grow, the less dogmatic I get about database choices. These
           days non-relational databases like MongoDB (using NoSQL) can do most
