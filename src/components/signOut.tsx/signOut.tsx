@@ -1,13 +1,13 @@
-import { component$ } from "@builder.io/qwik";
-import { Form } from "@builder.io/qwik-city";
-import { useAuthSignout } from "~/routes/plugin@auth";
+// import { component$ } from "@builder.io/qwik";
+// import { Form } from "@builder.io/qwik-city";
+// import { useAuthSignout } from "~/routes/plugin@auth";
 
-export const SignOut = component$(() => {
-  const signOut = useAuthSignout();
-  return (
-    <Form action={signOut}>
-      {/* <input type="hidden" name="callbackUrl" value={callbackUrl as string} /> */}
-      <button>Sign Out</button>
-    </Form>
-  );
-});
+// export const SignOut = component$(() => {
+//   const signOut = useAuthSignout();
+//   return (
+//     <Form action={signOut}>
+//       {/* <input type="hidden" name="callbackUrl" value={callbackUrl as string} /> */}
+//       <button>Sign Out</button>
+//     </Form>
+//   );
+// });
