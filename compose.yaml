@@ -4,9 +4,4 @@ services:
     image: kabeech-website-docker-test
     ports:
       - 3000:3000
-    secrets:
-      - dotenv
-
-secrets: 
-  dotenv:
-    file: .env.local
+    env_file: .env.local
