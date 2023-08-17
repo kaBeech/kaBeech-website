@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   kabeech-website:
-    image: kabeech-website-docker-test
+    image: kabeech-website
     ports:
       - 3000:3000
     env_file: .env.local
