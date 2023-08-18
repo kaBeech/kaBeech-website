@@ -585,24 +585,7 @@ select {
   align-self: stretch;
   overflow: auto;
   flex: 1 1 auto;
-  /* height: 0; */
-  /* justify-content: space-between; */
-  /* padding: auto; */
-  /* align-self: stretch; */
   padding: 0 1em;
-}
-
-.screenContents12 {
-  /* display: flex; */
-  flex-direction: column;
-  /* align-self: stretch; */
-  /* overflow: auto; */
-  flex: 1 1 auto;
-  /* height: 0; */
-  /* justify-content: space-between; */
-  /* padding: auto; */
-  /* align-self: stretch; */
-  /* padding: 0 8em; */
 }
 
 .screenContents p,
