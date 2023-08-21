@@ -145,7 +145,9 @@ export default component$(() => {
           with cool technology (for instance this is where we first started
           using the Rust programming language)
         </p>
-        <h2 id="adventOfCode">Advent Of Code (My Personal Solutions)</h2>
+        <h2 id="adventOfCode">
+          Advent Of Code (My Mod and Personal Solutions Repo)
+        </h2>
         <img
           src="/adventOfCode.webp"
           alt="A star representing the Advent Of Code"
@@ -154,7 +156,7 @@ export default component$(() => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://github.com/kaBeech/Advent-Of-Code-2022"
+            href="https://github.com/kaBeech/Advent-Of-Code"
           >
             Check out my Advent Of Code repo on GitHub!
           </a>
@@ -197,6 +199,24 @@ export default component$(() => {
           finished the calendar for 2022. But I'm proud of my work, and I very
           much look forward to completing the challenges when I have more time
           to do so!
+        </p>
+        <p>
+          In my scant free time I'm also building a mod to randomly assign bonus
+          challenges to the Advent Of Code puzzles. You know, in case you
+          secretly want to write a program in LOLCODE or without using any
+          numbers but can't work up the courage to do so unless a robot tells
+          you to
+        </p>
+        <p>
+          It's not finished yet, but{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="https://github.com/kaBeech/Advent-Of-Code-QSLs-Mod"
+          >
+            you can check out my work on it here
+          </a>
         </p>
         <p>
           <Link class="link margin1" href="../">
