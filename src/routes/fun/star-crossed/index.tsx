@@ -108,7 +108,7 @@ export default component$(() => {
           </a>
         </p>
         <p>
-          StarCrossed is inspired by the concept illustrated{" "}
+          StarCrossed is inspired by the concept illustrated in{" "}
           <a
             target="_blank"
             rel="noopener noreferrer"
