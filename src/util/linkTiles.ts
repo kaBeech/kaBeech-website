@@ -72,7 +72,7 @@ export const linkTiles = {
     external: true,
   },
   fun_adventOfCode: {
-    linkPath: "https://github.com/kaBeech/Advent-Of-Code-2022",
+    linkPath: "https://github.com/kaBeech/Advent-Of-Code",
     text: "Advent Of Code",
     icon: "/icons/tree.svg",
     external: true,
