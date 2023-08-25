@@ -39,10 +39,14 @@ jobs:
         run: cd app/
 
       - name: Install Deno
-        run: curl -fsSL https://deno.land/x/install/install.sh | sh
-        
-      - name: Install deployctl
-        run: /home/runner/.deno/bin/deno install --allow-all --no-check -r -f https://deno.land/x/deploy/deployctl.ts
-
+        shell: bash {0}
+        run: |
+          curl -fsSL https://deno.land/x/install/install.sh | sh 
+          export DENO_INSTALL="/home/runner/.deno"
+          export PATH="$DENO_INSTALL/bin:$PATH"
+          
       - name: Deploy to Deno Deploy
-        run: /home/runner/.deno/bin/deployctl deploy --project=${{ secrets.DENO_DEPLOY_PROJECT }} ./server/entry.deno.js
+        shell: bash {0}
+        run: |
+          deno install --allow-all --no-check -r -f https://deno.land/x/deploy/deployctl.ts
+          deployctl deploy --project=${{ secrets.DENO_DEPLOY_PROJECT }} ./server/entry.deno.js
