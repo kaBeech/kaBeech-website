@@ -44,6 +44,12 @@ jobs:
       - name: Export path
         run: export PATH="$DENO_INSTALL/bin:$PATH"
 
+      - name: Restart shell
+        run: source ~/.bashrc
+
+      - name: Test
+        run: deno --version
+
       - name: Install deployctl
         run: deno install --allow-all --no-check -r -f https://deno.land/x/deploy/deployctl.ts
 
