@@ -12,4 +12,4 @@ I use it to try out new tech, so it is currently stitched toggether out of Qwik,
 
 ![FarReachCo](https://github.com/kaBeech/kaBeech-website/assets/97925125/412e4972-bba2-4c91-9167-fe413430d2bc)
 
-## Whether you're here for business or pleasure, I hope you enjoy your visit!
+## Whether you're here for business or pleasure, I hope you enjoy your stay!
