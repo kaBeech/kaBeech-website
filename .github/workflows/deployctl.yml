@@ -42,16 +42,16 @@ jobs:
         run: source ~/.bashrc -i
 
       - name: Export dir
-        run: export DENO_INSTALL="/home/runner/.deno"
+        run: export DENO_INSTALL="/home/runner/.deno" -i
 
       - name: Export path
-        run: export PATH="$DENO_INSTALL/bin:$PATH" | echo $PATH
+        run: export PATH="$DENO_INSTALL/bin:$PATH" -i
+        
+      - name: Test
+        run: cat ~/.bashrc
 
       - name: Restart shell in interactive mode
         run: source ~/.bashrc -i
-
-      - name: Test
-        run: echo $PATH
 
       - name: Install deployctl
         run: deno install --allow-all --no-check -r -f https://deno.land/x/deploy/deployctl.ts
