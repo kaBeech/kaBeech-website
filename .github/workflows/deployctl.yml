@@ -33,10 +33,10 @@ jobs:
         run: mkdir app | cp -r node_modules app/node_modules | cp -r server app/server | cp -r dist app/dist
 
       - name: Change directory
-        run: cd app/
+        run: cd app/ | ls server/
 
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
         with:
           project: empty-dove-51
-          entrypoint: ./server/entry.deno.ts
+          entrypoint: ./server/entry.deno.js
