@@ -9,7 +9,7 @@ on:
     branches: [ "deploy-on-vercel" ]
     
 jobs:
-  Deploy-Production:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
