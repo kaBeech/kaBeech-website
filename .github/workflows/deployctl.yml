@@ -35,6 +35,9 @@ jobs:
       - name: Change directory
         run: cd app/
 
+      - name: Install Deno
+        run: curl -fsSL https://deno.land/x/install/install.sh | sh
+
       - name: Install deployctl
         run: deno install --allow-all --no-check -r -f https://deno.land/x/deploy/deployctl.ts
 
