@@ -48,7 +48,7 @@ jobs:
         run: source ~/.bashrc
 
       - name: Test
-        run: echo $PATH
+        run: export PATH="$DENO_INSTALL/bin:$PATH" | echo $PATH
 
       - name: Install deployctl
         run: deno install --allow-all --no-check -r -f https://deno.land/x/deploy/deployctl.ts
