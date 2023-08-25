@@ -3,6 +3,7 @@ notes.md
 .env.local
 
 # Build
+/app
 /dist
 /lib
 /lib-types

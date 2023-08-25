@@ -1,6 +1,6 @@
 {
   "name": "kabeech-website-frontend-qwik",
-  "description": "App with Routing built-in (recommended)",
+  "description": "kaBeech official website",
   "engines": {
     "node": ">=15.0.0"
   },
