@@ -42,4 +42,4 @@ jobs:
         run: /home/runner/.deno/bin/deno install --allow-all --no-check -r -f https://deno.land/x/deploy/deployctl.ts
 
       - name: Deploy to Deno Deploy
-        run: deployctl deploy --project=${{ secrets.DENO_DEPLOY_PROJECT }} ./server/entry.deno.js
+        run: /home/runner/.deno/bin/deployctl deploy --project=${{ secrets.DENO_DEPLOY_PROJECT }} ./server/entry.deno.js
