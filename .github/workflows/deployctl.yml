@@ -42,7 +42,7 @@ jobs:
         run: export PATH="/home/username/.deno/bin:$PATH"
 
       - name: Test
-        run: pwd | deno --version
+        run: pwd
 
       - name: Install deployctl
         run: deno install --allow-all --no-check -r -f https://deno.land/x/deploy/deployctl.ts
