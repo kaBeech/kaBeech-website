@@ -23,4 +23,4 @@ RUN deno install --allow-all --no-check -r -f https://deno.land/x/deploy/deployc
 
 EXPOSE 3000
 
-CMD ["deployctl", "deploy", "--project=empty-dove-51", "./server/entry.deno.js"]
+CMD ["deno", "serve", "-A", "./server/entry.deno.js"]
