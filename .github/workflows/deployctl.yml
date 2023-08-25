@@ -18,6 +18,9 @@ jobs:
       - name: Clone repository
         uses: actions/checkout@v3
 
+      - name: ls
+        run: ls
+
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
         with:
