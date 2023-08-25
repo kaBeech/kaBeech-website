@@ -38,6 +38,9 @@ jobs:
       - name: Install Deno
         run: curl -fsSL https://deno.land/x/install/install.sh | sh
 
+      - name: Test
+        run: /home/runner/.deno/bin/deno --help
+
       - name: Install deployctl
         run: /home/runner/.deno/bin/deno install --allow-all --no-check -r -f https://deno.land/x/deploy/deployctl.ts
 
