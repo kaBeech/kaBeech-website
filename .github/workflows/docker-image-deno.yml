@@ -35,4 +35,4 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: empty-dove-51 # the name of the project on Deno Deploy
-          entrypoint: ./src/entry.deno.js # the entrypoint to deploy
+          entrypoint: ./src/entry.deno.ts # the entrypoint to deploy
