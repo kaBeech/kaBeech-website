@@ -41,6 +41,23 @@ jobs:
       - name: Restart shell in interactive mode
         run: source ~/.bashrc -i
 
+                      
+      - name: Write File              
+        uses: DamianReeves/write-file-action@v1.2
+        with:
+          path: path/to/file.js
+          write-mode: overwrite
+          contents: |
+            if [ -f /etc/bashrc ]; then
+                    . /etc/bashrc
+            fi
+
+            if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
+            then
+                PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+            fi
+            export PATH
+            
       - name: Export dir
         run: export DENO_INSTALL="/home/runner/.deno"
 
