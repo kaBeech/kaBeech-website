@@ -39,16 +39,16 @@ jobs:
         run: curl -fsSL https://deno.land/x/install/install.sh | sh
 
       - name: Restart shell in interactive mode
-        run: source ~/.bashrc -i
+        run: ~/.bashrc -i
 
       - name: Export dir
-        run: export -i DENO_INSTALL="/home/runner/.deno"
+        run: export DENO_INSTALL="/home/runner/.deno"
 
       - name: Export path
-        run: export -i PATH="$DENO_INSTALL/bin:$PATH"
+        run: export PATH="$DENO_INSTALL/bin:$PATH"
         
       - name: Test
-        run: cat ~/.bashrc
+        run: echo $PATH
 
       - name: Restart shell in interactive mode
         run: source ~/.bashrc -i
