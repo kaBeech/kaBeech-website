@@ -2,36 +2,15 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ "deploy-with-deno" ]
+    branches: ["deploy-with-deno"]
   pull_request:
-    branches: [ "deploy-with-deno" ]
+    branches: ["deploy-with-deno"]
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag kabeech-website:$(date +%s)
-  deploy:
-    runs-on: ubuntu-latest
-
-    permissions:
-      id-token: write # This is required to allow the GitHub Action to authenticate with Deno Deploy.
-      contents: read
-
-    steps:
-      - name: Clone repository
-        uses: actions/checkout@v3
-
-      - name: ls
-        run: ls src/
-
-      - name: Deploy to Deno Deploy
-        uses: denoland/deployctl@v1
-        with:
-          project: empty-dove-51 # the name of the project on Deno Deploy
-          entrypoint: ./server/entry.deno.ts # the entrypoint to deploy
+      - uses: actions/checkout@v3
+      - name: Build the Docker image
+        run: docker build . --file Dockerfile --tag kabeech-website:$(date +%s)
