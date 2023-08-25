@@ -4,9 +4,9 @@ env:
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 on:
   push:
-    branches: [" deploy-on-vercel "]
+    branches: [ "deploy-on-vercel" ]
   pull_request:
-    branches: [" deploy-on-vercel "]
+    branches: [ "deploy-on-vercel" ]
     
 jobs:
   Deploy-Production:
