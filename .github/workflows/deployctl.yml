@@ -36,6 +36,4 @@ jobs:
         run: cd app/
 
       - name: Deploy to Deno Deploy
-        uses: denoland/deployctl@v1
-        with:
-          project: empty-dove-51 # the name of the project on Deno Deploy
+        run: deployctl deploy --project=${{ secrets.DENO_DEPLOY_PROJECT }} ./server/entry.deno.js
