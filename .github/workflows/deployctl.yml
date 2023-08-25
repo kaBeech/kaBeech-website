@@ -39,7 +39,7 @@ jobs:
         run: curl -fsSL https://deno.land/x/install/install.sh | sh
 
       - name: Export path
-        run: export PATH="/home/username/.deno/bin:$PATH"
+        run: export PATH="/home/runner/.deno/bin:$PATH"
 
       - name: Test
         run: pwd
