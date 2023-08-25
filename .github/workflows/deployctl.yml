@@ -36,7 +36,7 @@ jobs:
         run: cd app/
 
       - name: Install deployctl
-        run: RUN install --allow-all --no-check -r -f https://deno.land/x/deploy/deployctl.ts
+        run: deno install --allow-all --no-check -r -f https://deno.land/x/deploy/deployctl.ts
 
       - name: Deploy to Deno Deploy
         run: deployctl deploy --project=${{ secrets.DENO_DEPLOY_PROJECT }} ./server/entry.deno.js
