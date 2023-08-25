@@ -18,8 +18,17 @@ jobs:
       - name: Clone repository
         uses: actions/checkout@v3
 
-      - name: Install deps
-        run: npm install
+      - name: Clean install
+        run: npm ci
+
+      - name: Clean install
+        run: npm run build
+
+      - name: Copy build artifacts
+        run: mkdir app | cp -r node_modules app/node_modules | cp -r server app/server | cp -r dist app/dist
+
+      - name: Change directory
+        run: cd app/
 
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
