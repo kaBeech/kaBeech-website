@@ -38,5 +38,5 @@ jobs:
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: ${{ secrets.DENO_DEPLOY_PROJECT }}
+          project: empty-dove-51
           entrypoint: ./server/entry.deno.jsy
