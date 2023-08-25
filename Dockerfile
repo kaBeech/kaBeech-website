@@ -1,5 +1,9 @@
 FROM node:20-alpine as build
 
+ENV NAMAGEN_API=https://full-duck-87-qfzve1n0y4s0.deno.dev \
+    STARCROSSED_API=https://hungry-heron-21.deno.dev \
+    AL_LUGHA_MISMA_API=https://brave-robin-143.deno.dev
+
 WORKDIR /usr/src/app
 
 COPY ./package.json ./
