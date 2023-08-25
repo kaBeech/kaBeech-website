@@ -42,7 +42,7 @@ jobs:
         run: export DENO_INSTALL="/home/runner/.deno"
 
       - name: Export path
-        run: export PATH="$DENO_INSTALL/bin:$PATH"
+        run: export PATH="$DENO_INSTALL/bin:$PATH" | echo $PATH
 
       - name: Restart shell
         run: source ~/.bashrc
