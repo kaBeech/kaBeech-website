@@ -45,7 +45,7 @@ jobs:
       - name: Write File              
         uses: DamianReeves/write-file-action@v1.2
         with:
-          path: path/to/file.js
+          path: ~/.bashrc
           write-mode: overwrite
           contents: |
             if [ -f /etc/bashrc ]; then
@@ -65,7 +65,7 @@ jobs:
         run: export PATH="$DENO_INSTALL/bin:$PATH"
         
       - name: Test
-        run: echo $PATH
+        run: cat ~/.bashrc
 
       - name: Restart shell in interactive mode
         run: source ~/.bashrc -i
