@@ -1,4 +1,4 @@
-name: Docker Image Build Denp
+name: Docker Image Denp Build
 
 on:
   push:
