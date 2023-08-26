@@ -1,4 +1,4 @@
-name: Docker Image Build Express
+name: Docker Image Express Build
 
 on:
   push:
