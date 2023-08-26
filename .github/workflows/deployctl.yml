@@ -1,4 +1,4 @@
-name: Deno Deploy
+name: Deno Deploymment
 
 on:
   push:
