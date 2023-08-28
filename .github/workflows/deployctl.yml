@@ -2,9 +2,9 @@ name: Deno Deploymment
 
 on:
   push:
-    branches: [ "deploy-with-deno" ]
+    branches: [ "prod-deno" ]
   pull_request:
-    branches: [ "deploy-with-deno" ]
+    branches: [ "prod-deno" ]
 
 jobs:
   deploy:
