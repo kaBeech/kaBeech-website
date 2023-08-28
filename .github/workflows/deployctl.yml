@@ -2,9 +2,9 @@ name: Deno Deploymment
 
 on:
   push:
-    branches: [ "deploy-with-deno" ]
+    branches: [ "prod-deno" ]
   pull_request:
-    branches: [ "deploy-with-deno" ]
+    branches: [ "prod-deno" ]
 
 jobs:
   deploy:
@@ -18,8 +18,25 @@ jobs:
       - name: Clone repository
         uses: actions/checkout@v3
 
+      - name: Clean install
+        run: npm ci
+
+      - name: Build for deployment
+        run: npm run build
+        env: 
+          STARCROSSED_API: ${{ secrets.STARCROSSED_API }}
+          NAMAGEN_API: ${{ secrets.NAMAGEN_API }}
+          AL_LUGHA_MISMA_API: ${{ secrets.AL_LUGHA_MISMA_API }}
+
+
+      - name: Copy build artifacts
+        run: mkdir app | cp -r node_modules app/node_modules | cp -r server app/server | cp -r dist app/dist
+
+      - name: Change directory
+        run: cd app/ | ls server/
+
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: empty-dove-51 # the name of the project on Deno Deploy
-          entrypoint: entry.deno.js # the entrypoint to deploy
+          project: empty-dove-51
+          entrypoint: ./server/entry.deno.js
