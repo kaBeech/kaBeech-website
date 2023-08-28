@@ -21,5 +21,5 @@ jobs:
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: empty-dove-51 # the name of the project on Deno Deploy
+          project: ${{ secrets.DENO_DELPOY_PROJECT }} # the name of the project on Deno Deploy
           entrypoint: entry.deno.js # the entrypoint to deploy
