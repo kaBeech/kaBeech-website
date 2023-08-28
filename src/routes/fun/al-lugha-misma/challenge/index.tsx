@@ -20,6 +20,7 @@ interface TranslatedWord {
   language: string;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 let alLughaMismaAPI: string;
 
 export const onGet = (requestEvent: RequestEvent) => {
@@ -31,31 +32,34 @@ export const onGet = (requestEvent: RequestEvent) => {
   }
 };
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const serverFetcher = server$(async function (word_list, languagesString) {
-  const abortController = new AbortController();
-  const res = await fetch(
-    `${alLughaMismaAPI}/word_list/${word_list}/languages/${languagesString}/key`,
-    {
-      signal: abortController.signal,
-    }
-  );
-  const data = await res.json();
-  const translatedWordList: TranslatedWord[] = [];
-  data.challenge_key.forEach((translatedWord: TranslatedWord) =>
-    translatedWordList.push(translatedWord)
-  );
-  return (translatedWordList || "Error") as TranslatedWord[];
+  // const abortController = new AbortController();
+  // const res = await fetch(
+  //   `${alLughaMismaAPI}/word_list/${word_list}/languages/${languagesString}/key`,
+  //   {
+  //     signal: abortController.signal,
+  //   }
+  // );
+  // const data = await res.json();
+  // const translatedWordList: TranslatedWord[] = [];
+  // data.challenge_key.forEach((translatedWord: TranslatedWord) =>
+  //   translatedWordList.push(translatedWord)
+  // );
+  // return (translatedWordList || "Error") as TranslatedWord[];
+  return ["Error"] as unknown as TranslatedWord[];
 });
 
 export const useFetchLanguageList = routeLoader$(async function () {
-  const abortController = new AbortController();
-  const res = await fetch(`${alLughaMismaAPI}/languages`, {
-    signal: abortController.signal,
-  });
-  const data = await res.json();
-  const languageList: string[] = [];
-  data.language_list.forEach((language: string) => languageList.push(language));
-  return (languageList || "Error") as string[];
+  // const abortController = new AbortController();
+  // const res = await fetch(`${alLughaMismaAPI}/languages`, {
+  //   signal: abortController.signal,
+  // });
+  // const data = await res.json();
+  // const languageList: string[] = [];
+  // data.language_list.forEach((language: string) => languageList.push(language));
+  // return (languageList || "Error") as string[];
+  return ["Error"] as string[];
 });
 
 export default component$(() => {
