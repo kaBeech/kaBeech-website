@@ -22,4 +22,4 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: ${{ secrets.DENO_DELPOY_PROJECT }} # the name of the project on Deno Deploy
-          entrypoint: entry.deno.js # the entrypoint to deploy
+          entrypoint: ./server/entry.deno.js # the entrypoint to deploy
