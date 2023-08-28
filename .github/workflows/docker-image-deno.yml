@@ -1,16 +1,18 @@
-name: Docker Image Denp Build
+name: Docker Image Deno Build
 
 on:
   push:
-    branches: ["deploy-with-deno"]
+    branches: [ "prod-deno" ]
   pull_request:
-    branches: ["deploy-with-deno"]
+    branches: [ "prod-deno" ]
 
 jobs:
+
   build:
+
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-      - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag kabeech-website:$(date +%s)
+    - uses: actions/checkout@v3
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag ${{ secrets.ECR_REPOSITORY }}:$(date +%s)
