@@ -1,4 +1,4 @@
-name: docker-image-build
+name: Docker Image Express Build
 
 on:
   push:
@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag kabeech-website:$(date +%s)
+      run: docker build . --file Dockerfile --tag ${{ secrets.ECR_REPOSITORY }}:$(date +%s)
