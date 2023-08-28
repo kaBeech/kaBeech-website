@@ -1,10 +1,10 @@
-name: Docker Image Denp Build
+name: Docker Image Deno Build
 
 on:
   push:
-    branches: [ "deploy-with-deno" ]
+    branches: [ "prod-deno" ]
   pull_request:
-    branches: [ "deploy-with-deno" ]
+    branches: [ "prod-deno" ]
 
 jobs:
 
