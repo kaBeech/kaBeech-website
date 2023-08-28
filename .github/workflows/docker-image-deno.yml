@@ -7,9 +7,7 @@ on:
     branches: [ "prod-deno" ]
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
 
     steps:
