@@ -46,6 +46,8 @@
     "vite-tsconfig-paths": "4.2.0"
   },
   "dependencies": {
+    "@builder.io/dev-tools": "^0.1.14",
+    "@builder.io/sdk-qwik": "^0.6.2",
     "nodemailer": "^6.9.3",
     "qwik": "^1.0.57"
   }
