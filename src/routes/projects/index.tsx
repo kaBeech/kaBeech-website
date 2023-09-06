@@ -146,7 +146,7 @@ export default component$(() => {
           using the Rust programming language)
         </p>
         <h2 id="adventOfCode">
-          Advent Of Code (My Mod and Personal Solutions Repo)
+          Advent Of Code (My Personal Solutions Repo and XXXMas Mod)
         </h2>
         <img
           src="/adventOfCode.webp"
@@ -213,7 +213,7 @@ export default component$(() => {
             target="_blank"
             rel="noopener noreferrer"
             class="link"
-            href="https://github.com/kaBeech/Advent-Of-Code-QSLs-Mod"
+            href="https://github.com/kaBeech/advent-of-code-xxxmas-mod"
           >
             you can check out my work on it here
           </a>

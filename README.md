@@ -1,8 +1,8 @@
-# [kabeech.com](https://kabeech.com)
+# [kaBeech.com](https://kabeech.com)
 
 This is my [edge-deployed](https://kabeech.com/tech/edge) personal website built to showcase some of my work using the new [POQD stack](https://kabeech.com/tech/poqd)
 
-I use it to try out new tech, so it is currently stitched toggether using Qwik, Deno, Postgres, Node, and Docker (and interfacing with some Rust/[WebAssembly](https://kabeech.com/tech/wasm) microservices). If you like, [you can read more about that fancy tech over here ](https://kabeech.com/tech)
+I use it to try out new tech, so it is currently stitched together using Qwik, Deno, Postgres, Node, and Docker (and interfacing with some Rust/[WebAssembly](https://kabeech.com/tech/wasm) microservices). If you like, [you can read more about that fancy tech over here ](https://kabeech.com/tech)
 
 ## If you're just here for a good time, [there are some fun toys over here](https://kabeech.com/fun)
 
