@@ -23,14 +23,26 @@ export default component$(() => {
           </a>
         </p>
         <p>
-          You can also{" "}
+          You can also find me on{" "}
           <a
             target="_blank"
             rel="noopener noreferrer"
             class="link"
             href="https://github.com/kaBeech"
           >
-            find me on GitHub
+            GitHub
+          </a>
+          ,{" "}
+          <a href="https://www.linkedin.com/in/kyle-beechly/" class="link">
+            LinkedIn
+          </a>
+          ,{" "}
+          <a href="https://bsky.app/profile/kabeech.com" class="link">
+            Bluesky
+          </a>
+          , and{" "}
+          <a href="https://hachyderm.io/@kaBeech" class="link">
+            Mastodon
           </a>
         </p>
         <p>
