@@ -15,6 +15,67 @@ export default component$(() => {
       <div class="screenContents">
         <h1>Projects</h1>
         <p>Here are some cool things I've helped build!</p>
+        <h2 id="xtremeXmasCode">Xtreme Xmas Code</h2>
+        <img
+          src="/xtreme-xmas-code.webp"
+          alt="A knitted star pattern representing Xtreme Xmas Code"
+        />
+        <button>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.xtremexmascode.com/"
+          >
+            Check out Xtreme Xmas Code!
+          </a>
+        </button>
+        <button class="invertedButton">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/kaBeech/xtreme-xmas-code"
+          >
+            View source on GitHub
+          </a>
+        </button>
+        <p>
+          Have you ever been savoring your Advent Of Code calendar, keyboard
+          dusted with sugar cookie crumbles, reindeer curled at your feet, and
+          found yourself wishing the puzzles were wilder? More challenging? MORE
+          XTREME??
+        </p>
+        <p>Well ho-ho-hold that thought because this is the mod for you!</p>
+        <p>
+          <em>Xtreme Xmas Code</em> is a mod/companion app for{" "}
+          <a href="https://adventofcode.com/" class="link">
+            Advent of Code
+          </a>
+          , a delightful{" "}
+          <a href="https://en.wikipedia.org/wiki/Advent_calendar" class="link">
+            Advent calendar
+          </a>{" "}
+          of small programming puzzles created by{" "}
+          <a href="http://was.tl/" class="link">
+            Eric Wastl
+          </a>
+          . With it you can record your Advent of Code progress and each day get
+          an additional modifier to that day's AoC puzzle. For example, you may
+          be challenged to complete that day's puzzle using a language you've
+          never used before, or without reassigning any variables.
+        </p>
+        <p>
+          Additionally, the mod scores each game based on how you use your
+          reroll tokens and provides leaderboards for ranking games based on
+          this score. I hope this will provide a brain-stretching leaderboard
+          experience{" "}
+          <a
+            href="https://www.reddit.com/r/adventofcode/comments/e2wjhf/comment/f90ksek/"
+            class="link"
+          >
+            that isn't tied to a strict time schedule
+          </a>
+          .
+        </p>
         <h2 id="audiopile">Audiopile</h2>
         <img
           src="/waveform.webp"
@@ -145,79 +206,6 @@ export default component$(() => {
           with cool technology (for instance this is where we first started
           using the Rust programming language)
         </p>
-        <h2 id="adventOfCode">
-          Advent Of Code (My Personal Solutions Repo and Xtreme Xmas)
-        </h2>
-        <img
-          src="/adventOfCode.webp"
-          alt="A star representing the Advent Of Code"
-        />
-        <button>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/kaBeech/Advent-Of-Code"
-          >
-            Check out my Advent Of Code repo on GitHub!
-          </a>
-        </button>
-        <p>Real holiday fun!</p>
-        <p>
-          Every year,{" "}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            class="link"
-            href="https://twitter.com/ericwastl"
-          >
-            some blessed individual
-          </a>{" "}
-          comes up with a holiday-themed adventure based on a series of logic
-          puzzles. Each day in December leading up to Christmas, one challenge
-          (and one piece of the story) is revealed. If you can solve that
-          challenge, a bit of the story is unraveled and the next day's
-          challenge is unlocked for you
-        </p>
-        <p>
-          If you're a big logic nerd like me this will become one of your
-          favorite winter traditions!
-        </p>
-        <p>
-          The link above will go to my repository of solutions to the
-          challenges. If you want to take a crack at the challenges yourself,{" "}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            class="link"
-            href="https://adventofcode.com/"
-          >
-            here's a direct link to the Advent Of Code homepage
-          </a>
-        </p>
-        <p>
-          My life got very busy all of a sudden this winter and I haven't yet
-          finished the calendar for 2022. But I'm proud of my work, and I very
-          much look forward to completing the challenges when I have more time
-          to do so!
-        </p>
-        <p>
-          In my scant free time I'm also building a mod to randomly assign bonus
-          challenges to the Advent Of Code puzzles. You know, in case you
-          secretly want to write a program in LOLCODE or without using any
-          numbers but can't work up the courage to do so unless a robot tells
-          you to
-        </p>
-        <p>
-          It's not finished yet, but{" "}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            class="link"
-            href="https://github.com/kaBeech/advent-of-code-xtreme-xmas"
-          >
-            you can check out my work on it here
-          </a>
-        </p>
         <p>
           <Link class="link margin1" href="../">
             {"<-- Back to Home"}
@@ -229,6 +217,12 @@ export default component$(() => {
         responses={[
           {
             fullMessage:
+              "I'm a big logic nerd like you - let's go to Xtreme Xmas Code!",
+            linkTile: linkTiles.projects_xtremeXmasCode,
+            jumpTo: "#xtremeXmasCode",
+          },
+          {
+            fullMessage:
               "Ooh! I've been looking for a simple audio sharing tool!",
             linkTile: linkTiles.projects_audiopile,
             jumpTo: "#audiopile",
@@ -237,12 +231,6 @@ export default component$(() => {
             fullMessage: "Time to play some D&D!!!",
             linkTile: linkTiles.projects_wyrldDashboard,
             jumpTo: "#wyrldDashboard",
-          },
-          {
-            fullMessage:
-              "I'm a big logic nerd like you - lemme see your solutions for Advent Of Code 2022!",
-            linkTile: linkTiles.fun_adventOfCode,
-            jumpTo: "#adventOfCode",
           },
           {
             fullMessage: "There's something else I want to ask...",

@@ -71,9 +71,9 @@ export const linkTiles = {
     icon: "/icons/tic-tac-toebot-cropped-icon.svg",
     external: true,
   },
-  fun_adventOfCode: {
-    linkPath: "https://github.com/kaBeech/Advent-Of-Code",
-    text: "Advent Of Code",
+  projects_xtremeXmasCode: {
+    linkPath: "https://www.xtremexmascode.com/",
+    text: "Xtreme Xmas Code",
     icon: "/icons/tree.svg",
     external: true,
   },
