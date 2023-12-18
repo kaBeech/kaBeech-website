@@ -8,10 +8,7 @@
 .lazyalign {
   align-items: center;
   justify-content: space-between;
-  /* flex-wrap: wrap-reverse; */
   gap: 0.4em;
-
-  /* overflow: auto; */
   max-height: 80vh;
 }
 
@@ -21,12 +18,13 @@ img {
   background-color: var(--kaBeech-main-background);
   border-color: rgba(23, 129, 86, 0.19);
   border-radius: 1em;
-  box-shadow: 0 0em 0.4em 0.05em rgba(0, 160, 149, 0.362),
+  box-shadow:
+    0 0em 0.4em 0.05em rgba(0, 160, 149, 0.362),
     0 0em 2.5em 0 rgba(1, 89, 125, 0.412);
   width: 2.34em;
-  padding: 0.5em;
+  height: 2.34em;
   aspect-ratio: 1;
-  /* margin: 0.35em -0.5em 0 0.5em; */
+  padding: 0.5em;
   margin-left: 0.5em;
 }
 
@@ -36,13 +34,11 @@ img {
   background-color: var(--kaBeech-main-background);
   border-color: rgba(23, 129, 86, 0.19);
   border-radius: 1em;
-  box-shadow: 0 0em 0.4em 0.05em rgba(0, 160, 149, 0.362),
+  box-shadow:
+    0 0em 0.4em 0.05em rgba(0, 160, 149, 0.362),
     0 0em 2.5em 0 rgba(1, 89, 125, 0.412);
   padding: 0.25em 0.5em;
-  /* margin: 0.35em -0.5em 0 0.5em; */
-  /* margin-left: 0.5em; */
   width: 8em;
-  /* aspect-ratio: 1; */
 }
 
 @media (max-width: 1000px) {

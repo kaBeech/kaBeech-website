@@ -501,6 +501,10 @@ select {
   gap: 0.5em;
 }
 
+.aspectRatio1 {
+  aspect-ratio: 1;
+}
+
 .vw100 {
   width: 100vw;
 }
