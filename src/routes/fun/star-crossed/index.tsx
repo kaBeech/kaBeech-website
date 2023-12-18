@@ -262,6 +262,7 @@ export default component$(() => {
                   id="skyMap"
                   class={`${state.skyMapClass} marginTop0`}
                   src={starCrossedData.skyMapURL}
+                  aria-label={`Sky Map of the starCrossing for ${birthday1} x ${birthday2}`}
                 ></iframe>{" "}
                 <p class={`${state.skyMapClass}`}>
                   <a
