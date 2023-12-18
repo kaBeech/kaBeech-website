@@ -28,7 +28,7 @@ export default component$(() => {
         <table>
           <tbody>
             <tr>
-              <th></th>
+              <td></td>
               <th>MERN</th>
               <th>POQD</th>
             </tr>
