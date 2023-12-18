@@ -7,7 +7,7 @@ img {
   background-color: var(--kaBeech-main-background);
 }
 
-button {
+.button {
   margin-top: 0.15em;
 }
 
