@@ -191,6 +191,19 @@ button {
   border-radius: 0.25em;
 }
 
+.button {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  background-color: var(--kaBeech-screen-foreground);
+  color: var(--kaBeech-screen-background);
+  border-width: 0.2em;
+  border-style: none;
+  border-radius: 0.25em;
+  padding: 0 0.2em;
+}
+
 .invertedButton {
   color: var(--kaBeech-screen-foreground);
   background-color: var(--kaBeech-main-background);
