@@ -118,7 +118,7 @@ export default component$(() => {
                 class="pointer"
                 onInput$={(ev: any) => (state.word_list = ev.target.value)}
                 value={state.word_list}
-                aria-labelledby="Word List"
+                aria-label="Word List"
                 name="wordList"
               >
                 <option value="Colors">Colors</option>
@@ -131,7 +131,7 @@ export default component$(() => {
                 class="pointer"
                 onInput$={(ev: any) => (state.language1 = ev.target.value)}
                 value={state.language1}
-                aria-labelledby="Language 1"
+                aria-label="Language 1"
                 name="language1"
               >
                 {languagesList.map((language) =>
@@ -156,7 +156,7 @@ export default component$(() => {
                 class="pointer"
                 onInput$={(ev: any) => (state.language2 = ev.target.value)}
                 value={state.language2}
-                aria-labelledby="Language 2"
+                aria-label="Language 2"
                 name="language2"
               >
                 {languagesList.map((language) =>

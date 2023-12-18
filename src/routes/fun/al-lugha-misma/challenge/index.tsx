@@ -98,7 +98,7 @@ export default component$(() => {
         <select
           onInput$={(ev: any) => (state.word_list = ev.target.value)}
           value={state.word_list}
-          aria-labelledby="Word List"
+          aria-label="Word List"
         >
           <option value="Colors">Colors</option>
           <option value="Numbers">Numbers</option>
@@ -107,7 +107,7 @@ export default component$(() => {
           // multiple={true}
           onInput$={(ev: any) => (state.languages = ev.target.value)}
           value={state.languages as string[]}
-          aria-labelledby="Languages"
+          aria-label="Languages"
         >
           {languagesList.map((language) => (
             <option
