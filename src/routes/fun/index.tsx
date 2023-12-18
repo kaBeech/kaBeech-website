@@ -156,6 +156,14 @@ export default component$(() => {
         <Link class="button" href="flower?pride=true">
           Check out the Flower!
         </Link>
+        <a
+          class="button invertedButton"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/kaBeech/kaBeech-website/tree/main/src/routes/fun/flower"
+        >
+          View source on GitHub
+        </a>
         <p>
           An enchanting interactive animation that I remixed. The original
           version was made by the Qwik team{" "}
