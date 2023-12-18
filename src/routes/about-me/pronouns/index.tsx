@@ -11,7 +11,7 @@ export default component$(() => {
       <Beechy />
       <div class="screenContents">
         <h1>Pronouns</h1>
-        <h3 class="responseTextLight">What are your preferred pronouns?</h3>
+        <h2 class="responseTextLight">What are your preferred pronouns?</h2>
         <p>Why, thank you for asking!</p>
         <p>
           I prefer xe/xyr or ze/zyr pronouns. Either pair works equally well -
@@ -22,7 +22,7 @@ export default component$(() => {
           Here's an example sentence: "I met xyr at xys house and xe drove me to
           the concert"
         </p>
-        <h3 class="responseTextLight">How do you pronounce them?</h3>
+        <h2 class="responseTextLight">How do you pronounce them?</h2>
         <p>
           The 'X' and 'Z' can both be pronounced /z/, like the 'Z' in 'Zebra'
         </p>
@@ -33,8 +33,8 @@ export default component$(() => {
         <p>'Xe' and 'Ze' rhyme with 'He'</p>
         <p>'Xyr' and 'Zyr' rhyme with 'Her'</p>
         <p>'Xys' and 'Zys' rhyme with 'His'</p>
-        <h3 class="responseTextLight">Why not use they/them?</h3>
-        <h4>Grammatical Number</h4>
+        <h2 class="responseTextLight">Why not use they/them?</h2>
+        <h3>Grammatical Number</h3>
         <p>
           In English, they/them can be used to refer to either one person or
           multiple people. This can lead to ambiguity
@@ -50,7 +50,7 @@ export default component$(() => {
           clearly implies that both Beechy and Kyle came back, but that it's
           Kyle's fingernails that we're talking about
         </p>
-        <h4>Subjective Feelings of Humanization</h4>
+        <h3>Subjective Feelings of Humanization</h3>
         <p>
           Additionally, to me, xe/xyr/ze/zyr pronouns feel more humanizing than
           they/them. For whatever reason, xe/xyr/ze/zyr pronouns make me feel
@@ -63,8 +63,8 @@ export default component$(() => {
           'he/she,' 'they' feels somewhere in the middle and 'xe/ze' feels at
           home right there with 'he/she'
         </p>
-        <h3 class="responseTextLight">Why both xe/xyr and ze/zyr?</h3>
-        <h4>Reduced Ambiguity for Multiple Subjects</h4>
+        <h2 class="responseTextLight">Why both xe/xyr and ze/zyr?</h2>
+        <h3>Reduced Ambiguity for Multiple Subjects</h3>
         <p>
           Having two options for pronouns can help make it clear who we're
           referring to when talking about more than one person
@@ -89,7 +89,7 @@ export default component$(() => {
           With this wording, we clearly know that Beechy's car is the one that
           magically changed color
         </p>
-        <h4>Duality</h4>
+        <h3>Duality</h3>
         <p>
           The idea of gender nonconformity to me represents the freedom to
           explore the wide reaches of possibility. Its nature is to set free,

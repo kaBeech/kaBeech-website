@@ -19,18 +19,17 @@ export default component$(() => {
           src="/starCrossedLogo.webp"
           alt="An array of stars in a heart shape"
         />
-        <button>
-          <Link href="star-crossed">Check out StarCrossed!</Link>
-        </button>
-        <button class="invertedButton">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/kaBeech/star-crossed"
-          >
-            View source on GitHub
-          </a>
-        </button>
+        <Link class="button" href="star-crossed">
+          Check out StarCrossed!
+        </Link>
+        <a
+          class="button invertedButton"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/kaBeech/star-crossed"
+        >
+          View source on GitHub
+        </a>
         <p>
           StarCrossed is a tool for finding a spot in the universe special to
           two people. I built it as an experiment with{" "}
@@ -68,18 +67,17 @@ export default component$(() => {
           src="/peli_hype_centered.webp"
           alt="Peli, the Far Reach Co. mascot, showing excitement)"
         />
-        <button>
-          <Link href="namagen">Check out Namagen!</Link>
-        </button>
-        <button class="invertedButton">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/Far-Reach-Co/namagen"
-          >
-            View source on GitHub
-          </a>
-        </button>
+        <Link class="button" href="namagen">
+          Check out Namagen!
+        </Link>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/Far-Reach-Co/namagen"
+          class="button invertedButton"
+        >
+          View source on GitHub
+        </a>
         <p>
           Namagen randomly generates names in constructed languages. I built it
           for use in role-playing games (to integrate with the{" "}
@@ -98,24 +96,22 @@ export default component$(() => {
           src="/favicon.webp"
           alt="A rainbow heart made with Buddh-A-Sketch"
         />{" "}
-        <button>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://kabeech.github.io/buddh-a-sketch/"
-          >
-            Check out Buddh-A-Sketch!
-          </a>
-        </button>
-        <button class="invertedButton">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/kaBeech/buddh-a-sketch"
-          >
-            View source on GitHub
-          </a>
-        </button>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://kabeech.github.io/buddh-a-sketch/"
+          class="button"
+        >
+          Check out Buddh-A-Sketch!
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/kaBeech/buddh-a-sketch"
+          class="button invertedButton"
+        >
+          View source on GitHub
+        </a>
         <p>
           This started as an emulation of a classic drawing toy and evolved to
           include functionality for meditative practice. Then I added
@@ -132,18 +128,17 @@ export default component$(() => {
           src="/icons/alLughaMismaColorized2.webp"
           alt="The Al Lugha Misma logo (a calligraphic representation of 'Al Lugha Misma' in mixed Naskh and Devanagari script"
         />
-        <button>
-          <Link href="al-lugha-misma">Check out Al Lugha Misma!</Link>
-        </button>
-        <button class="invertedButton">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/kaBeech/al-lugha-misma"
-          >
-            View source on GitHub
-          </a>
-        </button>
+        <Link class="button" href="al-lugha-misma">
+          Check out Al Lugha Misma!
+        </Link>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/kaBeech/al-lugha-misma"
+          class="button invertedButton"
+        >
+          View source on GitHub
+        </a>
         <p>You say "potato" (English), and I say "baTaaTaa" (Arabic)</p>
         <p>Or "papa" (Spanish)!</p>
         <p>
@@ -158,9 +153,17 @@ export default component$(() => {
         </p>
         <h2 id="flower">Fractal Flower</h2>
         <img src="/flower15.webp" alt="A fractal flower budding" />
-        <button>
-          <Link href="flower?pride=true">Check out the Flower!</Link>
-        </button>
+        <Link class="button" href="flower?pride=true">
+          Check out the Flower!
+        </Link>
+        <a
+          class="button invertedButton"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/kaBeech/kaBeech-website/tree/main/src/routes/fun/flower"
+        >
+          View source on GitHub
+        </a>
         <p>
           An enchanting interactive animation that I remixed. The original
           version was made by the Qwik team{" "}
@@ -180,24 +183,22 @@ export default component$(() => {
           src="/tic-tac-toebot.webp"
           alt="A snapshot of the Tic-Tac-Toebot"
         />
-        <button>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://kabeech.github.io/tic-tac-toebot/"
-          >
-            Check out Tic-Tac-Toebot!
-          </a>
-        </button>
-        <button class="invertedButton">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/kaBeech/tic-tac-toebot"
-          >
-            View source on GitHub
-          </a>
-        </button>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://kabeech.github.io/tic-tac-toebot/"
+          class="button"
+        >
+          Check out Tic-Tac-Toebot!
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/kaBeech/tic-tac-toebot"
+          class="button invertedButton"
+        >
+          View source on GitHub
+        </a>
         <p>A robot that plays Tic-Tac-Toe!</p>
         <p>
           My friend Andy thinks he can beat the Unbeatable Master. I think he

@@ -31,24 +31,23 @@ export const ResponseButton = component$((props: ResponseButtonProps) => {
 
   return (
     <>
-      <button
-        class={{ semitransparent: state.selected }}
+      <a
+        href={props.response.jumpTo}
+        class={{ semitransparent: state.selected } + ` button`}
         onClick$={() => {
           handleClick();
         }}
       >
-        <a href={props.response.jumpTo}>
-          {" "}
-          {props.response.linkTile.icon ? (
-            <img
-              src={props.response.linkTile.icon}
-              alt={props.response.linkTile.text}
-            />
-          ) : (
-            props.response.linkTile.text
-          )}
-        </a>
-      </button>
+        {" "}
+        {props.response.linkTile.icon ? (
+          <img
+            src={props.response.linkTile.icon}
+            alt={props.response.linkTile.text}
+          />
+        ) : (
+          props.response.linkTile.text
+        )}
+      </a>
     </>
   );
 });

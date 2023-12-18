@@ -4,6 +4,7 @@ img {
   border-radius: 1em;
   width: 8em;
   aspect-ratio: 1;
+  margin-bottom: 0.15em;
 }
 
 .tempLogo {
@@ -11,5 +12,9 @@ img {
 }
 
 button {
+  margin-top: 0.15em;
+}
+
+.button {
   margin-top: 0.15em;
 }

@@ -20,24 +20,22 @@ export default component$(() => {
           src="/xtreme-xmas-code.webp"
           alt="A knitted star pattern representing Xtreme Xmas Code"
         />
-        <button>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.xtremexmascode.com/"
-          >
-            Check out Xtreme Xmas Code!
-          </a>
-        </button>
-        <button class="invertedButton">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/kaBeech/xtreme-xmas-code"
-          >
-            View source on GitHub
-          </a>
-        </button>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.xtremexmascode.com/"
+          class="button"
+        >
+          Check out Xtreme Xmas Code!
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/kaBeech/xtreme-xmas-code"
+          class="button invertedButton"
+        >
+          View source on GitHub
+        </a>
         <p>
           Have you ever been savoring your Advent Of Code calendar, keyboard
           dusted with sugar cookie crumbles, reindeer curled at your feet, and
@@ -81,24 +79,22 @@ export default component$(() => {
           src="/waveform.webp"
           alt="The Audiopile logo - overlapping multicolored sine waves"
         />
-        <button>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.audiopile.cloud/"
-          >
-            Check out Audiopile!
-          </a>
-        </button>
-        <button class="invertedButton">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/fogg4444/audiopile_master"
-          >
-            View source on GitHub
-          </a>
-        </button>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.audiopile.cloud/"
+          class="button"
+        >
+          Check out Audiopile!
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/fogg4444/audiopile_master"
+          class="button invertedButton"
+        >
+          View source on GitHub
+        </a>
         <p>A simple, professional tool for managing audio in the cloud</p>
         <p>
           A question for all the musicians, podcasters, and other audio
@@ -135,24 +131,22 @@ export default component$(() => {
           src="/peli_book_smaller.webp"
           alt="Peli, the Far Reach Co. mascot, holding a book"
         />
-        <button>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://farreachco.com/"
-          >
-            Check out Wyrld Dashboard!
-          </a>
-        </button>
-        <button class="invertedButton">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/Far-Reach-Co/dm-dash"
-          >
-            View source on GitHub
-          </a>
-        </button>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://farreachco.com/"
+          class="button"
+        >
+          Check out Wyrld Dashboard!
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/Far-Reach-Co/dm-dash"
+          class="button invertedButton"
+        >
+          View source on GitHub
+        </a>
         <p>
           <a
             target="_blank"

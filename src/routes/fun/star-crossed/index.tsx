@@ -151,14 +151,14 @@ export default component$(() => {
           type="date"
           onInput$={(ev: any) => (state.birthday1 = ev.target.value)}
           value={birthday1}
-          aria-labelledby="Birthday 1"
+          aria-label="Birthday 1"
         />
         <input
           class="pointer"
           type="date"
           onInput$={(ev: any) => (state.birthday2 = ev.target.value)}
           value={birthday2}
-          aria-labelledby="Birthday 2"
+          aria-label="Birthday 2"
         />
         <Resource
           value={starCrossedResource}
