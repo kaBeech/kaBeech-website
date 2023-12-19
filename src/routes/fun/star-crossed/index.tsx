@@ -258,7 +258,7 @@ export default component$(() => {
                     state.skyMapClass = "";
                     state.staticPhotoClass = "displayNone";
                   }}
-                  title="StarCrossed skyMap"
+                  title="StarCrossed Sky Map"
                   id="skyMap"
                   class={`${state.skyMapClass} marginTop0`}
                   src={starCrossedData.skyMapURL}
