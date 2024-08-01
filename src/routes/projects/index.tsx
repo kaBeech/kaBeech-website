@@ -82,7 +82,7 @@ export default component$(() => {
           </a>{" "}
           for the full paper!
         </p>
-        <h2 id="guideme">GuideMe</h2>
+        <h2 id="guideMe">GuideMe</h2>
         <img
           src="/guideme.webp"
           alt="GuideMe"
@@ -190,6 +190,46 @@ export default component$(() => {
           >
             Audiopile
           </a>
+        </p>
+        <h2 id="realDice">Real* Dice*</h2>
+        <img
+          src="/real-dice.webp"
+          alt="Real* Dice*"
+        />
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/kaBeech/real-dice?tab=readme-ov-file#real-dice-"
+          class="button"
+        >
+          Check out Real* Dice*!
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/kaBeech/real-dice"
+          class="button invertedButton"
+        >
+          View source on GitHub
+        </a>
+        <p>
+          Random number generation based on physical media touched by humans
+        </p>
+        <p>
+          Sometimes the digital world can feel cold and sterile compared to the
+          messy and unpredictable nature of our physical environment. Purely
+          functional languages like Haskell are, for better and for worse,
+          particularly susceptible to this digital de-messification
+        </p>
+        <p>
+
+          In celebration of Haskell's determinative nature, this package
+          provides random data from my interaction with the physical world as
+          well as utilities to leverage this data for random number generation
+          and other RNG-based tasks
+        </p>
+        <p>
+          This package can be used to bring a human touch to our digital world!
         </p>
         <h2 id="wyrldDashboard">Wyrld Dashboard</h2>
         <img
