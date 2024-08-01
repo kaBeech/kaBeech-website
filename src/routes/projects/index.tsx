@@ -234,7 +234,7 @@ export default component$(() => {
           focus on my work
         </p>
         <p>
-          Serious Sans originated as a project to disambiguate some of the
+          Serious Shanns originated as a project to disambiguate some of the
           glyphs appearing in{" "}
           <a
             target="_blank"
