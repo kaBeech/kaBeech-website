@@ -215,4 +215,10 @@ export const linkTiles = {
     icon: "/icons/dice-outline.svg",
     external: true,
   },
+  projects_seriousShanns: {
+    linkPath: "https://kabeech.github.io/serious-shanns/",
+    text: "Serious Shanns",
+    icon: "/icons/serious-shanns.svg",
+    external: true,
+  },
 };

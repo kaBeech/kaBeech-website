@@ -191,6 +191,101 @@ export default component$(() => {
             Audiopile
           </a>
         </p>
+        <h2 id="seriousShanns">Serious Shanns</h2>
+        <img
+          src="/seriousShanns.webp"
+          alt="An example of text in the Serious Shanns font"
+        />
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://kabeech.github.io/serious-shanns/"
+          class="button"
+        >
+          Check out Serious Shanns!
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/kaBeech/serious-shanns"
+          class="button invertedButton"
+        >
+          View source on GitHub
+        </a>
+        <p>A legible monospace font for playful professionals. Comic Sans for hackers</p>
+        <p>
+          Somehow this silly fork of a monospaced Comic Sans clone has become
+          my most popular project on GitHub. Used around the world by coders
+          working at places like Red Hat, Cloudflare, and a bunch of
+          universities!
+        </p>
+        <p>
+          This font can actually be helpful for people with learning
+          disabilities (like myself). It's somewhat well-known that
+          Comic Sans{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.nothingcomicaboutdyslexia.com/"
+            class="link"
+          >
+            can be easier to read for people with dyslexia
+          </a>, and as someone with ADHD I personally find this font helps me
+          focus on my work
+        </p>
+        <p>
+          Serious Sans originated as a project to disambiguate some of the
+          glyphs appearing in{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/shannpersand/comic-shanns"
+            class="link"
+          >
+            Comic Shanns
+          </a>{" "}by{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/shannpersand"
+            class="link"
+          >
+            Shannon Miwa
+          </a>
+          {" "}and has close family ties with{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/dtinth/comic-mono-font"
+            class="link"
+          >
+            Comic Mono
+          </a>{" "}by{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/dtinth"
+            class="link"
+          >
+            Thai Pangsakulyanont
+          </a>{" "}and{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/jesusmgg/comic-shanns-mono"
+            class="link"
+          >
+            Comic Shanns Mono
+          </a>{" "}by{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/jesusmgg"
+            class="link"
+          >
+            Jesús González
+          </a>
+        </p>
         <h2 id="real-dice">Real* Dice*</h2>
         <img
           src="/real-dice.webp"
@@ -326,6 +421,12 @@ export default component$(() => {
               "I want to check out GuideMe!",
             linkTile: linkTiles.projects_guideMe,
             jumpTo: "#guideMe",
+          },
+          {
+            fullMessage:
+              "Comic Sans for coders? Are you serious?",
+            linkTile: linkTiles.projects_seriousShanns,
+            jumpTo: "#seriousSans",
           },
           {
             fullMessage:
