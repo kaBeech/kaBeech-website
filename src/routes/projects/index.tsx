@@ -15,6 +15,73 @@ export default component$(() => {
       <div class="screenContents">
         <h1>Projects</h1>
         <p>Here are some cool projects I've worked on!</p>
+        <h2 id="tensort">Tensort</h2>
+        <img
+          src="/tensort.webp"
+          alt="Tensort"
+        />
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/kaBeech/tensort?tab=readme-ov-file#tensort-"
+          class="button"
+        >
+          Check out Tensort!
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/kaBeech/tensort"
+          class="button invertedButton"
+        >
+          View source on GitHub
+        </a>
+        <p>Tunable sorting for responsive robustness and beyond!</p>
+        <p>
+          Tensort is a tensor-based sorting algorithm I wrote after reading
+          David H. Ackley's {" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/kaBeech/tensort?tab=readme-ov-file#tensort-"
+            class="link"
+          >
+            Beyond Efficiency
+          </a>{" "}(and listening to Future Of Coding's {" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://futureofcoding.org/episodes/070"
+            class="link"
+          >
+            podcast episode
+          </a> {" "}
+          about it).
+        </p>
+        <p>
+          This project started as an exploration of what a sorting algorithm
+          that prioritizes robustness might look like, but the resulting
+          algorithm could be capable of much more.
+        </p>
+        <p>
+          Simply put, Tensort takes an input list, transforms the list into a
+          tensor field, then transforms the tensor field back into a sorted
+          list. These transformations provide opportunities to increase
+          redundancy for improved robustness and can be leveraged to include
+          any further processing we wish to do on the elements.
+        </p>
+        <p>
+          If that gets your gears humming, head over to{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/kaBeech/tensort?tab=readme-ov-file#tensort-"
+            class="link"
+          >
+            GitHub
+          </a>{" "}
+          for the full paper!
+        </p>
         <h2 id="audiopile">Audiopile</h2>
         <img
           src="/waveform.webp"
@@ -136,11 +203,6 @@ export default component$(() => {
             and profit from their work
           </li>
         </ul>
-        <p>
-          My partner Julian and I also use this project as an excuse to play
-          with cool technology (for instance this is where we first started
-          using the Rust programming language)
-        </p>
         <p>
           <Link class="link margin1" href="../">
             {"<-- Back to Home"}
