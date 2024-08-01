@@ -197,4 +197,22 @@ export const linkTiles = {
     icon: "/icons/musical-notes-outline.svg",
     external: true,
   },
+  projects_tensort: {
+    linkPath: "https://github.com/kaBeech/tensort",
+    text: "Tensort",
+    icon: "/icons/tensort.svg",
+    external: true,
+  },
+  projects_guideMe: {
+    linkPath: "https://gthub.com/kaBeech/guideme",
+    text: "GuideMe",
+    icon: "/icons/guideme.svg",
+    external: true,
+  },
+  projects_realDice: {
+    linkPath: "https://github.com/kaBeech/real-dice",
+    text: "Real* Dice*",
+    icon: "/icons/real-dice.svg",
+    external: true,
+  },
 };

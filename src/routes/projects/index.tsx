@@ -311,14 +311,32 @@ export default component$(() => {
         responses={[
           {
             fullMessage:
+              "Tensort sounds fascinating!",
+            linkTile: linkTiles.projects_tensort,
+            jumpTo: "#tensort",
+          },
+          {
+            fullMessage:
               "Ooh! I've been looking for a simple audio sharing tool!",
             linkTile: linkTiles.projects_audiopile,
             jumpTo: "#audiopile",
           },
           {
+            fullMessage:
+              "I want to check out GuideMe!",
+            linkTile: linkTiles.projects_guideMe,
+            jumpTo: "#guideMe",
+          },
+          {
             fullMessage: "Time to play some D&D!!!",
             linkTile: linkTiles.projects_wyrldDashboard,
             jumpTo: "#wyrldDashboard",
+          },
+          {
+            fullMessage:
+              "Now just how Real* are these Dice*?",
+            linkTile: linkTiles.projects_realDice,
+            jumpTo: "#real-dice",
           },
           {
             fullMessage: "There's something else I want to ask...",
