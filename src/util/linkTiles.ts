@@ -206,7 +206,7 @@ export const linkTiles = {
   projects_guideMe: {
     linkPath: "https://gthub.com/kaBeech/guideme",
     text: "GuideMe",
-    icon: "/icons/guideme.svg",
+    icon: "/icons/map-outline.svg",
     external: true,
   },
   projects_realDice: {
