@@ -21,7 +21,8 @@ export default component$(() => {
         <p>
           My name's Kyle Beechly and I'm a software engineer from the Pacific
           Northwest (in the US). I'm into Functional Programming and I mainly
-          work in Web Development
+          work in Web Development. My main languages are JavaScript/TypeScript,
+          Elixir, Haskell, Nix, HTML, CSS, and SQL
         </p>
         <p>
           You can{" "}
