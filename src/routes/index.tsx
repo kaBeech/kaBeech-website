@@ -34,15 +34,15 @@ export default component$(() => {
             </Link>{" "}
           </li>
           <li class="margin1">
-            - Tell you about the{" "}
-            <Link class="link" href="/tech">
-              tech used to build this website
+            - Exhibit{" "}
+            <Link class="link" href="/projects">
+              some other projects I've worked on
             </Link>{" "}
           </li>
           <li class="margin1">
-            - Show you{" "}
-            <Link class="link" href="/projects">
-              some other projects I've worked on
+            - Tell you about the{" "}
+            <Link class="link" href="/tech">
+              tech used to build this website
             </Link>{" "}
           </li>
           <li class="margin1">
@@ -68,13 +68,13 @@ export default component$(() => {
             linkTile: linkTiles.fun,
           },
           {
+            fullMessage: "Show me some projects you've worked on!",
+            linkTile: linkTiles.projects,
+          },
+          {
             fullMessage:
               "Woah, this site is pretty cool! What did you use to build it?",
             linkTile: linkTiles.tech,
-          },
-          {
-            fullMessage: "Show me some projects you've worked on!",
-            linkTile: linkTiles.projects,
           },
           {
             fullMessage: "I'm interested in you - tell me about yourself!",
