@@ -85,7 +85,7 @@ export default component$(() => {
         <h2 id="guideMe">GuideMe</h2>
         <img
           src="/guideme.webp"
-          alt="GuideMe"
+          alt="A guide on how to play chess from GuideMe"
         />
         <a
           target="_blank"
@@ -194,7 +194,7 @@ export default component$(() => {
         <h2 id="realDice">Real* Dice*</h2>
         <img
           src="/real-dice.webp"
-          alt="Real* Dice*"
+          alt="A computer drawing of a die using a marble texture representing Real* Dice*"
         />
         <a
           target="_blank"

@@ -212,7 +212,7 @@ export const linkTiles = {
   projects_realDice: {
     linkPath: "https://github.com/kaBeech/real-dice",
     text: "Real* Dice*",
-    icon: "/icons/real-dice.svg",
+    icon: "/icons/dice-outline.svg",
     external: true,
   },
 };
