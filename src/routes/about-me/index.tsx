@@ -38,7 +38,7 @@ export default component$(() => {
         <p>
           If you're interested, I prefer{" "}
           <Link class="link" href="pronouns">
-            xe/xyr or ze/zyr pronouns
+            xe/xem or ze/zem pronouns
           </Link>
           . I'm not very strict about it though, as long as you're being
           compassionate ♡

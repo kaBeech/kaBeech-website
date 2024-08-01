@@ -16,10 +16,10 @@ export default component$(() => {
         </h2>
         <p>Oh! Thanks for asking - being me pretty great!</p>
         <p>
-          Being Kyle's avatar is basically like being a conduit for zys
+          Being Kyle's avatar is basically like being a conduit for zyr
           personality (I also prefer{" "}
           <Link class="link" href="/about-me/pronouns">
-            xe/xyr or ze/zyr pronouns
+            xe/xem or ze/zem pronouns
           </Link>
           )
         </p>

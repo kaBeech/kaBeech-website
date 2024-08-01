@@ -126,7 +126,7 @@ export default component$(() => {
           guess what it means, but this could lead to unpredictable results
         </p>
         <p>
-          Or... xe could find a friend to interpret the sentence for xyr. Let's
+          Or... xe could find a friend to interpret the sentence for xem. Let's
           call this interpreter 'Beechy'
         </p>
         <h4 class="responseTextLight">Hey, I know Beechy!</h4>
@@ -141,12 +141,12 @@ export default component$(() => {
         </p>
         <p>
           However, there are a couple issues with this strategy. It's a long
-          process. Kyle has to rolodex xys list of friends, remember that Beechy
+          process. Kyle has to rolodex xyr list of friends, remember that Beechy
           can interpret high-level gibberish, contact Beechy, and prepare some
-          ice cream to bribe zyr into helping out
+          ice cream to bribe zem into helping out
         </p>
         <p>
-          While Beechy eats zys ice cream, ze has to read the high-level answer
+          While Beechy eats zyr ice cream, ze has to read the high-level answer
           and think about what I might mean by it. If there are any terms ze is
           unsure about, ze will (hopefully) take the time to look them up
         </p>
@@ -154,7 +154,7 @@ export default component$(() => {
           Once Beechy has a full stomach and a good grasp on what the sentence
           means, ze must figure out a way to convey that information to Kyle in
           a way xe will understand. Then, Beechy will have to actually convey
-          that information to Kyle, probably stopping to answer some of xys
+          that information to Kyle, probably stopping to answer some of xyr
           questions along the way. This whole process, from Kyle reading the
           sentence until xe finally understands it, takes a long time
         </p>
