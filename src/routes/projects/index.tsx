@@ -191,6 +191,163 @@ export default component$(() => {
             Audiopile
           </a>
         </p>
+        <h2 id="seriousShanns">Serious Shanns</h2>
+        <img
+          src="/seriousShanns.webp"
+          alt="An example of text in the Serious Shanns font"
+        />
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://kabeech.github.io/serious-shanns/"
+          class="button"
+        >
+          Check out Serious Shanns!
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/kaBeech/serious-shanns"
+          class="button invertedButton"
+        >
+          View source on GitHub
+        </a>
+        <p>A legible monospace font for playful professionals. Comic Sans for hackers</p>
+        <p>
+          Somehow this silly fork of a monospaced Comic Sans clone has become
+          my most popular project on GitHub. Used around the world by coders
+          working at places like Red Hat, Cloudflare, and a bunch of
+          universities!
+        </p>
+        <p>
+          This font can actually be helpful for people with learning
+          disabilities (like myself). It's somewhat well-known that
+          Comic Sans{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.nothingcomicaboutdyslexia.com/"
+            class="link"
+          >
+            can be easier to read for people with dyslexia
+          </a>, and as someone with ADHD I personally find this font helps me
+          focus on my work
+        </p>
+        <p>
+          Serious Sans originated as a project to disambiguate some of the
+          glyphs appearing in{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/shannpersand/comic-shanns"
+            class="link"
+          >
+            Comic Shanns
+          </a>{" "}by{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/shannpersand"
+            class="link"
+          >
+            Shannon Miwa
+          </a>
+          {" "}and has close family ties with{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/dtinth/comic-mono-font"
+            class="link"
+          >
+            Comic Mono
+          </a>{" "}by{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/dtinth"
+            class="link"
+          >
+            Thai Pangsakulyanont
+          </a>{" "}and{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/jesusmgg/comic-shanns-mono"
+            class="link"
+          >
+            Comic Shanns Mono
+          </a>{" "}by{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/jesusmgg"
+            class="link"
+          >
+            Jesús González
+          </a>
+        </p>
+        <h2 id="wyrldDashboard">Wyrld Dashboard</h2>
+        <img
+          src="/peli_book_smaller.webp"
+          alt="Peli, the Far Reach Co. mascot, holding a book"
+        />
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://farreachco.com/"
+          class="button"
+        >
+          Check out Wyrld Dashboard!
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/Far-Reach-Co/dm-dash"
+          class="button invertedButton"
+        >
+          View source on GitHub
+        </a>
+        <p>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="https://www.audiopile.cloud/"
+          >
+            Wyrld Dashboard
+          </a>{" "}
+          provides fast and unobtrusive cloud-based tools for tabletop
+          role-playing games (RPGs) like Dungeons & Dragons
+        </p>
+        <p class="lazyMargin">
+          Some of the tools we provide include:
+        </p>
+        <ul>
+          <li class="margin1">
+            - A database for holding and sharing information about RPG settings
+            (worlds and their underlying rules)
+          </li>
+          <li class="margin1">
+            - A user interface (UI) for game masters (GMs) to build and share
+            custom RPG settings
+          </li>
+          <li class="margin1">
+            - A UI for players to connect with the worlds shared by their GM and
+            to create and control certain assets (i.e. their characters and
+            personal notes)
+          </li>
+          <li class="margin1">
+            - Tools (character sheets, dice, event trackers, etc.) for GMs and
+            players to interact with their worlds
+          </li>
+          <li class="margin1">
+            - A virtual table top application for sharing visual game
+            information (such as maps, character position, and turn order)
+          </li>
+          <li class="margin1">
+            - An extensive (over 200 pages) compendium of D&D-compatible content
+          </li>
+        </ul>
         <h2 id="real-dice">Real* Dice*</h2>
         <img
           src="/real-dice.webp"
@@ -231,75 +388,6 @@ export default component$(() => {
         <p>
           This package can be used to bring a human touch to our digital world!
         </p>
-        <h2 id="wyrldDashboard">Wyrld Dashboard</h2>
-        <img
-          src="/peli_book_smaller.webp"
-          alt="Peli, the Far Reach Co. mascot, holding a book"
-        />
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://farreachco.com/"
-          class="button"
-        >
-          Check out Wyrld Dashboard!
-        </a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/Far-Reach-Co/dm-dash"
-          class="button invertedButton"
-        >
-          View source on GitHub
-        </a>
-        <p>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            class="link"
-            href="https://www.audiopile.cloud/"
-          >
-            Wyrld Dashboard
-          </a>{" "}
-          provides fast and unobtrusive cloud-based tools for tabletop
-          role-playing games (RPGs) like Dungeons & Dragons
-        </p>
-        <p class="lazyMargin">
-          Some of the tools we provide (or are planning to build) include:
-        </p>
-        <ul>
-          <li class="margin1">
-            - A database for holding and sharing information about RPG settings
-            (worlds and their underlying rules)
-          </li>
-          <li class="margin1">
-            - A user interface (UI) for game masters (GMs) to build and share
-            custom RPG settings
-          </li>
-          <li class="margin1">
-            - A UI for players to connect with the worlds shared by their GM and
-            to create and control certain assets (i.e. their characters and
-            personal notes)
-          </li>
-          <li class="margin1">
-            - Tools (character sheets, dice, event trackers, etc.) for GMs and
-            players to interact with their worlds
-          </li>
-          <li class="margin1">
-            - A virtual table top application for sharing visual game
-            information (such as maps, character position, and turn order)
-          </li>
-          <li class="margin1">
-            - Tools for creating and sharing AI-generated portraits and maps
-          </li>
-          <li class="margin1">
-            - An extensive (200+ pages) compendium of D&D-compatible content
-          </li>
-          <li class="margin1">
-            - A framework in which other content creators can share, license,
-            and profit from their work
-          </li>
-        </ul>
         <p>
           <Link class="link margin1" href="../">
             {"<-- Back to Home"}
@@ -329,14 +417,20 @@ export default component$(() => {
           },
           {
             fullMessage:
-              "Now just how Real* are these Dice*?",
-            linkTile: linkTiles.projects_realDice,
-            jumpTo: "#real-dice",
+              "Comic Sans for coders? Are you serious?",
+            linkTile: linkTiles.projects_seriousShanns,
+            jumpTo: "#seriousShanns",
           },
           {
             fullMessage: "Time to play some D&D!!!",
             linkTile: linkTiles.projects_wyrldDashboard,
             jumpTo: "#wyrldDashboard",
+          },
+          {
+            fullMessage:
+              "Now just how Real* are these Dice*?",
+            linkTile: linkTiles.projects_realDice,
+            jumpTo: "#real-dice",
           },
           {
             fullMessage: "There's something else I want to ask...",
