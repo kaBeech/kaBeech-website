@@ -14,53 +14,6 @@ export default component$(() => {
       <Beechy />
       <div class="screenContents">
         <h1>Fun and Games!</h1>
-        <h2 id="starCrossed">StarCrossed</h2>
-        <img
-          src="/starCrossedLogo.webp"
-          alt="An array of stars in a heart shape"
-        />
-        <Link class="button" href="star-crossed">
-          Check out StarCrossed!
-        </Link>
-        <a
-          class="button invertedButton"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/kaBeech/star-crossed"
-        >
-          View source on GitHub
-        </a>
-        <p>
-          StarCrossed is a tool for finding a spot in the universe special to
-          two people. I built it as an experiment with{" "}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href={"https://deno.com/kv"}
-            class={`link`}
-          >
-            Deno KV
-          </a>{" "}
-          (an{" "}
-          <Link class="link" href="/tech/edge">
-            edge-enabled
-          </Link>
-          , globally distributed key-value store), as my entry in{" "}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href={"https://deno.com/blog/deno-kv-hackathon"}
-            class={`link`}
-          >
-            the Deno KV Hackathon
-          </a>
-        </p>
-        <p>
-          You can use it to check your compatibility with another person (based
-          on your subjective opinion of what your stars look like), find a
-          galactic make-out spot, or just discover a unique point in the sky to
-          look at together through a telescope
-        </p>
         <h2 id="xtremeXmasCode">Xtreme Xmas Code</h2>
         <img
           src="/xtreme-xmas-code.webp"
@@ -119,6 +72,53 @@ export default component$(() => {
             that isn't tied to a strict time schedule
           </a>
           .
+        </p>
+        <h2 id="starCrossed">StarCrossed</h2>
+        <img
+          src="/starCrossedLogo.webp"
+          alt="An array of stars in a heart shape"
+        />
+        <Link class="button" href="star-crossed">
+          Check out StarCrossed!
+        </Link>
+        <a
+          class="button invertedButton"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/kaBeech/star-crossed"
+        >
+          View source on GitHub
+        </a>
+        <p>
+          StarCrossed is a tool for finding a spot in the universe special to
+          two people. I built it as an experiment with{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={"https://deno.com/kv"}
+            class={`link`}
+          >
+            Deno KV
+          </a>{" "}
+          (an{" "}
+          <Link class="link" href="/tech/edge">
+            edge-enabled
+          </Link>
+          , globally distributed key-value store), as my entry in{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={"https://deno.com/blog/deno-kv-hackathon"}
+            class={`link`}
+          >
+            the Deno KV Hackathon
+          </a>
+        </p>
+        <p>
+          You can use it to check your compatibility with another person (based
+          on your subjective opinion of what your stars look like), find a
+          galactic make-out spot, or just discover a unique point in the sky to
+          look at together through a telescope
         </p>
         <h2 id="namagen">Namagen</h2>
         <img
@@ -273,15 +273,15 @@ export default component$(() => {
       <ResponseBar
         responses={[
           {
-            fullMessage: "Let's look at the stars!",
-            linkTile: linkTiles.fun_starCrossed,
-            jumpTo: "#starCrossed",
-          },
-          {
             fullMessage:
               "I'm a big logic nerd like you - show me Xtreme Xmas Code!",
             linkTile: linkTiles.projects_xtremeXmasCode,
             jumpTo: "#xtremeXmasCode",
+          },
+          {
+            fullMessage: "Let's look at the stars!",
+            linkTile: linkTiles.fun_starCrossed,
+            jumpTo: "#starCrossed",
           },
           {
             fullMessage: "Ooh! I wanna try that fantasy name generator!",
