@@ -11,6 +11,12 @@ export const linkTiles = {
     icon: "/icons/logo-github.svg",
     external: false,
   },
+  linkedIn: {
+    linkPath: "https://www.linkedin.com/in/kyle-beechly/",
+    text: "LinkedIn",
+    icon: "/icons/logo-linkedin.svg",
+    external: false,
+  },
   email: {
     linkPath: "mailto:contact@kabeech.com",
     text: "Email Me!",
@@ -189,6 +195,24 @@ export const linkTiles = {
     linkPath: "https://www.audiopile.cloud/",
     text: "Audiopile",
     icon: "/icons/musical-notes-outline.svg",
+    external: true,
+  },
+  projects_tensort: {
+    linkPath: "https://github.com/kaBeech/tensort",
+    text: "Tensort",
+    icon: "/icons/snow-outline.svg",
+    external: true,
+  },
+  projects_guideMe: {
+    linkPath: "https://gthub.com/kaBeech/guideme",
+    text: "GuideMe",
+    icon: "/icons/map-outline.svg",
+    external: true,
+  },
+  projects_realDice: {
+    linkPath: "https://github.com/kaBeech/real-dice",
+    text: "Real* Dice*",
+    icon: "/icons/dice-outline.svg",
     external: true,
   },
 };

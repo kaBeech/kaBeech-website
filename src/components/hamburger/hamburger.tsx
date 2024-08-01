@@ -45,13 +45,13 @@ export const Hamburger = component$((props: HamburgerProps) => {
             />
             <div class="blinkOut">Fun and Games</div>
           </Link>
-          <Link class="hamburgerChoice" href="/tech">
-            <img class="lazy" src="/icons/cpu.svg" alt="Technology" />
-            <div class="blinkOut">Tech</div>
-          </Link>
           <Link class="hamburgerChoice" href="/projects">
             <img class="lazy" src="/icons/hammer-outline.svg" alt="Projects" />
             <div class="blinkOut">Projects</div>
+          </Link>
+          <Link class="hamburgerChoice" href="/tech">
+            <img class="lazy" src="/icons/cpu.svg" alt="Technology" />
+            <div class="blinkOut">Tech</div>
           </Link>
           <Link class="hamburgerChoice" href="/about-me">
             <img

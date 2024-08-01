@@ -20,11 +20,8 @@ export default component$(() => {
         />
         <p>
           My name's Kyle Beechly and I'm a software engineer from the Pacific
-          Northwest (in America). I built this site to showcase some of my work
-          using the new{" "}
-          <Link class="link" href="/tech/poqd">
-            POQD stack
-          </Link>
+          Northwest (in the US). I'm into Functional Programming and I mainly
+          work in Web Development
         </p>
         <p>
           You can{" "}

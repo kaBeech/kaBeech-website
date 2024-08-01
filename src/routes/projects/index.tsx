@@ -14,65 +14,130 @@ export default component$(() => {
       <Beechy />
       <div class="screenContents">
         <h1>Projects</h1>
-        <p>Here are some cool things I've helped build!</p>
-        <h2 id="xtremeXmasCode">Xtreme Xmas Code</h2>
+        <p>Here are some cool projects I've worked on!</p>
+        <h2 id="tensort">Tensort</h2>
         <img
-          src="/xtreme-xmas-code.webp"
-          alt="A knitted star pattern representing Xtreme Xmas Code"
+          src="/tensort.webp"
+          alt="An octohegonal fractal representing Tensort"
         />
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.xtremexmascode.com/"
+          href="https://github.com/kaBeech/tensort?tab=readme-ov-file#tensort-"
           class="button"
         >
-          Check out Xtreme Xmas Code!
+          Check out Tensort!
         </a>
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://github.com/kaBeech/xtreme-xmas-code"
+          href="https://github.com/kaBeech/tensort"
           class="button invertedButton"
         >
           View source on GitHub
         </a>
+        <p>Tunable sorting for responsive robustness and beyond!</p>
         <p>
-          Have you ever been savoring your Advent Of Code calendar, keyboard
-          dusted with sugar cookie crumbles, reindeer curled at your feet, and
-          found yourself wishing the puzzles were wilder? More challenging? MORE
-          XTREME??
-        </p>
-        <p>Well ho-ho-hold that thought because this is the mod for you!</p>
-        <p>
-          <em>Xtreme Xmas Code</em> is a mod/companion app for{" "}
-          <a href="https://adventofcode.com/" class="link">
-            Advent of Code
-          </a>
-          , a delightful{" "}
-          <a href="https://en.wikipedia.org/wiki/Advent_calendar" class="link">
-            Advent calendar
-          </a>{" "}
-          of small programming puzzles created by{" "}
-          <a href="http://was.tl/" class="link">
-            Eric Wastl
-          </a>
-          . With it you can record your Advent of Code progress and each day get
-          an additional modifier to that day's AoC puzzle. For example, you may
-          be challenged to complete that day's puzzle using a language you've
-          never used before, or without reassigning any variables.
-        </p>
-        <p>
-          Additionally, the mod scores each game based on how you use your
-          reroll tokens and provides leaderboards for ranking games based on
-          this score. I hope this will provide a brain-stretching leaderboard
-          experience{" "}
+          Tensort is a tensor-based sorting algorithm I wrote after reading
+          David H. Ackley's {" "}
           <a
-            href="https://www.reddit.com/r/adventofcode/comments/e2wjhf/comment/f90ksek/"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/kaBeech/tensort?tab=readme-ov-file#tensort-"
             class="link"
           >
-            that isn't tied to a strict time schedule
+            Beyond Efficiency
+          </a>{" "}(and listening to Future Of Coding's {" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://futureofcoding.org/episodes/070"
+            class="link"
+          >
+            podcast episode
+          </a> {" "}
+          about it).
+        </p>
+        <p>
+          This project started as an exploration of what a sorting algorithm
+          that prioritizes robustness might look like, but the resulting
+          algorithm could be capable of much more.
+        </p>
+        <p>
+          Simply put, Tensort takes an input list, transforms the list into a
+          tensor field, then transforms the tensor field back into a sorted
+          list. These transformations provide opportunities to increase
+          redundancy for improved robustness and can be leveraged to include
+          any further processing we wish to do on the elements.
+        </p>
+        <p>
+          If that gets your gears humming, head over to{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/kaBeech/tensort?tab=readme-ov-file#tensort-"
+            class="link"
+          >
+            GitHub
+          </a>{" "}
+          for the full paper!
+        </p>
+        <h2 id="guideMe">GuideMe</h2>
+        <img
+          src="/guideme.webp"
+          alt="A guide on how to play chess from GuideMe"
+        />
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/kaBeech/guideme?tab=readme-ov-file#guideme-"
+          class="button"
+        >
+          Check out GuideMe!
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/kaBeech/guideme"
+          class="button invertedButton"
+        >
+          View source on GitHub
+        </a>
+        <p>Simple declarative knowledge enhancement</p>
+        <p>
+          At work I was tired of inscrutable, out-of-date
+          knowledge base articles across multiple formats. I wanted
+          something that gave immediate, high-level information (including
+          visual examples) while allowing users to drill down into
+          greater detail when needed.
+        </p>
+        <p>
+          GuideMe is what I built in response. It takes a declarative approach,
+          assuming that users know the basics of their job and displaying
+          simple step-by-step guides. If a user needs more information,
+          on a step, they can click through for a guide on that step in detail.
+        </p>
+        <p>
+          When new users come onto a team (or existing users are given more
+          responsibility), team leaders can assign them specific guides to
+          study, which the users can mark as reviewed once they've read them.
+          As information changes, guides can be updated and users can be
+          notified that there is new information to review
+        </p>
+        <p>
+          I have ADHD and personally I find this format very helpful for
+          absorbing new information and jogging my memory while maintaining
+          my focus on the task at hand. You can try it out for yourself by
+          downloading the source from {" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/kaBeech/guideme"
+            class="link"
+          >
+            GitHub
           </a>
-          .
+          !
         </p>
         <h2 id="audiopile">Audiopile</h2>
         <img
@@ -125,6 +190,46 @@ export default component$(() => {
           >
             Audiopile
           </a>
+        </p>
+        <h2 id="real-dice">Real* Dice*</h2>
+        <img
+          src="/real-dice.webp"
+          alt="A computer drawing of a die using a marble texture representing Real* Dice*"
+        />
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/kaBeech/real-dice?tab=readme-ov-file#real-dice-"
+          class="button"
+        >
+          Check out Real* Dice*!
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/kaBeech/real-dice"
+          class="button invertedButton"
+        >
+          View source on GitHub
+        </a>
+        <p>
+          Random number generation based on physical media touched by humans
+        </p>
+        <p>
+          Sometimes the digital world can feel cold and sterile compared to the
+          messy and unpredictable nature of our physical environment. Purely
+          functional languages like Haskell are, for better and for worse,
+          particularly susceptible to this digital de-messification
+        </p>
+        <p>
+
+          In celebration of Haskell's determinative nature, this package
+          provides random data from my interaction with the physical world as
+          well as utilities to leverage this data for random number generation
+          and other RNG-based tasks
+        </p>
+        <p>
+          This package can be used to bring a human touch to our digital world!
         </p>
         <h2 id="wyrldDashboard">Wyrld Dashboard</h2>
         <img
@@ -196,11 +301,6 @@ export default component$(() => {
           </li>
         </ul>
         <p>
-          My partner Julian and I also use this project as an excuse to play
-          with cool technology (for instance this is where we first started
-          using the Rust programming language)
-        </p>
-        <p>
           <Link class="link margin1" href="../">
             {"<-- Back to Home"}
           </Link>{" "}
@@ -211,9 +311,9 @@ export default component$(() => {
         responses={[
           {
             fullMessage:
-              "I'm a big logic nerd like you - let's go to Xtreme Xmas Code!",
-            linkTile: linkTiles.projects_xtremeXmasCode,
-            jumpTo: "#xtremeXmasCode",
+              "Tensort sounds fascinating!",
+            linkTile: linkTiles.projects_tensort,
+            jumpTo: "#tensort",
           },
           {
             fullMessage:
@@ -222,9 +322,21 @@ export default component$(() => {
             jumpTo: "#audiopile",
           },
           {
+            fullMessage:
+              "I want to check out GuideMe!",
+            linkTile: linkTiles.projects_guideMe,
+            jumpTo: "#guideMe",
+          },
+          {
             fullMessage: "Time to play some D&D!!!",
             linkTile: linkTiles.projects_wyrldDashboard,
             jumpTo: "#wyrldDashboard",
+          },
+          {
+            fullMessage:
+              "Now just how Real* are these Dice*?",
+            linkTile: linkTiles.projects_realDice,
+            jumpTo: "#real-dice",
           },
           {
             fullMessage: "There's something else I want to ask...",

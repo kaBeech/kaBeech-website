@@ -12,18 +12,13 @@ export default component$(() => {
       <div class="screenContents">
         <h1>Contact</h1>
         <p>
-          You can email me at{" "}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            class="link"
-            href="mailto:contact@kabeech.com"
-          >
-            contact@kaBeech.com
+          The best way to get ahold of my is usually{" "}
+          <a href="https://www.linkedin.com/in/kyle-beechly/" class="link">
+            LinkedIn
           </a>
         </p>
         <p>
-          You can also find me on{" "}
+          You can also find me through{" "}
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -33,8 +28,13 @@ export default component$(() => {
             GitHub
           </a>
           ,{" "}
-          <a href="https://www.linkedin.com/in/kyle-beechly/" class="link">
-            LinkedIn
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="mailto:contact@kabeech.com"
+          >
+            Email
           </a>
           ,{" "}
           <a href="https://bsky.app/profile/kabeech.com" class="link">
@@ -56,11 +56,15 @@ export default component$(() => {
         responses={[
           {
             fullMessage: "I want to get in touch with you!",
-            linkTile: linkTiles.email,
+            linkTile: linkTiles.linkedIn,
           },
           {
             fullMessage: "Get me to your GitHub!",
             linkTile: linkTiles.gitHub,
+          },
+          {
+            fullMessage: "I prefer email!",
+            linkTile: linkTiles.email,
           },
           {
             fullMessage: "There's something else I want to ask...",

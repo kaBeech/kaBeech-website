@@ -56,7 +56,7 @@ export default component$(() => {
               </td>
             </tr>
             <tr>
-              <th>Backend</th>
+              <th>Server</th>
               <td>
                 <a
                   target="_blank"
@@ -130,78 +130,24 @@ export default component$(() => {
         <div class="flex">
           <div>
             <h3>MongoDB</h3>
-            <p>Non-Relational Database</p>
+            <p>Non-Relational (NoSQL) Database</p>
           </div>
           <div>
             <h3>PostgreSQL</h3>
-            <p>Relational Database</p>
+            <p>Relational (SQL) Database</p>
           </div>
         </div>
         <h3 class="responseTextLight">Why PostgreSQL?</h3>
-        {/* <p>
-          <strong>
-            Note: with the recent release of{" "}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href={"https://deno.com/kv"}
-              class={`link`}
-            >
-              Deno KV
-            </a>
-            , I've been enjoying the low-config workflow and snappy performance
-            that comes with{" "}
-            <Link class="link" href="/tech/edge">
-              edge-enabled
-            </Link>{" "}
-            key-value stores. I still love Postgres (especially for more
-            complicated databases), but keep in mind that alternative options
-            are becoming available
-          </strong>
-        </p> */}
         <p>
-          The more I grow, the less dogmatic I get about database choices. These
-          days non-relational databases like MongoDB (using NoSQL) can do most
-          of what relational databases like Postgres (using SQL) do and vice
-          versa. Because of this, the remainder of this section is more flowery
-          and less science-based than the others - feel free to skip ahead.
-          You've been warned
+          I'm a functional programmer. I like defining structure and
+          having it to lean on. I'm just more comfortable with relational
+          databases
         </p>
         <p>
-          MongoDB's great. It's easy to use, has friendly documentation, and
-          notably offers a very accessible multi-cloud developer data platform
-          in MongoDB Atlas
+          Posgres is free, open-source, runs on practically everything, and
+          does everything I need it to do. Plus I like elephants
         </p>
-        <p>
-          But I just like Postgres. It feels good on my brain. The color scheme
-          is nice. The community is great. The elephant is a kind and noble
-          creature
-        </p>
-        <p>
-          SQL just makes sense to me. I understand I'm in the minority here, but
-          I'm more likely to feel frustrated than relieved when working in a
-          system that tries to map program execution onto natural language. Not
-          that MongoDB does that per se, but the firm and simple logic of SQL
-          feels good to me
-        </p>
-        <p>
-          SQL is fast and it provides easy methods to combine data. The
-          advantages of NoSQL are that it's easily expansible and you don't have
-          to plan ahead as much
-        </p>
-        <p>
-          Again, these days both SQL and NoSQL have evolved to the point that
-          they're both viable options for many projects. It just depends on how
-          you prefer to think about your data. It sounds like an old kōan by
-          now: do you want a document full of tables (MongoDB) or a table full
-          of documents (Postgres)?
-        </p>
-        <p>
-          I like speed by default and I'm the kind of person who both a) likes
-          to plan ahead before actually building a project and b) doesn't mind
-          rewriting things if I really need to. PostgreSQL for me, please
-        </p>
-        <h2 id="backend">Backend</h2>
+        <h2 id="server">Server</h2>
         <div class="flex">
           <div>
             <h3>Express</h3>
@@ -444,13 +390,10 @@ export default component$(() => {
         </p>
         <h3 class="summaryPoint">2. It's Performant</h3>
         <p>
-          Sites built with POQD can be fast. Like really really fast. BLAZINGLY
-          FAST, some might say
-        </p>
-        <p>
+          Sites built with POQD can be fast.
           Go ahead and click around this site. See how much time you spend
           waiting for a page to load. Run a Lighthouse test (Performance usually
-          hovers around 100 for me). There may not be many fancy bells and
+          hovers close to 100 for me). There may not be many fancy bells and
           whistles here yet, but I have more content planned that will
           demonstrate further how quick and responsive it is. To get a taste for
           now, try{" "}
@@ -487,31 +430,6 @@ export default component$(() => {
           where I don't mean to is worth it to me
         </p>
         <p>
-          <strong>Example 3:</strong>{" "}
-          <Link class="link" href="/fun/flower?pride=true">
-            Qwik uses symbolic slots
-          </Link>
-          . Qwik renders parents and children in perfect isolation. This means
-          it can render the parent component without re-rendering the children
-          and vice versa
-        </p>
-        <p>
-          However, because slots are symbolic, the children can NOT be read or
-          transformed by the components, like is possible in React. This means
-          if you're a lazy kaBeech just hacking together a website real fast,
-          you might hit a point where your mind is screaming "Why can't I just
-          pass this state in to every possible child of this slot component the
-          way I can with React????"
-        </p>
-        <p>
-          But after a minute (you are a very smart and attractive kaBeech after
-          all), you'll start to ask yourself "Okay, but why do I need to pass
-          state to components that I haven't even built yet?" And then you'll
-          realize that you could structure the whole thing in a more organized,
-          more performant way
-        </p>
-        <p>I like tools that encourage me to grow ♡ </p>
-        <p>
           <Link class="link margin1" href="../">
             {"<-- Back to Tech"}
           </Link>{" "}
@@ -528,7 +446,7 @@ export default component$(() => {
           {
             fullMessage: "I want to learn more about Oak",
             linkTile: linkTiles.poqd_oak,
-            jumpTo: "#backend",
+            jumpTo: "#server",
           },
           {
             fullMessage: "I want to learn more about Qwik",
