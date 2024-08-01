@@ -28,16 +28,17 @@ export default component$(() => {
         <h3 class="homepage">If you are interested, I can:</h3>
         <ul>
           <li class="margin1">
-            - Show you{" "}
-            <Link class="link" href="/fun">
-              some fun toys
+            - Show you some{" "}
+            <Link class="link" href="/projects">
+              projects I've worked on
             </Link>{" "}
           </li>
           <li class="margin1">
-            - Exhibit{" "}
-            <Link class="link" href="/projects">
-              some other projects I've worked on
+            - Bring out some{" "}
+            <Link class="link" href="/fun">
+              fun toys
             </Link>{" "}
+            to play with
           </li>
           <li class="margin1">
             - Tell you about the{" "}
@@ -63,13 +64,13 @@ export default component$(() => {
       <ResponseBar
         responses={[
           {
+            fullMessage: "Show me some projects you've worked on!",
+            linkTile: linkTiles.projects,
+          },
+          {
             fullMessage:
               "I'm just having fun. Do you have anything cool to play with?",
             linkTile: linkTiles.fun,
-          },
-          {
-            fullMessage: "Show me some projects you've worked on!",
-            linkTile: linkTiles.projects,
           },
           {
             fullMessage:

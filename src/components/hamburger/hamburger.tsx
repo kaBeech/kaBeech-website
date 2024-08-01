@@ -37,6 +37,10 @@ export const Hamburger = component$((props: HamburgerProps) => {
             <img class="lazy" src="/icons/home.svg" alt="Home" />
             <div class="blinkOut">Home</div>
           </Link>
+          <Link class="hamburgerChoice" href="/projects">
+            <img class="lazy" src="/icons/hammer-outline.svg" alt="Projects" />
+            <div class="blinkOut">Projects</div>
+          </Link>
           <Link class="hamburgerChoice" href="/fun">
             <img
               class="lazy"
@@ -44,10 +48,6 @@ export const Hamburger = component$((props: HamburgerProps) => {
               alt="Fun and Games"
             />
             <div class="blinkOut">Fun and Games</div>
-          </Link>
-          <Link class="hamburgerChoice" href="/projects">
-            <img class="lazy" src="/icons/hammer-outline.svg" alt="Projects" />
-            <div class="blinkOut">Projects</div>
           </Link>
           <Link class="hamburgerChoice" href="/tech">
             <img class="lazy" src="/icons/cpu.svg" alt="Technology" />
@@ -72,14 +72,14 @@ export const Hamburger = component$((props: HamburgerProps) => {
           <Link href="/">
             <div class="blink">Home</div>
           </Link>
+          <Link href="/projects">
+            <div class="blink">Projects</div>
+          </Link>
           <Link href="/fun">
             <div class="blink">Fun and Games</div>
           </Link>
           <Link href="/tech">
             <div class="blink">Technology</div>
-          </Link>
-          <Link href="/projects">
-            <div class="blink">Projects</div>
           </Link>
           <Link href="/about-me">
             <div class="blink">About Me</div>
