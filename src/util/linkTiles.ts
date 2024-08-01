@@ -11,6 +11,12 @@ export const linkTiles = {
     icon: "/icons/logo-github.svg",
     external: false,
   },
+  linkedIn: {
+    linkPath: "https://www.linkedin.com/in/kyle-beechly/",
+    text: "LinkedIn",
+    icon: "/icons/logo-linkedin.svg",
+    external: false,
+  },
   email: {
     linkPath: "mailto:contact@kabeech.com",
     text: "Email Me!",
