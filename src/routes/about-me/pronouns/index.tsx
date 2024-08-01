@@ -14,12 +14,12 @@ export default component$(() => {
         <h2 class="responseTextLight">What are your preferred pronouns?</h2>
         <p>Why, thank you for asking!</p>
         <p>
-          I prefer xe/xyr or ze/zyr pronouns. Either pair works equally well -
+          I prefer xe/xem or ze/zem pronouns. Either pair works equally well -
           use whichever feels right in the moment!
         </p>
-        <p>For possessive pronouns I like xys or zys</p>
+        <p>For possessive pronouns I like xyr or zyr</p>
         <p>
-          Here's an example sentence: "I met xyr at xys house and xe drove me to
+          Here's an example sentence: "I met xem at xyr house and xe drove me to
           the concert"
         </p>
         <h2 class="responseTextLight">How do you pronounce them?</h2>
@@ -31,8 +31,8 @@ export default component$(() => {
           instance to use /d͡z/ for 'Z' and /x/ for 'X,' I support that as well!
         </p>
         <p>'Xe' and 'Ze' rhyme with 'He'</p>
+        <p>'Xem' and 'Zem' rhyme with 'Them'</p>
         <p>'Xyr' and 'Zyr' rhyme with 'Her'</p>
-        <p>'Xys' and 'Zys' rhyme with 'His'</p>
         <h2 class="responseTextLight">Why not use they/them?</h2>
         <h3>Grammatical Number</h3>
         <p>
@@ -46,48 +46,35 @@ export default component$(() => {
         </p>
         <p>
           Now try this one: "Kyle went with Beechy to the concert. When they
-          came back, zys fingernails were painted neon colors." To me, this more
+          came back, zyr fingernails were painted neon colors." To me, this more
           clearly implies that both Beechy and Kyle came back, but that it's
           Kyle's fingernails that we're talking about
         </p>
-        <h3>Subjective Feelings of Humanization</h3>
-        <p>
-          Additionally, to me, xe/xyr/ze/zyr pronouns feel more humanizing than
-          they/them. For whatever reason, xe/xyr/ze/zyr pronouns make me feel
-          more like a definite person and less like an 'it' than they/them
-        </p>
-        <p>
-          I feel the need to note that I have had one dear friend who prefers it
-          pronouns and I do not mean to diminish those who prefer them. What I
-          mean to say is that on the spectrum of feeling between 'it' and
-          'he/she,' 'they' feels somewhere in the middle and 'xe/ze' feels at
-          home right there with 'he/she'
-        </p>
-        <h2 class="responseTextLight">Why both xe/xyr and ze/zyr?</h2>
+        <h2 class="responseTextLight">Why both xe/xem and ze/zem?</h2>
         <h3>Reduced Ambiguity for Multiple Subjects</h3>
         <p>
           Having two options for pronouns can help make it clear who we're
           referring to when talking about more than one person
         </p>
         <p>
-          Consider this passage: "Beechy drove xys blue car to Kyle's concert.
+          Consider this passage: "Beechy drove xyr blue car to Kyle's concert.
           After the opening act, Kyle drove onstage in a jet black car, matching
-          xys hair. By the end of the show, the power of Music had turned both
-          xys car and xys hair rainbow colored!"
+          xyr hair. By the end of the show, the power of Music had turned both
+          xyr car and xyr hair rainbow colored!"
         </p>
         <p>
           At the end of the show, whose car is rainbow colored? It's not
           completely clear
         </p>
         <p>
-          Now try this one: "Beechy drove xys blue car to Kyle's concert. After
-          the opening act, Kyle drove onstage in a jet black car, matching zys
-          hair. By the end of the show, the power of Music had turned both xys
-          car and zys hair rainbow colored!"
+          Now try this one: "Beechy drove xyr blue car to Kyle's concert. After
+          the opening act, Kyle drove onstage in a jet black car, matching zyr
+          hair. By the end of the show, the power of Music had turned both xyr
+          car and zyr hair rainbow colored!"
         </p>
         <p>
-          With this wording, we clearly know that Beechy's car is the one that
-          magically changed color
+          With this wording (in written text at least), we clearly know that
+          Beechy's car is the one that magically changed color
         </p>
         <h3>Duality</h3>
         <p>
@@ -96,7 +83,7 @@ export default component$(() => {
           not to constrict
         </p>
         <p>
-          I enjoy the concept of gender fluidity. Having both xe/xyr and ze/zyr
+          I enjoy the concept of gender fluidity. Having both xe/xem and ze/zem
           options both celebrates duality and provides a framework for the
           gender-fluid experience to flourish without the need to default to
           using traditional pronouns
@@ -104,7 +91,7 @@ export default component$(() => {
         <p>
           Again, this is not to diminish those who prefer to fluctuate between
           he/him and she/her pronouns. On a personal note, before I decided on
-          xe/xyr/ze/zyr pronouns I used to tell people that I don't mind what
+          xe/xem/ze/zem pronouns I used to tell people that I don't mind what
           pronouns people use for me, but that I like it when they mix it up
         </p>
         <p>
@@ -112,8 +99,8 @@ export default component$(() => {
           as others) and I enjoy being able to partake in one without forsaking
           the others. However, this resulted in most people just defaulting to
           he/him all the time, which kinda bummed me out. I decided to find
-          suitable non-binary pronouns for friends to default to and finally
-          landed on the delightful options described on this page!
+          suitable non-binary pronouns for friends to default to and landed on
+          the delightful options described on this page!
         </p>
         <p>
           <Link class="link margin1" href="../">
