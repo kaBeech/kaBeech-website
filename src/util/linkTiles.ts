@@ -198,19 +198,19 @@ export const linkTiles = {
     external: true,
   },
   projects_tensort: {
-    linkPath: "https://github.com/kaBeech/tensort",
+    linkPath: "https://hackage.haskell.org/package/tensort",
     text: "Tensort",
     icon: "/icons/snow-outline.svg",
     external: true,
   },
   projects_guideMe: {
-    linkPath: "https://gthub.com/kaBeech/guideme",
+    linkPath: "https://github.com/kaBeech/guideme",
     text: "GuideMe",
     icon: "/icons/map-outline.svg",
     external: true,
   },
   projects_realDice: {
-    linkPath: "https://github.com/kaBeech/real-dice",
+    linkPath: "https://hackage.haskell.org/package/real-dice",
     text: "Real* Dice*",
     icon: "/icons/dice-outline.svg",
     external: true,

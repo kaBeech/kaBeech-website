@@ -23,7 +23,7 @@ export default component$(() => {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://github.com/kaBeech/tensort?tab=readme-ov-file#tensort-"
+          href="https://hackage.haskell.org/package/tensort"
           class="button"
         >
           Check out Tensort!
@@ -90,7 +90,7 @@ export default component$(() => {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://github.com/kaBeech/guideme?tab=readme-ov-file#guideme-"
+          href="https://github.com/kaBeech/guideme?tab=readme-ov-file#guideme"
           class="button"
         >
           Check out GuideMe!
@@ -199,7 +199,7 @@ export default component$(() => {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://github.com/kaBeech/real-dice?tab=readme-ov-file#real-dice-"
+          href="https://hackage.haskell.org/package/real-dice"
           class="button"
         >
           Check out Real* Dice*!
@@ -328,15 +328,15 @@ export default component$(() => {
             jumpTo: "#guideMe",
           },
           {
-            fullMessage: "Time to play some D&D!!!",
-            linkTile: linkTiles.projects_wyrldDashboard,
-            jumpTo: "#wyrldDashboard",
-          },
-          {
             fullMessage:
               "Now just how Real* are these Dice*?",
             linkTile: linkTiles.projects_realDice,
             jumpTo: "#real-dice",
+          },
+          {
+            fullMessage: "Time to play some D&D!!!",
+            linkTile: linkTiles.projects_wyrldDashboard,
+            jumpTo: "#wyrldDashboard",
           },
           {
             fullMessage: "There's something else I want to ask...",
