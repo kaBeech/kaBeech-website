@@ -200,7 +200,7 @@ export const linkTiles = {
   projects_tensort: {
     linkPath: "https://github.com/kaBeech/tensort",
     text: "Tensort",
-    icon: "/icons/tensort.svg",
+    icon: "/icons/snow-outline.svg",
     external: true,
   },
   projects_guideMe: {

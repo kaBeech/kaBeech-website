@@ -18,7 +18,7 @@ export default component$(() => {
         <h2 id="tensort">Tensort</h2>
         <img
           src="/tensort.webp"
-          alt="Tensort"
+          alt="An octohegonal fractal representing Tensort"
         />
         <a
           target="_blank"
