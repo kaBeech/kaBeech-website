@@ -15,7 +15,7 @@ import styles from "./star-crossed.css?inline";
 const birthday1 = "1999-08-11";
 const birthday2 = "2000-03-03";
 
-const serverFetcher = server$(async function (birthday1, birthday2) {
+const serverFetcher = server$(async function(birthday1, birthday2) {
   const starCrossedAPI = this.env.get("STARCROSSED_API");
   if (starCrossedAPI == undefined) {
     console.error("STARCROSSED_API string not found upon request");
@@ -297,11 +297,6 @@ export default component$(() => {
       </div>
       <ResponseBar
         responses={[
-          {
-            fullMessage:
-              "Wow, that works fast! Please tell me more about the tech you used to build it",
-            linkTile: linkTiles.tech,
-          },
           {
             fullMessage: "There's something else I want to ask...",
             linkTile: linkTiles.back,
