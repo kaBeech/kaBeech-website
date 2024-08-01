@@ -191,7 +191,7 @@ export default component$(() => {
             Audiopile
           </a>
         </p>
-        <h2 id="realDice">Real* Dice*</h2>
+        <h2 id="real-dice">Real* Dice*</h2>
         <img
           src="/real-dice.webp"
           alt="A computer drawing of a die using a marble texture representing Real* Dice*"
