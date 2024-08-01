@@ -14,66 +14,7 @@ export default component$(() => {
       <Beechy />
       <div class="screenContents">
         <h1>Projects</h1>
-        <p>Here are some cool things I've helped build!</p>
-        <h2 id="xtremeXmasCode">Xtreme Xmas Code</h2>
-        <img
-          src="/xtreme-xmas-code.webp"
-          alt="A knitted star pattern representing Xtreme Xmas Code"
-        />
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.xtremexmascode.com/"
-          class="button"
-        >
-          Check out Xtreme Xmas Code!
-        </a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/kaBeech/xtreme-xmas-code"
-          class="button invertedButton"
-        >
-          View source on GitHub
-        </a>
-        <p>
-          Have you ever been savoring your Advent Of Code calendar, keyboard
-          dusted with sugar cookie crumbles, reindeer curled at your feet, and
-          found yourself wishing the puzzles were wilder? More challenging? MORE
-          XTREME??
-        </p>
-        <p>Well ho-ho-hold that thought because this is the mod for you!</p>
-        <p>
-          <em>Xtreme Xmas Code</em> is a mod/companion app for{" "}
-          <a href="https://adventofcode.com/" class="link">
-            Advent of Code
-          </a>
-          , a delightful{" "}
-          <a href="https://en.wikipedia.org/wiki/Advent_calendar" class="link">
-            Advent calendar
-          </a>{" "}
-          of small programming puzzles created by{" "}
-          <a href="http://was.tl/" class="link">
-            Eric Wastl
-          </a>
-          . With it you can record your Advent of Code progress and each day get
-          an additional modifier to that day's AoC puzzle. For example, you may
-          be challenged to complete that day's puzzle using a language you've
-          never used before, or without reassigning any variables.
-        </p>
-        <p>
-          Additionally, the mod scores each game based on how you use your
-          reroll tokens and provides leaderboards for ranking games based on
-          this score. I hope this will provide a brain-stretching leaderboard
-          experience{" "}
-          <a
-            href="https://www.reddit.com/r/adventofcode/comments/e2wjhf/comment/f90ksek/"
-            class="link"
-          >
-            that isn't tied to a strict time schedule
-          </a>
-          .
-        </p>
+        <p>Here are some cool projects I've worked on!</p>
         <h2 id="audiopile">Audiopile</h2>
         <img
           src="/waveform.webp"
@@ -209,12 +150,6 @@ export default component$(() => {
 
       <ResponseBar
         responses={[
-          {
-            fullMessage:
-              "I'm a big logic nerd like you - let's go to Xtreme Xmas Code!",
-            linkTile: linkTiles.projects_xtremeXmasCode,
-            jumpTo: "#xtremeXmasCode",
-          },
           {
             fullMessage:
               "Ooh! I've been looking for a simple audio sharing tool!",
