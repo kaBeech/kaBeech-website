@@ -286,6 +286,68 @@ export default component$(() => {
             Jesús González
           </a>
         </p>
+        <h2 id="wyrldDashboard">Wyrld Dashboard</h2>
+        <img
+          src="/peli_book_smaller.webp"
+          alt="Peli, the Far Reach Co. mascot, holding a book"
+        />
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://farreachco.com/"
+          class="button"
+        >
+          Check out Wyrld Dashboard!
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/Far-Reach-Co/dm-dash"
+          class="button invertedButton"
+        >
+          View source on GitHub
+        </a>
+        <p>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+            href="https://www.audiopile.cloud/"
+          >
+            Wyrld Dashboard
+          </a>{" "}
+          provides fast and unobtrusive cloud-based tools for tabletop
+          role-playing games (RPGs) like Dungeons & Dragons
+        </p>
+        <p class="lazyMargin">
+          Some of the tools we provide include:
+        </p>
+        <ul>
+          <li class="margin1">
+            - A database for holding and sharing information about RPG settings
+            (worlds and their underlying rules)
+          </li>
+          <li class="margin1">
+            - A user interface (UI) for game masters (GMs) to build and share
+            custom RPG settings
+          </li>
+          <li class="margin1">
+            - A UI for players to connect with the worlds shared by their GM and
+            to create and control certain assets (i.e. their characters and
+            personal notes)
+          </li>
+          <li class="margin1">
+            - Tools (character sheets, dice, event trackers, etc.) for GMs and
+            players to interact with their worlds
+          </li>
+          <li class="margin1">
+            - A virtual table top application for sharing visual game
+            information (such as maps, character position, and turn order)
+          </li>
+          <li class="margin1">
+            - An extensive (over 200 pages) compendium of D&D-compatible content
+          </li>
+        </ul>
         <h2 id="real-dice">Real* Dice*</h2>
         <img
           src="/real-dice.webp"
@@ -326,75 +388,6 @@ export default component$(() => {
         <p>
           This package can be used to bring a human touch to our digital world!
         </p>
-        <h2 id="wyrldDashboard">Wyrld Dashboard</h2>
-        <img
-          src="/peli_book_smaller.webp"
-          alt="Peli, the Far Reach Co. mascot, holding a book"
-        />
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://farreachco.com/"
-          class="button"
-        >
-          Check out Wyrld Dashboard!
-        </a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/Far-Reach-Co/dm-dash"
-          class="button invertedButton"
-        >
-          View source on GitHub
-        </a>
-        <p>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            class="link"
-            href="https://www.audiopile.cloud/"
-          >
-            Wyrld Dashboard
-          </a>{" "}
-          provides fast and unobtrusive cloud-based tools for tabletop
-          role-playing games (RPGs) like Dungeons & Dragons
-        </p>
-        <p class="lazyMargin">
-          Some of the tools we provide (or are planning to build) include:
-        </p>
-        <ul>
-          <li class="margin1">
-            - A database for holding and sharing information about RPG settings
-            (worlds and their underlying rules)
-          </li>
-          <li class="margin1">
-            - A user interface (UI) for game masters (GMs) to build and share
-            custom RPG settings
-          </li>
-          <li class="margin1">
-            - A UI for players to connect with the worlds shared by their GM and
-            to create and control certain assets (i.e. their characters and
-            personal notes)
-          </li>
-          <li class="margin1">
-            - Tools (character sheets, dice, event trackers, etc.) for GMs and
-            players to interact with their worlds
-          </li>
-          <li class="margin1">
-            - A virtual table top application for sharing visual game
-            information (such as maps, character position, and turn order)
-          </li>
-          <li class="margin1">
-            - Tools for creating and sharing AI-generated portraits and maps
-          </li>
-          <li class="margin1">
-            - An extensive (200+ pages) compendium of D&D-compatible content
-          </li>
-          <li class="margin1">
-            - A framework in which other content creators can share, license,
-            and profit from their work
-          </li>
-        </ul>
         <p>
           <Link class="link margin1" href="../">
             {"<-- Back to Home"}
@@ -426,18 +419,18 @@ export default component$(() => {
             fullMessage:
               "Comic Sans for coders? Are you serious?",
             linkTile: linkTiles.projects_seriousShanns,
-            jumpTo: "#seriousSans",
+            jumpTo: "#seriousShanns",
+          },
+          {
+            fullMessage: "Time to play some D&D!!!",
+            linkTile: linkTiles.projects_wyrldDashboard,
+            jumpTo: "#wyrldDashboard",
           },
           {
             fullMessage:
               "Now just how Real* are these Dice*?",
             linkTile: linkTiles.projects_realDice,
             jumpTo: "#real-dice",
-          },
-          {
-            fullMessage: "Time to play some D&D!!!",
-            linkTile: linkTiles.projects_wyrldDashboard,
-            jumpTo: "#wyrldDashboard",
           },
           {
             fullMessage: "There's something else I want to ask...",
