@@ -114,7 +114,7 @@ export default component$(() => {
         <p>
           GuideMe is what I built in response. It takes a declarative approach,
           assuming that users know the basics of their job and displaying
-          simple step-by-step guides. If a user needs more information,
+          simple step-by-step guides. If a user needs more information
           on a step, they can click through for a guide on that step in detail.
         </p>
         <p>
