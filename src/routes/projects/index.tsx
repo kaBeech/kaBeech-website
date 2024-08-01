@@ -82,6 +82,63 @@ export default component$(() => {
           </a>{" "}
           for the full paper!
         </p>
+        <h2 id="guideme">GuideMe</h2>
+        <img
+          src="/guideme.webp"
+          alt="GuideMe"
+        />
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/kaBeech/guideme?tab=readme-ov-file#guideme-"
+          class="button"
+        >
+          Check out GuideMe!
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/kaBeech/guideme"
+          class="button invertedButton"
+        >
+          View source on GitHub
+        </a>
+        <p>Simple declarative knowledge enhancement</p>
+        <p>
+          At work I was tired of inscrutable, out-of-date
+          knowledge base articles across multiple formats. I wanted
+          something that gave immediate, high-level information (including
+          visual examples) while allowing users to drill down into
+          greater detail when needed.
+        </p>
+        <p>
+          GuideMe is what I built in response. It takes a declarative approach,
+          assuming that users know the basics of their job and displaying
+          simple step-by-step guides. If a user needs more information,
+          on a step, they can click through for a guide on that step in detail.
+        </p>
+        <p>
+          When new users come onto a team (or existing users are given more
+          responsibility), team leaders can assign them specific guides to
+          study, which the users can mark as reviewed once they've read them.
+          As information changes, guides can be updated and users can be
+          notified that there is new information to review
+        </p>
+        <p>
+          I have ADHD and personally I find this format very helpful for
+          absorbing new information and jogging my memory while maintaining
+          my focus on the task at hand. You can try it out for yourself by
+          downloading the source from {" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/kaBeech/guideme"
+            class="link"
+          >
+            GitHub
+          </a>
+          !
+        </p>
         <h2 id="audiopile">Audiopile</h2>
         <img
           src="/waveform.webp"
