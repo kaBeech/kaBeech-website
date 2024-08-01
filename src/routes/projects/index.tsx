@@ -56,19 +56,19 @@ export default component$(() => {
           >
             podcast episode
           </a> {" "}
-          about it).
+          about it)
         </p>
         <p>
           This project started as an exploration of what a sorting algorithm
           that prioritizes robustness might look like, but the resulting
-          algorithm could be capable of much more.
+          algorithm could be capable of much more
         </p>
         <p>
           Simply put, Tensort takes an input list, transforms the list into a
           tensor field, then transforms the tensor field back into a sorted
           list. These transformations provide opportunities to increase
           redundancy for improved robustness and can be leveraged to include
-          any further processing we wish to do on the elements.
+          any further processing we wish to do on the elements
         </p>
         <p>
           If that gets your gears humming, head over to{" "}
@@ -109,13 +109,13 @@ export default component$(() => {
           knowledge base articles across multiple formats. I wanted
           something that gave immediate, high-level information (including
           visual examples) while allowing users to drill down into
-          greater detail when needed.
+          greater detail when needed
         </p>
         <p>
           GuideMe is what I built in response. It takes a declarative approach,
           assuming that users know the basics of their job and displaying
           simple step-by-step guides. If a user needs more information
-          on a step, they can click through for a guide on that step in detail.
+          on a step, they can click through for a guide on that step in detail
         </p>
         <p>
           When new users come onto a team (or existing users are given more
@@ -174,7 +174,7 @@ export default component$(() => {
           with fresh ears for an opinion. Heck, maybe it's just a tune that came
           to you in the shower that you recorded on your shower phone (people
           have those, right?) and want to listen to later on your studio
-          computer.
+          computer
         </p>
         <p>
           In any case, do you know how to get that audio from wherever it is now
