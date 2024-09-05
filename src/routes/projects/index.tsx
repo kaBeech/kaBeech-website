@@ -90,7 +90,7 @@ export default component$(() => {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://github.com/kaBeech/guideme?tab=readme-ov-file#guideme"
+          href="https://guideme.gigalixirapp.com/"
           class="button"
         >
           Check out GuideMe!
@@ -127,17 +127,16 @@ export default component$(() => {
         <p>
           I have ADHD and personally I find this format very helpful for
           absorbing new information and jogging my memory while maintaining
-          my focus on the task at hand. You can try it out for yourself by
-          downloading the source from {" "}
+          my focus on the task at hand. There is a limited public demo
+          available{" "}
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://github.com/kaBeech/guideme"
+            href="https://guideme.gigalixirapp.com/"
             class="link"
           >
-            GitHub
+            here
           </a>
-          !
         </p>
         <h2 id="audiopile">Audiopile</h2>
         <img

@@ -23,6 +23,12 @@ export const linkTiles = {
     icon: "/icons/mail.svg",
     external: true,
   },
+  mastodon: {
+    linkPath: "https://hachyderm.io/@kaBeech",
+    text: "Mastodon",
+    icon: "/icons/logo-mastodon.svg",
+    external: true,
+  },
   home: {
     linkPath: "/",
     text: "Home",
@@ -204,7 +210,7 @@ export const linkTiles = {
     external: true,
   },
   projects_guideMe: {
-    linkPath: "https://github.com/kaBeech/guideme",
+    linkPath: "https://guideme.gigalixirapp.com/",
     text: "GuideMe",
     icon: "/icons/map-outline.svg",
     external: true,
