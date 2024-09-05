@@ -12,7 +12,7 @@ export default component$(() => {
       <div class="screenContents">
         <h1>Contact</h1>
         <p>
-          The best way to get ahold of my is usually{" "}
+          The best way to get ahold of me is usually via{" "}
           <a href="https://www.linkedin.com/in/kyle-beechly/" class="link">
             LinkedIn
           </a>
@@ -35,10 +35,6 @@ export default component$(() => {
             href="mailto:contact@kabeech.com"
           >
             Email
-          </a>
-          ,{" "}
-          <a href="https://bsky.app/profile/kabeech.com" class="link">
-            Bluesky
           </a>
           , and{" "}
           <a href="https://hachyderm.io/@kaBeech" class="link">
@@ -65,6 +61,10 @@ export default component$(() => {
           {
             fullMessage: "I prefer email!",
             linkTile: linkTiles.email,
+          },
+          {
+            fullMessage: "/* Mastodon noises */",
+            linkTile: linkTiles.mastodon,
           },
           {
             fullMessage: "There's something else I want to ask...",
