@@ -210,7 +210,7 @@ export const linkTiles = {
     external: true,
   },
   projects_coluguide: {
-    linkPath: "https://coluguide.gigalixirapp.com/",
+    linkPath: "https://www.coluguide.com/",
     text: "Coluguide",
     icon: "/icons/map-outline.svg",
     external: true,

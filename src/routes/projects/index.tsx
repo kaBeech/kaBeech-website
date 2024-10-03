@@ -90,7 +90,7 @@ export default component$(() => {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://coluguide.gigalixirapp.com/"
+          href="https://www.coluguide.com/"
           class="button"
         >
           Check out Coluguide!
@@ -132,7 +132,7 @@ export default component$(() => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://coluguide.gigalixirapp.com/"
+            href="https://www.coluguide.com/"
             class="link"
           >
             here
