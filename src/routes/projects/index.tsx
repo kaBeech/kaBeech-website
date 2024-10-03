@@ -82,23 +82,23 @@ export default component$(() => {
           </a>{" "}
           for the full paper!
         </p>
-        <h2 id="guideMe">GuideMe</h2>
+        <h2 id="coluguide">Coluguide</h2>
         <img
-          src="/guideme.webp"
-          alt="A guide on how to play chess from GuideMe"
+          src="/coluguide.webp"
+          alt="A guide on how to play chess from Coluguide"
         />
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://guideme.gigalixirapp.com/"
+          href="https://coluguide.gigalixirapp.com/"
           class="button"
         >
-          Check out GuideMe!
+          Check out Coluguide!
         </a>
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://github.com/kaBeech/guideme"
+          href="https://github.com/kaBeech/coluguide"
           class="button invertedButton"
         >
           View source on GitHub
@@ -112,7 +112,7 @@ export default component$(() => {
           greater detail when needed
         </p>
         <p>
-          GuideMe is what I built in response. It takes a declarative approach,
+          Coluguide is what I built in response. It takes a declarative approach,
           assuming that users know the basics of their job and displaying
           simple step-by-step guides. If a user needs more information
           on a step, they can click through for a guide on that step in detail
@@ -132,7 +132,7 @@ export default component$(() => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://guideme.gigalixirapp.com/"
+            href="https://coluguide.gigalixirapp.com/"
             class="link"
           >
             here
@@ -410,9 +410,9 @@ export default component$(() => {
           },
           {
             fullMessage:
-              "I want to check out GuideMe!",
-            linkTile: linkTiles.projects_guideMe,
-            jumpTo: "#guideMe",
+              "I want to check out Coluguide!",
+            linkTile: linkTiles.projects_coluguide,
+            jumpTo: "#coluguide",
           },
           {
             fullMessage:

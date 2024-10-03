@@ -209,9 +209,9 @@ export const linkTiles = {
     icon: "/icons/snow-outline.svg",
     external: true,
   },
-  projects_guideMe: {
-    linkPath: "https://guideme.gigalixirapp.com/",
-    text: "GuideMe",
+  projects_coluguide: {
+    linkPath: "https://coluguide.gigalixirapp.com/",
+    text: "Coluguide",
     icon: "/icons/map-outline.svg",
     external: true,
   },
