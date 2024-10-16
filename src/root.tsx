@@ -20,7 +20,7 @@ export default component$(() => {
         <meta property="og:title" content="kaBeech Website" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.kabeech.com/" />
-        <meta property="og:image" content={"https://media.licdn.com/dms/image/v2/D562DAQGBXnE5DopjTA/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1693517070407?e=1729724400&v=beta&t=WPdxUnqUFuoa-ipX4oYqoklmsGXgj4rbVZbOpTpAGfk"} />
+        <meta property="og:image" content="https://www.kabeech.com/open_graph.jpeg" />
         <link rel="manifest" href="/manifest.json" />
         <RouterHead />
       </head>
